@@ -1,0 +1,6 @@
+# rendered output (regenerate with render_par.py / shot.py)
+frames/
+prev/
+render.log
+*.mp4
+__pycache__/
