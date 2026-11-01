@@ -1,455 +1,530 @@
 {
- "source": "FotMob match 5795498 (Opta data)",
- "match": "Chelsea 2-0 Manchester United, Premier League round 9, Sat, Oct 31, 2026, 12:30 UTC",
- "home": "CHE",
- "away": "MUN",
+ "source": "FotMob match 5881208 (Opta data)",
+ "match": "Bayern München 2-2 Borussia Dortmund, Bundesliga round 8, Sat, Oct 31, 2026, 17:30 UTC",
+ "home": "BAY",
+ "away": "BVB",
  "shots": [
   {
-   "team": "CHE",
-   "min": 8,
-   "add": null,
-   "type": "Miss",
-   "situation": "RegularPlay",
-   "shotType": "LeftFoot",
-   "xg": 0.015,
-   "x": 78.7684466032,
-   "y": 20.4960509585,
-   "player": "Estêvão",
-   "onTarget": false,
-   "blocked": false,
-   "ownGoal": false
-  },
-  {
-   "team": "MUN",
-   "min": 9,
-   "add": null,
-   "type": "Miss",
-   "situation": "RegularPlay",
-   "shotType": "LeftFoot",
-   "xg": 0.0402,
-   "x": 82.7101941752,
-   "y": 42.2928125,
-   "player": "Andrey Santos",
-   "onTarget": false,
-   "blocked": false,
-   "ownGoal": false
-  },
-  {
-   "team": "MUN",
-   "min": 14,
+   "team": "BAY",
+   "min": 7,
    "add": null,
    "type": "AttemptSaved",
-   "situation": "FromCorner",
-   "shotType": "LeftFoot",
-   "xg": 0.0198,
-   "x": 77.9800970888,
-   "y": 36.97375,
-   "player": "Carlos Baleba",
+   "situation": "SetPiece",
+   "shotType": "RightFoot",
+   "xg": 0.02,
+   "x": 95.54385964789999,
+   "y": 52.1982165596,
+   "player": "Harry Kane",
    "onTarget": true,
    "blocked": true,
    "ownGoal": false
   },
   {
-   "team": "CHE",
+   "team": "BAY",
+   "min": 10,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0434,
+   "x": 92.3,
+   "y": 40.721666666999994,
+   "player": "Michael Olise",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "BAY",
+   "min": 10,
+   "add": null,
+   "type": "Post",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0497,
+   "x": 90.2,
+   "y": 39.040714287,
+   "player": "Michael Olise",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAY",
+   "min": 10,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.4679,
+   "x": 94.2894736826,
+   "y": 37.58375000000001,
+   "player": "Ismael Saibari",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BVB",
    "min": 15,
    "add": null,
    "type": "AttemptSaved",
-   "situation": "FastBreak",
-   "shotType": "LeftFoot",
-   "xg": 0.0394,
-   "x": 92.1,
-   "y": 18.604331212399998,
-   "player": "Pedro Neto",
-   "onTarget": true,
-   "blocked": false,
-   "ownGoal": false
-  },
-  {
-   "team": "MUN",
-   "min": 19,
-   "add": null,
-   "type": "Miss",
-   "situation": "FastBreak",
-   "shotType": "LeftFoot",
-   "xg": 0.3007,
-   "x": 94.2894736826,
-   "y": 41.5990625,
-   "player": "Bruno Fernandes",
-   "onTarget": false,
-   "blocked": false,
-   "ownGoal": false
-  },
-  {
-   "team": "CHE",
-   "min": 22,
-   "add": null,
-   "type": "AttemptSaved",
    "situation": "RegularPlay",
    "shotType": "RightFoot",
-   "xg": 0.0352,
-   "x": 97.570175438,
-   "y": 18.2540127409,
-   "player": "Josh Acheampong",
+   "xg": 0.1757,
+   "x": 91.4,
+   "y": 38.704523811,
+   "player": "Maximilian Beier",
    "onTarget": true,
    "blocked": true,
    "ownGoal": false
   },
   {
-   "team": "CHE",
-   "min": 22,
-   "add": null,
-   "type": "AttemptSaved",
-   "situation": "FromCorner",
-   "shotType": "Header",
-   "xg": 0.0731,
-   "x": 95.9298245603,
-   "y": 32.70374999999999,
-   "player": "Wesley Fofana",
-   "onTarget": true,
-   "blocked": false,
-   "ownGoal": false
-  },
-  {
-   "team": "MUN",
-   "min": 30,
-   "add": null,
-   "type": "AttemptSaved",
-   "situation": "RegularPlay",
-   "shotType": "LeftFoot",
-   "xg": 0.0274,
-   "x": 84.3995145632,
-   "y": 22.808152870399997,
-   "player": "Amad Diallo",
-   "onTarget": true,
-   "blocked": false,
-   "ownGoal": false
-  },
-  {
-   "team": "MUN",
-   "min": 30,
+   "team": "BVB",
+   "min": 15,
    "add": null,
    "type": "AttemptSaved",
    "situation": "RegularPlay",
    "shotType": "RightFoot",
-   "xg": 0.1594,
-   "x": 97.1842105256,
-   "y": 30.797499999999996,
-   "player": "Matheus Cunha",
-   "onTarget": true,
-   "blocked": false,
-   "ownGoal": false
-  },
-  {
-   "team": "MUN",
-   "min": 31,
-   "add": null,
-   "type": "AttemptSaved",
-   "situation": "FromCorner",
-   "shotType": "RightFoot",
-   "xg": 0.0189,
-   "x": 96.9912280694,
-   "y": 20.2858598756,
-   "player": "Bruno Fernandes",
+   "xg": 0.1217,
+   "x": 90.4,
+   "y": 33.61875,
+   "player": "Carney Chukwuemeka",
    "onTarget": true,
    "blocked": true,
    "ownGoal": false
   },
   {
-   "team": "MUN",
-   "min": 32,
+   "team": "BVB",
+   "min": 22,
    "add": null,
-   "type": "Miss",
+   "type": "AttemptSaved",
    "situation": "RegularPlay",
    "shotType": "RightFoot",
-   "xg": 0.0948,
-   "x": 101.4913793106,
-   "y": 21.9673885388,
-   "player": "Amad Diallo",
-   "onTarget": false,
+   "xg": 0.0287,
+   "x": 82.37233009760001,
+   "y": 29.295476189000002,
+   "player": "Jobe Bellingham",
+   "onTarget": true,
    "blocked": false,
    "ownGoal": false
   },
   {
-   "team": "MUN",
+   "team": "BVB",
+   "min": 22,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0284,
+   "x": 89.2,
+   "y": 46.1727388498,
+   "player": "Felix Nmecha",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "BAY",
+   "min": 24,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.654,
+   "x": 92.2,
+   "y": 34.533750000000005,
+   "player": "Ismael Saibari",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAY",
    "min": 38,
    "add": null,
    "type": "AttemptSaved",
    "situation": "RegularPlay",
-   "shotType": "LeftFoot",
-   "xg": 0.1264,
-   "x": 95.15789473550001,
-   "y": 25.7071875,
-   "player": "Amad Diallo",
+   "shotType": "RightFoot",
+   "xg": 0.317,
+   "x": 93.3,
+   "y": 26.4009375,
+   "player": "Konrad Laimer",
    "onTarget": true,
    "blocked": false,
    "ownGoal": false
   },
   {
-   "team": "CHE",
-   "min": 42,
+   "team": "BAY",
+   "min": 38,
    "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.774,
+   "x": 99.8793103452,
+   "y": 30.22,
+   "player": "Konrad Laimer",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAY",
+   "min": 41,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0185,
+   "x": 77.9800970888,
+   "y": 42.00375,
+   "player": "Harry Kane",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BVB",
+   "min": 41,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0375,
+   "x": 85.9235294112,
+   "y": 34.305,
+   "player": "Jobe Bellingham",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BVB",
+   "min": 45,
+   "add": 2,
    "type": "AttemptSaved",
-   "situation": "FromCorner",
-   "shotType": "Header",
-   "xg": 0.0607,
-   "x": 96.9912280694,
-   "y": 32.39875,
-   "player": "Wesley Fofana",
+   "situation": "SetPiece",
+   "shotType": "RightFoot",
+   "xg": 0.0546,
+   "x": 94.09649122639999,
+   "y": 43.5803821607,
+   "player": "Carney Chukwuemeka",
    "onTarget": true,
    "blocked": true,
    "ownGoal": false
   },
   {
-   "team": "MUN",
-   "min": 43,
+   "team": "BAY",
+   "min": 47,
    "add": null,
-   "type": "Miss",
-   "situation": "FastBreak",
-   "shotType": "LeftFoot",
-   "xg": 0.3004,
-   "x": 93.4,
-   "y": 26.343125,
-   "player": "Amad Diallo",
-   "onTarget": false,
-   "blocked": false,
-   "ownGoal": false
-  },
-  {
-   "team": "CHE",
-   "min": 44,
-   "add": null,
-   "type": "Miss",
+   "type": "AttemptSaved",
    "situation": "RegularPlay",
    "shotType": "LeftFoot",
-   "xg": 0.0317,
-   "x": 102.3448275864,
-   "y": 47.714140124400004,
-   "player": "Pedro Neto",
-   "onTarget": false,
-   "blocked": false,
-   "ownGoal": false
-  },
-  {
-   "team": "CHE",
-   "min": 45,
-   "add": 0,
-   "type": "AttemptSaved",
-   "situation": "FastBreak",
-   "shotType": "RightFoot",
-   "xg": 0.0271,
-   "x": 96.4122807008,
-   "y": 19.9355414041,
-   "player": "Estêvão",
+   "xg": 0.0842,
+   "x": 94.8684210512,
+   "y": 23.0183439533,
+   "player": "Konrad Laimer",
    "onTarget": true,
    "blocked": false,
    "ownGoal": false
   },
   {
-   "team": "CHE",
+   "team": "BAY",
+   "min": 48,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0553,
+   "x": 92,
+   "y": 26.942142857,
+   "player": "Michael Olise",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAY",
    "min": 50,
    "add": null,
-   "type": "Goal",
+   "type": "Miss",
    "situation": "RegularPlay",
    "shotType": "LeftFoot",
-   "xg": 0.6525,
-   "x": 97.2807017537,
-   "y": 38.032142859000004,
-   "player": "Morgan Rogers",
-   "onTarget": true,
+   "xg": 0.1919,
+   "x": 91.5,
+   "y": 37.72,
+   "player": "Michael Olise",
+   "onTarget": false,
    "blocked": false,
    "ownGoal": false
   },
   {
-   "team": "CHE",
+   "team": "BAY",
    "min": 51,
    "add": null,
    "type": "AttemptSaved",
-   "situation": "FastBreak",
-   "shotType": "Header",
-   "xg": 0.1408,
-   "x": 97.570175438,
-   "y": 36.2875,
-   "player": "Pedro Neto",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0355,
+   "x": 89.1,
+   "y": 41.9459375,
+   "player": "Harry Kane",
    "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "BAY",
+   "min": 55,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0169,
+   "x": 101.681034483,
+   "y": 46.0326114612,
+   "player": "Harry Kane",
+   "onTarget": false,
    "blocked": false,
    "ownGoal": false
   },
   {
-   "team": "CHE",
-   "min": 64,
+   "team": "BAY",
+   "min": 56,
    "add": null,
-   "type": "Goal",
+   "type": "Post",
    "situation": "Penalty",
-   "shotType": "LeftFoot",
+   "shotType": "RightFoot",
    "xg": 0.7884,
    "x": 94,
    "y": 34,
-   "player": "Cole Palmer",
-   "onTarget": true,
-   "blocked": false,
-   "ownGoal": false
-  },
-  {
-   "team": "CHE",
-   "min": 67,
-   "add": null,
-   "type": "Miss",
-   "situation": "RegularPlay",
-   "shotType": "LeftFoot",
-   "xg": 0.017,
-   "x": 89.1,
-   "y": 19.2349044611,
-   "player": "Estêvão",
+   "player": "Harry Kane",
    "onTarget": false,
    "blocked": false,
    "ownGoal": false
   },
   {
-   "team": "CHE",
-   "min": 69,
+   "team": "BVB",
+   "min": 59,
    "add": null,
    "type": "AttemptSaved",
-   "situation": "FromCorner",
-   "shotType": "LeftFoot",
-   "xg": 0.0186,
-   "x": 81.80922330160001,
-   "y": 45.8924840726,
-   "player": "Josh Acheampong",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.017,
+   "x": 80.11990291360001,
+   "y": 46.1727388498,
+   "player": "Felix Nmecha",
    "onTarget": true,
    "blocked": false,
    "ownGoal": false
   },
   {
-   "team": "CHE",
+   "team": "BVB",
+   "min": 60,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1013,
+   "x": 94.7719298231,
+   "y": 37.78,
+   "player": "Serhou Guirassy",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAY",
+   "min": 62,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0286,
+   "x": 83.2733009712,
+   "y": 31.4075,
+   "player": "Joshua Kimmich",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAY",
+   "min": 62,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.043,
+   "x": 85.9235294112,
+   "y": 31.865,
+   "player": "Joshua Kimmich",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "BAY",
+   "min": 66,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0523,
+   "x": 94.7719298231,
+   "y": 21.7571974559,
+   "player": "Konrad Laimer",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "BAY",
+   "min": 66,
+   "add": null,
+   "type": "Goal",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.7991,
+   "x": 102.53448275880001,
+   "y": 31.1025,
+   "player": "Dayot Upamecano",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAY",
+   "min": 78,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0976,
+   "x": 90.8,
+   "y": 39.545000001,
+   "player": "Harry Kane",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BVB",
    "min": 79,
    "add": null,
-   "type": "AttemptSaved",
+   "type": "Miss",
    "situation": "RegularPlay",
-   "shotType": "LeftFoot",
-   "xg": 0.0689,
-   "x": 91.5,
-   "y": 26.4009375,
-   "player": "Estêvão",
-   "onTarget": true,
-   "blocked": true,
+   "shotType": "RightFoot",
+   "xg": 0.0146,
+   "x": 76.8538834968,
+   "y": 40.721666666999994,
+   "player": "Fábio Silva",
+   "onTarget": false,
+   "blocked": false,
    "ownGoal": false
   },
   {
-   "team": "CHE",
+   "team": "BAY",
    "min": 80,
    "add": null,
-   "type": "Miss",
-   "situation": "FromCorner",
-   "shotType": "LeftFoot",
-   "xg": 0.0254,
-   "x": 86.0308823524,
-   "y": 26.4009375,
-   "player": "Cole Palmer",
-   "onTarget": false,
-   "blocked": false,
-   "ownGoal": false
-  },
-  {
-   "team": "MUN",
-   "min": 84,
-   "add": null,
-   "type": "AttemptSaved",
-   "situation": "RegularPlay",
-   "shotType": "RightFoot",
-   "xg": 0.0225,
-   "x": 75.7276699048,
-   "y": 32.70374999999999,
-   "player": "Joshua Zirkzee",
-   "onTarget": true,
-   "blocked": false,
-   "ownGoal": false
-  },
-  {
-   "team": "CHE",
-   "min": 84,
-   "add": null,
    "type": "AttemptSaved",
    "situation": "RegularPlay",
    "shotType": "LeftFoot",
-   "xg": 0.0243,
-   "x": 87.7485294116,
-   "y": 18.884585989599998,
-   "player": "Estêvão",
-   "onTarget": true,
-   "blocked": false,
-   "ownGoal": false
-  },
-  {
-   "team": "CHE",
-   "min": 85,
-   "add": null,
-   "type": "AttemptSaved",
-   "situation": "RegularPlay",
-   "shotType": "LeftFoot",
-   "xg": 0.0573,
+   "xg": 0.028,
    "x": 84.85,
-   "y": 28.707142856,
-   "player": "Estêvão",
-   "onTarget": true,
-   "blocked": false,
-   "ownGoal": false
-  },
-  {
-   "team": "MUN",
-   "min": 90,
-   "add": 2,
-   "type": "AttemptSaved",
-   "situation": "RegularPlay",
-   "shotType": "RightFoot",
-   "xg": 0.0301,
-   "x": 99.6896551728,
-   "y": 18.4642038238,
-   "player": "Joshua Zirkzee",
+   "y": 27.278333333000003,
+   "player": "Michael Olise",
    "onTarget": true,
    "blocked": true,
    "ownGoal": false
   },
   {
-   "team": "MUN",
-   "min": 90,
-   "add": 2,
+   "team": "BVB",
+   "min": 83,
+   "add": null,
    "type": "AttemptSaved",
-   "situation": "FromCorner",
+   "situation": "RegularPlay",
    "shotType": "LeftFoot",
-   "xg": 0.0249,
-   "x": 82.1470873792,
-   "y": 32.3225,
-   "player": "Bryan Mbeumo",
+   "xg": 0.0697,
+   "x": 85.17205882280001,
+   "y": 26.169687500000002,
+   "player": "Jobe Bellingham",
    "onTarget": true,
    "blocked": false,
    "ownGoal": false
   },
   {
-   "team": "CHE",
-   "min": 90,
-   "add": 3,
-   "type": "Miss",
+   "team": "BVB",
+   "min": 83,
+   "add": null,
+   "type": "AttemptSaved",
    "situation": "RegularPlay",
    "shotType": "LeftFoot",
-   "xg": 0.0845,
-   "x": 89.6,
-   "y": 36.05875,
-   "player": "Cole Palmer",
-   "onTarget": false,
+   "xg": 0.0509,
+   "x": 98.6315789471,
+   "y": 47.5740127358,
+   "player": "Fábio Silva",
+   "onTarget": true,
    "blocked": false,
    "ownGoal": false
   },
   {
-   "team": "CHE",
+   "team": "BVB",
+   "min": 89,
+   "add": null,
+   "type": "Goal",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0442,
+   "x": 93.8,
+   "y": 22.247643316,
+   "player": "Fábio Silva",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAY",
    "min": 90,
-   "add": 9,
-   "type": "Miss",
+   "add": 3,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1099,
+   "x": 93,
+   "y": 24.84,
+   "player": "Konrad Laimer",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "BAY",
+   "min": 90,
+   "add": 4,
+   "type": "AttemptSaved",
    "situation": "RegularPlay",
    "shotType": "LeftFoot",
-   "xg": 0.5091,
-   "x": 97.95614035039999,
-   "y": 37.50750000000001,
-   "player": "Valentín Barco",
+   "xg": 0.0653,
+   "x": 90.7,
+   "y": 36.36375,
+   "player": "Nathaniel Brown",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "BAY",
+   "min": 90,
+   "add": 5,
+   "type": "Post",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0113,
+   "x": 80.79563106879999,
+   "y": 18.2540127409,
+   "player": "Lennart Karl",
    "onTarget": false,
    "blocked": false,
    "ownGoal": false
@@ -462,371 +537,371 @@
   ],
   [
    1,
-   -27
+   5
   ],
   [
    2,
-   -33
+   22
   ],
   [
    3,
-   -33
+   5
   ],
   [
    4,
-   -5
+   0
   ],
   [
    5,
-   38
+   -5
   ],
   [
    6,
-   33
+   27
   ],
   [
    7,
-   -16
+   43
   ],
   [
    8,
-   -43
+   22
   ],
   [
    9,
-   -92
+   8
   ],
   [
    10,
-   -49
+   35
   ],
   [
    11,
-   -54
+   46
   ],
   [
    12,
-   22
-  ],
-  [
-   13,
-   33
-  ],
-  [
-   14,
-   11
-  ],
-  [
-   15,
-   11
-  ],
-  [
-   16,
-   5
-  ],
-  [
-   17,
-   49
-  ],
-  [
-   18,
-   30
-  ],
-  [
-   19,
-   -24
-  ],
-  [
-   20,
-   -65
-  ],
-  [
-   21,
-   -79
-  ],
-  [
-   22,
-   27
-  ],
-  [
-   23,
-   19
-  ],
-  [
-   24,
-   22
-  ],
-  [
-   25,
-   -52
-  ],
-  [
-   26,
-   -43
-  ],
-  [
-   27,
-   -30
-  ],
-  [
-   28,
-   -8
-  ],
-  [
-   29,
-   5
-  ],
-  [
-   30,
-   -100
-  ],
-  [
-   31,
-   -100
-  ],
-  [
-   32,
-   -100
-  ],
-  [
-   33,
-   -5
-  ],
-  [
-   34,
-   -76
-  ],
-  [
-   35,
-   -60
-  ],
-  [
-   36,
-   -71
-  ],
-  [
-   37,
-   -22
-  ],
-  [
-   38,
-   -73
-  ],
-  [
-   39,
-   -57
-  ],
-  [
-   40,
-   -30
-  ],
-  [
-   41,
-   27
-  ],
-  [
-   42,
-   46
-  ],
-  [
-   43,
-   -19
-  ],
-  [
-   44,
-   -8
-  ],
-  [
-   45,
-   -38
-  ],
-  [
-   45.5,
-   -3
-  ],
-  [
-   46,
-   27
-  ],
-  [
-   47,
-   38
-  ],
-  [
-   48,
-   38
-  ],
-  [
-   49,
-   22
-  ],
-  [
-   50,
-   100
-  ],
-  [
-   51,
-   100
-  ],
-  [
-   52,
-   100
-  ],
-  [
-   53,
    54
   ],
   [
-   54,
-   3
-  ],
-  [
-   55,
-   43
-  ],
-  [
-   56,
-   65
-  ],
-  [
-   57,
-   33
-  ],
-  [
-   58,
-   11
-  ],
-  [
-   59,
-   -5
-  ],
-  [
-   60,
-   11
-  ],
-  [
-   61,
-   11
-  ],
-  [
-   62,
-   5
-  ],
-  [
-   63,
-   0
-  ],
-  [
-   64,
-   0
-  ],
-  [
-   65,
-   0
-  ],
-  [
-   66,
-   0
-  ],
-  [
-   67,
-   27
-  ],
-  [
-   68,
-   38
-  ],
-  [
-   69,
-   38
-  ],
-  [
-   70,
-   22
-  ],
-  [
-   71,
-   27
-  ],
-  [
-   72,
-   27
-  ],
-  [
-   73,
+   13,
    16
   ],
   [
-   74,
-   -54
-  ],
-  [
-   75,
-   -54
-  ],
-  [
-   76,
-   -49
-  ],
-  [
-   77,
+   14,
    5
   ],
   [
-   78,
-   22
+   15,
+   -71
   ],
   [
-   79,
-   33
+   16,
+   -81
   ],
   [
-   80,
-   33
+   17,
+   -90
   ],
   [
-   81,
-   27
+   18,
+   5
   ],
   [
-   82,
-   38
-  ],
-  [
-   83,
+   19,
    43
   ],
   [
-   84,
-   38
+   20,
+   79
   ],
   [
-   85,
-   49
+   21,
+   43
   ],
   [
-   86,
+   22,
+   -60
+  ],
+  [
+   23,
+   -76
+  ],
+  [
+   24,
+   -24
+  ],
+  [
+   25,
+   35
+  ],
+  [
+   26,
+   35
+  ],
+  [
+   27,
+   0
+  ],
+  [
+   28,
+   -24
+  ],
+  [
+   29,
+   -19
+  ],
+  [
+   30,
+   -19
+  ],
+  [
+   31,
+   16
+  ],
+  [
+   32,
+   11
+  ],
+  [
+   33,
+   0
+  ],
+  [
+   34,
+   -16
+  ],
+  [
+   35,
+   -16
+  ],
+  [
+   36,
+   -16
+  ],
+  [
+   37,
+   0
+  ],
+  [
+   38,
+   54
+  ],
+  [
+   39,
    46
   ],
   [
-   87,
+   40,
+   68
+  ],
+  [
+   41,
+   8
+  ],
+  [
+   42,
+   22
+  ],
+  [
+   43,
+   0
+  ],
+  [
+   44,
+   22
+  ],
+  [
+   45,
+   33
+  ],
+  [
+   45.5,
+   -54
+  ],
+  [
+   46,
+   0
+  ],
+  [
+   47,
+   22
+  ],
+  [
+   48,
    41
   ],
   [
-   88,
-   3
+   49,
+   41
   ],
   [
-   89,
-   16
+   50,
+   62
   ],
   [
-   90,
+   51,
+   60
+  ],
+  [
+   52,
+   49
+  ],
+  [
+   53,
+   5
+  ],
+  [
+   54,
+   -5
+  ],
+  [
+   55,
    11
   ],
   [
+   56,
+   11
+  ],
+  [
+   57,
+   5
+  ],
+  [
+   58,
+   -22
+  ],
+  [
+   59,
+   -54
+  ],
+  [
+   60,
+   -100
+  ],
+  [
+   61,
+   -76
+  ],
+  [
+   62,
+   27
+  ],
+  [
+   63,
+   100
+  ],
+  [
+   64,
+   100
+  ],
+  [
+   65,
+   100
+  ],
+  [
+   66,
+   100
+  ],
+  [
+   67,
+   100
+  ],
+  [
+   68,
+   90
+  ],
+  [
+   69,
+   27
+  ],
+  [
+   70,
+   5
+  ],
+  [
+   71,
+   0
+  ],
+  [
+   72,
+   11
+  ],
+  [
+   73,
+   33
+  ],
+  [
+   74,
+   16
+  ],
+  [
+   75,
+   0
+  ],
+  [
+   76,
+   -5
+  ],
+  [
+   77,
+   38
+  ],
+  [
+   78,
+   87
+  ],
+  [
+   79,
+   65
+  ],
+  [
+   80,
+   54
+  ],
+  [
+   81,
+   0
+  ],
+  [
+   82,
+   11
+  ],
+  [
+   83,
+   -54
+  ],
+  [
+   84,
+   -54
+  ],
+  [
+   85,
+   -33
+  ],
+  [
+   86,
+   -5
+  ],
+  [
+   87,
+   -27
+  ],
+  [
+   88,
+   -38
+  ],
+  [
+   89,
+   -46
+  ],
+  [
+   90,
+   -24
+  ],
+  [
    90.5,
-   21
+   38
   ],
   [
    90.75,
@@ -835,10 +910,18 @@
  ],
  "events": [
   {
+   "type": "card",
+   "card": "Yellow",
+   "min": 6,
+   "team": "BVB",
+   "player": "Jobe Bellingham",
+   "reason": "Foul"
+  },
+  {
    "type": "var",
    "min": 34,
-   "team": "MUN",
-   "player": "Matheus Cunha",
+   "team": "BVB",
+   "player": "Jobe Bellingham",
    "decision": [
     "Goal ruled out",
     "offside"
@@ -847,136 +930,93 @@
   {
    "type": "added",
    "min": 45,
-   "minutes": 2
+   "minutes": 6
   },
   {
    "type": "card",
    "card": "Yellow",
-   "min": 59,
-   "team": "MUN",
-   "player": "Lisandro Martínez",
+   "min": 53,
+   "team": "BAY",
+   "player": "Josip Stanišić",
    "reason": "Foul"
   },
   {
-   "type": "card",
-   "card": "YellowRed",
-   "min": 63,
-   "team": "MUN",
-   "player": "Lisandro Martínez",
-   "reason": null
+   "type": "penmiss",
+   "min": 56,
+   "add": null,
+   "team": "BAY",
+   "player": "Harry Kane"
   },
   {
    "type": "card",
    "card": "Yellow",
-   "min": 66,
-   "team": "MUN",
-   "player": "Harry Maguire",
-   "reason": "Dissent"
-  },
-  {
-   "type": "card",
-   "card": "Yellow",
-   "min": 70,
-   "team": "MUN",
-   "player": "Kobbie Mainoo",
-   "reason": "Foul"
-  },
-  {
-   "type": "var",
-   "min": 71,
-   "team": "CHE",
-   "player": "Estêvão",
-   "decision": [
-    "Goal ruled out",
-    "offside"
-   ]
-  },
-  {
-   "type": "card",
-   "card": "Yellow",
-   "min": 81,
-   "team": "MUN",
-   "player": "Bryan Mbeumo",
-   "reason": null
-  },
-  {
-   "type": "card",
-   "card": "Yellow",
-   "min": 86,
-   "team": "MUN",
-   "player": "Joshua Zirkzee",
+   "min": 74,
+   "team": "BAY",
+   "player": "Konrad Laimer",
    "reason": "Foul"
   },
   {
    "type": "added",
    "min": 90,
-   "minutes": 10
-  },
-  {
-   "type": "card",
-   "card": "Yellow",
-   "min": 90,
-   "team": "CHE",
-   "player": "Mike Penders",
-   "reason": "Time wasting"
+   "minutes": 4
   }
  ],
  "stats": {
   "All": {
    "BallPossesion": [
-    59,
-    41
+    56,
+    44
    ],
    "expected_goals": [
-    "2.67",
-    "1.17"
+    "4.48",
+    "0.74"
    ],
    "total_shots": [
-    18,
+    23,
     12
    ],
    "ShotsOnTarget": [
-    9,
-    5
+    5,
+    6
    ],
    "touches_opp_box": [
-    40,
-    21
+    45,
+    24
    ],
    "big_chance": [
-    4,
-    3
+    6,
+    0
    ],
    "big_chance_missed_title": [
-    2,
-    3
+    4,
+    0
    ],
    "accurate_passes": [
-    "479 (88%)",
-    "293 (77%)"
+    "516 (86%)",
+    "394 (82%)"
    ],
    "yellow_cards": [
-    1,
-    4
-   ],
-   "corners": [
-    8,
-    7
-   ],
-   "ShotsOffTarget": [
-    6,
-    4
-   ],
-   "blocked_shots": [
-    3,
-    3
-   ],
-   "shots_woodwork": [
-    1,
+    2,
     1
    ],
+   "corners": [
+    5,
+    2
+   ],
+   "ShotsOffTarget": [
+    10,
+    2
+   ],
+   "blocked_shots": [
+    8,
+    4
+   ],
+   "shots_woodwork": [
+    3,
+    0
+   ],
    "shots_inside_box": [
-    13,
+    18,
     7
    ],
    "shots_outside_box": [
@@ -984,408 +1024,392 @@
     5
    ],
    "expected_goals_open_play": [
-    "1.70",
-    "1.10"
+    "2.80",
+    "0.65"
    ],
    "expected_goals_set_play": [
-    "0.18",
-    "0.06"
+    "0.89",
+    "0.10"
    ],
    "expected_goals_non_penalty": [
-    "1.88",
-    "1.17"
+    "3.69",
+    "0.74"
    ],
    "expected_goals_on_target": [
-    "2.48",
-    "0.30"
-   ],
-   "physical_metrics_distance_covered": [
-    114761,
-    109269
-   ],
-   "physical_metrics_running": [
-    20996,
-    21519
-   ],
-   "physical_metrics_sprinting": [
-    2940,
-    3027
-   ],
-   "physical_metrics_number_of_sprints": [
-    131,
-    133
+    "4.12",
+    "1.55"
    ],
    "passes": [
-    542,
-    379
+    603,
+    483
    ],
    "own_half_passes": [
-    257,
-    144
+    260,
+    206
    ],
    "opposition_half_passes": [
-    222,
-    149
+    256,
+    188
    ],
    "long_balls_accurate": [
-    "16 (42%)",
-    "13 (30%)"
+    "27 (50%)",
+    "19 (36%)"
    ],
    "accurate_crosses": [
-    "5 (36%)",
-    "3 (23%)"
+    "4 (36%)",
+    "0 (0%)"
    ],
    "player_throws": [
-    16,
-    13
+    23,
+    14
    ],
    "Offsides": [
     3,
-    2
+    3
    ],
    "matchstats.headers.tackles": [
-    21,
-    22
+    12,
+    19
    ],
    "interceptions": [
-    16,
+    13,
     14
    ],
    "shot_blocks": [
-    5,
-    2
+    4,
+    8
    ],
    "clearances": [
-    11,
-    19
+    17,
+    23
    ],
    "keeper_saves": [
-    3,
-    7
+    4,
+    3
    ],
    "duel_won": [
-    56,
-    42
+    32,
+    41
    ],
    "ground_duels_won": [
-    "46 (58%)",
-    "34 (43%)"
+    "23 (39%)",
+    "36 (61%)"
    ],
    "aerials_won": [
-    "10 (56%)",
-    "8 (44%)"
+    "9 (64%)",
+    "5 (36%)"
    ],
    "dribbles_succeeded": [
-    "5 (31%)",
-    "4 (33%)"
+    "6 (35%)",
+    "6 (50%)"
    ],
    "red_cards": [
     0,
-    1
+    0
    ],
    "fouls": [
-    8,
-    20
+    11,
+    6
    ]
   },
   "FirstHalf": {
    "BallPossesion": [
-    49,
-    51
+    50,
+    50
    ],
    "expected_goals": [
-    "0.28",
-    "1.09"
+    "2.08",
+    "0.45"
    ],
    "total_shots": [
-    7,
-    9
+    8,
+    6
    ],
    "ShotsOnTarget": [
     3,
-    3
+    1
    ],
    "touches_opp_box": [
     17,
-    18
+    15
    ],
    "big_chance": [
-    1,
-    3
+    4,
+    0
    ],
    "big_chance_missed_title": [
-    1,
-    3
+    3,
+    0
    ],
    "accurate_passes": [
-    "175 (83%)",
-    "167 (77%)"
+    "243 (84%)",
+    "234 (82%)"
    ],
    "yellow_cards": [
     0,
-    0
+    1
    ],
    "corners": [
-    3,
-    6
+    0,
+    1
    ],
    "ShotsOffTarget": [
-    2,
-    4
+    3,
+    1
    ],
    "blocked_shots": [
     2,
-    2
+    4
    ],
    "shots_woodwork": [
     1,
     0
-   ],
-   "shots_inside_box": [
-    6,
-    6
-   ],
-   "shots_outside_box": [
-    1,
-    3
-   ],
-   "expected_goals_open_play": [
-    "0.15",
-    "1.05"
-   ],
-   "expected_goals_set_play": [
-    "0.13",
-    "0.04"
-   ],
-   "expected_goals_non_penalty": [
-    "0.28",
-    "1.09"
-   ],
-   "expected_goals_on_target": [
-    "0.27",
-    "0.21"
-   ],
-   "passes": [
-    211,
-    216
-   ],
-   "own_half_passes": [
-    90,
-    74
-   ],
-   "opposition_half_passes": [
-    85,
-    93
-   ],
-   "long_balls_accurate": [
-    "9 (39%)",
-    "9 (35%)"
-   ],
-   "accurate_crosses": [
-    "2 (40%)",
-    "3 (30%)"
-   ],
-   "player_throws": [
-    8,
-    8
-   ],
-   "Offsides": [
-    1,
-    1
-   ],
-   "matchstats.headers.tackles": [
-    12,
-    12
-   ],
-   "interceptions": [
-    12,
-    6
-   ],
-   "shot_blocks": [
-    4,
-    1
-   ],
-   "clearances": [
-    9,
-    11
-   ],
-   "keeper_saves": [
-    1,
-    3
-   ],
-   "duel_won": [
-    28,
-    23
-   ],
-   "ground_duels_won": [
-    "24 (57%)",
-    "18 (43%)"
-   ],
-   "aerials_won": [
-    "4 (44%)",
-    "5 (56%)"
-   ],
-   "dribbles_succeeded": [
-    "4 (44%)",
-    "3 (43%)"
-   ],
-   "red_cards": [
-    0,
-    0
-   ],
-   "fouls": [
-    3,
-    8
-   ]
-  },
-  "SecondHalf": {
-   "BallPossesion": [
-    67,
-    33
-   ],
-   "expected_goals": [
-    "2.39",
-    "0.08"
-   ],
-   "total_shots": [
-    11,
-    3
-   ],
-   "ShotsOnTarget": [
-    6,
-    2
-   ],
-   "touches_opp_box": [
-    23,
-    3
-   ],
-   "big_chance": [
-    3,
-    0
-   ],
-   "big_chance_missed_title": [
-    1,
-    0
-   ],
-   "accurate_passes": [
-    "304 (92%)",
-    "126 (77%)"
-   ],
-   "yellow_cards": [
-    1,
-    4
-   ],
-   "corners": [
-    5,
-    1
-   ],
-   "ShotsOffTarget": [
-    4,
-    0
-   ],
-   "blocked_shots": [
-    1,
-    1
-   ],
-   "shots_woodwork": [
-    0,
-    1
    ],
    "shots_inside_box": [
     7,
-    1
+    4
    ],
    "shots_outside_box": [
-    4,
+    1,
     2
    ],
    "expected_goals_open_play": [
-    "1.55",
-    "0.05"
+    "2.06",
+    "0.39"
    ],
    "expected_goals_set_play": [
-    "0.04",
-    "0.02"
+    "0.02",
+    "0.05"
    ],
    "expected_goals_non_penalty": [
-    "1.60",
-    "0.08"
+    "2.08",
+    "0.45"
    ],
    "expected_goals_on_target": [
-    "2.21",
-    "0.09"
+    "2.32",
+    "0.18"
    ],
    "passes": [
-    331,
-    163
+    289,
+    284
    ],
    "own_half_passes": [
-    167,
-    70
+    147,
+    128
    ],
    "opposition_half_passes": [
-    137,
-    56
+    96,
+    106
    ],
    "long_balls_accurate": [
-    "7 (47%)",
-    "4 (22%)"
+    "11 (39%)",
+    "12 (38%)"
    ],
    "accurate_crosses": [
-    "3 (33%)",
+    "0 (0%)",
     "0 (0%)"
    ],
    "player_throws": [
-    8,
-    5
+    11,
+    7
    ],
    "Offsides": [
-    2,
-    1
+    0,
+    3
    ],
    "matchstats.headers.tackles": [
     9,
     10
    ],
    "interceptions": [
-    4,
-    8
+    11,
+    7
    ],
    "shot_blocks": [
-    1,
-    1
+    4,
+    2
    ],
    "clearances": [
-    2,
-    8
+    10,
+    11
    ],
    "keeper_saves": [
-    2,
-    4
+    1,
+    2
    ],
    "duel_won": [
-    28,
-    19
+    20,
+    24
    ],
    "ground_duels_won": [
-    "22 (58%)",
-    "16 (42%)"
+    "16 (42%)",
+    "22 (58%)"
    ],
    "aerials_won": [
-    "6 (67%)",
-    "3 (33%)"
+    "4 (67%)",
+    "2 (33%)"
    ],
    "dribbles_succeeded": [
-    "1 (14%)",
-    "1 (20%)"
+    "3 (33%)",
+    "5 (50%)"
    ],
    "red_cards": [
     0,
-    1
+    0
    ],
    "fouls": [
+    7,
+    4
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    61,
+    39
+   ],
+   "expected_goals": [
+    "2.41",
+    "0.30"
+   ],
+   "total_shots": [
+    15,
+    6
+   ],
+   "ShotsOnTarget": [
+    2,
+    5
+   ],
+   "touches_opp_box": [
+    28,
+    9
+   ],
+   "big_chance": [
+    2,
+    0
+   ],
+   "big_chance_missed_title": [
+    1,
+    0
+   ],
+   "accurate_passes": [
+    "273 (87%)",
+    "160 (80%)"
+   ],
+   "yellow_cards": [
+    2,
+    0
+   ],
+   "corners": [
     5,
+    1
+   ],
+   "ShotsOffTarget": [
+    7,
+    1
+   ],
+   "blocked_shots": [
+    6,
+    0
+   ],
+   "shots_woodwork": [
+    2,
+    0
+   ],
+   "shots_inside_box": [
+    11,
+    3
+   ],
+   "shots_outside_box": [
+    4,
+    3
+   ],
+   "expected_goals_open_play": [
+    "0.75",
+    "0.25"
+   ],
+   "expected_goals_set_play": [
+    "0.87",
+    "0.04"
+   ],
+   "expected_goals_non_penalty": [
+    "1.62",
+    "0.30"
+   ],
+   "expected_goals_on_target": [
+    "1.80",
+    "1.37"
+   ],
+   "passes": [
+    314,
+    199
+   ],
+   "own_half_passes": [
+    113,
+    78
+   ],
+   "opposition_half_passes": [
+    160,
+    82
+   ],
+   "long_balls_accurate": [
+    "16 (62%)",
+    "7 (33%)"
+   ],
+   "accurate_crosses": [
+    "4 (44%)",
+    "0 (0%)"
+   ],
+   "player_throws": [
+    12,
+    7
+   ],
+   "Offsides": [
+    3,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    3,
+    9
+   ],
+   "interceptions": [
+    2,
+    7
+   ],
+   "shot_blocks": [
+    0,
+    6
+   ],
+   "clearances": [
+    7,
     12
+   ],
+   "keeper_saves": [
+    3,
+    1
+   ],
+   "duel_won": [
+    12,
+    17
+   ],
+   "ground_duels_won": [
+    "7 (33%)",
+    "14 (67%)"
+   ],
+   "aerials_won": [
+    "5 (63%)",
+    "3 (38%)"
+   ],
+   "dribbles_succeeded": [
+    "3 (38%)",
+    "1 (50%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    4,
+    2
    ]
   }
  }
