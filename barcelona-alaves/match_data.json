@@ -1,0 +1,1343 @@
+{
+ "source": "FotMob match 5868115 (Opta data)",
+ "match": "Barcelona 6-1 Deportivo Alavés, LaLiga round 11, Sat, Oct 31, 2026, 20:00 UTC",
+ "venue": "Spotify Camp Nou, Barcelona",
+ "home": "BAR",
+ "away": "ALA",
+ "shots": [
+  {
+   "team": "BAR",
+   "min": 8,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.5939,
+   "x": 99.50000000040001,
+   "y": 32.70374999999999,
+   "player": "Raphinha",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ALA",
+   "min": 11,
+   "add": null,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.2745,
+   "x": 93,
+   "y": 37.708,
+   "player": "Abderrahman Rebbach",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ALA",
+   "min": 12,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0352,
+   "x": 99.784482759,
+   "y": 19.515159238299997,
+   "player": "Ángel Pérez",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ALA",
+   "min": 13,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0535,
+   "x": 95.35087719170001,
+   "y": 37.05,
+   "player": "Lucas Boyé",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 14,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0304,
+   "x": 81.35873786479999,
+   "y": 45.8224203783,
+   "player": "Fermín López",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 23,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0534,
+   "x": 101.3965517244,
+   "y": 20.3559235699,
+   "player": "Fermín López",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 26,
+   "add": null,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.031,
+   "x": 101.9655172416,
+   "y": 21.2667515958,
+   "player": "Lamine Yamal",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 34,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.9078,
+   "x": 101.1120689658,
+   "y": 34.1525,
+   "player": "Raphinha",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 35,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.3214,
+   "x": 101.58620689680001,
+   "y": 29.211428570000002,
+   "player": "Lamine Yamal",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ALA",
+   "min": 37,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0656,
+   "x": 91.8,
+   "y": 39.124761905999996,
+   "player": "Lucas Boyé",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ALA",
+   "min": 37,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0424,
+   "x": 86.78235294080001,
+   "y": 34.7625,
+   "player": "Carlos Protesoni",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 41,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.2737,
+   "x": 89.6,
+   "y": 27.782619046999997,
+   "player": "Raphinha",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 45,
+   "add": 0,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0352,
+   "x": 93.8,
+   "y": 18.5342675181,
+   "player": "Lamine Yamal",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 45,
+   "add": 1,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0263,
+   "x": 84.9573529404,
+   "y": 25.7071875,
+   "player": "Lamine Yamal",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 45,
+   "add": 5,
+   "type": "AttemptSaved",
+   "situation": "SetPiece",
+   "shotType": "LeftFoot",
+   "xg": 0.0169,
+   "x": 82.8228155344,
+   "y": 25.186875,
+   "player": "Lamine Yamal",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 54,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.251,
+   "x": 95.8333333322,
+   "y": 37.431250000000006,
+   "player": "Karim Adeyemi",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 64,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.2886,
+   "x": 91.6,
+   "y": 38.704523811,
+   "player": "Lamine Yamal",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 81,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.4256,
+   "x": 93.8,
+   "y": 42.8709375,
+   "player": "Anthony Gordon",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ALA",
+   "min": 84,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.2291,
+   "x": 92.1,
+   "y": 30.95,
+   "player": "Mariano Díaz",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ALA",
+   "min": 90,
+   "add": 0,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0607,
+   "x": 93.4,
+   "y": 27.446428571,
+   "player": "Toni Martínez",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   2,
+   22
+  ],
+  [
+   3,
+   43
+  ],
+  [
+   4,
+   38
+  ],
+  [
+   5,
+   27
+  ],
+  [
+   6,
+   33
+  ],
+  [
+   7,
+   38
+  ],
+  [
+   8,
+   100
+  ],
+  [
+   9,
+   100
+  ],
+  [
+   10,
+   92
+  ],
+  [
+   11,
+   -43
+  ],
+  [
+   12,
+   -49
+  ],
+  [
+   13,
+   -24
+  ],
+  [
+   14,
+   38
+  ],
+  [
+   15,
+   49
+  ],
+  [
+   16,
+   62
+  ],
+  [
+   17,
+   11
+  ],
+  [
+   18,
+   16
+  ],
+  [
+   19,
+   27
+  ],
+  [
+   20,
+   14
+  ],
+  [
+   21,
+   24
+  ],
+  [
+   22,
+   24
+  ],
+  [
+   23,
+   54
+  ],
+  [
+   24,
+   43
+  ],
+  [
+   25,
+   33
+  ],
+  [
+   26,
+   30
+  ],
+  [
+   27,
+   19
+  ],
+  [
+   28,
+   24
+  ],
+  [
+   29,
+   -16
+  ],
+  [
+   30,
+   -5
+  ],
+  [
+   31,
+   -11
+  ],
+  [
+   32,
+   33
+  ],
+  [
+   33,
+   38
+  ],
+  [
+   34,
+   100
+  ],
+  [
+   35,
+   100
+  ],
+  [
+   36,
+   100
+  ],
+  [
+   37,
+   100
+  ],
+  [
+   38,
+   3
+  ],
+  [
+   39,
+   -14
+  ],
+  [
+   40,
+   22
+  ],
+  [
+   41,
+   35
+  ],
+  [
+   42,
+   41
+  ],
+  [
+   43,
+   60
+  ],
+  [
+   44,
+   11
+  ],
+  [
+   45,
+   60
+  ],
+  [
+   45.5,
+   51
+  ],
+  [
+   46,
+   5
+  ],
+  [
+   47,
+   54
+  ],
+  [
+   48,
+   81
+  ],
+  [
+   49,
+   98
+  ],
+  [
+   50,
+   76
+  ],
+  [
+   51,
+   65
+  ],
+  [
+   52,
+   60
+  ],
+  [
+   53,
+   54
+  ],
+  [
+   54,
+   98
+  ],
+  [
+   55,
+   100
+  ],
+  [
+   56,
+   100
+  ],
+  [
+   57,
+   62
+  ],
+  [
+   58,
+   8
+  ],
+  [
+   59,
+   14
+  ],
+  [
+   60,
+   5
+  ],
+  [
+   61,
+   33
+  ],
+  [
+   62,
+   38
+  ],
+  [
+   63,
+   54
+  ],
+  [
+   64,
+   76
+  ],
+  [
+   65,
+   71
+  ],
+  [
+   66,
+   49
+  ],
+  [
+   67,
+   0
+  ],
+  [
+   68,
+   -5
+  ],
+  [
+   69,
+   3
+  ],
+  [
+   70,
+   57
+  ],
+  [
+   71,
+   73
+  ],
+  [
+   72,
+   81
+  ],
+  [
+   73,
+   46
+  ],
+  [
+   74,
+   27
+  ],
+  [
+   75,
+   33
+  ],
+  [
+   76,
+   8
+  ],
+  [
+   77,
+   16
+  ],
+  [
+   78,
+   -5
+  ],
+  [
+   79,
+   0
+  ],
+  [
+   80,
+   -5
+  ],
+  [
+   81,
+   16
+  ],
+  [
+   82,
+   16
+  ],
+  [
+   83,
+   33
+  ],
+  [
+   84,
+   -27
+  ],
+  [
+   85,
+   -16
+  ],
+  [
+   86,
+   -11
+  ],
+  [
+   87,
+   27
+  ],
+  [
+   88,
+   30
+  ],
+  [
+   89,
+   35
+  ],
+  [
+   90,
+   8
+  ],
+  [
+   90.5,
+   -7
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "goal",
+   "min": 8,
+   "add": null,
+   "team": "BAR",
+   "player": "Raphinha",
+   "score": [
+    1,
+    0
+   ]
+  },
+  {
+   "type": "goal",
+   "min": 23,
+   "add": null,
+   "team": "BAR",
+   "player": "Fermín López",
+   "score": [
+    2,
+    0
+   ]
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 27,
+   "add": null,
+   "team": "ALA",
+   "player": "Carlos Protesoni",
+   "reason": "Foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 40,
+   "add": null,
+   "team": "BAR",
+   "player": "Pedri",
+   "reason": "Foul"
+  },
+  {
+   "type": "goal",
+   "min": 41,
+   "add": null,
+   "team": "BAR",
+   "player": "Raphinha",
+   "score": [
+    3,
+    0
+   ]
+  },
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 3
+  },
+  {
+   "type": "goal",
+   "min": 45,
+   "add": 1,
+   "team": "BAR",
+   "player": "Lamine Yamal",
+   "score": [
+    4,
+    0
+   ]
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 45,
+   "add": 3,
+   "team": "ALA",
+   "player": "Ángel Pérez",
+   "reason": "Foul"
+  },
+  {
+   "type": "sub",
+   "min": 46,
+   "team": "BAR",
+   "in": "Marc Bernal",
+   "out": "Pedri"
+  },
+  {
+   "type": "sub",
+   "min": 46,
+   "team": "ALA",
+   "in": "Toni Martínez",
+   "out": "Carlos Protesoni"
+  },
+  {
+   "type": "sub",
+   "min": 55,
+   "team": "ALA",
+   "in": "Pablo Ibánez",
+   "out": "Denis Suárez"
+  },
+  {
+   "type": "sub",
+   "min": 55,
+   "team": "ALA",
+   "in": "Aitor Mañas",
+   "out": "Abderrahman Rebbach"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 58,
+   "add": null,
+   "team": "BAR",
+   "player": "João Cancelo",
+   "reason": "Foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 60,
+   "add": null,
+   "team": "ALA",
+   "player": "Pablo Ibánez",
+   "reason": null
+  },
+  {
+   "type": "sub",
+   "min": 62,
+   "team": "BAR",
+   "in": "Alejandro Balde",
+   "out": "João Cancelo"
+  },
+  {
+   "type": "sub",
+   "min": 62,
+   "team": "BAR",
+   "in": "Gabriel Jesus",
+   "out": "Raphinha"
+  },
+  {
+   "type": "goal",
+   "min": 64,
+   "add": null,
+   "team": "BAR",
+   "player": "Lamine Yamal",
+   "score": [
+    5,
+    0
+   ]
+  },
+  {
+   "type": "sub",
+   "min": 74,
+   "team": "BAR",
+   "in": "Anthony Gordon",
+   "out": "Lamine Yamal"
+  },
+  {
+   "type": "sub",
+   "min": 74,
+   "team": "ALA",
+   "in": "Hugo Novoa",
+   "out": "Ángel Pérez"
+  },
+  {
+   "type": "sub",
+   "min": 74,
+   "team": "ALA",
+   "in": "Mariano Díaz",
+   "out": "Lucas Boyé"
+  },
+  {
+   "type": "goal",
+   "min": 81,
+   "add": null,
+   "team": "BAR",
+   "player": "Anthony Gordon",
+   "score": [
+    6,
+    0
+   ]
+  },
+  {
+   "type": "sub",
+   "min": 82,
+   "team": "BAR",
+   "in": "Gerard Martín",
+   "out": "Frenkie de Jong"
+  },
+  {
+   "type": "goal",
+   "min": 84,
+   "add": null,
+   "team": "ALA",
+   "player": "Mariano Díaz",
+   "score": [
+    6,
+    1
+   ]
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 2
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    77,
+    23
+   ],
+   "expected_goals": [
+    "3.26",
+    "0.76"
+   ],
+   "total_shots": [
+    13,
+    7
+   ],
+   "ShotsOnTarget": [
+    7,
+    3
+   ],
+   "touches_opp_box": [
+    32,
+    12
+   ],
+   "big_chance": [
+    7,
+    2
+   ],
+   "big_chance_missed_title": [
+    3,
+    1
+   ],
+   "accurate_passes": [
+    "774 (93%)",
+    "182 (75%)"
+   ],
+   "yellow_cards": [
+    2,
+    3
+   ],
+   "corners": [
+    3,
+    3
+   ],
+   "ShotsOffTarget": [
+    3,
+    1
+   ],
+   "blocked_shots": [
+    3,
+    3
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    10,
+    6
+   ],
+   "shots_outside_box": [
+    3,
+    1
+   ],
+   "expected_goals_open_play": [
+    "3.24",
+    "0.71"
+   ],
+   "expected_goals_set_play": [
+    "0.02",
+    "0.05"
+   ],
+   "expected_goals_non_penalty": [
+    "3.26",
+    "0.76"
+   ],
+   "expected_goals_on_target": [
+    "3.61",
+    "1.03"
+   ],
+   "passes": [
+    836,
+    242
+   ],
+   "own_half_passes": [
+    374,
+    132
+   ],
+   "opposition_half_passes": [
+    400,
+    50
+   ],
+   "long_balls_accurate": [
+    "23 (72%)",
+    "14 (38%)"
+   ],
+   "accurate_crosses": [
+    "0 (0%)",
+    "2 (29%)"
+   ],
+   "player_throws": [
+    23,
+    16
+   ],
+   "Offsides": [
+    1,
+    5
+   ],
+   "matchstats.headers.tackles": [
+    16,
+    11
+   ],
+   "interceptions": [
+    7,
+    9
+   ],
+   "shot_blocks": [
+    3,
+    2
+   ],
+   "clearances": [
+    9,
+    16
+   ],
+   "keeper_saves": [
+    2,
+    1
+   ],
+   "duel_won": [
+    40,
+    29
+   ],
+   "ground_duels_won": [
+    "34 (55%)",
+    "28 (45%)"
+   ],
+   "aerials_won": [
+    "6 (86%)",
+    "1 (14%)"
+   ],
+   "dribbles_succeeded": [
+    "7 (50%)",
+    "3 (30%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    14,
+    11
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    76,
+    24
+   ],
+   "expected_goals": [
+    "2.29",
+    "0.47"
+   ],
+   "total_shots": [
+    10,
+    5
+   ],
+   "ShotsOnTarget": [
+    5,
+    2
+   ],
+   "touches_opp_box": [
+    17,
+    8
+   ],
+   "big_chance": [
+    4,
+    1
+   ],
+   "big_chance_missed_title": [
+    2,
+    1
+   ],
+   "accurate_passes": [
+    "413 (93%)",
+    "103 (76%)"
+   ],
+   "yellow_cards": [
+    1,
+    2
+   ],
+   "corners": [
+    2,
+    3
+   ],
+   "ShotsOffTarget": [
+    2,
+    1
+   ],
+   "blocked_shots": [
+    3,
+    2
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    7,
+    4
+   ],
+   "shots_outside_box": [
+    3,
+    1
+   ],
+   "expected_goals_open_play": [
+    "2.27",
+    "0.42"
+   ],
+   "expected_goals_set_play": [
+    "0.02",
+    "0.05"
+   ],
+   "expected_goals_non_penalty": [
+    "2.29",
+    "0.47"
+   ],
+   "expected_goals_on_target": [
+    "3.05",
+    "0.24"
+   ],
+   "passes": [
+    443,
+    135
+   ],
+   "own_half_passes": [
+    187,
+    76
+   ],
+   "opposition_half_passes": [
+    226,
+    27
+   ],
+   "long_balls_accurate": [
+    "11 (65%)",
+    "9 (43%)"
+   ],
+   "accurate_crosses": [
+    "0 (0%)",
+    "1 (25%)"
+   ],
+   "player_throws": [
+    10,
+    9
+   ],
+   "Offsides": [
+    1,
+    3
+   ],
+   "matchstats.headers.tackles": [
+    3,
+    5
+   ],
+   "interceptions": [
+    5,
+    2
+   ],
+   "shot_blocks": [
+    2,
+    2
+   ],
+   "clearances": [
+    4,
+    11
+   ],
+   "keeper_saves": [
+    2,
+    1
+   ],
+   "duel_won": [
+    14,
+    12
+   ],
+   "ground_duels_won": [
+    "12 (52%)",
+    "11 (48%)"
+   ],
+   "aerials_won": [
+    "2 (67%)",
+    "1 (33%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (40%)",
+    "1 (100%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    5,
+    7
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    78,
+    22
+   ],
+   "expected_goals": [
+    "0.97",
+    "0.29"
+   ],
+   "total_shots": [
+    3,
+    2
+   ],
+   "ShotsOnTarget": [
+    2,
+    1
+   ],
+   "touches_opp_box": [
+    15,
+    4
+   ],
+   "big_chance": [
+    3,
+    1
+   ],
+   "big_chance_missed_title": [
+    1,
+    0
+   ],
+   "accurate_passes": [
+    "361 (92%)",
+    "79 (74%)"
+   ],
+   "yellow_cards": [
+    1,
+    1
+   ],
+   "corners": [
+    1,
+    0
+   ],
+   "ShotsOffTarget": [
+    1,
+    0
+   ],
+   "blocked_shots": [
+    0,
+    1
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    3,
+    2
+   ],
+   "shots_outside_box": [
+    0,
+    0
+   ],
+   "expected_goals_open_play": [
+    "0.97",
+    "0.29"
+   ],
+   "expected_goals_set_play": [
+    "0.00",
+    "0.00"
+   ],
+   "expected_goals_non_penalty": [
+    "0.97",
+    "0.29"
+   ],
+   "expected_goals_on_target": [
+    "0.56",
+    "0.79"
+   ],
+   "passes": [
+    393,
+    107
+   ],
+   "own_half_passes": [
+    187,
+    56
+   ],
+   "opposition_half_passes": [
+    174,
+    23
+   ],
+   "long_balls_accurate": [
+    "12 (80%)",
+    "5 (31%)"
+   ],
+   "accurate_crosses": [
+    "0 (0%)",
+    "1 (33%)"
+   ],
+   "player_throws": [
+    13,
+    7
+   ],
+   "Offsides": [
+    0,
+    2
+   ],
+   "matchstats.headers.tackles": [
+    13,
+    6
+   ],
+   "interceptions": [
+    2,
+    7
+   ],
+   "shot_blocks": [
+    1,
+    0
+   ],
+   "clearances": [
+    5,
+    5
+   ],
+   "keeper_saves": [
+    0,
+    0
+   ],
+   "duel_won": [
+    26,
+    17
+   ],
+   "ground_duels_won": [
+    0,
+    0
+   ],
+   "aerials_won": [
+    "4 (100%)",
+    "0 (0%)"
+   ],
+   "dribbles_succeeded": [
+    "5 (56%)",
+    "2 (22%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    9,
+    4
+   ]
+  }
+ }
+}
