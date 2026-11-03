@@ -360,6 +360,8 @@ const ringTex=new THREE.CanvasTexture(ringC);
 const goalShots=SHOTS.filter(s=>s.type==='goal');
 const rings=goalShots.map(()=>{ const s=new THREE.Sprite(new THREE.SpriteMaterial({map:ringTex,transparent:true,depthTest:false,depthWrite:false})); group.add(s); return s; });
 const glabsEl=document.getElementById('glabs'); const glabs=goalShots.map(s=>{ const d=document.createElement('div'); d.className='glab'; d.textContent=s.min; glabsEl.appendChild(d); return d; });
+// goals scored from (almost) the same spot share one FT ring + label (Mayulu's 13' and Ruiz's 50' are under a metre apart)
+goalShots.forEach((s,j)=>{ const k=goalShots.findIndex((o,i)=>i<j&&o.merged===undefined&&Math.hypot(o.x-s.x,o.z-s.z)<2); if(k>=0){ s.merged=k; glabs[k].textContent+=' '+s.min; } });
 
 // ================= SURFACE UPDATE =================
 const tmp=new THREE.Color(), cA=new THREE.Color(), cE=new THREE.Color(), WHITE=new THREE.Color(1,1,1);
@@ -413,25 +415,24 @@ function drawTL(m,f){ const w=952,h=168,mid=h/2,amp=h/2-16; tl.clearRect(0,0,w,h
   tl.save(); tl.shadowColor='#fff'; tl.shadowBlur=14; tl.fillStyle='#fff'; tl.beginPath(); tl.arc(px,py,5.5,0,7); tl.fill(); tl.restore(); }
 
 // insight ticker copy (all derived from the match data above)
-// FotMob's per-shot xG matches its official half totals (HT 0.26 / 2.71), so no per-half scaling
-// ...except Madrid's 22 shots sum to 3.365, which would read 3.37 against the official 3.36: a hair of scaling lands both totals exactly
-const XG_FT={A:0.97,E:3.36}, XGK={}; for(const tm of ['A','E']){ const sum=SHOTS.filter(s=>s.team===tm).reduce((a,s)=>a+s.xg,0); XGK[tm]=XG_FT[tm]/sum; }
+// FotMob's per-shot xG matches its official half totals (HT 0.17 / 1.72, 2nd half 0.49 / 0.97), so no per-half scaling
+// ...except Villarreal's 14 shots sum to 0.665, which can read 0.67 against the official 0.66: a hair of scaling lands both totals exactly
+const XG_FT={A:0.66,E:2.69}, XGK={}; for(const tm of ['A','E']){ const sum=SHOTS.filter(s=>s.team===tm).reduce((a,s)=>a+s.xg,0); XGK[tm]=XG_FT[tm]/sum; }
 function xgLive(team,t){ let x=0,n=0; for(const s of SHOTS){ if(s.team!==team) continue; const a=t-s.ti; if(a<0) continue; x+=s.xg*XGK[team]*clamp(a/0.35); n++; } return [x,n]; }
 function insight(f){ const t=f/FPS, m=mArr[f];
-  if(f>=FT_FRAME) return (f-FT_FRAME)/FPS<3.2?['ft','xG 0.97–3.36 · SHOTS 10–22 · ON TARGET 1–7']:['ft2','0–3 BY THE 36TH MIN · 2ND HALF xG 0.71–0.64'];
+  if(f>=FT_FRAME) return (f-FT_FRAME)/FPS<3.2?['ft','xG 0.66–2.69 · SHOTS 14–22 · ON TARGET 2–12']:['ft2','0–4 BY THE 17TH MIN · 71% POSSESSION'];
   let last=-1; EVENTS.forEach((e,i)=>{ if(trig[i]>=0&&t>=trig[i]+IMPACT) last=i; });
   if(t<0.9) return ['boot','SYNCING MATCH MODEL …'];
   if(last<0) return ['intro','TALLER SPIKE = BIGGER CHANCE · COLOUR = TERRITORY'];
-  if(last===0) return m<16?['g0','MBAPPÉ FROM THE SPOT · 0–1']:['p0','4 MADRID SHOTS IN THE FIRST 15 MINUTES'];
-  if(last===1) return ['g1','BELLINGHAM · ARDA GÜLER ASSIST · 0–2'];
-  if(last===2) return ['c2','GÜLER DENIED ON THE BREAK · 0.32 xG'];
-  if(last===3) return m<45.9?['g3','DIOMANDE FROM 0.03 xG · 0–3 IN 36 MINUTES']:['ht','HT 0–3 · xG 0.26–2.71 · SHOTS 3–12'];
-  if(last===4) return ['c4','ZABIRI WIDE · RACING’S BEST CHANCE · 0.26 xG'];
-  if(last===5) return ['w5','MBAPPÉ OFF THE POST · 3 SHOTS IN THE 60TH MIN'];
-  return m<91?['v6','VAR CANCELS A RACING PENALTY']:['p6','RACING: 1 SHOT ON TARGET ALL GAME']; }
+  if(last===0) return ['g0','JOÃO NEVES FROM A CORNER · 0–1'];
+  if(last===1) return ['g1','DOUÉ · AKLIOUCHE ASSIST · 0–2'];
+  if(last===2) return ['g2','MAYULU · TWO GOALS IN TWO MINUTES · 0–3'];
+  if(last===3) return m<45.9?(m<30?['g3','FABIÁN RUIZ · 4 GOALS IN 8 MINUTES · 0–4']:['p3','PSG: 15 SHOTS TO 4 IN THE 1ST HALF']):['ht','HT 0–4 · xG 0.17–1.72 · SHOTS 4–15'];
+  if(last===4) return m<60?['g4','RUIZ AGAIN · VITINHA ASSIST · 0–5']:['p4','VILLARREAL: 2 SHOTS ON TARGET ALL NIGHT'];
+  return m<86?['g5','BOLY, 2 MINUTES OFF THE BENCH · 0–6']:['p5','6 GOALS FROM 2.69 xG · 12 ON TARGET']; }
 const insStart={}; for(let f=0;f<TOTAL;f++){ const k=insight(f)[0]; if(!(k in insStart)) insStart[k]=f; }
 
-const STATS=[['10','SHOTS','22',10,22,0],['1','ON TARGET','7',1,7,0],['0.97','xG','3.36',0.97,3.36,2],['46%','POSSESSION','54%',46,54,0]]; // FotMob / Opta
+const STATS=[['14','SHOTS','22',14,22,0],['2','ON TARGET','12',2,12,0],['0.66','xG','2.69',0.66,2.69,2],['29%','POSSESSION','71%',29,71,0]]; // FotMob / Opta
 $('#stats').innerHTML=`<div class="hd"><span><img src="logo_vil.png" alt="">VILLARREAL</span><span>PARIS SG<img src="logo_psg.png" alt=""></span></div>`+
   STATS.map(r=>`<div class="r"><div class="v" style="color:var(--Al)">${r[0]}</div><div class="mid"><div class="lab">${r[1]}</div><div class="bar"><i class="a"></i><span class="sp"></span><i class="e"></i></div></div><div class="v b e">${r[2]}</div></div>`).join('');
 const statRows=[...document.querySelectorAll('#stats .r')];
@@ -444,7 +445,7 @@ function setHUD(f){ const m=mArr[f], t=f/FPS, ft=f>=FT_FRAME, ftU=ft?(f-FT_FRAME
   const inA=(d)=>0.3+0.7*easeOut((t-d)/0.35);
   [['#top',0],['#topl',.05],['#tA',.08],['#tE',.14],['#clock',.12],['#ins',.22],['#tlh',.26],['#tl',.28],['#tlc',.28],['#axis',.3],['#brand',.32]].forEach(([s,d])=>{ const u=inA(d); const el=$(s); el.style.opacity=u; el.style.translate=`0 ${(1-u)*18}px`; });
   // intro crest lockup, cleared before the first event
-  { const vin=easeOut((t-0.1)/0.45), vout=clamp((3.6-t)/0.4); /* gone well before Mbappé's 11' */ $('#vs').style.opacity=Math.min(vin,vout);
+  { const vin=easeOut((t-0.1)/0.45), vout=clamp((3.6-t)/0.4); /* gone well before Neves's 9' */ $('#vs').style.opacity=Math.min(vin,vout);
     $('#vs .a').style.transform=`translateX(${((1-vin)*-90).toFixed(1)}px) scale(${(0.85+0.15*backOut((t-0.1)/0.5)).toFixed(3)})`;
     $('#vs .e').style.transform=`translateX(${((1-vin)*90).toFixed(1)}px) scale(${(0.85+0.15*backOut((t-0.1)/0.5)).toFixed(3)})`;
     $('#vs .x').style.opacity=easeOut((t-0.4)/0.3); $('#vs .s').style.opacity=easeOut((t-0.55)/0.3); }
@@ -516,8 +517,8 @@ function frame(f){ f=Math.max(0,Math.min(TOTAL-1,f)); const t=f/FPS, m=mArr[f], 
       tintO=Math.max(tintO,(isG?0.55:0.4)*Math.exp(-a2/0.55)+(isG?0.16:0.08)*clamp((dw+0.6-a)/0.5));
       const isC=isChance(E); tintC=isG||isC?(E.team==='A'?['#ffd60a','#fff6c2']:['#3d6dff','#ff2e3e']):(E.type==='red'?[RED,RED]:[ICE,'#7f9cd6']); if(E.type==='var') horiz=1; }
     const s=SHOTS.find(s=>s.ei===i); const e=Math.sin(clamp(a/(dw+0.7))*Math.PI); if(s&&e>emph){ emph=e; ex=s.x; ez=s.z; } });
-  // a tall spike at the far end (Racing-attacking, +x, with NEAR=-1) would climb into the scoreboard: pull back and centre on it while it's up,
-  // starting just before the clock hits the minute so the spring overshoot is already covered (none today: Zabiri's 0.26 stays under the 0.4 threshold)
+  // a tall spike at the far end (Villarreal-attacking, +x, with NEAR=-1) would climb into the scoreboard: pull back and centre on it while it's up,
+  // starting just before the clock hits the minute so the spring overshoot is already covered (none today: Villarreal's best was 0.07 xG)
   EVENTS.forEach((E,i)=>{ const s=SHOTS.find(s=>s.ei===i); if(trig[i]<0||!s||s.x*NEAR>=0) return; const a=t-trig[i];
     const l=clamp((s.xg-0.4)/0.4)*clamp((a+0.3)/0.3)*clamp((dwellT[i]+1.0-a)/0.5); if(l>lift){ lift=l; lx=s.x; lz=s.z; } });
   if(ft&&ftU<0.5){ flash=Math.max(flash,0.5*Math.exp(-ftU/0.1)); shake=Math.max(shake,0.5*Math.exp(-ftU/0.2)); ca=Math.max(ca,Math.exp(-ftU/0.15)); }
@@ -556,7 +557,7 @@ function frame(f){ f=Math.max(0,Math.min(TOTAL-1,f)); const t=f/FPS, m=mArr[f], 
     if(isP&&a>=IMPACT-0.04){ const a2=a-IMPACT; shield.visible=true; shield.position.set(sg*50.6,height(sg*52.5,0)+4.2,gz); const sc=0.9+1.5*easeOut(a2/0.28); shield.scale.setScalar(sc);
       const o=clamp(1-a2/0.75); shield.userData.lm.opacity=o; shield.userData.fill.material.opacity=0.85*o*Math.exp(-Math.max(0,a2)/0.22); } });
   // ---- camera
-  // half turn (NEAR=-1): Madrid's end (-x: Mbappé's 0.79 pen, Bellingham's 0.78, Güler's 0.32 save) sits nearest the camera; far-end spikes are handled by the lift above
+  // half turn (NEAR=-1): PSG's end (-x: all six goals, Ruiz's 0.54 the tallest) sits nearest the camera; far-end spikes are handled by the lift above
   const ry=-0.82+0.10*Math.sin(t*.35)+k*0.16+(ft?ftU*0.035:0)+(NEAR<0?Math.PI:0); group.rotation.y=ry;
   V.set(ex,0,ez).applyAxisAngle(YAX,ry); let tx=V.x*0.32*emph, tz=V.z*0.32*emph; V.set(lx,0,lz).applyAxisAngle(YAX,ry); tx+=V.x*0.45*lift; tz+=V.z*0.45*lift;
   const dist=520-emph*40*(1-lift)+lift*120+k*95, el=0.62+0.14*k, dz=Math.sqrt(1-el*el);
@@ -566,7 +567,7 @@ function frame(f){ f=Math.max(0,Math.min(TOTAL-1,f)); const t=f/FPS, m=mArr[f], 
   group.position.set(0,k*6,0);
   camera.updateMatrixWorld(); group.updateMatrixWorld(true);
   // FT rings + labels
-  goalShots.forEach((s,j)=>{ const r=rings[j], L=glabs[j]; if(!ft){ r.visible=false; L.style.opacity=0; return; }
+  goalShots.forEach((s,j)=>{ const r=rings[j], L=glabs[j]; if(!ft||s.merged!==undefined){ r.visible=false; L.style.opacity=0; return; }
     const a=ftU-(0.8+1.9*s.m/END)-0.12; const top=height(s.x,s.z)+3.2; const sc=4.6*backOut(a/0.3); r.visible=a>0; r.scale.set(sc,sc,1); r.position.set(s.x,top,s.z);
     const [px,py]=project(s.x,top,s.z); L.style.opacity=clamp((a-0.1)/0.2); const lr=20; L.style.transform=`translate(${(px+lr).toFixed(1)}px,${(py-12).toFixed(1)}px)`; });
   renderer.render(scene,camera);
