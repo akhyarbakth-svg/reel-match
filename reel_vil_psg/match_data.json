@@ -1,0 +1,984 @@
+{
+ "source": "FotMob match 6106326 (Opta data)",
+ "match": "Villarreal 0-4 Paris Saint-Germain, Champions League round 4, Tue, Nov 3, 2026, 20:00 UTC",
+ "home": "VIL",
+ "away": "PSG",
+ "shots": [
+  {
+   "team": "VIL",
+   "min": 3,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0447,
+   "x": 81.5839805832,
+   "y": 32.17,
+   "player": "Carlos Romero",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "VIL",
+   "min": 4,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0338,
+   "x": 94.9649122793,
+   "y": 19.655286626899997,
+   "player": "Nicolas Pépé",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "PSG",
+   "min": 5,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.0352,
+   "x": 87.963235294,
+   "y": 46.452993627000005,
+   "player": "Désiré Doué",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "PSG",
+   "min": 6,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0344,
+   "x": 83.38592233039999,
+   "y": 42.5240625,
+   "player": "Désiré Doué",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSG",
+   "min": 9,
+   "add": null,
+   "type": "Goal",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.4513,
+   "x": 100.1637931038,
+   "y": 35.143750000000004,
+   "player": "João Neves",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSG",
+   "min": 12,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1521,
+   "x": 89.8,
+   "y": 29.295476189000002,
+   "player": "Désiré Doué",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSG",
+   "min": 13,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0581,
+   "x": 90.5,
+   "y": 30.328,
+   "player": "João Neves",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "PSG",
+   "min": 13,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.2034,
+   "x": 96.79824561320001,
+   "y": 37.58375000000001,
+   "player": "Senny Mayulu",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSG",
+   "min": 16,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1076,
+   "x": 97.4736842099,
+   "y": 29.799761903000004,
+   "player": "Maghnes Akliouche",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "PSG",
+   "min": 17,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1698,
+   "x": 91.5,
+   "y": 36.440000000000005,
+   "player": "Fabián Ruiz",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSG",
+   "min": 22,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0702,
+   "x": 102.25000000019999,
+   "y": 44.4912101866,
+   "player": "Fabián Ruiz",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSG",
+   "min": 28,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0703,
+   "x": 97.6666666661,
+   "y": 37.12625,
+   "player": "Ilya Zabarnyi",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "VIL",
+   "min": 29,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.032,
+   "x": 94.7719298231,
+   "y": 43.720509549300004,
+   "player": "Tajon Buchanan",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSG",
+   "min": 31,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.127,
+   "x": 92.8,
+   "y": 30.05190476,
+   "player": "Achraf Hakimi",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "PSG",
+   "min": 36,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0737,
+   "x": 97.1842105256,
+   "y": 45.4020382125,
+   "player": "Désiré Doué",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSG",
+   "min": 43,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0674,
+   "x": 86.13823529359999,
+   "y": 32.856249999999996,
+   "player": "Fabián Ruiz",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "VIL",
+   "min": 45,
+   "add": 2,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0593,
+   "x": 87.53382352919999,
+   "y": 24.699872616500002,
+   "player": "Ayoze Pérez",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSG",
+   "min": 45,
+   "add": 2,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1121,
+   "x": 96.3157894727,
+   "y": 24.139363062099996,
+   "player": "Achraf Hakimi",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "PSG",
+   "min": 45,
+   "add": 3,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.021,
+   "x": 92.7,
+   "y": 35.9825,
+   "player": "Lucas Hernández",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   -5
+  ],
+  [
+   2,
+   -11
+  ],
+  [
+   3,
+   -11
+  ],
+  [
+   4,
+   24
+  ],
+  [
+   5,
+   30
+  ],
+  [
+   6,
+   24
+  ],
+  [
+   7,
+   -11
+  ],
+  [
+   8,
+   -27
+  ],
+  [
+   9,
+   -22
+  ],
+  [
+   10,
+   -5
+  ],
+  [
+   11,
+   -27
+  ],
+  [
+   12,
+   -27
+  ],
+  [
+   13,
+   -71
+  ],
+  [
+   14,
+   -27
+  ],
+  [
+   15,
+   -16
+  ],
+  [
+   16,
+   -49
+  ],
+  [
+   17,
+   -54
+  ],
+  [
+   18,
+   -60
+  ],
+  [
+   19,
+   -16
+  ],
+  [
+   20,
+   -24
+  ],
+  [
+   21,
+   -68
+  ],
+  [
+   22,
+   -71
+  ],
+  [
+   23,
+   -68
+  ],
+  [
+   24,
+   -30
+  ],
+  [
+   25,
+   -24
+  ],
+  [
+   26,
+   -24
+  ],
+  [
+   27,
+   -24
+  ],
+  [
+   28,
+   -5
+  ],
+  [
+   29,
+   -5
+  ],
+  [
+   30,
+   -33
+  ],
+  [
+   31,
+   -79
+  ],
+  [
+   32,
+   -84
+  ],
+  [
+   33,
+   -57
+  ],
+  [
+   34,
+   0
+  ],
+  [
+   35,
+   11
+  ],
+  [
+   36,
+   -49
+  ],
+  [
+   37,
+   -81
+  ],
+  [
+   38,
+   -92
+  ],
+  [
+   39,
+   -38
+  ],
+  [
+   40,
+   -5
+  ],
+  [
+   41,
+   -16
+  ],
+  [
+   42,
+   -11
+  ],
+  [
+   43,
+   -43
+  ],
+  [
+   44,
+   -27
+  ],
+  [
+   45,
+   -33
+  ],
+  [
+   45.5,
+   -28
+  ],
+  [
+   46,
+   null
+  ],
+  [
+   47,
+   null
+  ],
+  [
+   48,
+   null
+  ],
+  [
+   49,
+   null
+  ],
+  [
+   50,
+   null
+  ],
+  [
+   51,
+   null
+  ],
+  [
+   52,
+   null
+  ],
+  [
+   53,
+   null
+  ],
+  [
+   54,
+   null
+  ],
+  [
+   55,
+   null
+  ],
+  [
+   56,
+   null
+  ],
+  [
+   57,
+   null
+  ],
+  [
+   58,
+   null
+  ],
+  [
+   59,
+   null
+  ],
+  [
+   60,
+   null
+  ],
+  [
+   61,
+   null
+  ],
+  [
+   62,
+   null
+  ],
+  [
+   63,
+   null
+  ],
+  [
+   64,
+   null
+  ],
+  [
+   65,
+   null
+  ],
+  [
+   66,
+   null
+  ],
+  [
+   67,
+   null
+  ],
+  [
+   68,
+   null
+  ],
+  [
+   69,
+   null
+  ],
+  [
+   70,
+   null
+  ],
+  [
+   71,
+   null
+  ],
+  [
+   72,
+   null
+  ],
+  [
+   73,
+   null
+  ],
+  [
+   74,
+   null
+  ],
+  [
+   75,
+   null
+  ],
+  [
+   76,
+   null
+  ],
+  [
+   77,
+   null
+  ],
+  [
+   78,
+   null
+  ],
+  [
+   79,
+   null
+  ],
+  [
+   80,
+   null
+  ],
+  [
+   81,
+   null
+  ],
+  [
+   82,
+   null
+  ],
+  [
+   83,
+   null
+  ],
+  [
+   84,
+   null
+  ],
+  [
+   85,
+   null
+  ],
+  [
+   86,
+   null
+  ],
+  [
+   87,
+   null
+  ],
+  [
+   88,
+   null
+  ],
+  [
+   89,
+   null
+  ],
+  [
+   90,
+   null
+  ],
+  [
+   90.75,
+   null
+  ]
+ ],
+ "events": [
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 2
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 45,
+   "team": "VIL",
+   "player": "Santi Comesaña",
+   "reason": "Foul"
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    25,
+    75
+   ],
+   "expected_goals": [
+    "0.17",
+    "1.75"
+   ],
+   "total_shots": [
+    4,
+    15
+   ],
+   "ShotsOnTarget": [
+    1,
+    8
+   ],
+   "touches_opp_box": [
+    5,
+    27
+   ],
+   "big_chance": [
+    0,
+    3
+   ],
+   "big_chance_missed_title": [
+    0,
+    0
+   ],
+   "accurate_passes": [
+    "92 (74%)",
+    "349 (92%)"
+   ],
+   "yellow_cards": [
+    1,
+    0
+   ],
+   "corners": [
+    3,
+    5
+   ],
+   "ShotsOffTarget": [
+    1,
+    2
+   ],
+   "blocked_shots": [
+    2,
+    5
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    2,
+    12
+   ],
+   "shots_outside_box": [
+    2,
+    3
+   ],
+   "expected_goals_open_play": [
+    "0.13",
+    "1.21"
+   ],
+   "expected_goals_set_play": [
+    "0.04",
+    "0.54"
+   ],
+   "expected_goals_non_penalty": [
+    "0.17",
+    "1.75"
+   ],
+   "expected_goals_on_target": [
+    "0.12",
+    "3.95"
+   ],
+   "passes": [
+    125,
+    379
+   ],
+   "own_half_passes": [
+    66,
+    197
+   ],
+   "opposition_half_passes": [
+    26,
+    152
+   ],
+   "long_balls_accurate": [
+    "7 (39%)",
+    "19 (79%)"
+   ],
+   "accurate_crosses": [
+    "1 (17%)",
+    "2 (29%)"
+   ],
+   "player_throws": [
+    8,
+    8
+   ],
+   "Offsides": [
+    0,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    9,
+    8
+   ],
+   "interceptions": [
+    3,
+    4
+   ],
+   "shot_blocks": [
+    4,
+    2
+   ],
+   "clearances": [
+    8,
+    6
+   ],
+   "keeper_saves": [
+    4,
+    1
+   ],
+   "duel_won": [
+    18,
+    27
+   ],
+   "ground_duels_won": [
+    "14 (41%)",
+    "20 (59%)"
+   ],
+   "aerials_won": [
+    "4 (36%)",
+    "7 (64%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (33%)",
+    "4 (50%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    9,
+    3
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    25,
+    75
+   ],
+   "expected_goals": [
+    "0.17",
+    "1.75"
+   ],
+   "total_shots": [
+    4,
+    15
+   ],
+   "ShotsOnTarget": [
+    1,
+    8
+   ],
+   "touches_opp_box": [
+    5,
+    27
+   ],
+   "big_chance": [
+    0,
+    3
+   ],
+   "big_chance_missed_title": [
+    0,
+    0
+   ],
+   "accurate_passes": [
+    "92 (74%)",
+    "349 (92%)"
+   ],
+   "yellow_cards": [
+    1,
+    0
+   ],
+   "corners": [
+    3,
+    5
+   ],
+   "ShotsOffTarget": [
+    1,
+    2
+   ],
+   "blocked_shots": [
+    2,
+    5
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    2,
+    12
+   ],
+   "shots_outside_box": [
+    2,
+    3
+   ],
+   "expected_goals_open_play": [
+    "0.13",
+    "1.21"
+   ],
+   "expected_goals_set_play": [
+    "0.04",
+    "0.54"
+   ],
+   "expected_goals_non_penalty": [
+    "0.17",
+    "1.75"
+   ],
+   "expected_goals_on_target": [
+    "0.12",
+    "3.95"
+   ],
+   "passes": [
+    125,
+    379
+   ],
+   "own_half_passes": [
+    66,
+    197
+   ],
+   "opposition_half_passes": [
+    26,
+    152
+   ],
+   "long_balls_accurate": [
+    "7 (39%)",
+    "19 (79%)"
+   ],
+   "accurate_crosses": [
+    "1 (17%)",
+    "2 (29%)"
+   ],
+   "player_throws": [
+    8,
+    8
+   ],
+   "Offsides": [
+    0,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    9,
+    8
+   ],
+   "interceptions": [
+    3,
+    4
+   ],
+   "shot_blocks": [
+    4,
+    2
+   ],
+   "clearances": [
+    8,
+    6
+   ],
+   "keeper_saves": [
+    4,
+    1
+   ],
+   "duel_won": [
+    18,
+    27
+   ],
+   "ground_duels_won": [
+    "14 (41%)",
+    "20 (59%)"
+   ],
+   "aerials_won": [
+    "4 (36%)",
+    "7 (64%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (33%)",
+    "4 (50%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    9,
+    3
+   ]
+  }
+ }
+}
