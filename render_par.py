@@ -1,12 +1,17 @@
 # parallel render: N Chromium workers each take an interleaved-free contiguous chunk, write JPEGs, then one ffmpeg encode at 30 fps
+# usage: python -I render_par.py <frames dir> <workers> <total frames> [out.mp4]   (CHROMIUM=<path> to use a specific Chromium build)
 import sys,os,time,subprocess,multiprocessing as mp,imageio_ffmpeg
-URL='file:///E:/Page%20Content/reel_che_mun/index.html'
-OUT='E:/Page Content/Videos/Game State-V15/Chelsea_vs_Man_United_PL_Reel.mp4'
+from pathlib import Path
+H=Path(__file__).resolve().parent
+URL=(H/'index.html').as_uri()
+OUT=sys.argv[4] if len(sys.argv)>4 else str(H/'AEK_vs_Real_Madrid_UCL_Reel.mp4')
+ARGS=["--use-gl=angle","--use-angle=swiftshader","--enable-unsafe-swiftshader","--ignore-gpu-blocklist"]
+def launch(p): return p.chromium.launch(args=ARGS,**({'executable_path':os.environ['CHROMIUM']} if os.environ.get('CHROMIUM') else {}))
 def work(args):
     wid,lo,hi,fdir=args
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
-        b=p.chromium.launch(args=["--use-gl=angle","--use-angle=swiftshader","--enable-unsafe-swiftshader","--ignore-gpu-blocklist"])
+        b=launch(p)
         pg=b.new_page(viewport={'width':1080,'height':1920}); pg.on('pageerror',lambda e:print('ERR',wid,e,flush=True))
         pg.goto(URL); pg.wait_for_function('window.READY===true',timeout=30000); pg.wait_for_timeout(800)
         t0=time.time()

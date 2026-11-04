@@ -1,13 +1,14 @@
 <!doctype html>
-<html><head><meta charset="utf-8"><title>Chelsea v Man United reel</title>
+<html><head><meta charset="utf-8"><title>AEK Athens v Real Madrid reel</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-/* team themes sampled from the crests and kits: Chelsea = royal blue #034694 (brightened to lead, white halo from the socks/trim) · Man United = red #DA291C (red leads, devil-gold halo) */
-:root{--A:#2f6bff;--A2:#eef3ff;--Al:#8cb0ff;--Eb:#ff2a2a;--Eg:#ffb81c;--Ebl:#ff8a8a;--Egl:#ff3b3b;--Y:#c6ff3d;--ice:#dbe7ff;--dim:#7886a6;--hair:rgba(190,212,255,.22)}
-html,body{width:1080px;height:1920px;background:#03050b;overflow:hidden;color:#eaf2ff;font-family:'Bahnschrift','Segoe UI',sans-serif}
+/* fonts: Windows faces first (Agency FB / Bahnschrift / Consolas), open fallbacks after (Oswald / Barlow Semi Condensed / JetBrains Mono) */
+/* team themes sampled from the crests and kits: AEK = eagle yellow #FFD200 (yellow leads, deep-amber halo, black trim) · Real Madrid = white (white leads, crest royal blue #00529F brightened as the halo) */
+:root{--A:#ffd21a;--A2:#ff9d00;--Al:#ffe27a;--Eb:#f4f7ff;--Eg:#3d7bff;--Ebl:#ffffff;--Egl:#9db8ff;--Y:#c6ff3d;--ice:#dbe7ff;--dim:#7886a6;--hair:rgba(190,212,255,.22)}
+html,body{width:1080px;height:1920px;background:#03050b;overflow:hidden;color:#eaf2ff;font-family:'Bahnschrift','Barlow Semi Condensed','Segoe UI',sans-serif}
 #stage{position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:540px 860px}
 .abs{position:absolute}
-.mono{font-family:'Consolas',monospace}
+.mono{font-family:Consolas,"JetBrains Mono",monospace}
 #bg{position:absolute;inset:-80px;background:radial-gradient(ellipse 72% 40% at 50% 42%,#10203f 0%,rgba(9,16,34,.55) 48%,rgba(3,5,11,0) 78%),linear-gradient(#03050b,#050b18 46%,#03050b)}
 #tint{position:absolute;inset:-80px;opacity:0;mix-blend-mode:screen}
 canvas#gl,#bloom{position:absolute;left:0;top:0;width:1080px;height:1920px}
@@ -20,7 +21,7 @@ canvas#gl,#bloom{position:absolute;left:0;top:0;width:1080px;height:1920px}
 .br.bl{left:26px;bottom:26px;border-left-width:2px;border-bottom-width:2px}
 .br.bb{right:26px;bottom:26px;border-right-width:2px;border-bottom-width:2px}
 
-#top{left:64px;right:64px;top:50px;display:flex;justify-content:space-between;align-items:center;font:600 21px Consolas;letter-spacing:3px;color:#a9b7d6}
+#top{left:64px;right:64px;top:50px;display:flex;justify-content:space-between;align-items:center;font:600 21px Consolas,"JetBrains Mono",monospace;letter-spacing:3px;color:#a9b7d6}
 #top b{color:#fff;font-weight:700}
 #top .rp{color:#cfd9ef;display:flex;align-items:center;gap:10px}
 #top .rp i{width:12px;height:12px;border-radius:50%;background:var(--Y);box-shadow:0 0 10px var(--Y)}
@@ -31,33 +32,33 @@ canvas#gl,#bloom{position:absolute;left:0;top:0;width:1080px;height:1920px}
 .team .crest{position:absolute;left:18px;top:16px;width:104px;height:104px;object-fit:contain;filter:drop-shadow(0 0 12px rgba(0,0,0,.8))}
 .team .rc{position:absolute;left:98px;top:84px;width:20px;height:27px;border-radius:3px;background:#ff2330;border:2px solid #fff;box-shadow:0 0 14px #ff2330;transform:rotate(10deg);opacity:0}
 .team .code{position:absolute;left:138px;top:14px;font-size:54px;font-weight:700;letter-spacing:2px;line-height:1}
-.team .name{position:absolute;left:140px;top:76px;font:600 16px Consolas;letter-spacing:4px;color:var(--dim)}
-.team .score{position:absolute;left:258px;top:0;width:120px;height:136px;text-align:center;font:700 158px/136px 'Agency FB';transform-origin:50% 60%}
-.team .mini{position:absolute;left:396px;top:16px;font:600 20px Consolas;letter-spacing:2px;color:var(--dim);line-height:36px;white-space:nowrap}
+.team .name{position:absolute;left:140px;top:76px;font:600 16px Consolas,"JetBrains Mono",monospace;letter-spacing:4px;color:var(--dim)}
+.team .score{position:absolute;left:258px;top:0;width:120px;height:136px;text-align:center;font:700 158px/136px 'Agency FB',Oswald,sans-serif;transform-origin:50% 60%}
+.team .mini{position:absolute;left:396px;top:16px;font:600 20px Consolas,"JetBrains Mono",monospace;letter-spacing:2px;color:var(--dim);line-height:36px;white-space:nowrap}
 .team .mini b{color:#eef4ff;font-size:27px;margin-left:12px;font-weight:700}
-.team .mins{font:700 19px Consolas;color:#d4ddf0;letter-spacing:0;height:36px}
+.team .mins{font:700 19px Consolas,"JetBrains Mono",monospace;color:#d4ddf0;letter-spacing:0;height:36px}
 .team .mins span{margin-right:9px}
 .team .burst{position:absolute;left:318px;top:68px;width:10px;height:10px;border-radius:50%;border:3px solid #fff;opacity:0;transform:translate(-50%,-50%)}
 #vs{left:0;right:0;top:1060px;height:300px;opacity:0}
 #vs img{position:absolute;top:0;width:210px;height:210px;object-fit:contain;filter:drop-shadow(0 0 28px rgba(0,0,0,.9))}
 #vs .a{left:170px}#vs .e{right:170px}
-#vs .x{position:absolute;left:0;right:0;top:58px;text-align:center;font:700 86px/1 'Agency FB';letter-spacing:4px;color:#f2f5ff;text-shadow:0 0 22px rgba(0,0,0,.95)}
-#vs .s{position:absolute;left:0;right:0;top:236px;text-align:center;font:700 22px Consolas;letter-spacing:5px;color:#c3cde4;text-shadow:0 0 10px #000,0 0 4px #000}
+#vs .x{position:absolute;left:0;right:0;top:58px;text-align:center;font:700 86px/1 'Agency FB',Oswald,sans-serif;letter-spacing:4px;color:#f2f5ff;text-shadow:0 0 22px rgba(0,0,0,.95)}
+#vs .s{position:absolute;left:0;right:0;top:236px;text-align:center;font:700 22px Consolas,"JetBrains Mono",monospace;letter-spacing:5px;color:#c3cde4;text-shadow:0 0 10px #000,0 0 4px #000}
 
 #clock{right:50px;top:104px;width:214px;height:250px}
 #clock svg{position:absolute;left:0;top:0}
-#clock .m{position:absolute;left:0;top:0;width:214px;height:214px;display:flex;align-items:center;justify-content:center;font:700 86px 'Agency FB';letter-spacing:1px}
-#clock .h{position:absolute;left:0;top:220px;width:214px;text-align:center;font:600 18px Consolas;letter-spacing:4px;color:#a9b7d6}
+#clock .m{position:absolute;left:0;top:0;width:214px;height:214px;display:flex;align-items:center;justify-content:center;font:700 86px 'Agency FB',Oswald,sans-serif;letter-spacing:1px}
+#clock .h{position:absolute;left:0;top:220px;width:214px;text-align:center;font:600 18px Consolas,"JetBrains Mono",monospace;letter-spacing:4px;color:#a9b7d6}
 
 #call{left:0;right:0;top:1086px;text-align:center;opacity:0}
-#call .t{position:relative;display:inline-block;font:700 214px/1 'Agency FB';letter-spacing:10px}
+#call .t{position:relative;display:inline-block;font:700 214px/1 'Agency FB',Oswald,sans-serif;letter-spacing:10px}
 #call .t:before,#call .t:after{content:attr(data-text);position:absolute;left:0;top:0;width:100%;text-align:center;mix-blend-mode:screen}
 #call .t:before{color:#22e6ff;clip-path:inset(var(--c1,0%) 0 var(--c2,100%) 0);transform:translateX(var(--g1,0px))}
 #call .t:after{color:#ff2a6d;clip-path:inset(var(--c3,0%) 0 var(--c4,100%) 0);transform:translateX(var(--g2,0px))}
-#call .n{display:flex;align-items:center;justify-content:center;gap:16px;font:700 46px 'Bahnschrift';letter-spacing:3px;margin-top:2px;text-shadow:0 0 18px rgba(0,0,0,.9),0 2px 4px #000}
+#call .n{display:flex;align-items:center;justify-content:center;gap:16px;font:700 46px 'Bahnschrift','Barlow Semi Condensed',sans-serif;letter-spacing:3px;margin-top:2px;text-shadow:0 0 18px rgba(0,0,0,.9),0 2px 4px #000}
 #call .n img{width:62px;height:62px;object-fit:contain;filter:drop-shadow(0 0 10px rgba(0,0,0,.9))}
 #call .n .card{display:inline-block;width:34px;height:46px;border-radius:4px;background:#ff2330;border:2.5px solid #fff;box-shadow:0 0 18px #ff2330;transform:rotate(10deg)}
-#call .chip{display:inline-block;margin-top:16px;font:700 23px Consolas;letter-spacing:3px;padding:9px 20px 8px;background:rgba(6,12,26,.72);border:1.5px solid rgba(220,230,255,.35);position:relative}
+#call .chip{display:inline-block;margin-top:16px;font:700 23px Consolas,"JetBrains Mono",monospace;letter-spacing:3px;padding:9px 20px 8px;background:rgba(6,12,26,.72);border:1.5px solid rgba(220,230,255,.35);position:relative}
 #call .chip:before,#call .chip:after{content:'';position:absolute;width:12px;height:12px;border:2px solid var(--Y)}
 #call .chip:before{left:-5px;top:-5px;border-right:0;border-bottom:0}
 #call .chip:after{right:-5px;bottom:-5px;border-left:0;border-top:0}
@@ -67,24 +68,24 @@ canvas#gl,#bloom{position:absolute;left:0;top:0;width:1080px;height:1920px}
 #tag .ln{position:absolute;left:0;top:-1px;width:78px;height:2px;background:linear-gradient(90deg,#fff,rgba(255,255,255,.5));transform-origin:0 50%;transform:rotate(-42deg)}
 #tag .box{position:absolute;left:56px;bottom:50px;padding:8px 14px 7px 64px;background:rgba(5,10,22,.8);border-left:4px solid #fff;white-space:nowrap}
 #tag .box img{position:absolute;left:10px;top:50%;width:44px;height:44px;margin-top:-22px;object-fit:contain}
-#tag .box b{display:block;font:700 34px/1 Consolas;letter-spacing:1px}
-#tag .box span{display:block;font:700 16px Consolas;letter-spacing:3px;color:#b8c5e0;margin-top:5px}
+#tag .box b{display:block;font:700 34px/1 Consolas,"JetBrains Mono",monospace;letter-spacing:1px}
+#tag .box span{display:block;font:700 16px Consolas,"JetBrains Mono",monospace;letter-spacing:3px;color:#b8c5e0;margin-top:5px}
 
-.glab{position:absolute;left:0;top:0;font:700 19px Consolas;letter-spacing:1px;color:var(--Y);opacity:0;white-space:nowrap;text-shadow:0 0 8px #000,0 0 3px #000}
+.glab{position:absolute;left:0;top:0;font:700 19px Consolas,"JetBrains Mono",monospace;letter-spacing:1px;color:var(--Y);opacity:0;white-space:nowrap;text-shadow:0 0 8px #000,0 0 3px #000}
 
 #stats{left:64px;right:64px;top:1062px;opacity:0}
 #stats .hd{display:flex;justify-content:space-between;align-items:center;height:58px}
-#stats .hd span{display:flex;align-items:center;gap:12px;font:700 17px Consolas;letter-spacing:4px;color:#a9b7d6}
+#stats .hd span{display:flex;align-items:center;gap:12px;font:700 17px Consolas,"JetBrains Mono",monospace;letter-spacing:4px;color:#a9b7d6}
 #stats .hd img{width:50px;height:50px;object-fit:contain}
 #stats .r{display:flex;align-items:flex-end;height:76px}
-#stats .v{width:150px;font:700 54px/1 'Agency FB';letter-spacing:1px}
+#stats .v{width:150px;font:700 54px/1 'Agency FB',Oswald,sans-serif;letter-spacing:1px}
 #stats .v.b{text-align:right}
 #stats .mid{flex:1;padding:0 18px 8px}
-#stats .lab{text-align:center;font:700 18px Consolas;letter-spacing:5px;color:#a9b7d6;margin-bottom:9px}
+#stats .lab{text-align:center;font:700 18px Consolas,"JetBrains Mono",monospace;letter-spacing:5px;color:#a9b7d6;margin-bottom:9px}
 #stats .bar{display:flex;gap:6px;height:10px}
 #stats .bar i{display:block;height:10px;-webkit-mask:repeating-linear-gradient(90deg,#000 0 9px,transparent 9px 12px)}
-#stats .bar i.a{background:repeating-linear-gradient(90deg,var(--A) 0 12px,var(--A2) 12px 24px);box-shadow:0 0 10px rgba(47,107,255,.7)}
-#stats .bar i.e{background:repeating-linear-gradient(90deg,var(--Eb) 0 12px,var(--Eg) 12px 24px);box-shadow:0 0 10px rgba(255,42,42,.75)}
+#stats .bar i.a{background:repeating-linear-gradient(90deg,var(--A) 0 12px,var(--A2) 12px 24px);box-shadow:0 0 10px rgba(255,200,20,.6)}
+#stats .bar i.e{background:repeating-linear-gradient(90deg,var(--Eb) 0 12px,var(--Eg) 12px 24px);box-shadow:0 0 10px rgba(61,123,255,.75)}
 #stats .v.e{background:linear-gradient(180deg,var(--Ebl) 18%,var(--Egl) 82%);-webkit-background-clip:text;background-clip:text;color:transparent}
 #tlc{left:64px;top:1576px;width:952px;height:168px;pointer-events:none}
 #tlc img{position:absolute;left:8px;width:30px;height:30px;object-fit:contain;opacity:.85}
@@ -93,16 +94,16 @@ canvas#gl,#bloom{position:absolute;left:0;top:0;width:1080px;height:1920px}
 #ins{left:64px;right:64px;top:1452px;height:66px;display:flex;align-items:center;gap:20px;padding:0 22px;background:linear-gradient(90deg,rgba(20,34,64,.62),rgba(10,18,36,.25));border:1px solid rgba(190,212,255,.16)}
 #ins:before{content:'';position:absolute;left:-1px;top:-1px;width:16px;height:16px;border-left:3px solid var(--Y);border-top:3px solid var(--Y)}
 #ins:after{content:'';position:absolute;right:-1px;bottom:-1px;width:16px;height:16px;border-right:3px solid var(--Y);border-bottom:3px solid var(--Y)}
-#ins .k{font:700 19px Consolas;letter-spacing:3px;color:var(--Y);white-space:nowrap}
-#ins .tx{font:600 25px 'Bahnschrift';letter-spacing:1px;white-space:nowrap;overflow:hidden;color:#f1f5ff}
+#ins .k{font:700 19px Consolas,"JetBrains Mono",monospace;letter-spacing:3px;color:var(--Y);white-space:nowrap}
+#ins .tx{font:600 25px 'Bahnschrift','Barlow Semi Condensed',sans-serif;letter-spacing:1px;white-space:nowrap;overflow:hidden;color:#f1f5ff}
 #ins .cur{display:inline-block;width:13px;height:26px;background:var(--Y);margin-left:-14px}
 
-#tlh{left:64px;right:64px;top:1546px;display:flex;justify-content:space-between;font:700 18px Consolas;letter-spacing:3px;color:#97a5c4}
+#tlh{left:64px;right:64px;top:1546px;display:flex;justify-content:space-between;font:700 18px Consolas,"JetBrains Mono",monospace;letter-spacing:3px;color:#97a5c4}
 #tl{left:64px;top:1576px;width:952px;height:168px}
-#axis{left:64px;right:64px;top:1750px;font:600 17px Consolas;letter-spacing:3px;color:#66728f;display:flex;justify-content:space-between}
+#axis{left:64px;right:64px;top:1750px;font:600 17px Consolas,"JetBrains Mono",monospace;letter-spacing:3px;color:#66728f;display:flex;justify-content:space-between}
 #brand{left:64px;right:64px;top:1830px;display:flex;justify-content:space-between;align-items:center;font-size:27px;font-weight:700;letter-spacing:.8px}
 #brand .l img{display:block;height:36px;filter:drop-shadow(0 0 10px rgba(242,243,238,.18))}
-#brand .r{display:flex;align-items:center;gap:12px;font:600 18px Consolas;letter-spacing:5px;color:#9ba3ae}
+#brand .r{display:flex;align-items:center;gap:12px;font:600 18px Consolas,"JetBrains Mono",monospace;letter-spacing:5px;color:#9ba3ae}
 #brand .r i{width:10px;height:10px;border-radius:50%;background:var(--Y);box-shadow:0 0 10px var(--Y)}
 </style></head><body>
 <div id="stage">
@@ -113,12 +114,12 @@ canvas#gl,#bloom{position:absolute;left:0;top:0;width:1080px;height:1920px}
 <div id="vig"></div>
 <div class="br tl"></div><div class="br tr"></div><div class="br bl"></div><div class="br bb"></div>
 
-<div class="abs" id="top"><span><b>PREMIER LEAGUE</b> &nbsp;▸&nbsp; MD9 &nbsp;▸&nbsp; 31 OCT 2026</span><span class="rp"><i></i>MATCH REPLAY</span></div>
+<div class="abs" id="top"><span><b>CHAMPIONS LEAGUE</b> &nbsp;▸&nbsp; MD4 &nbsp;▸&nbsp; 04 NOV 2026</span><span class="rp"><i></i>MATCH REPLAY</span></div>
 <div class="abs" id="topl"></div>
 
-<div class="team" id="tA" style="top:112px"><div class="bar" style="background:linear-gradient(var(--A),var(--A2));box-shadow:0 -6px 16px var(--A),0 6px 16px var(--A2)"></div><img class="crest" src="logo_che.png" alt=""><i class="rc"></i><div class="code">CHE</div><div class="name">CHELSEA</div><div class="burst"></div><div class="score">0</div>
+<div class="team" id="tA" style="top:112px"><div class="bar" style="background:linear-gradient(var(--A),var(--A2));box-shadow:0 -6px 16px var(--A),0 6px 16px var(--A2)"></div><img class="crest" src="logo_aek.png" alt=""><i class="rc"></i><div class="code">AEK</div><div class="name">AEK ATHENS</div><div class="burst"></div><div class="score">0</div>
  <div class="mini"><div>xG<b class="xg">0.00</b></div><div>SHOTS<b class="sh">0</b></div><div class="mins"></div></div></div>
-<div class="team" id="tE" style="top:262px"><div class="bar" style="background:linear-gradient(var(--Eb),var(--Eg));box-shadow:0 -6px 16px var(--Eb),0 6px 16px var(--Eg)"></div><img class="crest" src="logo_mun.png" alt=""><i class="rc"></i><div class="code">MUN</div><div class="name">MAN UNITED</div><div class="burst"></div><div class="score">0</div>
+<div class="team" id="tE" style="top:262px"><div class="bar" style="background:linear-gradient(var(--Eb),var(--Eg));box-shadow:0 -6px 16px var(--Eb),0 6px 16px var(--Eg)"></div><img class="crest" src="logo_rma.png" alt=""><i class="rc"></i><div class="code">RMA</div><div class="name">REAL MADRID</div><div class="burst"></div><div class="score">0</div>
  <div class="mini"><div>xG<b class="xg">0.00</b></div><div>SHOTS<b class="sh">0</b></div><div class="mins"></div></div></div>
 
 <div class="abs" id="clock"><svg width="214" height="214" viewBox="0 0 214 214"><g id="ticks"></g>
@@ -127,17 +128,17 @@ canvas#gl,#bloom{position:absolute;left:0;top:0;width:1080px;height:1920px}
  <circle id="phd" cx="107" cy="23" r="7" fill="#fff" style="filter:drop-shadow(0 0 6px #fff)"/></svg>
  <div class="m">0'</div><div class="h">1ST HALF</div></div>
 
-<div class="abs" id="tag"><i class="ln"></i><i class="dot"></i><div class="box"><img class="iA" src="logo_che.png" alt=""><img class="iE" src="logo_mun.png" alt=""><b></b><span></span></div></div>
+<div class="abs" id="tag"><i class="ln"></i><i class="dot"></i><div class="box"><img class="iA" src="logo_aek.png" alt=""><img class="iE" src="logo_rma.png" alt=""><b></b><span></span></div></div>
 <div id="glabs"></div>
 
-<div class="abs" id="vs"><img class="a" src="logo_che.png" alt=""><img class="e" src="logo_mun.png" alt=""><div class="x">VS</div><div class="s">STAMFORD BRIDGE · LONDON</div></div>
+<div class="abs" id="vs"><img class="a" src="logo_aek.png" alt=""><img class="e" src="logo_rma.png" alt=""><div class="x">VS</div><div class="s">ALLWYN ARENA · ATHENS</div></div>
 <div class="abs" id="call"><div class="t" data-text="GOAL">GOAL</div><div class="n"></div><div class="chip"></div></div>
 <div class="abs" id="stats"></div>
 
 <div class="abs" id="ins"><span class="k">◆ INSIGHT</span><span class="tx"></span><i class="cur"></i></div>
 <div class="abs" id="tlh"><span>MOMENTUM ▸ ATTACKING PRESSURE</span><span class="r"></span></div>
 <canvas class="abs" id="tl" width="952" height="168"></canvas>
-<div class="abs" id="tlc"><img src="logo_che.png" alt="" style="top:4px"><img src="logo_mun.png" alt="" style="top:134px"></div>
+<div class="abs" id="tlc"><img src="logo_aek.png" alt="" style="top:4px"><img src="logo_rma.png" alt="" style="top:134px"></div>
 <div class="abs" id="axis"><span>00'</span><span>HALF-TIME</span><span>FULL-TIME</span></div>
 <div class="abs" id="brand"><span class="l"><img src="gs_logo.png" alt="Game State"></span><span class="r"><i></i>FOOTBALL · DATA · LIVE</span></div>
 </div>
@@ -155,17 +156,17 @@ function spring(a,w,z){ return a<=0?0:1-Math.exp(-z*a)*Math.cos(w*a); }
 function hash(n){ const s=Math.sin(n*127.1+311.7)*43758.5453; return (s-Math.floor(s))*2-1; }
 
 // ================= DATA =================
-const FPS=30, END=100; // clock runs to 90+10
-// team themes: A = Chelsea royal / deep-royal stripes with a thin white trim line, E = Man United red / deep-red stripes with a thin devil-gold trim line.
-// Single-colour uses (glow, rings) take TC; TC2 is the halo (Chelsea's white, United's gold)
-const COL_EB=new THREE.Color('#c8101e'), COL_EG=new THREE.Color('#6e0710');
-const TC={A:'#2f6bff',E:'#ff2a2a'}, TC2={A:'#eef3ff',E:'#ffb81c'}, TC3={A:0x2f6bff,E:0xff2a2a};
+const FPS=30, END=95.5; // clock runs to 90+5 (Koïta's red came after the 4 added minutes)
+// team themes: A = AEK yellow / deep-amber stripes with a thin black trim line, E = Real Madrid white / silver stripes with a thin royal-blue trim line.
+// Single-colour uses (glow, rings) take TC; TC2 is the halo (AEK's amber, Madrid's crest blue); TC3 is the 3D glow (Madrid's goes blue so it reads on the white)
+const COL_EB=new THREE.Color('#eef1f8'), COL_EG=new THREE.Color('#8e97ad');
+const TC={A:'#ffd21a',E:'#f4f7ff'}, TC2={A:'#ff9d00',E:'#3d7bff'}, TC3={A:0xffd21a,E:0x6f96ff};
 const RED='#ff2330', ICE='#dbe7ff';
 // EVENTS, OTHER (every other shot) and MOM (attacking momentum) come from data.js: FotMob / Opta, not modelled
 function smoothMom(sig){ const out=[]; for(let i=0;i<=END*4;i++){ const m=i/4; let a=0,w=0; for(const [mm,v] of MOM){ const k=Math.exp(-(mm-m)*(mm-m)/(2*sig*sig)); a+=v*k; w+=k; } out.push(a/w); } return out; }
 const DOM_S=smoothMom(1.6), MOM_S=smoothMom(1.0);
 function samp(arr,m){ const u=clamp(m,0,END)*4, i=Math.floor(u), f=u-i; return i>=arr.length-1?arr[arr.length-1]:arr[i]+(arr[i+1]-arr[i])*f; }
-// dominance (+ = Barça on top) drives the territory front line on the surface
+// dominance (+ = AEK on top) drives the territory front line on the surface
 function dom(m){ return 0.9*samp(DOM_S,m); }
 let seed2=99;function rnd2(){seed2=(seed2*16807)%2147483647;return (seed2-1)/2147483646;}
 const SHOTS=EVENTS.map((e,i)=>({...e,ei:i})).filter(e=>e.x!==undefined); // var / red events have no shot location
@@ -174,7 +175,7 @@ SHOTS.sort((a,b)=>a.m-b.m);
 const GOALS=EVENTS.filter(e=>e.type==='goal');
 
 // ================= TIME MAP (clock holds on each event) =================
-const RATE=1/0.19, CREEP=0.3, INTRO=2.4, IMPACT=0.33, FT_LEN=Math.round(6.4*FPS);
+const RATE=1/0.19, CREEP=0.3, INTRO=2.4, IMPACT=0.33, FT_LEN=Math.round(5.8*FPS); // keeps the reel under 40 s
 const isChance=e=>e.type==='miss'||e.type==='post'||e.type==='save';
 const dwellT=EVENTS.map(e=>e.type==='goal'?1.8:(isChance(e)?1.4:1.5));
 const HT_HOLD=1.4; // clock pauses on HT so the half-time xG read gets air
@@ -360,19 +361,19 @@ const glabsEl=document.getElementById('glabs'); const glabs=goalShots.map(s=>{ c
 
 // ================= SURFACE UPDATE =================
 const tmp=new THREE.Color(), cA=new THREE.Color(), cE=new THREE.Color(), WHITE=new THREE.Color(1,1,1);
-// territory carries the kits: Chelsea royal / deep-royal stripes with a thin white trim line, United red / deep-red stripes with a thin gold trim line; every stripe bends with the swell
-const CR=new THREE.Color('#1f55e0').multiplyScalar(.66), CR2=new THREE.Color('#0b2a8c').multiplyScalar(.66), CWH=new THREE.Color('#dfe8ff').multiplyScalar(.6), UGD=new THREE.Color('#d9a21c').multiplyScalar(.62);
-function cheCol(z,out,s){ return out.copy(CR).lerp(CR2,stripe(z+STRIPE/4)).lerp(CWH,0.6*Math.exp(-Math.pow(Math.sin(z*Math.PI/STRIPE)/0.06,2))).multiplyScalar(s); }
-function munCol(z,out,s){ return out.copy(EB_DEEP).lerp(EG_DEEP,stripe(z)).lerp(UGD,0.6*Math.exp(-Math.pow(Math.sin(z*Math.PI/STRIPE)/0.06,2))).multiplyScalar(s); }
+// territory carries the kits: AEK yellow / deep-amber stripes with a thin black trim line, Madrid white / silver stripes with a thin royal-blue trim line; every stripe bends with the swell
+const CR=new THREE.Color('#f2c200').multiplyScalar(.66), CR2=new THREE.Color('#8a5a00').multiplyScalar(.66), CWH=new THREE.Color('#050505'), UGD=new THREE.Color('#2a63ff').multiplyScalar(.62);
+function aekCol(z,out,s){ return out.copy(CR).lerp(CR2,stripe(z+STRIPE/4)).lerp(CWH,0.6*Math.exp(-Math.pow(Math.sin(z*Math.PI/STRIPE)/0.06,2))).multiplyScalar(s); }
+function rmaCol(z,out,s){ return out.copy(EB_DEEP).lerp(EG_DEEP,stripe(z)).lerp(UGD,0.6*Math.exp(-Math.pow(Math.sin(z*Math.PI/STRIPE)/0.06,2))).multiplyScalar(s); }
 const FOAM=new THREE.Color('#e4ecff');
 const EB_DEEP=COL_EB.clone().multiplyScalar(.62), EG_DEEP=COL_EG.clone().multiplyScalar(.62);
-const AB_HI=new THREE.Color('#3d7bff'), AG_HI=new THREE.Color('#e6eeff'), EB_HI=new THREE.Color('#ff2a2a'), EG_HI=new THREE.Color('#ffd86b'); // Chelsea spikes run royal -> white with height, United's red -> devil gold
+const AB_HI=new THREE.Color('#ffb800'), AG_HI=new THREE.Color('#fff4b8'), EB_HI=new THREE.Color('#7fa0ff'), EG_HI=new THREE.Color('#ffffff'); // AEK spikes run amber -> pale yellow with height, Madrid's crest blue -> white
 const STRIPE=68/5;
 function stripe(z){ return THREE.MathUtils.smoothstep(Math.sin(z*2*Math.PI/STRIPE),-0.2,0.2); }
 function updateSurface(){ const m=CUR.m,k=CUR.k;
   for(let i=0;i<pos.count;i++){ const x=pos.getX(i), z=pos.getZ(i); const h=height(x,z), wv=WV; pos.setY(i,h); const zw=z+2.2*Math.sin(x*.11-CUR.t*1.3), sz=stripe(zw);
-    if(k<1){ const u=THREE.MathUtils.smoothstep(x-boundary(z,m),-5,5); cheCol(zw,cA,1); munCol(zw,cE,1); tmp.copy(cA).lerp(cE,u); } else tmp.setRGB(0,0,0);
-    if(k>0){ const u2=THREE.MathUtils.smoothstep(x,-0.5,0.5); cheCol(zw,cA,.7); munCol(zw,cE,.7); tmp.lerp(cA.lerp(cE,u2),k); }
+    if(k<1){ const u=THREE.MathUtils.smoothstep(x-boundary(z,m),-5,5); aekCol(zw,cA,1); rmaCol(zw,cE,1); tmp.copy(cA).lerp(cE,u); } else tmp.setRGB(0,0,0);
+    if(k>0){ const u2=THREE.MathUtils.smoothstep(x,-0.5,0.5); aekCol(zw,cA,.7); rmaCol(zw,cE,.7); tmp.lerp(cA.lerp(cE,u2),k); }
     tmp.lerp(FOAM,clamp((wv-0.9)/1.4)*(0.3-0.12*k)); // foam on the swell crests
     if(HA>0.05) tmp.lerp(cA.copy(AB_HI).lerp(AG_HI,clamp((h-3)/30)),clamp(HA/5)*.9); if(HE>0.05) tmp.lerp(cE.copy(EB_HI).lerp(EG_HI,clamp((h-3)/30)),clamp(HE/5)*.9);
     tmp.lerp(WHITE,clamp((h-14)/50)*.32);
@@ -394,7 +395,7 @@ function drawTL(m,f){ const w=952,h=168,mid=h/2,amp=h/2-16; tl.clearRect(0,0,w,h
   tl.lineWidth=1; for(let q=0;q<=END;q+=15){ tl.strokeStyle=q===45?'rgba(190,212,255,.22)':'rgba(190,212,255,.08)'; tl.beginPath(); tl.moveTo(X(q)+.5,6); tl.lineTo(X(q)+.5,h-6); tl.stroke(); }
   tl.strokeStyle='rgba(190,212,255,.22)'; tl.beginPath(); tl.moveTo(0,mid+.5); tl.lineTo(w,mid+.5); tl.stroke();
   const N=Math.floor(Math.min(m,END)*4); if(N<1) return;
-  const grd=tl.createLinearGradient(0,0,0,h); grd.addColorStop(0,'rgba(90,140,255,.85)'); grd.addColorStop(.25,'rgba(80,130,255,.42)'); grd.addColorStop(.5,'rgba(47,107,255,.02)'); grd.addColorStop(.5,'rgba(255,42,42,.02)'); grd.addColorStop(.75,'rgba(255,42,42,.3)'); grd.addColorStop(1,'rgba(200,16,30,.6)');
+  const grd=tl.createLinearGradient(0,0,0,h); grd.addColorStop(0,'rgba(255,210,26,.85)'); grd.addColorStop(.25,'rgba(255,190,20,.42)'); grd.addColorStop(.5,'rgba(255,170,0,.02)'); grd.addColorStop(.5,'rgba(120,150,255,.02)'); grd.addColorStop(.75,'rgba(150,175,255,.3)'); grd.addColorStop(1,'rgba(230,236,255,.6)');
   tl.beginPath(); tl.moveTo(0,mid); for(let i=0;i<=N;i++) tl.lineTo(X(i/4),mid-PR[i]*amp); tl.lineTo(X(N/4),mid); tl.closePath(); tl.fillStyle=grd; tl.fill();
   tl.save(); tl.shadowColor='rgba(170,210,255,.9)'; tl.shadowBlur=10; tl.lineWidth=3; tl.lineJoin='round'; tl.strokeStyle='#eef5ff';
   tl.beginPath(); for(let i=0;i<=N;i++){ const y=mid-PR[i]*amp; i?tl.lineTo(X(i/4),y):tl.moveTo(X(i/4),y); } tl.stroke(); tl.restore();
@@ -410,26 +411,25 @@ function drawTL(m,f){ const w=952,h=168,mid=h/2,amp=h/2-16; tl.clearRect(0,0,w,h
   tl.save(); tl.shadowColor='#fff'; tl.shadowBlur=14; tl.fillStyle='#fff'; tl.beginPath(); tl.arc(px,py,5.5,0,7); tl.fill(); tl.restore(); }
 
 // insight ticker copy (all derived from the match data above)
-// FotMob's per-shot xG sums to its official half totals here (HT 0.28 / 1.09, FT 2.67 / 1.17), so no per-half scaling
+// FotMob's per-shot xG sums to its official half totals here (HT 0.49 / 1.12, FT 0.87 / 3.35), so no per-half scaling
 function xgLive(team,t){ let x=0,n=0; for(const s of SHOTS){ if(s.team!==team) continue; const a=t-s.ti; if(a<0) continue; x+=s.xg*clamp(a/0.35); n++; } return [x,n]; }
 function insight(f){ const t=f/FPS, m=mArr[f];
-  if(f>=FT_FRAME) return (f-FT_FRAME)/FPS<3.2?['ft','xG 2.67–1.17 · SHOTS 18–12 · ON TARGET 9–5']:['ft2','2ND HALF xG 2.39–0.08 · UNITED 10 MEN FROM 63’'];
+  if(f>=FT_FRAME) return (f-FT_FRAME)/FPS<3.2?['ft','xG 0.87–3.35 · SHOTS 9–24 · ON TARGET 5–8']:['ft2','MADRID 70% OF THE BALL · 43 TOUCHES IN THE BOX'];
   let last=-1; EVENTS.forEach((e,i)=>{ if(trig[i]>=0&&t>=trig[i]+IMPACT) last=i; });
   if(t<0.9) return ['boot','SYNCING MATCH MODEL …'];
   if(last<0) return ['intro','TALLER SPIKE = BIGGER CHANCE · COLOUR = TERRITORY'];
-  if(last===0) return m<28?['c0','BRUNO WIDE ON THE BREAK · 0.30 xG']:['p0','UNITED ON TOP · 4 SHOTS IN 3 MINUTES'];
-  if(last===1) return ['v1','CUNHA FINDS THE NET · VAR: OFFSIDE'];
-  if(last===2) return m<45.9?['c2','AMAD WIDE FROM 0.30 xG · STILL 0–0']:['ht','HT 0–0 · xG 0.28–1.09 · UNITED SHOULD LEAD'];
-  if(last===3) return ['g3','ROGERS BREAKS THE DEADLOCK · 1–0'];
-  if(last===4) return ['r4','MARTÍNEZ: TWO YELLOWS IN 4 MINUTES'];
-  if(last===5) return ['g5','PALMER FROM THE SPOT · 2–0'];
-  if(last===6) return m<80?['v6','ESTÊVÃO SCORES · VAR: OFFSIDE AGAIN']:['p6','UNITED 2ND HALF: 3 SHOTS · 0.08 xG'];
-  return ['c7','BARCO WIDE FROM 0.51 xG IN THE 99TH MIN']; }
+  if(last===0) return m<21?['g0','KOÏTA OPENS IT FROM 0.08 xG · AEK 1–0']:['p0','MADRID CAMPED IN THE AEK HALF'];
+  if(last===1) return ['g1','BELLINGHAM LEVELS · CUCURELLA ASSIST · 1–1'];
+  if(last===2) return m<45.9?['c2','BERNARDO WIDE FROM 0.55 xG · STILL 1–1']:(m<56?['ht','HT 1–1 · xG 0.49–1.12 · MADRID 68% OF THE BALL']:['p2','CUCURELLA’S 0.27 xG BLOCKED · AEK HOLD']);
+  if(last===3) return ['g3','PILIOS ON THE BREAK · AEK LEAD AGAIN 2–1'];
+  if(last===4) return m<84?['g4','MBAPPÉ ANSWERS 3 MINUTES LATER · 2–2']:['p4','DUMFRIES 0.28 xG SAVED · MADRID PUSH ON'];
+  if(last===5) return ['g5','VALVERDE FROM 0.03 xG IN THE 92ND MINUTE'];
+  return ['r6','KOÏTA SENT OFF AFTER THE WINNER · AEK 10']; }
 const insStart={}; for(let f=0;f<TOTAL;f++){ const k=insight(f)[0]; if(!(k in insStart)) insStart[k]=f; }
 
-const STATS=[['18','SHOTS','12',18,12,0],['9','ON TARGET','5',9,5,0],['2.67','xG','1.17',2.67,1.17,2],['59%','POSSESSION','41%',59,41,0]]; // FotMob / Opta
-$('#stats').innerHTML=`<div class="hd"><span><img src="logo_che.png" alt="">CHELSEA</span><span>MAN UNITED<img src="logo_mun.png" alt=""></span></div>`+
-  STATS.map(r=>`<div class="r"><div class="v" style="color:#8cb0ff">${r[0]}</div><div class="mid"><div class="lab">${r[1]}</div><div class="bar"><i class="a"></i><span class="sp"></span><i class="e"></i></div></div><div class="v b e">${r[2]}</div></div>`).join('');
+const STATS=[['9','SHOTS','24',9,24,0],['5','ON TARGET','8',5,8,0],['0.87','xG','3.35',0.87,3.35,2],['30%','POSSESSION','70%',30,70,0]]; // FotMob / Opta
+$('#stats').innerHTML=`<div class="hd"><span><img src="logo_aek.png" alt="">AEK ATHENS</span><span>REAL MADRID<img src="logo_rma.png" alt=""></span></div>`+
+  STATS.map(r=>`<div class="r"><div class="v" style="color:#ffe27a">${r[0]}</div><div class="mid"><div class="lab">${r[1]}</div><div class="bar"><i class="a"></i><span class="sp"></span><i class="e"></i></div></div><div class="v b e">${r[2]}</div></div>`).join('');
 const statRows=[...document.querySelectorAll('#stats .r')];
 
 function lastImpact(team,t){ let li=-1; EVENTS.forEach((e,i)=>{ if(e.type==='goal'&&e.team===team&&trig[i]>=0&&t>=trig[i]+IMPACT) li=trig[i]+IMPACT; }); return li; }
@@ -444,7 +444,7 @@ function setHUD(f){ const m=mArr[f], t=f/FPS, ft=f>=FT_FRAME, ftU=ft?(f-FT_FRAME
     $('#vs .a').style.transform=`translateX(${((1-vin)*-90).toFixed(1)}px) scale(${(0.85+0.15*backOut((t-0.1)/0.5)).toFixed(3)})`;
     $('#vs .e').style.transform=`translateX(${((1-vin)*90).toFixed(1)}px) scale(${(0.85+0.15*backOut((t-0.1)/0.5)).toFixed(3)})`;
     $('#vs .x').style.opacity=easeOut((t-0.4)/0.3); $('#vs .s').style.opacity=easeOut((t-0.55)/0.3); }
-  // red card badge on the crest of the side that's down to 10 (Martínez, 63')
+  // red card badge on the crest of the side that's down to 10 (Koïta, 90+5')
   { const ri=EVENTS.findIndex(e=>e.type==='red'); const a=ri>=0&&trig[ri]>=0?t-trig[ri]-IMPACT:-1; const rc=$('#t'+(ri>=0?EVENTS[ri].team:'A')+' .rc');
     rc.style.opacity=a>=0?1:0; rc.style.transform=`rotate(10deg) scale(${a>=0?(1+1.4*Math.exp(-a*6)*Math.cos(a*14)).toFixed(3):1})`; }
   // scores + jump
@@ -466,7 +466,7 @@ function setHUD(f){ const m=mArr[f], t=f/FPS, ft=f>=FT_FRAME, ftU=ft?(f-FT_FRAME
   $('#ins .cur').style.opacity=(n<itx.length||Math.floor(t*2.5)%2===0)?1:0;
   // pressure tag
   const [sa,se]=shotsLast10(m); const tr=$('#tlh .r');
-  if(!ft&&sa+se>=3&&m>6){ const tm=sa>=se?'#8cb0ff':'#ff7a8a'; tr.innerHTML=`<span style="color:${tm}">▲ ${sa+se} SHOTS · LAST 10'</span>`; } else tr.innerHTML=ft?'<span style="color:#c6ff3d">◆ FULL MATCH</span>':'';
+  if(!ft&&sa+se>=3&&m>6){ const tm=sa>=se?'#ffe27a':'#b9cbff'; tr.innerHTML=`<span style="color:${tm}">▲ ${sa+se} SHOTS · LAST 10'</span>`; } else tr.innerHTML=ft?'<span style="color:#c6ff3d">◆ FULL MATCH</span>':'';
   drawTL(m,f);
   // callout
   const call=$('#call'), ev=activeEvent(t);
@@ -480,7 +480,7 @@ function setHUD(f){ const m=mArr[f], t=f/FPS, ft=f>=FT_FRAME, ftU=ft?(f-FT_FRAME
     const c1=Math.abs(hash(f*5.1))*70, c3=Math.abs(hash(f*7.7))*70; T.style.setProperty('--g1',g1+'px'); T.style.setProperty('--g2',g2+'px');
     T.style.setProperty('--c1',c1+'%'); T.style.setProperty('--c2',(gA?100-c1-18:100)+'%'); T.style.setProperty('--c3',c3+'%'); T.style.setProperty('--c4',(gA?100-c3-14:100)+'%');
     const N=call.querySelector('.n'), C=call.querySelector('.chip');
-    const crest=`<img src="${E.team==='A'?'logo_che.png':'logo_mun.png'}" alt="">`;
+    const crest=`<img src="${E.team==='A'?'logo_aek.png':'logo_rma.png'}" alt="">`;
     if(N.dataset.ev!==String(ev)){ N.dataset.ev=ev; // rebuild only on change so the crest <img> isn't re-decoded every frame
     N.innerHTML=`${isR?'<i class="card"></i>':crest}<span>${E.name} <span style="color:${col}">·</span> ${E.min}</span>`;
     C.innerHTML=isG?`xG ${E.xg.toFixed(2)} <span style="color:#6f7d9c">|</span> ${E.xg<0.5?`1-IN-${Math.round(1/E.xg)}`:`${Math.round(E.xg*100)}%`} CHANCE`
@@ -510,11 +510,11 @@ function frame(f){ f=Math.max(0,Math.min(TOTAL-1,f)); const t=f/FPS, m=mArr[f], 
     if(a<IMPACT) shake=Math.max(shake,0.35*Math.exp(-a/0.12));
     if(a2>=0){ shake=Math.max(shake,(isG?1:0.85)*Math.exp(-a2/0.3)); flash=Math.max(flash,(isG?0.42:0.3)*Math.exp(-a2/0.07)); ca=Math.max(ca,Math.exp(-a2/0.16));
       tintO=Math.max(tintO,(isG?0.55:0.4)*Math.exp(-a2/0.55)+(isG?0.16:0.08)*clamp((dw+0.6-a)/0.5));
-      const isC=isChance(E); tintC=isG||isC?(E.team==='A'?['#2f6bff','#eef3ff']:['#ff2a2a','#ffb81c']):(E.type==='red'?[RED,RED]:[ICE,'#7f9cd6']); if(E.type==='var') horiz=1; }
+      const isC=isChance(E); tintC=isG||isC?(E.team==='A'?['#ffd21a','#ff9d00']:['#9db8ff','#3d7bff']):(E.type==='red'?[RED,RED]:[ICE,'#7f9cd6']); if(E.type==='var') horiz=1; }
     const s=SHOTS.find(s=>s.ei===i); const e=Math.sin(clamp(a/(dw+0.7))*Math.PI); if(s&&e>emph){ emph=e; ex=s.x; ez=s.z; } });
-  // a tall spike at the far (United-attacking, -x) end would climb into the scoreboard: pull back and centre on it while it's up,
-  // starting just before the clock hits the minute so the spring overshoot is already covered (none today: Bruno's and Amad's 0.30s stay under the 0.4 threshold)
-  EVENTS.forEach((E,i)=>{ const s=SHOTS.find(s=>s.ei===i); if(trig[i]<0||!s||s.x>=0) return; const a=t-trig[i];
+  // a tall spike at the far (AEK-attacking, +x after the half turn) end would climb into the scoreboard: pull back and centre on it while it's up,
+  // starting just before the clock hits the minute so the spring overshoot is already covered (none today: Koïta's 0.08 and Pilios's 0.19 stay under the 0.4 threshold)
+  EVENTS.forEach((E,i)=>{ const s=SHOTS.find(s=>s.ei===i); if(trig[i]<0||!s||s.x<=0) return; const a=t-trig[i];
     const l=clamp((s.xg-0.4)/0.4)*clamp((a+0.3)/0.3)*clamp((dwellT[i]+1.0-a)/0.5); if(l>lift){ lift=l; lx=s.x; lz=s.z; } });
   if(ft&&ftU<0.5){ flash=Math.max(flash,0.5*Math.exp(-ftU/0.1)); shake=Math.max(shake,0.5*Math.exp(-ftU/0.2)); ca=Math.max(ca,Math.exp(-ftU/0.15)); }
   const sxp=hash(f*1.31)*(horiz?30:20)*shake, syp=hash(f*2.17)*(horiz?8:20)*shake, srt=hash(f*3.7)*0.9*shake;
@@ -552,8 +552,8 @@ function frame(f){ f=Math.max(0,Math.min(TOTAL-1,f)); const t=f/FPS, m=mArr[f], 
     if(isP&&a>=IMPACT-0.04){ const a2=a-IMPACT; shield.visible=true; shield.position.set(sg*50.6,height(sg*52.5,0)+4.2,gz); const sc=0.9+1.5*easeOut(a2/0.28); shield.scale.setScalar(sc);
       const o=clamp(1-a2/0.75); shield.userData.lm.opacity=o; shield.userData.fill.material.opacity=0.85*o*Math.exp(-Math.max(0,a2)/0.22); } });
   // ---- camera
-  // no half turn: Chelsea's end (+x: Rogers's 0.65, Palmer's 0.79 pen, Barco's 0.51 miss) sits nearest the camera; United's far-end spikes are handled by the lift above
-  const ry=-0.82+0.10*Math.sin(t*.35)+k*0.16+(ft?ftU*0.035:0); group.rotation.y=ry;
+  // half turn: Madrid's end (-x: Mbappé's 0.77, Bernardo's 0.55 miss, 24 of the 33 shots) sits nearest the camera; AEK's far-end spikes are handled by the lift above
+  const ry=Math.PI-0.82+0.10*Math.sin(t*.35)+k*0.16+(ft?ftU*0.035:0); group.rotation.y=ry;
   V.set(ex,0,ez).applyAxisAngle(YAX,ry); let tx=V.x*0.32*emph, tz=V.z*0.32*emph; V.set(lx,0,lz).applyAxisAngle(YAX,ry); tx+=V.x*0.45*lift; tz+=V.z*0.45*lift;
   const dist=520-emph*40*(1-lift)+lift*120+k*95, el=0.62+0.14*k, dz=Math.sqrt(1-el*el);
   const cs=shake*3.2;
@@ -575,7 +575,7 @@ function frame(f){ f=Math.max(0,Math.min(TOTAL-1,f)); const t=f/FPS, m=mArr[f], 
     const top=height(sp?sp.x:s.x,sp?sp.z:s.z)+1.2; let [px,py]=project(sp?sp.x:s.x,top,sp?sp.z:s.z); py=Math.max(py,516); // keep the box under the scoreboard while a tall spike overshoots
     const o=clamp((a-0.12)/0.12)*clamp((dwellT[evi]+0.35-a)/0.2); tag.style.opacity=o; tag.style.transform=`translate(${px.toFixed(1)}px,${py.toFixed(1)}px)`;
     const col=TC[E.team]; tag.querySelector('.box').style.borderLeftColor=col; tag.querySelector('.dot').style.borderColor=col; tag.querySelector('.dot').style.boxShadow=`0 0 14px ${TC2[E.team]}`;
-    tag.querySelector('b').textContent='xG '+E.xg.toFixed(2); tag.querySelector('span').textContent=E.team==='A'?'CHELSEA SHOT':'UNITED SHOT';
+    tag.querySelector('b').textContent='xG '+E.xg.toFixed(2); tag.querySelector('span').textContent=E.team==='A'?'AEK SHOT':'MADRID SHOT';
     tag.querySelector('.iA').style.display=E.team==='A'?'block':'none'; tag.querySelector('.iE').style.display=E.team==='E'?'block':'none';
     const flip=px>760; tag.querySelector('.box').style.left=flip?'auto':'56px'; tag.querySelector('.box').style.right=flip?'56px':'auto'; tag.querySelector('.ln').style.transform=flip?'rotate(-138deg)':'rotate(-42deg)'; }
   else tag.style.opacity=0;
