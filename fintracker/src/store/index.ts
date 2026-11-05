@@ -246,8 +246,10 @@ export const useStore = create<Store>()(
       name: 'fintracker-v1',
       storage: createJSONStorage(() => AsyncStorage),
       partialize: ({ hydrated: _hydrated, ...rest }) => rest,
-      onRehydrateStorage: () => (state) => {
-        state?.setHydrated();
+      // Mark as ready even if storage is unavailable (e.g. a sandboxed browser frame),
+      // so the app still runs, just without saving between visits.
+      onRehydrateStorage: () => () => {
+        setTimeout(() => useStore.getState().setHydrated(), 0);
       },
     },
   ),

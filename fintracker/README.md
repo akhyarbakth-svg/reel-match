@@ -16,6 +16,7 @@ npx expo start
 
 - **Phone:** install the Expo Go app, then scan the QR code from the terminal.
 - **Browser:** press `w` in the terminal, or run `npx expo start --web`.
+- **Single-file web build:** `npx expo export --platform web && python3 scripts/make_single_html.py dist fintracker.html` produces one HTML file that runs anywhere, including inside a sandboxed page.
 - **Store builds:** `npx eas-cli@latest build --platform android` (or `ios`). This needs an Expo account.
 
 Checks: `npx tsc --noEmit`, `npx expo lint`, `npx expo-doctor`.
