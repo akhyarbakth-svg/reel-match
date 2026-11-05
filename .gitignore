@@ -4,3 +4,4 @@ prev/
 render.log
 *.mp4
 __pycache__/
+prev_*/
