@@ -1,5 +1,7 @@
 # Chelsea 2-0 Man United · match replay reel
 
+Other reels: [Slavia Prague 1-2 Arsenal (UCL MD4)](sla_ars/README.md)
+
 Game State 1080×1920 reel for Chelsea v Manchester United (Premier League MD9, 31 Oct 2026, Stamford Bridge): a 3D xG surface in three.js where spike height is shot xG and colour is territory. It also shows the scoreboard, the momentum timeline and the full-time stats. There's no audio.
 
 Data comes from FotMob (Opta): the shot map, momentum, cards, VAR calls and team stats.

@@ -1,0 +1,1344 @@
+{
+ "source": "FotMob match 6106389 (Opta data)",
+ "match": "Slavia Prague 1-2 Arsenal, Champions League round 4, Wed, Nov 4, 2026, 20:00 UTC",
+ "home": "SLA",
+ "away": "ARS",
+ "shots": [
+  {
+   "team": "ARS",
+   "min": 9,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.2101,
+   "x": 97.3771929818,
+   "y": 23.438726119099996,
+   "player": "Noni Madueke",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ARS",
+   "min": 15,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0507,
+   "x": 85.279411764,
+   "y": 42.46625,
+   "player": "Mikel Merino",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ARS",
+   "min": 24,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.072,
+   "x": 101.58620689680001,
+   "y": 40.721666666999994,
+   "player": "Viktor Gyökeres",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ARS",
+   "min": 24,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.2992,
+   "x": 100.9224137934,
+   "y": 35.9825,
+   "player": "Mikel Merino",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ARS",
+   "min": 26,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1794,
+   "x": 97.3771929818,
+   "y": 41.3678125,
+   "player": "Eberechi Eze",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ARS",
+   "min": 27,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.2189,
+   "x": 97.0877192975,
+   "y": 32.24625,
+   "player": "Mikel Merino",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 36,
+   "add": null,
+   "type": "Miss",
+   "situation": "ThrowInSetPiece",
+   "shotType": "RightFoot",
+   "xg": 0.1105,
+   "x": 98.0526315785,
+   "y": 30.267999999999997,
+   "player": "Tomás Holeš",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ARS",
+   "min": 38,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0509,
+   "x": 97.7631578942,
+   "y": 45.1217834353,
+   "player": "Viktor Gyökeres",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ARS",
+   "min": 42,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.2023,
+   "x": 101.1120689658,
+   "y": 36.5925,
+   "player": "Gabriel",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 46,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0264,
+   "x": 84.286893204,
+   "y": 42.061562499999994,
+   "player": "Oskar Kubiak",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 49,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FreeKick",
+   "shotType": "LeftFoot",
+   "xg": 0.1426,
+   "x": 87.21176470559999,
+   "y": 28.959285713000003,
+   "player": "Oskar Kubiak",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 51,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0131,
+   "x": 76.8538834968,
+   "y": 47.50394904150001,
+   "player": "Emmanuel Ayaosi",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 58,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.0896,
+   "x": 85.279411764,
+   "y": 34.07625,
+   "player": "Emmanuel Ayaosi",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ARS",
+   "min": 72,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0242,
+   "x": 102.53448275880001,
+   "y": 21.2667515958,
+   "player": "Noni Madueke",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 74,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0199,
+   "x": 77.529611652,
+   "y": 43.440254772100005,
+   "player": "David Jurásek",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 75,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.1155,
+   "x": 98.3421052628,
+   "y": 32.856249999999996,
+   "player": "Ange N'Guessan",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 75,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0218,
+   "x": 100.1637931038,
+   "y": 42.813125,
+   "player": "Wiktor Nowak",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 75,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0739,
+   "x": 97.6666666661,
+   "y": 30.797499999999996,
+   "player": "Mojmír Chytil",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 77,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "ThrowInSetPiece",
+   "shotType": "LeftFoot",
+   "xg": 0.0389,
+   "x": 95.2543859636,
+   "y": 22.738089176099997,
+   "player": "David Zima",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 77,
+   "add": null,
+   "type": "Miss",
+   "situation": "ThrowInSetPiece",
+   "shotType": "LeftFoot",
+   "xg": 0.0686,
+   "x": 92.6,
+   "y": 25.649375000000003,
+   "player": "David Zima",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 79,
+   "add": null,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "Header",
+   "xg": 0.1071,
+   "x": 94.09649122639999,
+   "y": 26.4009375,
+   "player": "Mikulás Konečný",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ARS",
+   "min": 82,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0501,
+   "x": 86.99705882319999,
+   "y": 33.466249999999995,
+   "player": "Jurriën Timber",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ARS",
+   "min": 82,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0802,
+   "x": 87.963235294,
+   "y": 38.536428573,
+   "player": "Martin Ødegaard",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ARS",
+   "min": 83,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0517,
+   "x": 91.7,
+   "y": 44.5612738809,
+   "player": "Christos Tzolis",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 83,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.0867,
+   "x": 97.4736842099,
+   "y": 36.135000000000005,
+   "player": "Oskar Kubiak",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 89,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.0337,
+   "x": 79.21893204,
+   "y": 42.061562499999994,
+   "player": "Oskar Kubiak",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 89,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0102,
+   "x": 98.6315789471,
+   "y": 44.841528658099996,
+   "player": "Mikulás Konečný",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 90,
+   "add": 0,
+   "type": "Goal",
+   "situation": "ThrowInSetPiece",
+   "shotType": "RightFoot",
+   "xg": 0.9696,
+   "x": 102.8189655174,
+   "y": 32.551249999999996,
+   "player": "Wiktor Nowak",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 90,
+   "add": 3,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "Header",
+   "xg": 0.106,
+   "x": 95.73684210409999,
+   "y": 36.440000000000005,
+   "player": "Stepán Chaloupek",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SLA",
+   "min": 90,
+   "add": 6,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0776,
+   "x": 92,
+   "y": 24.5597452279,
+   "player": "Mikulás Konečný",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   14
+  ],
+  [
+   2,
+   -3
+  ],
+  [
+   3,
+   19
+  ],
+  [
+   4,
+   0
+  ],
+  [
+   5,
+   0
+  ],
+  [
+   6,
+   -27
+  ],
+  [
+   7,
+   -81
+  ],
+  [
+   8,
+   -65
+  ],
+  [
+   9,
+   -87
+  ],
+  [
+   10,
+   -27
+  ],
+  [
+   11,
+   -27
+  ],
+  [
+   12,
+   -5
+  ],
+  [
+   13,
+   -27
+  ],
+  [
+   14,
+   -27
+  ],
+  [
+   15,
+   -38
+  ],
+  [
+   16,
+   -22
+  ],
+  [
+   17,
+   -22
+  ],
+  [
+   18,
+   0
+  ],
+  [
+   19,
+   14
+  ],
+  [
+   20,
+   24
+  ],
+  [
+   21,
+   14
+  ],
+  [
+   22,
+   14
+  ],
+  [
+   23,
+   -8
+  ],
+  [
+   24,
+   -60
+  ],
+  [
+   25,
+   -57
+  ],
+  [
+   26,
+   -100
+  ],
+  [
+   27,
+   -100
+  ],
+  [
+   28,
+   -100
+  ],
+  [
+   29,
+   -71
+  ],
+  [
+   30,
+   -27
+  ],
+  [
+   31,
+   -22
+  ],
+  [
+   32,
+   -11
+  ],
+  [
+   33,
+   -27
+  ],
+  [
+   34,
+   -19
+  ],
+  [
+   35,
+   -19
+  ],
+  [
+   36,
+   100
+  ],
+  [
+   37,
+   76
+  ],
+  [
+   38,
+   71
+  ],
+  [
+   39,
+   -38
+  ],
+  [
+   40,
+   0
+  ],
+  [
+   41,
+   -5
+  ],
+  [
+   42,
+   -27
+  ],
+  [
+   43,
+   -33
+  ],
+  [
+   44,
+   -71
+  ],
+  [
+   45,
+   -41
+  ],
+  [
+   45.5,
+   6
+  ],
+  [
+   46,
+   22
+  ],
+  [
+   47,
+   38
+  ],
+  [
+   48,
+   38
+  ],
+  [
+   49,
+   16
+  ],
+  [
+   50,
+   22
+  ],
+  [
+   51,
+   27
+  ],
+  [
+   52,
+   30
+  ],
+  [
+   53,
+   14
+  ],
+  [
+   54,
+   14
+  ],
+  [
+   55,
+   -11
+  ],
+  [
+   56,
+   -11
+  ],
+  [
+   57,
+   -8
+  ],
+  [
+   58,
+   30
+  ],
+  [
+   59,
+   24
+  ],
+  [
+   60,
+   -11
+  ],
+  [
+   61,
+   -38
+  ],
+  [
+   62,
+   -38
+  ],
+  [
+   63,
+   -11
+  ],
+  [
+   64,
+   -11
+  ],
+  [
+   65,
+   -11
+  ],
+  [
+   66,
+   -11
+  ],
+  [
+   67,
+   0
+  ],
+  [
+   68,
+   0
+  ],
+  [
+   69,
+   22
+  ],
+  [
+   70,
+   11
+  ],
+  [
+   71,
+   5
+  ],
+  [
+   72,
+   -54
+  ],
+  [
+   73,
+   -35
+  ],
+  [
+   74,
+   -24
+  ],
+  [
+   75,
+   14
+  ],
+  [
+   76,
+   5
+  ],
+  [
+   77,
+   11
+  ],
+  [
+   78,
+   11
+  ],
+  [
+   79,
+   14
+  ],
+  [
+   80,
+   3
+  ],
+  [
+   81,
+   3
+  ],
+  [
+   82,
+   -30
+  ],
+  [
+   83,
+   35
+  ],
+  [
+   84,
+   35
+  ],
+  [
+   85,
+   33
+  ],
+  [
+   86,
+   -43
+  ],
+  [
+   87,
+   -33
+  ],
+  [
+   88,
+   -11
+  ],
+  [
+   89,
+   5
+  ],
+  [
+   90,
+   57
+  ],
+  [
+   90.5,
+   40
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 20,
+   "team": "SLA",
+   "player": "David Moses",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 1
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 53,
+   "team": "ARS",
+   "player": "Ezri Konsa",
+   "reason": "Foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 68,
+   "team": "ARS",
+   "player": "Declan Rice",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 5
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    44,
+    56
+   ],
+   "expected_goals": [
+    "2.11",
+    "1.49"
+   ],
+   "total_shots": [
+    18,
+    12
+   ],
+   "ShotsOnTarget": [
+    6,
+    5
+   ],
+   "touches_opp_box": [
+    21,
+    29
+   ],
+   "big_chance": [
+    4,
+    6
+   ],
+   "big_chance_missed_title": [
+    3,
+    4
+   ],
+   "accurate_passes": [
+    "300 (83%)",
+    "398 (83%)"
+   ],
+   "yellow_cards": [
+    1,
+    2
+   ],
+   "corners": [
+    4,
+    2
+   ],
+   "ShotsOffTarget": [
+    6,
+    3
+   ],
+   "blocked_shots": [
+    6,
+    4
+   ],
+   "shots_woodwork": [
+    1,
+    0
+   ],
+   "shots_inside_box": [
+    12,
+    9
+   ],
+   "shots_outside_box": [
+    6,
+    3
+   ],
+   "expected_goals_open_play": [
+    "0.54",
+    "1.29"
+   ],
+   "expected_goals_set_play": [
+    "1.57",
+    "0.20"
+   ],
+   "expected_goals_non_penalty": [
+    "2.11",
+    "1.49"
+   ],
+   "expected_goals_on_target": [
+    "2.59",
+    "1.87"
+   ],
+   "physical_metrics_distance_covered": [
+    126038,
+    127443
+   ],
+   "physical_metrics_walking": [
+    31090,
+    30878
+   ],
+   "physical_metrics_running": [
+    91103,
+    93302
+   ],
+   "physical_metrics_sprinting": [
+    3845,
+    3263
+   ],
+   "physical_metrics_number_of_sprints": [
+    190,
+    157
+   ],
+   "passes": [
+    362,
+    481
+   ],
+   "own_half_passes": [
+    180,
+    176
+   ],
+   "opposition_half_passes": [
+    120,
+    222
+   ],
+   "long_balls_accurate": [
+    "22 (47%)",
+    "15 (35%)"
+   ],
+   "accurate_crosses": [
+    "5 (33%)",
+    "1 (14%)"
+   ],
+   "player_throws": [
+    14,
+    16
+   ],
+   "Offsides": [
+    3,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    17,
+    19
+   ],
+   "interceptions": [
+    19,
+    6
+   ],
+   "shot_blocks": [
+    3,
+    7
+   ],
+   "clearances": [
+    15,
+    25
+   ],
+   "keeper_saves": [
+    3,
+    4
+   ],
+   "duel_won": [
+    46,
+    66
+   ],
+   "ground_duels_won": [
+    "34 (44%)",
+    "44 (56%)"
+   ],
+   "aerials_won": [
+    "12 (35%)",
+    "22 (65%)"
+   ],
+   "dribbles_succeeded": [
+    "7 (44%)",
+    "10 (48%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    15,
+    10
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    40,
+    60
+   ],
+   "expected_goals": [
+    "0.11",
+    "1.28"
+   ],
+   "total_shots": [
+    1,
+    8
+   ],
+   "ShotsOnTarget": [
+    0,
+    4
+   ],
+   "touches_opp_box": [
+    4,
+    22
+   ],
+   "big_chance": [
+    0,
+    6
+   ],
+   "big_chance_missed_title": [
+    0,
+    4
+   ],
+   "accurate_passes": [
+    "147 (83%)",
+    "230 (87%)"
+   ],
+   "yellow_cards": [
+    1,
+    0
+   ],
+   "corners": [
+    0,
+    2
+   ],
+   "ShotsOffTarget": [
+    1,
+    2
+   ],
+   "blocked_shots": [
+    0,
+    2
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    1,
+    7
+   ],
+   "shots_outside_box": [
+    0,
+    1
+   ],
+   "expected_goals_open_play": [
+    "0.00",
+    "1.08"
+   ],
+   "expected_goals_set_play": [
+    "0.11",
+    "0.20"
+   ],
+   "expected_goals_non_penalty": [
+    "0.11",
+    "1.28"
+   ],
+   "expected_goals_on_target": [
+    "0.00",
+    "1.81"
+   ],
+   "passes": [
+    177,
+    264
+   ],
+   "own_half_passes": [
+    91,
+    100
+   ],
+   "opposition_half_passes": [
+    56,
+    130
+   ],
+   "long_balls_accurate": [
+    "11 (42%)",
+    "10 (53%)"
+   ],
+   "accurate_crosses": [
+    "0 (0%)",
+    "1 (17%)"
+   ],
+   "player_throws": [
+    5,
+    9
+   ],
+   "Offsides": [
+    2,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    10,
+    7
+   ],
+   "interceptions": [
+    7,
+    3
+   ],
+   "shot_blocks": [
+    2,
+    0
+   ],
+   "clearances": [
+    9,
+    1
+   ],
+   "keeper_saves": [
+    2,
+    0
+   ],
+   "duel_won": [
+    19,
+    31
+   ],
+   "ground_duels_won": [
+    "16 (43%)",
+    "21 (57%)"
+   ],
+   "aerials_won": [
+    "3 (23%)",
+    "10 (77%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (33%)",
+    "7 (54%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    7,
+    4
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    47,
+    53
+   ],
+   "expected_goals": [
+    "2.00",
+    "0.21"
+   ],
+   "total_shots": [
+    17,
+    4
+   ],
+   "ShotsOnTarget": [
+    6,
+    1
+   ],
+   "touches_opp_box": [
+    17,
+    7
+   ],
+   "big_chance": [
+    4,
+    0
+   ],
+   "big_chance_missed_title": [
+    3,
+    0
+   ],
+   "accurate_passes": [
+    "153 (83%)",
+    "168 (77%)"
+   ],
+   "yellow_cards": [
+    0,
+    2
+   ],
+   "corners": [
+    4,
+    0
+   ],
+   "ShotsOffTarget": [
+    5,
+    1
+   ],
+   "blocked_shots": [
+    6,
+    2
+   ],
+   "shots_woodwork": [
+    1,
+    0
+   ],
+   "shots_inside_box": [
+    11,
+    2
+   ],
+   "shots_outside_box": [
+    6,
+    2
+   ],
+   "expected_goals_open_play": [
+    "0.54",
+    "0.21"
+   ],
+   "expected_goals_set_play": [
+    "1.46",
+    "0.00"
+   ],
+   "expected_goals_non_penalty": [
+    "2.00",
+    "0.21"
+   ],
+   "expected_goals_on_target": [
+    "2.59",
+    "0.06"
+   ],
+   "passes": [
+    185,
+    217
+   ],
+   "own_half_passes": [
+    89,
+    76
+   ],
+   "opposition_half_passes": [
+    64,
+    92
+   ],
+   "long_balls_accurate": [
+    "11 (52%)",
+    "5 (21%)"
+   ],
+   "accurate_crosses": [
+    "5 (38%)",
+    "0 (0%)"
+   ],
+   "player_throws": [
+    9,
+    7
+   ],
+   "Offsides": [
+    1,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    7,
+    12
+   ],
+   "interceptions": [
+    12,
+    3
+   ],
+   "shot_blocks": [
+    1,
+    7
+   ],
+   "clearances": [
+    6,
+    24
+   ],
+   "keeper_saves": [
+    1,
+    4
+   ],
+   "duel_won": [
+    27,
+    35
+   ],
+   "ground_duels_won": [
+    "18 (44%)",
+    "23 (56%)"
+   ],
+   "aerials_won": [
+    "9 (43%)",
+    "12 (57%)"
+   ],
+   "dribbles_succeeded": [
+    "5 (50%)",
+    "3 (38%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    8,
+    6
+   ]
+  }
+ }
+}
