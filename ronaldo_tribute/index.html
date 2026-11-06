@@ -1,0 +1,384 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Obrigado, Cristiano</title>
+<style>
+@font-face{font-family:Anton;src:url(fonts/anton.woff2) format('woff2')}
+@font-face{font-family:Inter;src:url(fonts/inter.woff2) format('woff2');font-weight:100 900}
+@font-face{font-family:JBM;src:url(fonts/jbmono.woff2) format('woff2');font-weight:100 800}
+@font-face{font-family:Serif;src:url(fonts/instrument-italic.woff2) format('woff2');font-style:italic}
+/* Game State house style (ink + ice + mono HUD) dressed in Portugal colours: red #e4002b, green #00a651, gold for silverware */
+:root{--ink:#05070c;--ice:#f2f4f8;--red:#e4002b;--red2:#8e0019;--green:#00a651;--green2:#03482a;--gold:#f5c542;--lime:#c6ff3d;--dim:rgba(242,244,248,.62)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--ink);color:var(--ice);font-family:Inter,sans-serif}
+.abs{position:absolute}
+#stage{position:absolute;inset:0;overflow:hidden}
+.scene{position:absolute;inset:0;overflow:hidden;opacity:0}
+.ph{position:absolute;inset:0;overflow:hidden}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform}
+.shade{position:absolute;inset:0;pointer-events:none}
+.mono{font-family:JBM,monospace;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+.anton{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;line-height:.9;letter-spacing:-.005em}
+.serif{font-family:Serif,serif;font-style:italic;font-weight:400;letter-spacing:-.01em}
+.ln{overflow:hidden;display:block;padding:0 4px}
+.ln>span{display:inline-block;will-change:transform}
+.serif .ln{padding-bottom:.14em;margin-bottom:-.14em}
+.chap{left:70px;top:248px;display:flex;align-items:center;gap:18px;font-size:24px;color:var(--ice)}
+.chap i{display:block;width:46px;height:4px;background:var(--red)}
+.chap b{color:var(--red);font-weight:800}
+.red{color:var(--red)}.gold{color:var(--gold)}.green{color:var(--green)}
+
+/* HUD */
+#hud{position:absolute;inset:0;z-index:50;pointer-events:none}
+#logo{position:absolute;left:64px;top:70px;height:32px;opacity:.95}
+#tag{position:absolute;right:64px;top:74px;font-size:20px;color:var(--ice);display:flex;align-items:center;gap:12px}
+#tag em{width:12px;height:12px;border-radius:50%;background:var(--red);box-shadow:0 0 14px var(--red)}
+#bar{position:absolute;left:64px;right:64px;top:126px;height:3px;background:rgba(242,244,248,.16)}
+#barf{position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,var(--green),var(--red) 55%,var(--gold))}
+#barh{position:absolute;top:-5px;width:13px;height:13px;border-radius:50%;background:#fff;box-shadow:0 0 12px #fff;margin-left:-6px}
+#y0,#y1{position:absolute;top:142px;font-size:16px;color:var(--dim)}
+#y0{left:64px}#y1{right:64px}
+#yc{position:absolute;top:142px;font-size:16px;color:#fff;transform:translateX(-50%)}
+
+/* FX */
+#grain{position:absolute;inset:0;width:1080px;height:1920px;z-index:40;opacity:.07;mix-blend-mode:overlay;pointer-events:none}
+#leak{position:absolute;inset:-200px;z-index:39;mix-blend-mode:screen;pointer-events:none;opacity:.22}
+#vig{position:absolute;inset:0;z-index:38;pointer-events:none;background:radial-gradient(ellipse 85% 70% at 50% 48%,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%)}
+.wp{position:absolute;top:-300px;height:2520px;width:1900px;z-index:45;transform-origin:50% 50%}
+#flash{position:absolute;inset:0;z-index:44;background:#fff;opacity:0;pointer-events:none}
+
+/* S1 hook */
+#s1 .ph img{object-position:50% 12%}
+#s1 .k{left:70px;top:870px;font-size:24px;display:flex;align-items:center;gap:14px}
+#s1 .k em{width:14px;height:14px;background:var(--red);border-radius:50%;box-shadow:0 0 16px var(--red)}
+#s1 .q{left:66px;top:912px;font-size:76px;line-height:1.05;width:960px}
+#s1 .n1{left:62px;top:1028px;font-size:206px}
+#s1 .n2{left:62px;top:1208px;font-size:250px;color:var(--red);text-shadow:0 0 60px rgba(228,0,43,.35)}
+#s1 .m{left:70px;top:1462px;font-size:24px;color:var(--ice)}
+#s1 .m b{color:var(--gold);font-weight:700}
+
+/* S2 debut */
+#s2 .ph img{object-position:38% 0%;filter:grayscale(1) contrast(1.25) brightness(.92)}
+#s2 .duo{background:linear-gradient(180deg,rgba(228,0,43,.0),rgba(142,0,25,.25));mix-blend-mode:multiply}
+#s2 .duo2{background:var(--red);mix-blend-mode:multiply;opacity:.62}
+#pol{left:612px;top:300px;width:370px;padding:14px 14px 0;background:#f4f1ea;box-shadow:0 30px 70px rgba(0,0,0,.6);transform-origin:50% 0}
+#pol img{display:block;width:342px;height:456px;object-fit:cover;object-position:50% 30%}
+#pol .cap{color:#111;font-family:JBM;font-size:17px;letter-spacing:.14em;padding:14px 2px 16px;text-transform:uppercase;line-height:1.45;font-weight:700}
+#pol .cap span{color:var(--red2)}
+#s2 .lab{left:70px;top:930px;font-size:24px}
+#s2 .d{left:62px;top:972px;font-size:196px}
+#s2 .vs{left:68px;top:1172px;font-size:66px;font-weight:800;letter-spacing:-.01em}
+#s2 .ag{left:66px;top:1248px;font-size:78px}
+#s2 .cap1{left:70px;top:1372px;font-size:22px;color:var(--ice)}
+
+/* S3 goals */
+#s3 .panel{left:0;top:168px;width:1080px;height:640px;overflow:hidden}
+#s3 .panel img{object-position:50% 38%}
+#s3 .panel .shade{background:linear-gradient(180deg,rgba(5,7,12,.55) 0%,rgba(5,7,12,0) 22%,rgba(5,7,12,0) 62%,var(--ink) 100%)}
+#s3 .chap{top:812px}
+#s3 .big{left:44px;top:866px;font-size:460px;line-height:.86}
+#s3 .lbl{left:660px;top:900px;font-size:56px;font-weight:900;line-height:.98;letter-spacing:-.01em}
+#s3 .lbl2{left:664px;top:1092px;font-size:20px;line-height:1.6;color:var(--dim);width:360px}
+#s3 .row{left:70px;top:1316px;width:940px;display:flex;gap:0}
+#s3 .row>div{flex:1;border-left:2px solid rgba(242,244,248,.18);padding-left:22px}
+#s3 .row .v{font-family:Anton;font-size:112px;line-height:1}
+#s3 .row .t{font-family:JBM;font-size:18px;letter-spacing:.2em;color:var(--dim);margin-top:8px;font-weight:600}
+
+/* S4 caps */
+#s4 .vpanel{left:0;top:168px;width:1080px;height:608px;overflow:hidden}
+#s4 video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.08) saturate(.85) brightness(.92);transform-origin:47% 30%}
+#s4 .vpanel .shade{background:linear-gradient(180deg,rgba(5,7,12,.6) 0%,rgba(5,7,12,0) 20%,rgba(5,7,12,0) 66%,var(--ink) 100%)}
+#s4 .vtag{left:70px;top:700px;font-size:18px;color:var(--ice);display:flex;align-items:center;gap:12px}
+#s4 .vtag em{width:10px;height:10px;border-radius:50%;background:var(--red);box-shadow:0 0 12px var(--red)}
+#s4 .chap{top:800px}
+#dots{left:666px;top:852px;width:350px;display:grid;grid-template-columns:repeat(13,1fr);row-gap:9px}
+#dots i{display:block;width:15px;height:15px;border-radius:50%;background:rgba(242,244,248,.14)}
+#s4 .big{left:44px;top:850px;font-size:385px;line-height:.86}
+#s4 .lbl{left:70px;top:1214px;font-size:62px;font-weight:900;letter-spacing:-.01em}
+#s4 .lbl2{left:70px;top:1298px;font-size:22px;color:var(--ice)}
+#s4 .lbl3{left:70px;top:1342px;font-size:22px;color:var(--gold)}
+
+/* S5 trophies */
+#s5 .ph img{object-position:50% 20%;filter:grayscale(.85) brightness(.45) contrast(1.1)}
+#s5 .tint{background:linear-gradient(180deg,rgba(5,7,12,.7),rgba(60,42,0,.35) 50%,rgba(5,7,12,.92));}
+#s5 .h{left:64px;top:296px;font-size:150px;line-height:1}
+.card{left:70px;width:940px;height:236px;background:rgba(8,10,16,.74);border:1px solid rgba(245,197,66,.3);overflow:hidden}
+.card:before{content:'';position:absolute;left:0;top:0;bottom:0;width:8px;background:var(--gold)}
+.card .ti{position:absolute;left:44px;top:34px;font-size:52px;font-weight:900;letter-spacing:-.01em}
+.card .de{position:absolute;left:46px;top:112px;font-size:18px;line-height:1.75;color:var(--dim)}
+.card .de b{color:var(--ice);font-weight:700}
+.card .yr{position:absolute;right:34px;top:40px;font-size:146px;color:var(--gold);line-height:1}
+.card .cup{position:absolute;right:250px;top:40px;width:64px;opacity:.9}
+#c1{top:520px}#c2{top:786px}#c3{top:1052px}
+#vidwrap{left:70px;top:1318px;width:940px;height:200px;overflow:hidden;border:1px solid rgba(242,244,248,.18)}
+
+/* S6 records */
+#s6 .ph img{object-position:38% 40%;filter:brightness(.62) saturate(.9)}
+#s6 .shade{background:linear-gradient(180deg,rgba(5,7,12,.85) 0%,rgba(5,7,12,.72) 45%,rgba(5,7,12,.5) 70%,rgba(5,7,12,.9) 100%)}
+#s6 .a1{left:70px;top:316px;font-size:54px;font-weight:900}
+#s6 .a2{left:62px;top:390px;font-size:172px;white-space:nowrap}
+#chips{left:70px;top:610px;width:940px;display:flex;gap:16px}
+#chips div{flex:1;height:66px;border:2px solid rgba(242,244,248,.3);display:flex;align-items:center;justify-content:center;font-family:JBM;font-weight:700;font-size:26px;letter-spacing:.06em;color:var(--dim)}
+#s6 .a3{left:70px;top:700px;font-size:20px;color:var(--gold)}
+.rec{left:70px;width:940px;height:250px;border-top:2px solid rgba(242,244,248,.16)}
+.rec .v{position:absolute;left:-6px;top:22px;font-size:230px}
+.rec .t1{position:absolute;left:330px;top:78px;font-size:54px;font-weight:900;letter-spacing:-.01em}
+.rec .t2{position:absolute;left:332px;top:150px;font-size:20px;color:var(--dim)}
+#r1{top:780px}#r2{top:1050px}
+
+/* S7 last dance */
+#s7 .ph{top:640px}
+#s7 .ph img{object-position:62% 30%}
+#s7 .shade{background:linear-gradient(180deg,var(--ink) 0%,var(--ink) 33%,rgba(5,7,12,.0) 48%,rgba(5,7,12,0) 82%,rgba(5,7,12,.6) 100%)}
+#s7 .a{left:64px;top:296px;font-size:120px;line-height:1}
+#s7 .b{left:62px;top:420px;font-size:156px}
+#s7 .c{left:70px;top:600px;font-size:21px;line-height:1.85;color:var(--ice)}
+#s7 .c b{color:var(--gold);font-weight:700}
+
+/* S8 outro */
+#s8 .ph img{object-position:55% 50%}
+#s8 .shade{background:linear-gradient(180deg,rgba(5,7,12,.9) 0%,rgba(5,7,12,.55) 26%,rgba(5,7,12,0) 42%,rgba(5,7,12,0) 58%,rgba(5,7,12,.9) 78%,var(--ink) 100%)}
+#s8 .a{left:60px;top:250px;font-size:170px;line-height:1}
+#s8 .b{left:60px;top:410px;font-size:200px;color:var(--red);text-shadow:0 0 60px rgba(228,0,43,.35)}
+#s8 .st{left:70px;top:1196px;width:940px;display:flex}
+#s8 .st>div{flex:1;text-align:center;border-left:2px solid rgba(242,244,248,.18)}
+#s8 .st>div:first-child{border-left:0}
+#s8 .st .v{font-family:Anton;font-size:104px;line-height:1}
+#s8 .st .t{font-family:JBM;font-size:18px;letter-spacing:.22em;color:var(--dim);margin-top:6px;font-weight:600}
+#s8 .cta{left:0;width:1080px;top:1390px;display:flex;justify-content:center;align-items:center;gap:26px}
+#s8 .cta img{height:34px}
+#s8 .cta span{background:var(--lime);color:#05070c;font-family:JBM;font-weight:800;font-size:22px;letter-spacing:.18em;padding:12px 22px}
+#s8 .cr{left:0;width:1080px;text-align:center;top:1470px;font-size:14px;letter-spacing:.16em;color:rgba(242,244,248,.5)}
+#fade{position:absolute;inset:0;background:#000;opacity:0;z-index:60}
+</style></head>
+<body>
+<div id="stage">
+
+<!-- 1 · HOOK -->
+<div class="scene" id="s1">
+  <div class="ph"><img src="img/wc26_portrait.jpg"></div>
+  <div class="shade" style="background:linear-gradient(180deg,rgba(5,7,12,.55) 0%,rgba(5,7,12,0) 16%,rgba(5,7,12,0) 34%,rgba(5,7,12,.82) 52%,rgba(5,7,12,.97) 74%,var(--ink) 100%)"></div>
+  <div class="abs mono k" data-in=".15" data-fx="fade"><em></em>05 · 11 · 2026</div>
+  <div class="abs serif q"><span class="ln"><span data-in=".3" data-d=".9">He said goodbye to Portugal.</span></span></div>
+  <div class="abs anton n1"><span class="ln"><span data-in="1.25" data-d=".8">Cristiano</span></span></div>
+  <div class="abs anton n2"><span class="ln"><span data-in="1.5" data-d=".85">Ronaldo</span></span></div>
+  <div class="abs mono m" data-in="2.5" data-fx="left">23 years · one shirt · <b>Nº7</b></div>
+</div>
+
+<!-- 2 · THE BEGINNING -->
+<div class="scene" id="s2">
+  <div class="ph"><img src="img/p2013c.jpg"></div>
+  <div class="shade duo2"></div>
+  <div class="shade" style="background:linear-gradient(180deg,rgba(5,7,12,.5) 0%,rgba(5,7,12,0) 18%,rgba(5,7,12,0) 38%,rgba(5,7,12,.9) 54%,var(--ink) 75%)"></div>
+  <div class="abs mono chap" data-in=".15" data-fx="left"><i></i><b>01</b>The beginning</div>
+  <div class="abs" id="pol" data-in="1.6" data-d="1" data-fx="drop"><img src="img/wc06_cel.jpg"><div class="cap">World Cup 2006 · Nº17<br><span>1st WC goal · vs Iran</span></div></div>
+  <div class="abs mono lab red" data-in=".35" data-fx="fade">International debut</div>
+  <div class="abs anton d"><span class="ln"><span data-in=".45" data-d=".85">20.08.2003</span></span></div>
+  <div class="abs vs"><span class="ln"><span data-in=".85">vs Kazakhstan</span></span></div>
+  <div class="abs serif ag"><span class="ln"><span data-in="1.1" data-d=".9">aged just 18.</span></span></div>
+  <div class="abs mono cap1" data-in="2.2" data-fx="left">Cap 1 of 234 → the journey begins</div>
+</div>
+
+<!-- 3 · GOALS -->
+<div class="scene" id="s3">
+  <div class="abs panel"><div class="ph"><img src="img/cel2025_jump.jpg"></div><div class="shade"></div></div>
+  <div class="abs mono chap" data-in=".1" data-fx="left"><i></i><b>02</b>The goals</div>
+  <div class="abs anton big" data-count="146" data-in=".25" data-d="1.9">146</div>
+  <div class="abs lbl"><span class="ln"><span data-in=".6">INTER-</span></span><span class="ln"><span data-in=".7">NATIONAL</span></span><span class="ln red"><span data-in=".8">GOALS</span></span></div>
+  <div class="abs mono lbl2" data-in="1.3" data-fx="fade">The most in men's football history</div>
+  <div class="abs row">
+    <div data-in="2.5" data-fx="up"><div class="v" data-count="10" data-in="2.5" data-d="1">10</div><div class="t">Hat-tricks</div></div>
+    <div data-in="2.75" data-fx="up"><div class="v" data-count="45" data-in="2.75" data-d="1">45</div><div class="t">Assists</div></div>
+    <div data-in="3.0" data-fx="up"><div class="v gold" data-count="0.62" data-dec="2" data-in="3.0" data-d="1">0.62</div><div class="t">Goals per game</div></div>
+  </div>
+</div>
+
+<!-- 4 · CAPS -->
+<div class="scene" id="s4">
+  <div class="abs vpanel"><video id="vid" src="img/ronaldo_presser_2022.webm" muted playsinline preload="auto"></video><div class="shade"></div></div>
+  <div class="abs mono vtag" data-in=".3" data-fx="fade"><em></em>The captain · World Cup 2022</div>
+  <div class="abs mono chap" data-in=".1" data-fx="left"><i></i><b>03</b>The caps</div>
+  <div class="abs" id="dots"></div>
+  <div class="abs anton big" data-count="234" data-in=".35" data-d="2.2">234</div>
+  <div class="abs lbl"><span class="ln"><span data-in=".8">APPEARANCES</span></span></div>
+  <div class="abs mono lbl2" data-in="1.2" data-fx="fade">Most-capped man in football history</div>
+  <div class="abs mono lbl3" data-in="1.45" data-fx="fade">20.08.2003 → 24.09.2026</div>
+</div>
+
+<!-- 5 · SILVERWARE -->
+<div class="scene" id="s5">
+  <div class="ph"><img src="img/euro16_header.jpg"></div>
+  <div class="shade tint"></div>
+  <div class="abs mono chap" data-in=".1" data-fx="left"><i></i><b>04</b>The silverware</div>
+  <div class="abs serif h gold"><span class="ln"><span data-in=".25" data-d=".9">Champions.</span></span></div>
+  <div class="abs card" id="c1" data-in=".7" data-fx="slide">
+    <div class="ti">UEFA EURO</div>
+    <div class="mono de"><b>Final · Portugal 1–0 France (aet)</b><br>Stade de France · 10.07.2016</div>
+    <div class="anton yr">2016</div>
+  </div>
+  <div class="abs card" id="c2" data-in="1.25" data-fx="slide">
+    <div class="ti">NATIONS LEAGUE</div>
+    <div class="mono de"><b>Final · Portugal 1–0 Netherlands</b><br>Estádio do Dragão · 09.06.2019</div>
+    <div class="anton yr">2019</div>
+  </div>
+  <div class="abs card" id="c3" data-in="1.8" data-fx="slide">
+    <div class="ti">NATIONS LEAGUE</div>
+    <div class="mono de"><b>Final · Portugal 2–2 Spain (5–3 p)</b><br>Allianz Arena · 08.06.2025</div>
+    <div class="anton yr">2025</div>
+  </div>
+</div>
+
+<!-- 6 · RECORDS -->
+<div class="scene" id="s6">
+  <div class="ph"><img src="img/wc18_cel.jpg"></div>
+  <div class="shade"></div>
+  <div class="abs mono chap" data-in=".1" data-fx="left"><i></i><b>05</b>The records</div>
+  <div class="abs a1"><span class="ln"><span data-in=".25">SCORED AT</span></span></div>
+  <div class="abs anton a2"><span class="ln"><span data-in=".4" data-d=".85">6 World Cups</span></span></div>
+  <div class="abs" id="chips"><div>2006</div><div>2010</div><div>2014</div><div>2018</div><div>2022</div><div>2026</div></div>
+  <div class="abs mono a3" data-in="2.1" data-fx="fade">The first player ever to do it</div>
+  <div class="abs rec" id="r1" data-in="2.6" data-fx="up">
+    <div class="anton v red" data-count="14" data-in="2.6" data-d="1">14</div>
+    <div class="t1">EURO GOALS</div><div class="mono t2">All-time tournament record</div>
+  </div>
+  <div class="abs rec" id="r2" data-in="3.2" data-fx="up">
+    <div class="anton v" data-count="11" data-in="3.2" data-d="1">11</div>
+    <div class="t1">WORLD CUP GOALS</div><div class="mono t2">Portugal's all-time best</div>
+  </div>
+</div>
+
+<!-- 7 · THE LAST DANCE -->
+<div class="scene" id="s7">
+  <div class="ph"><img src="img/wc26_sit.jpg"></div>
+  <div class="shade"></div>
+  <div class="abs mono chap" data-in=".1" data-fx="left"><i></i><b>06</b>The last dance</div>
+  <div class="abs serif a"><span class="ln"><span data-in=".3" data-d=".9">Aged 41.</span></span></div>
+  <div class="abs anton b"><span class="ln"><span data-in=".7" data-d=".85">Still scoring.</span></span></div>
+  <div class="abs mono c" data-in="1.4" data-fx="fade">World Cup 2026 · Round of 32<br>Penalty vs Croatia · 02.07.2026<br><b>Oldest scorer in a World Cup knockout game</b></div>
+</div>
+
+<!-- 8 · OBRIGADO -->
+<div class="scene" id="s8">
+  <div class="ph"><img src="img/wc26_back.jpg"></div>
+  <div class="shade"></div>
+  <div class="abs serif a"><span class="ln"><span data-in=".2" data-d="1">Obrigado,</span></span></div>
+  <div class="abs anton b"><span class="ln"><span data-in=".55" data-d=".9">Cristiano.</span></span></div>
+  <div class="abs st">
+    <div data-in="1.3" data-fx="up"><div class="v">234</div><div class="t">Caps</div></div>
+    <div data-in="1.45" data-fx="up"><div class="v red">146</div><div class="t">Goals</div></div>
+    <div data-in="1.6" data-fx="up"><div class="v gold">3</div><div class="t">Trophies</div></div>
+  </div>
+  <div class="abs cta" data-in="2.0" data-fx="fade"><img src="img/gs_logo.png"><span>Subscribe</span></div>
+  <div class="abs mono cr" data-in="2.2" data-fx="fade">Photos: Wikimedia Commons · CC BY / CC BY-SA · credits in description</div>
+</div>
+
+<div class="wp" id="w1" style="background:var(--green)"></div>
+<div class="wp" id="w2" style="background:var(--red)"></div>
+<div class="wp" id="w3" style="background:var(--ink)"></div>
+<div id="flash"></div>
+<div id="vig"></div>
+<div id="leak"></div>
+<canvas id="grain" width="360" height="640"></canvas>
+
+<div id="hud">
+  <img id="logo" src="img/gs_logo.png">
+  <div id="tag" class="mono"><em></em>Tribute · Nº7</div>
+  <div id="bar"><div id="barf"></div><div id="barh"></div></div>
+  <div id="y0" class="mono">2003</div><div id="y1" class="mono">2026</div>
+</div>
+<div id="fade"></div>
+</div>
+
+<script>
+const FPS=30, DUR=50, TOTAL=FPS*DUR;
+// scene windows (seconds); cuts are hidden under a colour wipe centred on each boundary
+const CUTS=[0,5.2,10.6,18.0,24.0,32.6,40.6,45.6,DUR];
+const scenes=[...document.querySelectorAll('.scene')];
+// Ken Burns per scene: [scale from, scale to, x drift px, y drift px, origin]
+const KB=[[1.10,1.22,0,-30,'50% 18%'],[1.12,1.04,-20,0,'40% 25%'],[1.04,1.14,-30,0,'50% 40%'],[1.06,1.16,20,0,'62% 30%'],[1.08,1.16,0,-20,'50% 20%'],[1.06,1.14,30,0,'38% 40%'],[1.14,1.0,0,0,'62% 40%'],[1.02,1.10,0,-20,'55% 40%']];
+const WIPE=.8;
+
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const eo=x=>x>=1?1:1-Math.pow(2,-10*x);             // easeOutExpo
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;    // easeInOutCubic
+const ec=x=>1-Math.pow(1-x,3);                       // easeOutCubic
+
+// 234 dots for the caps grid
+const dots=document.getElementById('dots');
+for(let i=0;i<234;i++){const d=document.createElement('i');dots.appendChild(d)}
+const dotEls=[...dots.children];
+const chips=[...document.querySelectorAll('#chips div')];
+
+// grain (seeded so every frame renders identically on re-render)
+const gc=document.getElementById('grain').getContext('2d');
+const gimg=gc.createImageData(360,640);
+function grain(f){let s=(f*9301+49297)%233280;for(let i=0;i<gimg.data.length;i+=4){s=(s*9301+49297)%233280;const v=(s/233280)*255;gimg.data[i]=gimg.data[i+1]=gimg.data[i+2]=v;gimg.data[i+3]=255}gc.putImageData(gimg,0,0)}
+
+const anim=scenes.map(sc=>[...sc.querySelectorAll('[data-in]')]);
+function applyIn(el,lt){
+  const t0=+el.dataset.in, d=+(el.dataset.d||.7), p=cl((lt-t0)/d), e=eo(p), fx=el.dataset.fx||'up-line';
+  if(el.dataset.count!==undefined){
+    const n=+el.dataset.count, dec=+(el.dataset.dec||0), v=n*ec(p);
+    el.textContent=dec?v.toFixed(dec):Math.round(v);
+    if(!el.dataset.fx){ // counters: settle with a small punch when they land
+      const k=cl((lt-t0-d)/.35); el.style.transform=`scale(${1+.05*Math.sin(Math.PI*k)})`; el.style.transformOrigin='0 80%';
+      el.style.opacity=cl((lt-t0)/.15); return }
+  }
+  if(fx==='up-line'){el.style.transform=`translateY(${(1-e)*110}%)`;return}
+  if(fx==='fade'){el.style.opacity=e;return}
+  if(fx==='left'){el.style.opacity=e;el.style.transform=`translateX(${(1-e)*-60}px)`;return}
+  if(fx==='up'){el.style.opacity=e;el.style.transform=`translateY(${(1-e)*60}px)`;return}
+  if(fx==='slide'){el.style.opacity=cl(p*3);el.style.transform=`translateX(${(1-e)*1100}px)`;return}
+  if(fx==='drop'){el.style.opacity=cl(p*4);el.style.transform=`translateY(${(1-e)*-120}px) rotate(${4+(1-e)*10}deg)`;return}
+}
+
+async function frame(f){
+  const t=f/FPS;
+  // active scene
+  let si=0; for(let i=0;i<scenes.length;i++) if(t>=CUTS[i]) si=i;
+  scenes.forEach((s,i)=>s.style.opacity=i===si?1:0);
+  const sc=scenes[si], lt=t-CUTS[si], len=CUTS[si+1]-CUTS[si];
+  // ken burns (runs across the full scene incl. the wipe tail)
+  const k=KB[si], kp=eio(cl((lt+WIPE/2)/(len+WIPE)));
+  sc.querySelectorAll('.ph img').forEach(im=>{im.style.transformOrigin=k[4];im.style.transform=`translate(${k[2]*kp}px,${k[3]*kp}px) scale(${k[0]+(k[1]-k[0])*kp})`});
+  anim[si].forEach(el=>applyIn(el,lt));
+
+  // scene specifics
+  if(si===3){ // caps dots fill with the counter
+    const p=ec(cl((lt-.35)/2.2)), n=Math.round(234*p);
+    dotEls.forEach((d,i)=>{d.style.background=i<n?(i===233?'var(--gold)':'var(--red)'):'rgba(242,244,248,.14)';d.style.boxShadow=i===233&&n===234?'0 0 16px var(--gold)':'none'});
+  }
+  if(si===5){ // six world cups light up in sequence
+    chips.forEach((c,i)=>{const on=lt>=1.0+i*.17, pk=cl((lt-1.0-i*.17)/.3);
+      c.style.background=on?'var(--red)':'transparent';c.style.borderColor=on?'var(--red)':'rgba(242,244,248,.3)';c.style.color=on?'#fff':'rgba(242,244,248,.62)';
+      c.style.transform=`scale(${on?1+.12*Math.sin(Math.PI*pk):1})`;c.style.opacity=cl((lt-.6-i*.05)/.3)});
+  }
+
+  // colour wipes centred on each cut
+  let wp=-1; for(let i=1;i<CUTS.length-1;i++){const d=t-(CUTS[i]-WIPE/2); if(d>=0&&d<=WIPE) wp=d/WIPE}
+  ['w1','w2','w3'].forEach((id,j)=>{const el=document.getElementById(id);
+    if(wp<0){el.style.display='none';return} el.style.display='block';
+    const p=eio(cl(wp*1.15-j*.075)); el.style.transform=`translateX(${-2100+p*4300}px) skewX(-14deg)`});
+
+  // flash on the hook name + on the final card
+  const fl=Math.max(cl(1-Math.abs(t-1.5)/.12)*.0, t>CUTS[7]&&t<CUTS[7]+.25?(1-(t-CUTS[7])/.25)*.35:0);
+  document.getElementById('flash').style.opacity=fl;
+
+  // HUD: career timeline 2003 → 2026 that advances with the story
+  const tp=cl(t/(DUR-.4)); document.getElementById('barf').style.width=(tp*100)+'%'; document.getElementById('barh').style.left=(tp*100)+'%';
+  document.getElementById('hud').style.opacity=t<.05?0:1;
+
+  // light leak drifting
+  const L=document.getElementById('leak'), a=t*.35;
+  L.style.background=`radial-gradient(circle at ${50+40*Math.sin(a)}% ${30+20*Math.cos(a*.7)}%,rgba(228,0,43,.55),rgba(228,0,43,0) 35%),radial-gradient(circle at ${60+30*Math.cos(a*.8)}% ${80+10*Math.sin(a)}%,rgba(245,197,66,.4),rgba(245,197,66,0) 30%)`;
+
+  // video b-roll: seek deterministically, wait for the decoded frame
+  if(si===3){const v=document.getElementById('vid'), vt=Math.min(v.duration-.05,Math.max(0,lt+WIPE/2));
+    const z=1.0+.06*eio(cl((lt+WIPE/2)/(len+WIPE))); v.style.transform=`scale(${z})`;
+    if(Math.abs(v.currentTime-vt)>.001){await new Promise(r=>{v.onseeked=r;v.currentTime=vt})}}
+  grain(f);
+  document.getElementById('fade').style.opacity=cl((t-(DUR-.45))/.45);
+}
+window.TOTAL=TOTAL; window.FPS=FPS; window.frame=frame;
+const V=document.getElementById('vid');
+Promise.all([document.fonts.ready,new Promise(r=>{if(V.readyState>=2)r();else V.addEventListener('loadeddata',r,{once:true})}),...[...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=i.onerror=r}))]).then(()=>{frame(0);window.READY=true});
+</script>
+</body></html>
