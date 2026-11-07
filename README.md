@@ -21,3 +21,7 @@ python -I render_par.py frames 5 1245               # 5 parallel workers -> MP4 
 ```
 
 `index.html` is deterministic per frame: `frame(f)` draws frame `f`. You can also open it directly in a browser.
+
+## Other reels
+
+- [`bar_avl/`](bar_avl/): Barcelona 3-0 Aston Villa, Champions League MD4, 3 Nov 2026
