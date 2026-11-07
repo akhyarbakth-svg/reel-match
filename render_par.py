@@ -1,12 +1,12 @@
 # parallel render: N Chromium workers each take an interleaved-free contiguous chunk, write JPEGs, then one ffmpeg encode at 30 fps
-import sys,os,time,subprocess,multiprocessing as mp,imageio_ffmpeg
-URL='file:///E:/Page%20Content/reel_che_mun/index.html'
-OUT='E:/Page Content/Videos/Game State-V15/Chelsea_vs_Man_United_PL_Reel.mp4'
+import sys,os,time,pathlib,subprocess,multiprocessing as mp,imageio_ffmpeg
+URL=pathlib.Path(__file__).resolve().with_name('index.html').as_uri()
+OUT=sys.argv[4] if len(sys.argv)>4 else 'E:/Page Content/Videos/Game State-V15/Nottm_Forest_vs_Man_City_PL_Reel.mp4'
 def work(args):
     wid,lo,hi,fdir=args
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
-        b=p.chromium.launch(args=["--use-gl=angle","--use-angle=swiftshader","--enable-unsafe-swiftshader","--ignore-gpu-blocklist"])
+        b=p.chromium.launch(executable_path=os.environ.get('CHROMIUM_PATH'),args=["--use-gl=angle","--use-angle=swiftshader","--enable-unsafe-swiftshader","--ignore-gpu-blocklist"])
         pg=b.new_page(viewport={'width':1080,'height':1920}); pg.on('pageerror',lambda e:print('ERR',wid,e,flush=True))
         pg.goto(URL); pg.wait_for_function('window.READY===true',timeout=30000); pg.wait_for_timeout(800)
         t0=time.time()
