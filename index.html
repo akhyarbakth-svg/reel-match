@@ -410,21 +410,17 @@ function drawTL(m,f){ const w=952,h=168,mid=h/2,amp=h/2-16; tl.clearRect(0,0,w,h
   tl.save(); tl.shadowColor='#fff'; tl.shadowBlur=14; tl.fillStyle='#fff'; tl.beginPath(); tl.arc(px,py,5.5,0,7); tl.fill(); tl.restore(); }
 
 // insight ticker copy (all derived from the match data above)
-// FotMob's per-shot xG sums to its official half totals here (HT 0.28 / 1.09, FT 2.67 / 1.17), so no per-half scaling
-function xgLive(team,t){ let x=0,n=0; for(const s of SHOTS){ if(s.team!==team) continue; const a=t-s.ti; if(a<0) continue; x+=s.xg*clamp(a/0.35); n++; } return [x,n]; }
+// FotMob's per-shot xG doesn't quite sum to its official half totals (Barça 2nd half 0.76 vs 0.71), so the live counter takes XGS from data.js: FT reads 1.53 / 1.54
+function xgLive(team,t){ let x=0,n=0; for(const s of SHOTS){ if(s.team!==team) continue; const a=t-s.ti; if(a<0) continue; x+=s.xg*XGS[team][s.m<46?0:1]*clamp(a/0.35); n++; } return [x,n]; }
 function insight(f){ const t=f/FPS, m=mArr[f];
-  if(f>=FT_FRAME) return (f-FT_FRAME)/FPS<3.2?['ft','xG 2.67–1.17 · SHOTS 18–12 · ON TARGET 9–5']:['ft2','2ND HALF xG 2.39–0.08 · UNITED 10 MEN FROM 63’'];
+  if(f>=FT_FRAME) return (f-FT_FRAME)/FPS<3.2?['ft','xG 1.53–1.54 · SHOTS 9–19 · ON TARGET 4–4']:['ft2','FERMÍN BRACE · BARÇA WIN AT THE METROPOLITANO'];
   let last=-1; EVENTS.forEach((e,i)=>{ if(trig[i]>=0&&t>=trig[i]+IMPACT) last=i; });
   if(t<0.9) return ['boot','SYNCING MATCH MODEL …'];
   if(last<0) return ['intro','TALLER SPIKE = BIGGER CHANCE · COLOUR = TERRITORY'];
-  if(last===0) return m<28?['c0','BRUNO WIDE ON THE BREAK · 0.30 xG']:['p0','UNITED ON TOP · 4 SHOTS IN 3 MINUTES'];
-  if(last===1) return ['v1','CUNHA FINDS THE NET · VAR: OFFSIDE'];
-  if(last===2) return m<45.9?['c2','AMAD WIDE FROM 0.30 xG · STILL 0–0']:['ht','HT 0–0 · xG 0.28–1.09 · UNITED SHOULD LEAD'];
-  if(last===3) return ['g3','ROGERS BREAKS THE DEADLOCK · 1–0'];
-  if(last===4) return ['r4','MARTÍNEZ: TWO YELLOWS IN 4 MINUTES'];
-  if(last===5) return ['g5','PALMER FROM THE SPOT · 2–0'];
-  if(last===6) return m<80?['v6','ESTÊVÃO SCORES · VAR: OFFSIDE AGAIN']:['p6','UNITED 2ND HALF: 3 SHOTS · 0.08 xG'];
-  return ['c7','BARCO WIDE FROM 0.51 xG IN THE 99TH MIN']; }
+  if(last===0) return m<22?['g0','SIMEONE STRIKES EARLY · 1–0 ATLÉTICO']:['p0','BARÇA 58% OF THE BALL IN THE 1ST HALF'];
+  if(last===1) return ['s1','JOAN GARCÍA DENIES BAENA · 0.47 xG'];
+  if(last===2) return m<45.9?['g2','FERMÍN LEVELS ON THE STROKE OF HT · 1–1']:(m<52?['ht','HT 1–1 · xG 1.38–0.84 · ATLÉTICO CREATED MORE']:['p2','2ND HALF: BARÇA 68% OF THE BALL']);
+  return m<78?['g3','FERMÍN AGAIN · HIS 2ND · 1–2 BARÇA']:['p3','ATLÉTICO 2ND HALF: 2 SHOTS · 0.15 xG']; }
 const insStart={}; for(let f=0;f<TOTAL;f++){ const k=insight(f)[0]; if(!(k in insStart)) insStart[k]=f; }
 
 $('#stats').innerHTML=`<div class="hd"><span><img src="logo_atm.png" alt="">ATLÉTICO</span><span>BARCELONA<img src="logo_bar.png" alt=""></span></div>`+
@@ -511,8 +507,8 @@ function frame(f){ f=Math.max(0,Math.min(TOTAL-1,f)); const t=f/FPS, m=mArr[f], 
       tintO=Math.max(tintO,(isG?0.55:0.4)*Math.exp(-a2/0.55)+(isG?0.16:0.08)*clamp((dw+0.6-a)/0.5));
       const isC=isChance(E); tintC=isG||isC?(E.team==='A'?['#ff3030','#ff8a8a']:['#3d6dff','#ff3d7f']):(E.type==='red'?[RED,RED]:[ICE,'#7f9cd6']); if(E.type==='var') horiz=1; }
     const s=SHOTS.find(s=>s.ei===i); const e=Math.sin(clamp(a/(dw+0.7))*Math.PI); if(s&&e>emph){ emph=e; ex=s.x; ez=s.z; } });
-  // a tall spike at the far (United-attacking, -x) end would climb into the scoreboard: pull back and centre on it while it's up,
-  // starting just before the clock hits the minute so the spring overshoot is already covered (none today: Bruno's and Amad's 0.30s stay under the 0.4 threshold)
+  // a tall spike at the far (Barça-attacking, -x) end would climb into the scoreboard: pull back and centre on it while it's up,
+  // starting just before the clock hits the minute so the spring overshoot is already covered (today: Fermín's 0.45 at 66')
   EVENTS.forEach((E,i)=>{ const s=SHOTS.find(s=>s.ei===i); if(trig[i]<0||!s||s.x>=0) return; const a=t-trig[i];
     const l=clamp((s.xg-0.4)/0.4)*clamp((a+0.3)/0.3)*clamp((dwellT[i]+1.0-a)/0.5); if(l>lift){ lift=l; lx=s.x; lz=s.z; } });
   if(ft&&ftU<0.5){ flash=Math.max(flash,0.5*Math.exp(-ftU/0.1)); shake=Math.max(shake,0.5*Math.exp(-ftU/0.2)); ca=Math.max(ca,Math.exp(-ftU/0.15)); }
@@ -551,7 +547,7 @@ function frame(f){ f=Math.max(0,Math.min(TOTAL-1,f)); const t=f/FPS, m=mArr[f], 
     if(isP&&a>=IMPACT-0.04){ const a2=a-IMPACT; shield.visible=true; shield.position.set(sg*50.6,height(sg*52.5,0)+4.2,gz); const sc=0.9+1.5*easeOut(a2/0.28); shield.scale.setScalar(sc);
       const o=clamp(1-a2/0.75); shield.userData.lm.opacity=o; shield.userData.fill.material.opacity=0.85*o*Math.exp(-Math.max(0,a2)/0.22); } });
   // ---- camera
-  // no half turn: Chelsea's end (+x: Rogers's 0.65, Palmer's 0.79 pen, Barco's 0.51 miss) sits nearest the camera; United's far-end spikes are handled by the lift above
+  // no half turn: Atlético's end (+x: Simeone's 0.69, Baena's 0.47 save) sits nearest the camera; Barça's far-end spikes are handled by the lift above
   const ry=-0.82+0.10*Math.sin(t*.35)+k*0.16+(ft?ftU*0.035:0); group.rotation.y=ry;
   V.set(ex,0,ez).applyAxisAngle(YAX,ry); let tx=V.x*0.32*emph, tz=V.z*0.32*emph; V.set(lx,0,lz).applyAxisAngle(YAX,ry); tx+=V.x*0.45*lift; tz+=V.z*0.45*lift;
   const dist=520-emph*40*(1-lift)+lift*120+k*95, el=0.62+0.14*k, dz=Math.sqrt(1-el*el);

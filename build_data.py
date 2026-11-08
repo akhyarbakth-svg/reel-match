@@ -69,7 +69,17 @@ STATS=[]
 for key,lab,dec in [('total_shots','SHOTS',0),('ShotsOnTarget','ON TARGET',0),('expected_goals','xG',2),('BallPossesion','POSSESSION',0)]:
     v=f(key)
     if v: a,b=num(v[0]),num(v[1]); pct='%' if lab=='POSSESSION' else ''; STATS.append([f"{a:.{dec}f}{pct}",lab,f"{b:.{dec}f}{pct}",a,b,dec])
+# live xG counter: scale each half's shots so the counter lands on FotMob's official half totals (spikes and callouts keep the per-shot xG)
+XGS={}
+for T,code,i in (('A',D['home'],0),('E',D['away'],1)):
+    XGS[T]=[]
+    for per,(lo,hi) in (('FirstHalf',(0,46)),('SecondHalf',(46,999))):
+        tot=sum(x['xg'] for x in D['shots'] if x['team']==code and lo<=x['min']<hi)
+        off=D['stats'].get(per,{}).get('expected_goals'); full=D['stats'].get('All',{}).get('expected_goals'); h1=D['stats'].get('FirstHalf',{}).get('expected_goals')
+        tgt=float(full[i])-float(h1[i]) if per=='SecondHalf' and full and h1 else (float(off[i]) if off else None) # 2nd half = full - 1st, so the counter ends on the FT figure
+        XGS[T].append(round(tgt/tot,4) if tgt is not None and tot else 1)
 emit(f'const END={END}; // clock runs to 90+{END-90}')
+emit('const XGS='+json.dumps(XGS)+'; // per-half live-xG scale [1st, 2nd] to match the official totals')
 emit('const EVENTS=[ // team: A = '+D['home']+', E = '+D['away']+' · xG + shot location from FotMob (Opta)\n '+',\n '.join(ev)+'];')
 emit('// every other shot: [clock minute, team, xG, x, z, W=woodwork S=saved B=blocked M=off target]')
 emit('const OTHER=['+','.join(sh)+'];')
