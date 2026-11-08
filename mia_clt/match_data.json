@@ -1,0 +1,1246 @@
+{
+ "source": "FotMob match 5071488 (Opta data)",
+ "match": "Inter Miami CF 3-3 Charlotte FC, Major League Soccer, Sat, Nov 7, 2026, 21:00 UTC",
+ "home": "MIA",
+ "away": "CLT",
+ "shots": [
+  {
+   "team": "MIA",
+   "min": 14,
+   "add": null,
+   "type": "Goal",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.4109,
+   "x": 98.3421052628,
+   "y": 34.38125,
+   "player": "Ian Fray",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MIA",
+   "min": 27,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.1336,
+   "x": 87.31911764680001,
+   "y": 32.856249999999996,
+   "player": "Lionel Messi",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MIA",
+   "min": 33,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0659,
+   "x": 103.103448276,
+   "y": 26.942142857,
+   "player": "Germán Berterame",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MIA",
+   "min": 33,
+   "add": null,
+   "type": "Goal",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.9442,
+   "x": 104.4310344828,
+   "y": 36.135000000000005,
+   "player": "Luis Suárez",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CLT",
+   "min": 36,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.2204,
+   "x": 94.2894736826,
+   "y": 19.7954140155,
+   "player": "Idan Toklomati",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MIA",
+   "min": 42,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0266,
+   "x": 77.3043689336,
+   "y": 30.291999999999998,
+   "player": "Rodrigo De Paul",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CLT",
+   "min": 45,
+   "add": 5,
+   "type": "Miss",
+   "situation": "SetPiece",
+   "shotType": "Header",
+   "xg": 0.0153,
+   "x": 96.50877192889999,
+   "y": 24.2794904507,
+   "player": "Morrison Agyemang",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CLT",
+   "min": 49,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0184,
+   "x": 73.4752427208,
+   "y": 31.559999999999995,
+   "player": "Pep Biel",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "CLT",
+   "min": 50,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.7541,
+   "x": 101.681034483,
+   "y": 34.7625,
+   "player": "Liel Abada",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CLT",
+   "min": 52,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0397,
+   "x": 77.6422330112,
+   "y": 32.474999999999994,
+   "player": "Pep Biel",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MIA",
+   "min": 53,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.0382,
+   "x": 92.2,
+   "y": 34.838750000000005,
+   "player": "Lionel Messi",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CLT",
+   "min": 54,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0156,
+   "x": 83.8364077672,
+   "y": 46.0326114612,
+   "player": "Luca de la Torre",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "CLT",
+   "min": 55,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0384,
+   "x": 87.85588235280001,
+   "y": 24.2794904507,
+   "player": "Liel Abada",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MIA",
+   "min": 59,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0372,
+   "x": 84.9573529404,
+   "y": 43.5803821607,
+   "player": "Yannick Bright",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MIA",
+   "min": 65,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0187,
+   "x": 94.38596491070001,
+   "y": 30.416249999999994,
+   "player": "Casemiro",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MIA",
+   "min": 68,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0926,
+   "x": 96.605263157,
+   "y": 40.973809524,
+   "player": "Lionel Messi",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CLT",
+   "min": 69,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "SetPiece",
+   "shotType": "Header",
+   "xg": 0.1639,
+   "x": 97.7631578942,
+   "y": 38.200238096999996,
+   "player": "Morrison Agyemang",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MIA",
+   "min": 77,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0396,
+   "x": 85.9235294112,
+   "y": 33.161249999999995,
+   "player": "Facundo Mura",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MIA",
+   "min": 81,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0288,
+   "x": 91.3,
+   "y": 42.9865625,
+   "player": "Luis Suárez",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "MIA",
+   "min": 82,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0351,
+   "x": 94.7719298231,
+   "y": 45.6822929897,
+   "player": "Riquelme Fillipi",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "MIA",
+   "min": 86,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0673,
+   "x": 101.1120689658,
+   "y": 45.8924840726,
+   "player": "Riquelme Fillipi",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CLT",
+   "min": 90,
+   "add": 0,
+   "type": "Post",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.213,
+   "x": 93.1,
+   "y": 33.2375,
+   "player": "Tyger Smalls",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CLT",
+   "min": 90,
+   "add": 0,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1955,
+   "x": 95.54385964789999,
+   "y": 41.057857143,
+   "player": "Rodolfo Aloko",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MIA",
+   "min": 90,
+   "add": 2,
+   "type": "Post",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.0595,
+   "x": 90.1,
+   "y": 22.597961787499997,
+   "player": "Lionel Messi",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MIA",
+   "min": 90,
+   "add": 2,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.0649,
+   "x": 88.39264705880001,
+   "y": 37.672,
+   "player": "Riquelme Fillipi",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "CLT",
+   "min": 90,
+   "add": 5,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.0995,
+   "x": 90.6,
+   "y": 43.5103184664,
+   "player": "Rodolfo Aloko",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   2,
+   0
+  ],
+  [
+   3,
+   5
+  ],
+  [
+   4,
+   5
+  ],
+  [
+   5,
+   5
+  ],
+  [
+   6,
+   0
+  ],
+  [
+   7,
+   -5
+  ],
+  [
+   8,
+   11
+  ],
+  [
+   9,
+   8
+  ],
+  [
+   10,
+   -3
+  ],
+  [
+   11,
+   -16
+  ],
+  [
+   12,
+   -8
+  ],
+  [
+   13,
+   22
+  ],
+  [
+   14,
+   19
+  ],
+  [
+   15,
+   -5
+  ],
+  [
+   16,
+   57
+  ],
+  [
+   17,
+   35
+  ],
+  [
+   18,
+   60
+  ],
+  [
+   19,
+   -27
+  ],
+  [
+   20,
+   62
+  ],
+  [
+   21,
+   35
+  ],
+  [
+   22,
+   46
+  ],
+  [
+   23,
+   -22
+  ],
+  [
+   24,
+   0
+  ],
+  [
+   25,
+   19
+  ],
+  [
+   26,
+   30
+  ],
+  [
+   27,
+   30
+  ],
+  [
+   28,
+   19
+  ],
+  [
+   29,
+   8
+  ],
+  [
+   30,
+   14
+  ],
+  [
+   31,
+   5
+  ],
+  [
+   32,
+   35
+  ],
+  [
+   33,
+   90
+  ],
+  [
+   34,
+   84
+  ],
+  [
+   35,
+   54
+  ],
+  [
+   36,
+   -16
+  ],
+  [
+   37,
+   -11
+  ],
+  [
+   38,
+   -27
+  ],
+  [
+   39,
+   -11
+  ],
+  [
+   40,
+   0
+  ],
+  [
+   41,
+   24
+  ],
+  [
+   42,
+   52
+  ],
+  [
+   43,
+   41
+  ],
+  [
+   44,
+   49
+  ],
+  [
+   45,
+   -5
+  ],
+  [
+   45.5,
+   3
+  ],
+  [
+   46,
+   -5
+  ],
+  [
+   47,
+   -16
+  ],
+  [
+   48,
+   -11
+  ],
+  [
+   49,
+   -22
+  ],
+  [
+   50,
+   -100
+  ],
+  [
+   51,
+   -100
+  ],
+  [
+   52,
+   -100
+  ],
+  [
+   53,
+   46
+  ],
+  [
+   54,
+   30
+  ],
+  [
+   55,
+   -19
+  ],
+  [
+   56,
+   -38
+  ],
+  [
+   57,
+   -11
+  ],
+  [
+   58,
+   49
+  ],
+  [
+   59,
+   60
+  ],
+  [
+   60,
+   57
+  ],
+  [
+   61,
+   14
+  ],
+  [
+   62,
+   5
+  ],
+  [
+   63,
+   -24
+  ],
+  [
+   64,
+   19
+  ],
+  [
+   65,
+   68
+  ],
+  [
+   66,
+   79
+  ],
+  [
+   67,
+   62
+  ],
+  [
+   68,
+   43
+  ],
+  [
+   69,
+   -22
+  ],
+  [
+   70,
+   -33
+  ],
+  [
+   71,
+   -76
+  ],
+  [
+   72,
+   16
+  ],
+  [
+   73,
+   33
+  ],
+  [
+   74,
+   27
+  ],
+  [
+   75,
+   5
+  ],
+  [
+   76,
+   5
+  ],
+  [
+   77,
+   49
+  ],
+  [
+   78,
+   49
+  ],
+  [
+   79,
+   54
+  ],
+  [
+   80,
+   46
+  ],
+  [
+   81,
+   62
+  ],
+  [
+   82,
+   68
+  ],
+  [
+   83,
+   49
+  ],
+  [
+   84,
+   38
+  ],
+  [
+   85,
+   22
+  ],
+  [
+   86,
+   22
+  ],
+  [
+   87,
+   0
+  ],
+  [
+   88,
+   -16
+  ],
+  [
+   89,
+   -22
+  ],
+  [
+   90,
+   -81
+  ],
+  [
+   90.5,
+   -14
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 9,
+   "team": "MIA",
+   "player": "Telasco Segovia",
+   "reason": null
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 88,
+   "team": "CLT",
+   "player": "David Schnegg",
+   "reason": null
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    60,
+    40
+   ],
+   "expected_goals": [
+    "2.06",
+    "1.73"
+   ],
+   "total_shots": [
+    15,
+    11
+   ],
+   "ShotsOnTarget": [
+    5,
+    5
+   ],
+   "touches_opp_box": [
+    26,
+    20
+   ],
+   "big_chance": [
+    3,
+    4
+   ],
+   "big_chance_missed_title": [
+    1,
+    2
+   ],
+   "accurate_passes": [
+    "612 (91%)",
+    "394 (89%)"
+   ],
+   "yellow_cards": [
+    1,
+    1
+   ],
+   "corners": [
+    6,
+    2
+   ],
+   "ShotsOffTarget": [
+    7,
+    4
+   ],
+   "blocked_shots": [
+    3,
+    2
+   ],
+   "shots_woodwork": [
+    1,
+    1
+   ],
+   "shots_inside_box": [
+    10,
+    7
+   ],
+   "shots_outside_box": [
+    5,
+    4
+   ],
+   "expected_goals_open_play": [
+    "0.62",
+    "1.55"
+   ],
+   "expected_goals_set_play": [
+    "1.44",
+    "0.18"
+   ],
+   "expected_goals_non_penalty": [
+    "2.06",
+    "1.73"
+   ],
+   "expected_goals_on_target": [
+    "2.11",
+    "2.19"
+   ],
+   "passes": [
+    669,
+    445
+   ],
+   "own_half_passes": [
+    338,
+    241
+   ],
+   "opposition_half_passes": [
+    274,
+    153
+   ],
+   "long_balls_accurate": [
+    "32 (67%)",
+    "24 (60%)"
+   ],
+   "accurate_crosses": [
+    "3 (30%)",
+    "1 (9%)"
+   ],
+   "player_throws": [
+    6,
+    6
+   ],
+   "Offsides": [
+    4,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    10,
+    11
+   ],
+   "interceptions": [
+    7,
+    9
+   ],
+   "shot_blocks": [
+    2,
+    3
+   ],
+   "clearances": [
+    12,
+    19
+   ],
+   "keeper_saves": [
+    2,
+    2
+   ],
+   "duel_won": [
+    25,
+    36
+   ],
+   "ground_duels_won": [
+    "17 (37%)",
+    "29 (63%)"
+   ],
+   "aerials_won": [
+    "8 (53%)",
+    "7 (47%)"
+   ],
+   "dribbles_succeeded": [
+    "3 (33%)",
+    "4 (40%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    14,
+    6
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    54,
+    46
+   ],
+   "expected_goals": [
+    "1.58",
+    "0.24"
+   ],
+   "total_shots": [
+    5,
+    2
+   ],
+   "ShotsOnTarget": [
+    4,
+    1
+   ],
+   "touches_opp_box": [
+    7,
+    3
+   ],
+   "big_chance": [
+    2,
+    1
+   ],
+   "big_chance_missed_title": [
+    0,
+    1
+   ],
+   "accurate_passes": [
+    "253 (89%)",
+    "205 (87%)"
+   ],
+   "yellow_cards": [
+    1,
+    0
+   ],
+   "corners": [
+    4,
+    1
+   ],
+   "ShotsOffTarget": [
+    1,
+    1
+   ],
+   "blocked_shots": [
+    0,
+    0
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    3,
+    2
+   ],
+   "shots_outside_box": [
+    2,
+    0
+   ],
+   "expected_goals_open_play": [
+    "0.16",
+    "0.22"
+   ],
+   "expected_goals_set_play": [
+    "1.42",
+    "0.02"
+   ],
+   "expected_goals_non_penalty": [
+    "1.58",
+    "0.24"
+   ],
+   "expected_goals_on_target": [
+    "1.94",
+    "0.22"
+   ],
+   "passes": [
+    284,
+    236
+   ],
+   "own_half_passes": [
+    147,
+    142
+   ],
+   "opposition_half_passes": [
+    106,
+    63
+   ],
+   "long_balls_accurate": [
+    "14 (67%)",
+    "12 (55%)"
+   ],
+   "accurate_crosses": [
+    "1 (17%)",
+    "0 (0%)"
+   ],
+   "player_throws": [
+    2,
+    4
+   ],
+   "Offsides": [
+    3,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    6,
+    5
+   ],
+   "interceptions": [
+    4,
+    6
+   ],
+   "shot_blocks": [
+    0,
+    0
+   ],
+   "clearances": [
+    7,
+    11
+   ],
+   "keeper_saves": [
+    1,
+    1
+   ],
+   "duel_won": [
+    11,
+    16
+   ],
+   "ground_duels_won": [
+    "10 (43%)",
+    "13 (57%)"
+   ],
+   "aerials_won": [
+    "1 (25%)",
+    "3 (75%)"
+   ],
+   "dribbles_succeeded": [
+    "1 (33%)",
+    "1 (33%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    7,
+    4
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    64,
+    36
+   ],
+   "expected_goals": [
+    "0.48",
+    "1.50"
+   ],
+   "total_shots": [
+    10,
+    9
+   ],
+   "ShotsOnTarget": [
+    1,
+    4
+   ],
+   "touches_opp_box": [
+    19,
+    17
+   ],
+   "big_chance": [
+    1,
+    3
+   ],
+   "big_chance_missed_title": [
+    1,
+    1
+   ],
+   "accurate_passes": [
+    "359 (93%)",
+    "189 (90%)"
+   ],
+   "yellow_cards": [
+    0,
+    1
+   ],
+   "corners": [
+    2,
+    1
+   ],
+   "ShotsOffTarget": [
+    6,
+    3
+   ],
+   "blocked_shots": [
+    3,
+    2
+   ],
+   "shots_woodwork": [
+    1,
+    1
+   ],
+   "shots_inside_box": [
+    7,
+    5
+   ],
+   "shots_outside_box": [
+    3,
+    4
+   ],
+   "expected_goals_open_play": [
+    "0.46",
+    "1.33"
+   ],
+   "expected_goals_set_play": [
+    "0.02",
+    "0.16"
+   ],
+   "expected_goals_non_penalty": [
+    "0.48",
+    "1.50"
+   ],
+   "expected_goals_on_target": [
+    "0.17",
+    "1.97"
+   ],
+   "passes": [
+    385,
+    209
+   ],
+   "own_half_passes": [
+    191,
+    99
+   ],
+   "opposition_half_passes": [
+    168,
+    90
+   ],
+   "long_balls_accurate": [
+    "18 (67%)",
+    "12 (67%)"
+   ],
+   "accurate_crosses": [
+    "2 (50%)",
+    "1 (14%)"
+   ],
+   "player_throws": [
+    4,
+    2
+   ],
+   "Offsides": [
+    1,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    4,
+    6
+   ],
+   "interceptions": [
+    3,
+    3
+   ],
+   "shot_blocks": [
+    2,
+    3
+   ],
+   "clearances": [
+    5,
+    8
+   ],
+   "keeper_saves": [
+    1,
+    1
+   ],
+   "duel_won": [
+    14,
+    20
+   ],
+   "ground_duels_won": [
+    "7 (30%)",
+    "16 (70%)"
+   ],
+   "aerials_won": [
+    "7 (64%)",
+    "4 (36%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (33%)",
+    "3 (43%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    7,
+    2
+   ]
+  }
+ }
+}
