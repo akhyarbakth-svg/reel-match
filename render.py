@@ -1,12 +1,15 @@
 import subprocess,time,sys,imageio_ffmpeg
 from playwright.sync_api import sync_playwright
+import os,pathlib
+URL=pathlib.Path(os.path.dirname(os.path.abspath(__file__)),'index.html').as_uri()
+EXE=os.environ.get('CHROMIUM') or None # optional Chromium binary (Playwright's bundled one otherwise)
 ff=imageio_ffmpeg.get_ffmpeg_exe()
-out='E:/Page Content/Real_Betis_vs_Barcelona_LaLiga_MD9_Reel.mp4'
+out=sys.argv[1] if len(sys.argv)>1 else os.path.join(os.path.dirname(os.path.abspath(__file__)),'Atletico_Madrid_vs_Barcelona_LaLiga_MD12_Reel.mp4')
 pr=subprocess.Popen([ff,'-y','-f','image2pipe','-framerate','30','-i','-','-vf','scale=in_range=pc:out_range=tv:in_color_matrix=bt601:out_color_matrix=bt709','-c:v','libx264','-pix_fmt','yuv420p','-color_range','tv','-colorspace','bt709','-color_primaries','bt709','-color_trc','bt709','-crf','16','-preset','medium','-tune','animation','-movflags','+faststart',out],stdin=subprocess.PIPE,stderr=subprocess.DEVNULL)
 with sync_playwright() as p:
-    b=p.chromium.launch(args=["--use-gl=angle","--use-angle=swiftshader","--enable-unsafe-swiftshader","--ignore-gpu-blocklist"])
+    b=p.chromium.launch(executable_path=EXE,args=["--use-gl=angle","--use-angle=swiftshader","--enable-unsafe-swiftshader","--ignore-gpu-blocklist"])
     pg=b.new_page(viewport={'width':1080,'height':1920}); pg.on('pageerror',lambda e:print('ERR',e,flush=True))
-    pg.goto('file:///E:/Page%20Content/reel_che_mun/index.html'); pg.wait_for_timeout(1500)
+    pg.goto(URL); pg.wait_for_timeout(1500)
     total=pg.evaluate('TOTAL'); t0=time.time()
     for f in range(total):
         pg.evaluate(f"frame({f})"); pr.stdin.write(pg.screenshot(type='jpeg',quality=95))

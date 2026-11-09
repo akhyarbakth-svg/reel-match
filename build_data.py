@@ -2,51 +2,59 @@
 import json,os
 H=os.path.dirname(os.path.abspath(__file__))
 D=json.load(open(os.path.join(H,'match_data.json'),encoding='utf-8'))
-NAMES={(50,'CHE'):'MORGAN ROGERS',(64,'CHE'):'COLE PALMER'}
+HOME=D['home'] # A = home (Atlético), E = away (Barcelona)
+NAMES={'Giuliano Simeone':'GIULIANO SIMEONE','Fermín López':'FERMÍN LÓPEZ'}
 # big chances that didn't go in get their own beat (clock holds, callout): (minute, team, type) -> (beat, name[, keeper])
-CHANCES={(19,'MUN','Miss'):('miss','BRUNO FERNANDES'),(43,'MUN','Miss'):('miss','AMAD DIALLO'),(90,'CHE','Miss'):('miss','VALENTÍN BARCO')}
-VARN={'Matheus Cunha':'MATHEUS CUNHA','Estêvão':'ESTÊVÃO'}
-REDN={'Lisandro Martínez':'LISANDRO MARTÍNEZ'}
+CHANCES={(7,'BAR','Post'):('post','PEDRI'),(38,'ATM','AttemptSaved'):('save','ÁLEX BAENA','JOAN GARCÍA')}
+VARN={}; REDN={}
 ev,sh=[],[]
 OUT=[]
 def emit(t): OUT.append(t)
-def beat(s): return (s['min'],s['team'],s['type']) in CHANCES and (s['min']!=90 or s['add']==9) # only Barco's 90+9 of the stoppage-time misses
-def clock(s): # 45+N sits inside the first-half stoppage before the HT hold at 45.9; 90+N runs on the clock to 100
+def beat(s): return (s['min'],s['team'],s['type']) in CHANCES
+def clock(s): # 45+N sits inside the first-half stoppage before the HT hold at 45.9; 90+N runs on the clock to 94
     a=s['add'] or 0
     return 45+0.25*a if s['min']==45 and a else (90+a if s['min']==90 and a else s['min'])
 def label(s):
     a=s['add']; return f"{s['min']}+{a}'" if a else f"{s['min']}'"
+# the shot map logs Simeone's opener at 10', the match events (and FotMob's scoreline) at 9': goals take the event minute
+GEV=[e for e in D['events'] if e['type']=='goal']
+def goal_min(s):
+    e=min((e for e in GEV if e['player']==s['player'] and e['team']==s['team']),key=lambda e:abs(e['min']-s['min']))
+    return {**s,'min':e['min'],'add':e['add'] or s['add']}
 shots=sorted(D['shots'],key=lambda s:(s['min'],s['add'] or 0))
 for e in D['events']:
-    T='A' if e.get('team')=='CHE' else 'E'
-    if e['type']=='var': # both ruled out for offside (FotMob decision: ['Goal ruled out', 'offside'])
+    T='A' if e.get('team')==HOME else 'E'
+    if e['type']=='var':
         ev.append((e['min']+0.01,f"{{m:{e['min']},team:'{T}',type:'var',name:'{VARN[e['player']]}',min:\"{e['min']}'\",why:'{e['decision'][1].upper()}'}}"))
     elif e['type']=='card' and e['card'] in('Red','YellowRed'):
         why='SECOND YELLOW' if e['card']=='YellowRed' else (e['reason'] or '').upper()
         ev.append((e['min']+0.01,f"{{m:{e['min']},team:'{T}',type:'red',name:'{REDN[e['player']]}',min:\"{e['min']}'\",why:'{why}'}}"))
 for i,s in enumerate(shots):
-    T='A' if s['team']=='CHE' else 'E'
-    # FotMob x: 0..105 towards the goal attacked, y: 0..68. Chelsea attack +x, United attack -x.
+    T='A' if s['team']==HOME else 'E'
+    # FotMob x: 0..105 towards the goal attacked, y: 0..68. Atlético attack +x, Barcelona attack -x.
     sg=1 if T=='A' else -1; x=round(sg*(s['x']-52.5),2); z=round(sg*(s['y']-34),2)
     if s['type']=='Goal':
-        m=clock(s); lab=label(s)+(' (P)' if s['situation']=='Penalty' else ''); k=(s['min'],s['team'])
-        ev.append((m,f"{{m:{m},team:'{T}',type:'goal',name:'{NAMES[k]}',min:\"{lab}\",xg:{s['xg']:.4f},x:{x},z:{z}}}"))
+        g=goal_min(s); m=clock(g); lab=label(g)+(' (P)' if s['situation']=='Penalty' else '')
+        ev.append((m,f"{{m:{m},team:'{T}',type:'goal',name:'{NAMES[s['player']]}',min:\"{lab}\",xg:{s['xg']:.4f},x:{x},z:{z}}}"))
     elif beat(s):
         k,name,*by=CHANCES[(s['min'],s['team'],s['type'])]; m=clock(s); by=f",by:'{by[0]}'" if by else ''
         ev.append((m,f"{{m:{m},team:'{T}',type:'{k}',name:'{name}',min:\"{label(s)}\",xg:{s['xg']:.4f},x:{x},z:{z}{by}}}"))
     else:
-        # same-minute shots pop in sequence just before the minute (and before any beat on it)
+        # same-minute shots pop in sequence just before the minute (and before any beat on it);
+        # first-half stoppage shots (45+N) pop just before their slot so they stay after a 45' goal and before the HT hold
         same=[o for o in shots if o['min']==s['min'] and (o['add'] or 0)==(s['add'] or 0) and o['type']!='Goal' and not beat(o)]
-        m=clock(s)-0.5-0.3*(len(same)-1-same.index(s))
+        j=len(same)-1-same.index(s)
+        m=clock(s)-0.05-0.1*j if s['min']==45 and s['add'] else clock(s)-0.5-0.3*j
+        if s['min']==46: m=max(m,45.95) # a 46' shot belongs after the HT hold
         k={'Post':'W','AttemptSaved':'B' if s['blocked'] else 'S','Miss':'M'}[s['type']]
         sh.append(f"[{round(m,2)},'{T}',{s['xg']:.4f},{x},{z},'{k}']")
 ev=[s for _,s in sorted(ev)]
-# 45.5 = first-half stoppage; 90.5 / 90.75 = second-half stoppage (+10), stretched to the 100' clock end
-mom=[[{90.5:94,90.75:98}.get(m,m),round(v/100,2)] for m,v in D['momentum']]+[[100,0]]
-emit('const EVENTS=[ // team: A = Chelsea, E = Man United · xG + shot location from FotMob (Opta)\n '+',\n '.join(ev)+'];')
+# 45.5 = first-half stoppage; 90.5 / 90.75 = second-half stoppage (+4), stretched to the 94' clock end
+mom=[[{90.5:92,90.75:93.5}.get(m,m),round(v/100,2)] for m,v in D['momentum']]+[[94,0]]
+emit('const EVENTS=[ // team: A = Atlético Madrid, E = Barcelona · xG + shot location from FotMob (Opta)\n '+',\n '.join(ev)+'];')
 emit('// every other shot: [clock minute, team, xG, x, z, W=woodwork S=saved B=blocked M=off target]')
 emit('const OTHER=['+','.join(sh)+'];')
-emit('// FotMob attacking momentum (xT model) per minute, + = Chelsea on top; 45.5 / 94+ = stoppage time')
+emit('// FotMob attacking momentum (xT model) per minute, + = Atlético on top; 45.5 / 92+ = stoppage time')
 emit('const MOM='+json.dumps(mom,separators=(',',':'))+';')
 NL=chr(10)
 open(os.path.join(H,'data.js'),'w',encoding='utf-8').write('// generated by build_data.py from match_data.json'+NL+NL.join(OUT)+NL); print('wrote data.js')
