@@ -9,7 +9,7 @@ if src.startswith('http'):
 else: html=open(src,encoding='utf-8').read()
 pp=json.loads(re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>',html,re.S).group(1))['props']['pageProps']
 g,c=pp['general'],pp['content']
-CODE={8455:'CHE',10260:'MUN'}
+CODE={8455:'CHE',10260:'MUN',10252:'AVL'}
 tid={g['homeTeam']['id']:CODE[g['homeTeam']['id']],g['awayTeam']['id']:CODE[g['awayTeam']['id']]}
 shots=[{'team':tid[s['teamId']],'min':s['min'],'add':s.get('minAdded'),'type':s['eventType'],'situation':s['situation'],'shotType':s['shotType'],
         'xg':round(s['expectedGoals'] or 0,4),'x':s['x'],'y':s['y'],'player':s['playerName'],'onTarget':s.get('isOnTarget'),'blocked':s.get('isBlocked'),'ownGoal':s.get('isOwnGoal')}

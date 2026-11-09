@@ -1,38 +1,42 @@
 # match_data.json -> data.js (loaded by index.html)
+# Manchester United 4-4 Aston Villa, Premier League MD10, 8 Nov 2026, Old Trafford (FotMob match 5795512)
 import json,os
 H=os.path.dirname(os.path.abspath(__file__))
 D=json.load(open(os.path.join(H,'match_data.json'),encoding='utf-8'))
-NAMES={(50,'CHE'):'MORGAN ROGERS',(64,'CHE'):'COLE PALMER'}
-# big chances that didn't go in get their own beat (clock holds, callout): (minute, team, type) -> (beat, name[, keeper])
-CHANCES={(19,'MUN','Miss'):('miss','BRUNO FERNANDES'),(43,'MUN','Miss'):('miss','AMAD DIALLO'),(90,'CHE','Miss'):('miss','VALENTÍN BARCO')}
-VARN={'Matheus Cunha':'MATHEUS CUNHA','Estêvão':'ESTÊVÃO'}
-REDN={'Lisandro Martínez':'LISANDRO MARTÍNEZ'}
+HOME,AWAY=D['home'],D['away'] # 'A' = home (top row, attacks +x towards the camera), 'E' = away
+TEAM={HOME:'A',AWAY:'E'}
+END=97 # clock runs to 90+7: six added minutes, Dorgu's equaliser came at 90+6
+NAME={'Alysson Edward':'ALYSSON','John McGinn':'JOHN McGINN'} # anything else: the FotMob name in capitals
+# big chances that didn't go in get their own beat (clock holds, callout): (minute, added, team, type, player) -> (beat, name[, keeper])
+CHANCES={(59,None,'MUN','AttemptSaved','Bryan Mbeumo'):('save','BRYAN MBEUMO','ZION SUZUKI'), # 0.32 xG, Mbeumo's effort held by Villa's keeper
+         (89,None,'MUN','Post','Mason Mount'):('post','MASON MOUNT')}                         # 0.52 xG, the biggest chance of the game that didn't go in
+def nm(p): return NAME.get(p,p.upper())
 ev,sh=[],[]
 OUT=[]
 def emit(t): OUT.append(t)
-def beat(s): return (s['min'],s['team'],s['type']) in CHANCES and (s['min']!=90 or s['add']==9) # only Barco's 90+9 of the stoppage-time misses
-def clock(s): # 45+N sits inside the first-half stoppage before the HT hold at 45.9; 90+N runs on the clock to 100
+def key(s): return (s['min'],s['add'],s['team'],s['type'],s['player'])
+def beat(s): return key(s) in CHANCES
+def clock(s): # 45+N sits inside the first-half stoppage before the HT hold at 45.9; 90+N runs on the clock to END
     a=s['add'] or 0
     return 45+0.25*a if s['min']==45 and a else (90+a if s['min']==90 and a else s['min'])
 def label(s):
     a=s['add']; return f"{s['min']}+{a}'" if a else f"{s['min']}'"
 shots=sorted(D['shots'],key=lambda s:(s['min'],s['add'] or 0))
-for e in D['events']:
-    T='A' if e.get('team')=='CHE' else 'E'
-    if e['type']=='var': # both ruled out for offside (FotMob decision: ['Goal ruled out', 'offside'])
-        ev.append((e['min']+0.01,f"{{m:{e['min']},team:'{T}',type:'var',name:'{VARN[e['player']]}',min:\"{e['min']}'\",why:'{e['decision'][1].upper()}'}}"))
+for e in D['events']: # no red cards or VAR calls in this one, but keep the plumbing
+    if e['type']=='var':
+        ev.append((e['min']+0.01,f"{{m:{e['min']},team:'{TEAM[e['team']]}',type:'var',name:'{nm(e['player'])}',min:\"{e['min']}'\",why:'{e['decision'][1].upper()}'}}"))
     elif e['type']=='card' and e['card'] in('Red','YellowRed'):
         why='SECOND YELLOW' if e['card']=='YellowRed' else (e['reason'] or '').upper()
-        ev.append((e['min']+0.01,f"{{m:{e['min']},team:'{T}',type:'red',name:'{REDN[e['player']]}',min:\"{e['min']}'\",why:'{why}'}}"))
-for i,s in enumerate(shots):
-    T='A' if s['team']=='CHE' else 'E'
-    # FotMob x: 0..105 towards the goal attacked, y: 0..68. Chelsea attack +x, United attack -x.
+        ev.append((e['min']+0.01,f"{{m:{e['min']},team:'{TEAM[e['team']]}',type:'red',name:'{nm(e['player'])}',min:\"{e['min']}'\",why:'{why}'}}"))
+for s in shots:
+    T=TEAM[s['team']]
+    # FotMob x: 0..105 towards the goal attacked, y: 0..68. Home attacks +x, away attacks -x.
     sg=1 if T=='A' else -1; x=round(sg*(s['x']-52.5),2); z=round(sg*(s['y']-34),2)
     if s['type']=='Goal':
-        m=clock(s); lab=label(s)+(' (P)' if s['situation']=='Penalty' else ''); k=(s['min'],s['team'])
-        ev.append((m,f"{{m:{m},team:'{T}',type:'goal',name:'{NAMES[k]}',min:\"{lab}\",xg:{s['xg']:.4f},x:{x},z:{z}}}"))
+        m=clock(s); lab=label(s)+(' (P)' if s['situation']=='Penalty' else '')
+        ev.append((m,f"{{m:{m},team:'{T}',type:'goal',name:'{nm(s['player'])}',min:\"{lab}\",xg:{s['xg']:.4f},x:{x},z:{z}}}"))
     elif beat(s):
-        k,name,*by=CHANCES[(s['min'],s['team'],s['type'])]; m=clock(s); by=f",by:'{by[0]}'" if by else ''
+        k,name,*by=CHANCES[key(s)]; m=clock(s); by=f",by:'{by[0]}'" if by else ''
         ev.append((m,f"{{m:{m},team:'{T}',type:'{k}',name:'{name}',min:\"{label(s)}\",xg:{s['xg']:.4f},x:{x},z:{z}{by}}}"))
     else:
         # same-minute shots pop in sequence just before the minute (and before any beat on it)
@@ -41,12 +45,19 @@ for i,s in enumerate(shots):
         k={'Post':'W','AttemptSaved':'B' if s['blocked'] else 'S','Miss':'M'}[s['type']]
         sh.append(f"[{round(m,2)},'{T}',{s['xg']:.4f},{x},{z},'{k}']")
 ev=[s for _,s in sorted(ev)]
-# 45.5 = first-half stoppage; 90.5 / 90.75 = second-half stoppage (+10), stretched to the 100' clock end
-mom=[[{90.5:94,90.75:98}.get(m,m),round(v/100,2)] for m,v in D['momentum']]+[[100,0]]
-emit('const EVENTS=[ // team: A = Chelsea, E = Man United · xG + shot location from FotMob (Opta)\n '+',\n '.join(ev)+'];')
+# FotMob's per-shot xG doesn't quite sum to its official half totals (Villa 1st half 1.29 vs 1.25): scale the live counter per half
+def off(per,i): return float(D['stats'][per]['expected_goals'][i])
+def summ(team,h1): return sum(s['xg'] for s in D['shots'] if s['team']==team and (s['min']<=45)==h1)
+fix={T:[round(off('FirstHalf',i)/summ(t,True),4),round(off('SecondHalf',i)/summ(t,False),4)] for i,(t,T) in enumerate([(HOME,'A'),(AWAY,'E')])}
+# 45.5 = first-half stoppage; 90.5 / 90.75 = second-half stoppage (+6), stretched to the END clock
+mom=[[{90.5:93,90.75:96}.get(m,m),round(v/100,2)] for m,v in D['momentum']]+[[END,0]]
+emit(f'const END={END}; // clock runs to 90+{END-90}')
+emit(f'const EVENTS=[ // team: A = {HOME} (home), E = {AWAY} · xG + shot location from FotMob (Opta)\n '+',\n '.join(ev)+'];')
 emit('// every other shot: [clock minute, team, xG, x, z, W=woodwork S=saved B=blocked M=off target]')
 emit('const OTHER=['+','.join(sh)+'];')
-emit('// FotMob attacking momentum (xT model) per minute, + = Chelsea on top; 45.5 / 94+ = stoppage time')
+emit('// per-half scale so the live xG counter lands on the official FotMob totals: [1st half, 2nd half]')
+emit('const XG_FIX='+json.dumps(fix,separators=(',',':'))+';')
+emit(f'// FotMob attacking momentum (xT model) per minute, + = {HOME} on top; 45.5 / 93+ = stoppage time')
 emit('const MOM='+json.dumps(mom,separators=(',',':'))+';')
 NL=chr(10)
 open(os.path.join(H,'data.js'),'w',encoding='utf-8').write('// generated by build_data.py from match_data.json'+NL+NL.join(OUT)+NL); print('wrote data.js')
