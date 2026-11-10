@@ -1,7 +1,8 @@
 # parallel render: N Chromium workers each take an interleaved-free contiguous chunk, write JPEGs, then one ffmpeg encode at 30 fps
-import sys,os,time,subprocess,multiprocessing as mp,imageio_ffmpeg
-URL='file:///E:/Page%20Content/reel_che_mun/index.html'
-OUT='E:/Page Content/Videos/Game State-V15/Chelsea_vs_Man_United_PL_Reel.mp4'
+# usage: python -I render_par.py <frames dir> <workers> <total frames> [page.html] [out.mp4]
+import sys,os,time,subprocess,multiprocessing as mp,pathlib,imageio_ffmpeg
+URL=pathlib.Path(sys.argv[4]).resolve().as_uri() if len(sys.argv)>4 else 'file:///E:/Page%20Content/reel_che_mun/index.html'
+OUT=sys.argv[5] if len(sys.argv)>5 else 'E:/Page Content/Videos/Game State-V15/Chelsea_vs_Man_United_PL_Reel.mp4'
 def work(args):
     wid,lo,hi,fdir=args
     from playwright.sync_api import sync_playwright

@@ -1,0 +1,1143 @@
+{
+ "source": "FotMob match 5749744 (Opta data)",
+ "match": "Inter 2-0 Como, Serie A round 11, Sun, Nov 8, 2026, 17:00 UTC",
+ "home": "INT",
+ "away": "COM",
+ "shots": [
+  {
+   "team": "COM",
+   "min": 6,
+   "add": null,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.0289,
+   "x": 78.2053398072,
+   "y": 43.5803821607,
+   "player": "Nico Paz",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 12,
+   "add": null,
+   "type": "Goal",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.9081,
+   "x": 101.8706896554,
+   "y": 32.551249999999996,
+   "player": "Francesco Pio Esposito",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 17,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.1965,
+   "x": 97.7631578942,
+   "y": 32.0175,
+   "player": "Marcus Thuram",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 17,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1738,
+   "x": 101.0172413796,
+   "y": 41.5990625,
+   "player": "Federico Dimarco",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 19,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0789,
+   "x": 101.0172413796,
+   "y": 41.483437499999994,
+   "player": "Marcus Thuram",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 23,
+   "add": null,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.0168,
+   "x": 66.3800970912,
+   "y": 44.35108279800001,
+   "player": "Nicolò Barella",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 29,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "SetPiece",
+   "shotType": "Header",
+   "xg": 0.0116,
+   "x": 93.2,
+   "y": 26.69,
+   "player": "Carlos Augusto",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "COM",
+   "min": 32,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "SetPiece",
+   "shotType": "Header",
+   "xg": 0.0126,
+   "x": 91.6,
+   "y": 30.873749999999998,
+   "player": "Nico Paz",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 35,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0561,
+   "x": 93.9,
+   "y": 22.738089176099997,
+   "player": "Marcus Thuram",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 40,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0134,
+   "x": 77.529611652,
+   "y": 48.134522290199996,
+   "player": "Carlos Augusto",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 51,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0657,
+   "x": 91.3,
+   "y": 44.981656046699996,
+   "player": "Federico Dimarco",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 53,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0354,
+   "x": 90.4,
+   "y": 42.928749999999994,
+   "player": "Federico Dimarco",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 57,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0909,
+   "x": 93.9,
+   "y": 23.438726119099996,
+   "player": "Marcus Thuram",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 69,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.065,
+   "x": 87.963235294,
+   "y": 32.24625,
+   "player": "Nicolò Barella",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "COM",
+   "min": 77,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0203,
+   "x": 92.5,
+   "y": 35.9825,
+   "player": "Jacobo Ramón",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "COM",
+   "min": 80,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.0321,
+   "x": 92.9,
+   "y": 33.00875,
+   "player": "Jacobo Ramón",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 80,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.064,
+   "x": 100.9224137934,
+   "y": 23.5788535077,
+   "player": "Marcus Thuram",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "COM",
+   "min": 83,
+   "add": null,
+   "type": "Post",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1151,
+   "x": 91.1,
+   "y": 34.99125,
+   "player": "Nico Paz",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 85,
+   "add": null,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.0365,
+   "x": 34.227669899999995,
+   "y": 65.1795260647,
+   "player": "Federico Dimarco",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   22
+  ],
+  [
+   2,
+   38
+  ],
+  [
+   3,
+   43
+  ],
+  [
+   4,
+   16
+  ],
+  [
+   5,
+   16
+  ],
+  [
+   6,
+   0
+  ],
+  [
+   7,
+   27
+  ],
+  [
+   8,
+   11
+  ],
+  [
+   9,
+   33
+  ],
+  [
+   10,
+   11
+  ],
+  [
+   11,
+   5
+  ],
+  [
+   12,
+   100
+  ],
+  [
+   13,
+   100
+  ],
+  [
+   14,
+   100
+  ],
+  [
+   15,
+   -16
+  ],
+  [
+   16,
+   0
+  ],
+  [
+   17,
+   95
+  ],
+  [
+   18,
+   90
+  ],
+  [
+   19,
+   92
+  ],
+  [
+   20,
+   14
+  ],
+  [
+   21,
+   14
+  ],
+  [
+   22,
+   -22
+  ],
+  [
+   23,
+   -27
+  ],
+  [
+   24,
+   -49
+  ],
+  [
+   25,
+   -33
+  ],
+  [
+   26,
+   -49
+  ],
+  [
+   27,
+   -11
+  ],
+  [
+   28,
+   -11
+  ],
+  [
+   29,
+   35
+  ],
+  [
+   30,
+   24
+  ],
+  [
+   31,
+   19
+  ],
+  [
+   32,
+   -30
+  ],
+  [
+   33,
+   -30
+  ],
+  [
+   34,
+   -24
+  ],
+  [
+   35,
+   16
+  ],
+  [
+   36,
+   27
+  ],
+  [
+   37,
+   11
+  ],
+  [
+   38,
+   -11
+  ],
+  [
+   39,
+   -19
+  ],
+  [
+   40,
+   8
+  ],
+  [
+   41,
+   14
+  ],
+  [
+   42,
+   0
+  ],
+  [
+   43,
+   -54
+  ],
+  [
+   44,
+   -65
+  ],
+  [
+   45,
+   -27
+  ],
+  [
+   45.5,
+   22
+  ],
+  [
+   46,
+   5
+  ],
+  [
+   47,
+   0
+  ],
+  [
+   48,
+   -11
+  ],
+  [
+   49,
+   -11
+  ],
+  [
+   50,
+   33
+  ],
+  [
+   51,
+   60
+  ],
+  [
+   52,
+   49
+  ],
+  [
+   53,
+   11
+  ],
+  [
+   54,
+   -24
+  ],
+  [
+   55,
+   -14
+  ],
+  [
+   56,
+   -24
+  ],
+  [
+   57,
+   49
+  ],
+  [
+   58,
+   11
+  ],
+  [
+   59,
+   33
+  ],
+  [
+   60,
+   -14
+  ],
+  [
+   61,
+   8
+  ],
+  [
+   62,
+   -8
+  ],
+  [
+   63,
+   -11
+  ],
+  [
+   64,
+   -11
+  ],
+  [
+   65,
+   -11
+  ],
+  [
+   66,
+   -33
+  ],
+  [
+   67,
+   -54
+  ],
+  [
+   68,
+   -38
+  ],
+  [
+   69,
+   5
+  ],
+  [
+   70,
+   33
+  ],
+  [
+   71,
+   -8
+  ],
+  [
+   72,
+   -35
+  ],
+  [
+   73,
+   -8
+  ],
+  [
+   74,
+   22
+  ],
+  [
+   75,
+   16
+  ],
+  [
+   76,
+   -27
+  ],
+  [
+   77,
+   -41
+  ],
+  [
+   78,
+   -27
+  ],
+  [
+   79,
+   -43
+  ],
+  [
+   80,
+   -19
+  ],
+  [
+   81,
+   -27
+  ],
+  [
+   82,
+   19
+  ],
+  [
+   83,
+   -16
+  ],
+  [
+   84,
+   -22
+  ],
+  [
+   85,
+   -41
+  ],
+  [
+   86,
+   -16
+  ],
+  [
+   87,
+   -5
+  ],
+  [
+   88,
+   0
+  ],
+  [
+   89,
+   -16
+  ],
+  [
+   90,
+   -27
+  ],
+  [
+   90.5,
+   4
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 1
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 72,
+   "team": "INT",
+   "player": "Francesco Pio Esposito",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 3
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    43,
+    57
+   ],
+   "expected_goals": [
+    "1.81",
+    "0.21"
+   ],
+   "total_shots": [
+    14,
+    5
+   ],
+   "ShotsOnTarget": [
+    4,
+    1
+   ],
+   "touches_opp_box": [
+    33,
+    11
+   ],
+   "big_chance": [
+    4,
+    0
+   ],
+   "big_chance_missed_title": [
+    2,
+    0
+   ],
+   "accurate_passes": [
+    "439 (88%)",
+    "593 (91%)"
+   ],
+   "yellow_cards": [
+    1,
+    0
+   ],
+   "corners": [
+    4,
+    2
+   ],
+   "ShotsOffTarget": [
+    8,
+    3
+   ],
+   "blocked_shots": [
+    2,
+    1
+   ],
+   "shots_woodwork": [
+    0,
+    1
+   ],
+   "shots_inside_box": [
+    10,
+    4
+   ],
+   "shots_outside_box": [
+    4,
+    1
+   ],
+   "expected_goals_open_play": [
+    "1.80",
+    "0.18"
+   ],
+   "expected_goals_set_play": [
+    "0.01",
+    "0.03"
+   ],
+   "expected_goals_non_penalty": [
+    "1.81",
+    "0.21"
+   ],
+   "expected_goals_on_target": [
+    "1.24",
+    "0.01"
+   ],
+   "passes": [
+    499,
+    652
+   ],
+   "own_half_passes": [
+    240,
+    238
+   ],
+   "opposition_half_passes": [
+    199,
+    355
+   ],
+   "long_balls_accurate": [
+    "31 (65%)",
+    "17 (55%)"
+   ],
+   "accurate_crosses": [
+    "2 (17%)",
+    "7 (32%)"
+   ],
+   "player_throws": [
+    9,
+    13
+   ],
+   "Offsides": [
+    8,
+    3
+   ],
+   "matchstats.headers.tackles": [
+    13,
+    13
+   ],
+   "interceptions": [
+    12,
+    9
+   ],
+   "shot_blocks": [
+    1,
+    2
+   ],
+   "clearances": [
+    20,
+    23
+   ],
+   "keeper_saves": [
+    1,
+    2
+   ],
+   "duel_won": [
+    33,
+    35
+   ],
+   "ground_duels_won": [
+    "21 (43%)",
+    "28 (57%)"
+   ],
+   "aerials_won": [
+    "12 (63%)",
+    "7 (37%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (50%)",
+    "2 (20%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    13,
+    6
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    44,
+    56
+   ],
+   "expected_goals": [
+    "1.46",
+    "0.04"
+   ],
+   "total_shots": [
+    8,
+    2
+   ],
+   "ShotsOnTarget": [
+    3,
+    0
+   ],
+   "touches_opp_box": [
+    13,
+    1
+   ],
+   "big_chance": [
+    4,
+    0
+   ],
+   "big_chance_missed_title": [
+    2,
+    0
+   ],
+   "accurate_passes": [
+    "230 (90%)",
+    "293 (91%)"
+   ],
+   "yellow_cards": [
+    0,
+    0
+   ],
+   "corners": [
+    1,
+    0
+   ],
+   "ShotsOffTarget": [
+    5,
+    1
+   ],
+   "blocked_shots": [
+    0,
+    1
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    6,
+    1
+   ],
+   "shots_outside_box": [
+    2,
+    1
+   ],
+   "expected_goals_open_play": [
+    "1.44",
+    "0.03"
+   ],
+   "expected_goals_set_play": [
+    "0.01",
+    "0.01"
+   ],
+   "expected_goals_non_penalty": [
+    "1.46",
+    "0.04"
+   ],
+   "expected_goals_on_target": [
+    "1.15",
+    "0.00"
+   ],
+   "passes": [
+    256,
+    322
+   ],
+   "own_half_passes": [
+    129,
+    148
+   ],
+   "opposition_half_passes": [
+    101,
+    145
+   ],
+   "long_balls_accurate": [
+    "18 (72%)",
+    "10 (59%)"
+   ],
+   "accurate_crosses": [
+    "2 (25%)",
+    "2 (33%)"
+   ],
+   "player_throws": [
+    6,
+    6
+   ],
+   "Offsides": [
+    2,
+    2
+   ],
+   "matchstats.headers.tackles": [
+    5,
+    4
+   ],
+   "interceptions": [
+    4,
+    1
+   ],
+   "shot_blocks": [
+    1,
+    0
+   ],
+   "clearances": [
+    4,
+    11
+   ],
+   "keeper_saves": [
+    0,
+    1
+   ],
+   "duel_won": [
+    13,
+    16
+   ],
+   "ground_duels_won": [
+    "9 (41%)",
+    "13 (59%)"
+   ],
+   "aerials_won": [
+    "4 (57%)",
+    "3 (43%)"
+   ],
+   "dribbles_succeeded": [
+    "1 (100%)",
+    "1 (20%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    8,
+    3
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    42,
+    58
+   ],
+   "expected_goals": [
+    "0.36",
+    "0.17"
+   ],
+   "total_shots": [
+    6,
+    3
+   ],
+   "ShotsOnTarget": [
+    1,
+    1
+   ],
+   "touches_opp_box": [
+    20,
+    10
+   ],
+   "big_chance": [
+    0,
+    0
+   ],
+   "big_chance_missed_title": [
+    0,
+    0
+   ],
+   "accurate_passes": [
+    "209 (86%)",
+    "300 (91%)"
+   ],
+   "yellow_cards": [
+    1,
+    0
+   ],
+   "corners": [
+    3,
+    2
+   ],
+   "ShotsOffTarget": [
+    3,
+    2
+   ],
+   "blocked_shots": [
+    2,
+    0
+   ],
+   "shots_woodwork": [
+    0,
+    1
+   ],
+   "shots_inside_box": [
+    4,
+    3
+   ],
+   "shots_outside_box": [
+    2,
+    0
+   ],
+   "expected_goals_open_play": [
+    "0.36",
+    "0.15"
+   ],
+   "expected_goals_set_play": [
+    "0.00",
+    "0.02"
+   ],
+   "expected_goals_non_penalty": [
+    "0.36",
+    "0.17"
+   ],
+   "expected_goals_on_target": [
+    "0.09",
+    "0.01"
+   ],
+   "passes": [
+    243,
+    330
+   ],
+   "own_half_passes": [
+    111,
+    90
+   ],
+   "opposition_half_passes": [
+    98,
+    210
+   ],
+   "long_balls_accurate": [
+    "13 (57%)",
+    "7 (50%)"
+   ],
+   "accurate_crosses": [
+    "0 (0%)",
+    "5 (31%)"
+   ],
+   "player_throws": [
+    3,
+    7
+   ],
+   "Offsides": [
+    6,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    8,
+    9
+   ],
+   "interceptions": [
+    8,
+    8
+   ],
+   "shot_blocks": [
+    0,
+    2
+   ],
+   "clearances": [
+    16,
+    12
+   ],
+   "keeper_saves": [
+    1,
+    1
+   ],
+   "duel_won": [
+    20,
+    19
+   ],
+   "ground_duels_won": [
+    "12 (44%)",
+    "15 (56%)"
+   ],
+   "aerials_won": [
+    "8 (67%)",
+    "4 (33%)"
+   ],
+   "dribbles_succeeded": [
+    "1 (33%)",
+    "1 (20%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    5,
+    3
+   ]
+  }
+ }
+}
