@@ -1,15 +1,15 @@
 ﻿# FotMob match page (__NEXT_DATA__, Opta data) -> match_data.json
-# usage: python -I fetch_data.py <fotmob match url | saved .html>
+# usage: python -I fetch_data.py <fotmob match url | saved .html> [output dir, default: this folder]
 import json,os,re,sys,urllib.request
 H=os.path.dirname(os.path.abspath(__file__))
-src=sys.argv[1]
+src=sys.argv[1]; OUTDIR=os.path.abspath(sys.argv[2]) if len(sys.argv)>2 else H
 if src.startswith('http'):
     req=urllib.request.Request(src,headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Safari/537.36'})
     html=urllib.request.urlopen(req,timeout=30).read().decode('utf-8')
 else: html=open(src,encoding='utf-8').read()
 pp=json.loads(re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>',html,re.S).group(1))['props']['pageProps']
 g,c=pp['general'],pp['content']
-CODE={8455:'CHE',10260:'MUN'}
+CODE={8455:'CHE',10260:'MUN',8650:'LIV',9826:'CRY'}
 tid={g['homeTeam']['id']:CODE[g['homeTeam']['id']],g['awayTeam']['id']:CODE[g['awayTeam']['id']]}
 shots=[{'team':tid[s['teamId']],'min':s['min'],'add':s.get('minAdded'),'type':s['eventType'],'situation':s['situation'],'shotType':s['shotType'],
         'xg':round(s['expectedGoals'] or 0,4),'x':s['x'],'y':s['y'],'player':s['playerName'],'onTarget':s.get('isOnTarget'),'blocked':s.get('isBlocked'),'ownGoal':s.get('isOwnGoal')}
@@ -27,4 +27,4 @@ sc=pp['header']['status']['scoreStr']
 out={'source':f"FotMob match {g['matchId']} (Opta data)",
      'match':f"{g['homeTeam']['name']} {sc.replace(' ','')} {g['awayTeam']['name']}, {g['leagueName']} round {g['matchRound']}, {g['matchTimeUTC']}",
      'home':home,'away':away,'shots':shots,'momentum':[[d['minute'],d['value']] for d in c['momentum']['main']['data']],'events':events,'stats':stats}
-json.dump(out,open(os.path.join(H,'match_data.json'),'w',encoding='utf-8'),ensure_ascii=False,indent=1); print('wrote match_data.json:',out['match'],len(shots),'shots')
+json.dump(out,open(os.path.join(OUTDIR,'match_data.json'),'w',encoding='utf-8'),ensure_ascii=False,indent=1); print('wrote match_data.json:',out['match'],len(shots),'shots')

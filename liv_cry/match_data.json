@@ -1,0 +1,1284 @@
+{
+ "source": "FotMob match 4813710 (Opta data)",
+ "match": "Liverpool 3-1 Crystal Palace, Premier League round 34, Sat, Apr 25, 2026, 14:00 UTC",
+ "home": "LIV",
+ "away": "CRY",
+ "shots": [
+  {
+   "team": "LIV",
+   "min": 6,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0184,
+   "x": 86.24558823480001,
+   "y": 27.698571428000005,
+   "player": "Dominik Szoboszlai",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 7,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0421,
+   "x": 95.640350876,
+   "y": 26.343125,
+   "player": "Florian Wirtz",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "CRY",
+   "min": 11,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.6172,
+   "x": 100.6379310348,
+   "y": 33.161249999999995,
+   "player": "Chris Richards",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRY",
+   "min": 17,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0302,
+   "x": 77.1917475744,
+   "y": 38.116190478,
+   "player": "Brennan Johnson",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "CRY",
+   "min": 20,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1188,
+   "x": 94.09649122639999,
+   "y": 25.186875,
+   "player": "Brennan Johnson",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 32,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0901,
+   "x": 93.8,
+   "y": 25.8228125,
+   "player": "Mohamed Salah",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 34,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0847,
+   "x": 92.6,
+   "y": 36.135000000000005,
+   "player": "Dominik Szoboszlai",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 35,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0331,
+   "x": 81.35873786479999,
+   "y": 26.516562500000003,
+   "player": "Alexis Mac Allister",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 35,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.4329,
+   "x": 94.9649122793,
+   "y": 36.440000000000005,
+   "player": "Alexander Isak",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRY",
+   "min": 39,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1982,
+   "x": 101.58620689680001,
+   "y": 44.2810191037,
+   "player": "Jean-Philippe Mateta",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRY",
+   "min": 40,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.1012,
+   "x": 96.0263157884,
+   "y": 33.77125,
+   "player": "Jean-Philippe Mateta",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 40,
+   "add": null,
+   "type": "Goal",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.371,
+   "x": 94.2894736826,
+   "y": 40.217380953,
+   "player": "Andrew Robertson",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRY",
+   "min": 45,
+   "add": 1,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.1172,
+   "x": 98.4385964909,
+   "y": 28.623095236999998,
+   "player": "Maxence Lacroix",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRY",
+   "min": 45,
+   "add": 1,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.1198,
+   "x": 101.3965517244,
+   "y": 27.950714285,
+   "player": "Maxence Lacroix",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRY",
+   "min": 45,
+   "add": 1,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0446,
+   "x": 95.640350876,
+   "y": 23.859108284899996,
+   "player": "Daniel Muñoz",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRY",
+   "min": 51,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0405,
+   "x": 93.2,
+   "y": 45.8924840726,
+   "player": "Borna Sosa",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRY",
+   "min": 64,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.1422,
+   "x": 96.4122807008,
+   "y": 41.057857143,
+   "player": "Ismaïla Sarr",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 67,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0339,
+   "x": 86.889705882,
+   "y": 20.84636943,
+   "player": "Jeremie Frimpong",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "CRY",
+   "min": 71,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.3773,
+   "x": 96.4122807008,
+   "y": 24.349554145,
+   "player": "Ismaïla Sarr",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRY",
+   "min": 71,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0405,
+   "x": 86.4602941172,
+   "y": 15.661656051799998,
+   "player": "Daniel Muñoz",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRY",
+   "min": 77,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0367,
+   "x": 81.80922330160001,
+   "y": 36.5925,
+   "player": "Yéremi Pino",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRY",
+   "min": 84,
+   "add": null,
+   "type": "Post",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.3171,
+   "x": 93.4,
+   "y": 23.0183439533,
+   "player": "Jørgen Strand Larsen",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 90,
+   "add": 6,
+   "type": "Goal",
+   "situation": "ThrowInSetPiece",
+   "shotType": "RightFoot",
+   "xg": 0.0387,
+   "x": 94.2894736826,
+   "y": 23.718980896300003,
+   "player": "Florian Wirtz",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   -16
+  ],
+  [
+   2,
+   -22
+  ],
+  [
+   3,
+   -22
+  ],
+  [
+   4,
+   5
+  ],
+  [
+   5,
+   11
+  ],
+  [
+   6,
+   16
+  ],
+  [
+   7,
+   14
+  ],
+  [
+   8,
+   14
+  ],
+  [
+   9,
+   -5
+  ],
+  [
+   10,
+   -27
+  ],
+  [
+   11,
+   -100
+  ],
+  [
+   12,
+   -95
+  ],
+  [
+   13,
+   -81
+  ],
+  [
+   14,
+   -14
+  ],
+  [
+   15,
+   24
+  ],
+  [
+   16,
+   19
+  ],
+  [
+   17,
+   24
+  ],
+  [
+   18,
+   11
+  ],
+  [
+   19,
+   16
+  ],
+  [
+   20,
+   -5
+  ],
+  [
+   21,
+   -22
+  ],
+  [
+   22,
+   -22
+  ],
+  [
+   23,
+   22
+  ],
+  [
+   24,
+   22
+  ],
+  [
+   25,
+   22
+  ],
+  [
+   26,
+   0
+  ],
+  [
+   27,
+   5
+  ],
+  [
+   28,
+   14
+  ],
+  [
+   29,
+   19
+  ],
+  [
+   30,
+   30
+  ],
+  [
+   31,
+   38
+  ],
+  [
+   32,
+   60
+  ],
+  [
+   33,
+   38
+  ],
+  [
+   34,
+   81
+  ],
+  [
+   35,
+   76
+  ],
+  [
+   36,
+   81
+  ],
+  [
+   37,
+   30
+  ],
+  [
+   38,
+   8
+  ],
+  [
+   39,
+   -8
+  ],
+  [
+   40,
+   -5
+  ],
+  [
+   41,
+   -5
+  ],
+  [
+   42,
+   11
+  ],
+  [
+   43,
+   5
+  ],
+  [
+   44,
+   0
+  ],
+  [
+   45,
+   -22
+  ],
+  [
+   45.5,
+   -70
+  ],
+  [
+   46,
+   8
+  ],
+  [
+   47,
+   19
+  ],
+  [
+   48,
+   3
+  ],
+  [
+   49,
+   -5
+  ],
+  [
+   50,
+   0
+  ],
+  [
+   51,
+   -5
+  ],
+  [
+   52,
+   8
+  ],
+  [
+   53,
+   30
+  ],
+  [
+   54,
+   38
+  ],
+  [
+   55,
+   30
+  ],
+  [
+   56,
+   -19
+  ],
+  [
+   57,
+   16
+  ],
+  [
+   58,
+   11
+  ],
+  [
+   59,
+   22
+  ],
+  [
+   60,
+   -16
+  ],
+  [
+   61,
+   -8
+  ],
+  [
+   62,
+   -5
+  ],
+  [
+   63,
+   19
+  ],
+  [
+   64,
+   -43
+  ],
+  [
+   65,
+   -41
+  ],
+  [
+   66,
+   -27
+  ],
+  [
+   67,
+   54
+  ],
+  [
+   68,
+   76
+  ],
+  [
+   69,
+   81
+  ],
+  [
+   70,
+   49
+  ],
+  [
+   71,
+   -11
+  ],
+  [
+   72,
+   -38
+  ],
+  [
+   73,
+   -33
+  ],
+  [
+   74,
+   0
+  ],
+  [
+   75,
+   0
+  ],
+  [
+   76,
+   5
+  ],
+  [
+   77,
+   -11
+  ],
+  [
+   78,
+   -11
+  ],
+  [
+   79,
+   -16
+  ],
+  [
+   80,
+   0
+  ],
+  [
+   81,
+   -5
+  ],
+  [
+   82,
+   -5
+  ],
+  [
+   83,
+   -22
+  ],
+  [
+   84,
+   -16
+  ],
+  [
+   85,
+   -11
+  ],
+  [
+   86,
+   5
+  ],
+  [
+   87,
+   65
+  ],
+  [
+   88,
+   60
+  ],
+  [
+   89,
+   65
+  ],
+  [
+   90,
+   -5
+  ],
+  [
+   90.5,
+   -14
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 19,
+   "team": "CRY",
+   "player": "Daniel Muñoz",
+   "reason": null
+  },
+  {
+   "type": "var",
+   "min": 23,
+   "team": "LIV",
+   "player": "Mohamed Salah",
+   "decision": [
+    "Penalty cancelled"
+   ]
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 32,
+   "team": "CRY",
+   "player": "Dean Henderson",
+   "reason": "Time wasting"
+  },
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 4
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 90,
+   "team": "LIV",
+   "player": "Dominik Szoboszlai",
+   "reason": "Time wasting"
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 7
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 90,
+   "team": "CRY",
+   "player": "Borna Sosa",
+   "reason": null
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    53,
+    47
+   ],
+   "expected_goals": [
+    "1.14",
+    "2.28"
+   ],
+   "total_shots": [
+    9,
+    14
+   ],
+   "ShotsOnTarget": [
+    3,
+    7
+   ],
+   "touches_opp_box": [
+    32,
+    25
+   ],
+   "big_chance": [
+    3,
+    5
+   ],
+   "big_chance_missed_title": [
+    0,
+    5
+   ],
+   "accurate_passes": [
+    "378 (81%)",
+    "326 (82%)"
+   ],
+   "yellow_cards": [
+    1,
+    3
+   ],
+   "corners": [
+    5,
+    8
+   ],
+   "ShotsOffTarget": [
+    2,
+    6
+   ],
+   "blocked_shots": [
+    4,
+    1
+   ],
+   "shots_woodwork": [
+    0,
+    2
+   ],
+   "shots_inside_box": [
+    6,
+    11
+   ],
+   "shots_outside_box": [
+    3,
+    3
+   ],
+   "expected_goals_open_play": [
+    "1.05",
+    "1.30"
+   ],
+   "expected_goals_set_play": [
+    "0.10",
+    "0.98"
+   ],
+   "expected_goals_non_penalty": [
+    "1.14",
+    "2.28"
+   ],
+   "expected_goals_on_target": [
+    "1.93",
+    "1.43"
+   ],
+   "physical_metrics_distance_covered": [
+    109918,
+    113961
+   ],
+   "physical_metrics_running": [
+    22107,
+    24421
+   ],
+   "physical_metrics_sprinting": [
+    3089,
+    2562
+   ],
+   "physical_metrics_number_of_sprints": [
+    144,
+    127
+   ],
+   "passes": [
+    465,
+    400
+   ],
+   "own_half_passes": [
+    215,
+    195
+   ],
+   "opposition_half_passes": [
+    163,
+    131
+   ],
+   "long_balls_accurate": [
+    "27 (47%)",
+    "24 (44%)"
+   ],
+   "accurate_crosses": [
+    "4 (33%)",
+    "6 (33%)"
+   ],
+   "player_throws": [
+    10,
+    16
+   ],
+   "Offsides": [
+    1,
+    4
+   ],
+   "matchstats.headers.tackles": [
+    9,
+    13
+   ],
+   "interceptions": [
+    4,
+    9
+   ],
+   "shot_blocks": [
+    1,
+    4
+   ],
+   "clearances": [
+    36,
+    29
+   ],
+   "keeper_saves": [
+    5,
+    0
+   ],
+   "duel_won": [
+    45,
+    42
+   ],
+   "ground_duels_won": [
+    "23 (45%)",
+    "28 (55%)"
+   ],
+   "aerials_won": [
+    "22 (61%)",
+    "14 (39%)"
+   ],
+   "dribbles_succeeded": [
+    "4 (44%)",
+    "6 (60%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    10,
+    10
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    57,
+    43
+   ],
+   "expected_goals": [
+    "1.07",
+    "1.32"
+   ],
+   "total_shots": [
+    7,
+    8
+   ],
+   "ShotsOnTarget": [
+    2,
+    4
+   ],
+   "touches_opp_box": [
+    14,
+    14
+   ],
+   "big_chance": [
+    2,
+    3
+   ],
+   "big_chance_missed_title": [
+    0,
+    3
+   ],
+   "accurate_passes": [
+    "213 (83%)",
+    "138 (75%)"
+   ],
+   "yellow_cards": [
+    0,
+    2
+   ],
+   "corners": [
+    3,
+    6
+   ],
+   "ShotsOffTarget": [
+    2,
+    3
+   ],
+   "blocked_shots": [
+    3,
+    1
+   ],
+   "shots_woodwork": [
+    0,
+    1
+   ],
+   "shots_inside_box": [
+    5,
+    7
+   ],
+   "shots_outside_box": [
+    2,
+    1
+   ],
+   "expected_goals_open_play": [
+    "1.01",
+    "0.35"
+   ],
+   "expected_goals_set_play": [
+    "0.06",
+    "0.98"
+   ],
+   "expected_goals_non_penalty": [
+    "1.07",
+    "1.32"
+   ],
+   "expected_goals_on_target": [
+    "1.67",
+    "0.66"
+   ],
+   "physical_metrics_distance_covered": [
+    55126,
+    57095
+   ],
+   "physical_metrics_running": [
+    10934,
+    12042
+   ],
+   "physical_metrics_sprinting": [
+    1426,
+    1213
+   ],
+   "physical_metrics_number_of_sprints": [
+    68,
+    61
+   ],
+   "passes": [
+    256,
+    183
+   ],
+   "own_half_passes": [
+    135,
+    78
+   ],
+   "opposition_half_passes": [
+    78,
+    60
+   ],
+   "long_balls_accurate": [
+    "14 (44%)",
+    "12 (40%)"
+   ],
+   "accurate_crosses": [
+    "0 (0%)",
+    "6 (50%)"
+   ],
+   "player_throws": [
+    4,
+    7
+   ],
+   "Offsides": [
+    1,
+    3
+   ],
+   "matchstats.headers.tackles": [
+    3,
+    7
+   ],
+   "interceptions": [
+    2,
+    4
+   ],
+   "shot_blocks": [
+    1,
+    3
+   ],
+   "clearances": [
+    18,
+    12
+   ],
+   "keeper_saves": [
+    3,
+    0
+   ],
+   "duel_won": [
+    22,
+    26
+   ],
+   "ground_duels_won": [
+    "8 (32%)",
+    "17 (68%)"
+   ],
+   "aerials_won": [
+    "14 (61%)",
+    "9 (39%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (33%)",
+    "5 (63%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    6,
+    3
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    49,
+    51
+   ],
+   "expected_goals": [
+    "0.07",
+    "0.95"
+   ],
+   "total_shots": [
+    2,
+    6
+   ],
+   "ShotsOnTarget": [
+    1,
+    3
+   ],
+   "touches_opp_box": [
+    18,
+    11
+   ],
+   "big_chance": [
+    1,
+    2
+   ],
+   "big_chance_missed_title": [
+    0,
+    2
+   ],
+   "accurate_passes": [
+    "165 (79%)",
+    "188 (87%)"
+   ],
+   "yellow_cards": [
+    1,
+    1
+   ],
+   "corners": [
+    2,
+    2
+   ],
+   "ShotsOffTarget": [
+    0,
+    3
+   ],
+   "blocked_shots": [
+    1,
+    0
+   ],
+   "shots_woodwork": [
+    0,
+    1
+   ],
+   "shots_inside_box": [
+    1,
+    4
+   ],
+   "shots_outside_box": [
+    1,
+    2
+   ],
+   "expected_goals_open_play": [
+    "0.03",
+    "0.95"
+   ],
+   "expected_goals_set_play": [
+    "0.04",
+    "0.00"
+   ],
+   "expected_goals_non_penalty": [
+    "0.07",
+    "0.95"
+   ],
+   "expected_goals_on_target": [
+    "0.27",
+    "0.77"
+   ],
+   "physical_metrics_distance_covered": [
+    54791,
+    56865
+   ],
+   "physical_metrics_running": [
+    11172,
+    12377
+   ],
+   "physical_metrics_sprinting": [
+    1662,
+    1349
+   ],
+   "physical_metrics_number_of_sprints": [
+    76,
+    66
+   ],
+   "passes": [
+    209,
+    217
+   ],
+   "own_half_passes": [
+    80,
+    117
+   ],
+   "opposition_half_passes": [
+    85,
+    71
+   ],
+   "long_balls_accurate": [
+    "13 (50%)",
+    "12 (48%)"
+   ],
+   "accurate_crosses": [
+    "4 (50%)",
+    "0 (0%)"
+   ],
+   "player_throws": [
+    6,
+    9
+   ],
+   "Offsides": [
+    0,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    6,
+    6
+   ],
+   "interceptions": [
+    2,
+    5
+   ],
+   "shot_blocks": [
+    0,
+    1
+   ],
+   "clearances": [
+    18,
+    17
+   ],
+   "keeper_saves": [
+    2,
+    0
+   ],
+   "duel_won": [
+    23,
+    16
+   ],
+   "ground_duels_won": [
+    "15 (58%)",
+    "11 (42%)"
+   ],
+   "aerials_won": [
+    "8 (62%)",
+    "5 (38%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (67%)",
+    "1 (50%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    4,
+    7
+   ]
+  }
+ }
+}

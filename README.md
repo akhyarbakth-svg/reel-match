@@ -21,3 +21,7 @@ python -I render_par.py frames 5 1245               # 5 parallel workers -> MP4 
 ```
 
 `index.html` is deterministic per frame: `frame(f)` draws frame `f`. You can also open it directly in a browser.
+
+## Other reels
+
+- [`liv_cry/`](liv_cry/README.md): Liverpool 3-1 Crystal Palace (PL MD34, 25 Apr 2026). Render any reel folder with `render_reel.py`.
