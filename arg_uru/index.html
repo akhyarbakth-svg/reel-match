@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Argentina 1-2 Uruguay Reel</title>
+<style>
+html,body{margin:0;background:#05070d;overflow:hidden}
+canvas{display:block;width:1080px;height:1920px}
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="data.js"></script>
+<script>
+// Argentina 1-2 Uruguay · international friendly · 13 Nov 2026 · La Bombonera
+// Deterministic: frame(f) draws frame f. Data in data.js comes from FotMob (Opta): events, lineups, ratings, team stats.
+'use strict';
+const W=1080,H=1920,FPS=30;
+const cv=document.getElementById('c'), X=cv.getContext('2d');
+const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
+const lerp=(a,b,u)=>a+(b-a)*u;
+const ease=u=>{u=clamp(u);return u<.5?4*u*u*u:1-Math.pow(-2*u+2,3)/2;};
+const easeOut=u=>1-Math.pow(1-clamp(u),3);
+const easeIn=u=>Math.pow(clamp(u),3);
+const backOut=u=>{u=clamp(u);const c=1.9;return 1+(c+1)*Math.pow(u-1,3)+c*Math.pow(u-1,2);};
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const vis=(t,a,b,fi=.35,fo=.35)=>Math.min(seg(t,a,a+fi),1-seg(t,b-fo,b));
+function rng(seed){let s=seed>>>0;return()=>{s=(s*1664525+1013904223)>>>0;return s/4294967296;};}
+
+const FONT='"Inter Display","Inter",system-ui,sans-serif';
+const COL={ARG:'#75AADB',URU:'#F4C430'}, INK='#07101d', WHITE='#f4f7fb', DIM='rgba(220,230,245,.62)';
+const NAME={ARG:'ARGENTINA',URU:'URUGUAY'};
+const M=MATCH, ST=M.stats.All, S1=M.stats.FirstHalf;
+const SUR={'Giorgian De Arrascaeta':'DE ARRASCAETA','Alexis Mac Allister':'MAC ALLISTER','Maxi Araújo':'M. ARAÚJO','Ronald Araujo':'R. ARAUJO'};
+const sur=n=>SUR[n]||n.split(' ').slice(-1)[0].toUpperCase();
+const num=v=>typeof v==='string'?parseFloat(v):v;
+
+// ---------- text ----------
+function T(s,x,y,size,o={}){
+  X.save(); X.globalAlpha*=o.a??1; X.font=`${o.w||800} ${size}px ${FONT}`; X.fillStyle=o.c||WHITE;
+  X.textAlign=o.al||'center'; X.textBaseline=o.bl||'middle'; X.letterSpacing=(o.tr||0)+'px';
+  if(o.sh){X.shadowColor=o.sh;X.shadowBlur=o.sb||24;}
+  if(o.mw){const w=X.measureText(s).width; if(w>o.mw){X.translate(x,y);X.scale(o.mw/w,1);X.translate(-x,-y);}}
+  X.fillText(s,x,y); X.restore();
+}
+function tw(s,size,w=800,tr=0){X.save();X.font=`${w} ${size}px ${FONT}`;X.letterSpacing=tr+'px';const v=X.measureText(s).width;X.restore();return v;}
+function rr(x,y,w,h,r){X.beginPath();X.roundRect(x,y,w,h,r);}
+
+// ---------- flags (drawn once, offscreen) ----------
+function sun(g,cx,cy,r,rays){ g.save(); g.translate(cx,cy); g.fillStyle='#F6B40E'; g.strokeStyle='#85340A'; g.lineWidth=r*.06;
+  g.beginPath(); for(let i=0;i<rays*2;i++){ const a=i*Math.PI/rays, R=i%2?r*1.55:r*2.05, w=Math.PI/rays*.42;
+    g.moveTo(Math.cos(a-w)*r*.9,Math.sin(a-w)*r*.9); g.lineTo(Math.cos(a)*R,Math.sin(a)*R); g.lineTo(Math.cos(a+w)*r*.9,Math.sin(a+w)*r*.9); }
+  g.fill(); g.stroke(); g.beginPath(); g.arc(0,0,r,0,7); g.fill(); g.stroke(); g.restore(); }
+const FLAG={};
+(function(){
+  const mk=()=>{const c=document.createElement('canvas');c.width=600;c.height=400;return c;};
+  let c=mk(), g=c.getContext('2d');
+  g.fillStyle='#74ACDF'; g.fillRect(0,0,600,400); g.fillStyle='#fff'; g.fillRect(0,133.3,600,133.4); sun(g,300,200,34,16); FLAG.ARG=c;
+  c=mk(); g=c.getContext('2d'); for(let i=0;i<9;i++){ g.fillStyle=i%2?'#0038A8':'#fff'; g.fillRect(0,i*400/9,600,400/9+1); }
+  g.fillStyle='#fff'; g.fillRect(0,0,222.2,222.2); sun(g,111,111,38,8); FLAG.URU=c;
+})();
+function flag(code,cx,cy,w,t,o={}){ const h=w*2/3, r=o.r??w*.08; X.save(); X.globalAlpha*=o.a??1;
+  X.shadowColor='rgba(0,0,0,.55)'; X.shadowBlur=w*.18; X.shadowOffsetY=w*.05; rr(cx-w/2,cy-h/2,w,h,r); X.fillStyle='#000'; X.fill();
+  X.shadowColor='transparent'; X.save(); rr(cx-w/2,cy-h/2,w,h,r); X.clip(); X.drawImage(FLAG[code],cx-w/2,cy-h/2,w,h);
+  const s=((t*.35)%1.6)-.3, gr=X.createLinearGradient(cx-w/2,cy-h/2,cx+w/2,cy+h/2); // moving sheen
+  gr.addColorStop(clamp(s-.18),'rgba(255,255,255,0)'); gr.addColorStop(clamp(s),'rgba(255,255,255,.28)'); gr.addColorStop(clamp(s+.18),'rgba(255,255,255,0)');
+  X.fillStyle=gr; X.fillRect(cx-w/2,cy-h/2,w,h); X.restore();
+  rr(cx-w/2,cy-h/2,w,h,r); X.strokeStyle='rgba(255,255,255,.35)'; X.lineWidth=Math.max(1.5,w*.012); X.stroke(); X.restore(); }
+
+// ---------- background ----------
+const NOISE=(()=>{const c=document.createElement('canvas');c.width=c.height=256;const g=c.getContext('2d'),d=g.createImageData(256,256),r=rng(7);
+  for(let i=0;i<d.data.length;i+=4){const v=r()*255;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=14;} g.putImageData(d,0,0);return c;})();
+function bg(t,f){
+  const g=X.createLinearGradient(0,0,0,H); g.addColorStop(0,'#070b16'); g.addColorStop(1,'#04060b'); X.fillStyle=g; X.fillRect(0,0,W,H);
+  const glow=(x,y,r,c,a)=>{const q=X.createRadialGradient(x,y,0,x,y,r);q.addColorStop(0,c.replace('A',a));q.addColorStop(1,c.replace('A',0));X.fillStyle=q;X.fillRect(0,0,W,H);};
+  glow(180+90*Math.sin(t*.31),420+80*Math.cos(t*.23),900,'rgba(117,170,219,A)',.20);
+  glow(900+80*Math.cos(t*.27),1500+90*Math.sin(t*.19),900,'rgba(244,196,48,A)',.13);
+  X.save(); X.globalAlpha=.05; X.strokeStyle='#cfe0ff'; X.lineWidth=2; // slow diagonal pinstripes
+  const off=(t*22)%90; for(let i=-30;i<40;i++){const x0=i*90+off; X.beginPath(); X.moveTo(x0,0); X.lineTo(x0-H*.45,H); X.stroke();} X.restore();
+  const v=X.createRadialGradient(W/2,H/2,H*.25,W/2,H/2,H*.75); v.addColorStop(0,'rgba(0,0,0,0)'); v.addColorStop(1,'rgba(0,0,0,.6)'); X.fillStyle=v; X.fillRect(0,0,W,H);
+  const r=rng(f*31+3); X.save(); X.translate(-r()*256,-r()*256); X.fillStyle=X.createPattern(NOISE,'repeat'); X.fillRect(0,0,W+256,H+256); X.restore();
+}
+
+// ---------- timeline: clock schedule ----------
+const evs=M.events.map(e=>({...e,k:e.min+(e.add||0)}));
+const ROWS=[]; // feed rows: subs grouped per minute + team
+for(const e of evs){ if(e.type==='sub'){ const r=ROWS.find(q=>q.type==='sub'&&q.k===e.k&&q.team===e.team); if(r){r.on.push(e.on);r.off.push(e.off);continue;}
+  ROWS.push({...e,on:[e.on],off:[e.off]}); } else ROWS.push(e); }
+const GOALS=ROWS.filter(r=>r.type==='goal');
+const T2=11.0, GOAL_D=3.6, HT_D=3.6;
+const SEGS=[]; let tt=T2+0.9; const HT_T=(()=>{ const d=45/15; SEGS.push({t0:tt,t1:tt+d,m0:0,m1:45,e:1}); tt+=d; const h=tt; SEGS.push({t0:tt,t1:tt+HT_D,m0:45,m1:45}); tt+=HT_D; return h; })();
+{ let cur=45; const keys=[...new Set(ROWS.map(r=>r.k))].sort((a,b)=>a-b);
+  for(const k of keys){ const d=(k-cur)/8; SEGS.push({t0:tt,t1:tt+d,m0:cur,m1:k}); tt+=d;
+    const rs=ROWS.filter(r=>r.k===k); rs.forEach((r,i)=>r.t=tt+i*.18); const goal=rs.some(r=>r.type==='goal');
+    const hd=goal?GOAL_D:.22+.18*rs.length; SEGS.push({t0:tt,t1:tt+hd,m0:k,m1:k}); tt+=hd; cur=k; }
+  const d=(91.6-cur)/8; SEGS.push({t0:tt,t1:tt+d,m0:cur,m1:91.6}); tt+=d; }
+const FT_T=tt;
+GOALS.forEach((g,i)=>{ g.i=i; });
+function minuteAt(t){ if(t<=SEGS[0].t0) return 0; for(const s of SEGS) if(t<s.t1) return s.e?lerp(s.m0,s.m1,ease(seg(t,s.t0,s.t1))):lerp(s.m0,s.m1,seg(t,s.t0,s.t1)); return 91.6; }
+function clockStr(t,m){ if(t>=FT_T) return 'FT'; if(t>=HT_T&&t<HT_T+HT_D) return 'HT'; if(m>90) return `90+${Math.max(1,Math.floor(m-90))}'`; return `${Math.max(1,Math.ceil(m-1e-6))}'`; }
+function score(t){ const s={ARG:0,URU:0}; for(const g of GOALS) if(t>=g.t+1.1) s[g.team]++; return s; }
+
+// scene times
+const T3=FT_T+1.0, T4=T3+9.6, T5=T4+5.8, T6=T5+5.2, END=T6+4.6;
+const TOTAL=Math.round(END*FPS);
+
+// ---------- S0 intro ----------
+function intro(t){
+  const a=vis(t,0,4.9,.3,.5); if(a<=0) return; X.save(); X.globalAlpha=a; const up=-90*easeIn(seg(t,4.4,4.9));
+  X.translate(0,up);
+  T('INTERNATIONAL FRIENDLY',W/2,470,34,{w:700,tr:10,c:DIM,a:easeOut(seg(t,.1,.7))});
+  const u1=easeOut(seg(t,.25,1.15)), u2=easeOut(seg(t,.4,1.3));
+  flag('ARG',lerp(-200,290,u1),780,330,t); flag('URU',lerp(W+200,790,u2),780,330,t);
+  const vs=backOut(seg(t,1.0,1.5)); X.save(); X.translate(W/2,780); X.scale(vs,vs); T('VS',0,0,64,{w:900,c:WHITE,sh:'rgba(255,255,255,.4)'}); X.restore();
+  T('ARGENTINA',290,1000,58,{w:900,c:COL.ARG,a:easeOut(seg(t,.9,1.4)),mw:420}); T('URUGUAY',790,1000,58,{w:900,c:COL.URU,a:easeOut(seg(t,1.0,1.5)),mw:420});
+  const b=easeOut(seg(t,1.5,2.1)); X.save(); X.globalAlpha*=b; X.fillStyle='rgba(255,255,255,.18)'; X.fillRect(W/2-260*b,1095,520*b,2); X.restore();
+  T('LA BOMBONERA · BUENOS AIRES',W/2,1160,38,{w:700,tr:3,a:b}); T('13 NOVEMBER 2026',W/2,1220,34,{w:600,tr:4,c:DIM,a:b});
+  const c=easeOut(seg(t,2.2,2.8)); X.save(); X.globalAlpha*=c; X.translate(0,30*(1-c)); rr(150,1330,780,170,26); X.fillStyle='rgba(117,170,219,.12)'; X.fill(); X.strokeStyle='rgba(117,170,219,.5)'; X.lineWidth=2; X.stroke();
+  T('ARGENTINA’S FIRST MATCH SINCE',W/2,1392,36,{w:800,tr:1}); T('MESSI’S INTERNATIONAL RETIREMENT',W/2,1442,36,{w:800,tr:1,c:COL.ARG}); X.restore();
+  X.restore();
+}
+
+// ---------- S1 lineups ----------
+const PX0=120,PX1=960,PY0=380,PY1=1580,PMID=(PY0+PY1)/2;
+function ratingCol(r){ return r>=7.5?'#2fd47a':r>=7?'#9be15d':r>=6.5?'#f2d14b':r>=6?'#f39a3b':'#f0533f'; }
+function lineups(t){
+  const a=vis(t,4.6,11.2,.4,.45); if(a<=0) return; X.save(); X.globalAlpha=a;
+  T('STARTING XI',W/2,200,58,{w:900,tr:4,a:easeOut(seg(t,4.7,5.2))});
+  T('FOTMOB PLAYER RATINGS',W/2,262,26,{w:700,tr:6,c:DIM,a:easeOut(seg(t,7.2,7.8))});
+  const pu=ease(seg(t,4.7,5.6));
+  X.save(); rr(PX0,PY0,PX1-PX0,PY1-PY0,28); X.clip();
+  const g=X.createLinearGradient(0,PY0,0,PY1); g.addColorStop(0,'rgba(24,70,48,.55)'); g.addColorStop(1,'rgba(14,48,34,.55)'); X.fillStyle=g; X.fillRect(PX0,PY0,PX1-PX0,PY1-PY0);
+  for(let i=0;i<10;i++) if(i%2){X.fillStyle='rgba(255,255,255,.025)';X.fillRect(PX0,PY0+i*120,PX1-PX0,120);} X.restore();
+  X.save(); X.strokeStyle='rgba(255,255,255,.42)'; X.lineWidth=3; if(pu<1) X.setLineDash([4200*pu,4200]);
+  const line=pts=>{X.beginPath();pts.forEach((p,i)=>i?X.lineTo(...p):X.moveTo(...p));X.stroke();};
+  line([[PX0,PY0],[PX1,PY0],[PX1,PY1],[PX0,PY1],[PX0,PY0]]); line([[PX0,PMID],[PX1,PMID]]);
+  X.beginPath(); X.arc(W/2,PMID,110,0,Math.PI*2*pu); X.stroke();
+  for(const s of[1,-1]){ const y0=s>0?PY0:PY1; line([[W/2-250,y0],[W/2-250,y0+s*200],[W/2+250,y0+s*200],[W/2+250,y0]]); line([[W/2-110,y0],[W/2-110,y0+s*70],[W/2+110,y0+s*70],[W/2+110,y0]]); }
+  X.restore();
+  // formations
+  T(`${NAME.URU}  ${M.lineup.URU.formation}`,PX0+6,PY0-38,30,{w:800,al:'left',c:COL.URU,a:easeOut(seg(t,5.1,5.6)),tr:2});
+  T(`${NAME.ARG}  ${M.lineup.ARG.formation}`,PX0+6,PY1+40,30,{w:800,al:'left',c:COL.ARG,a:easeOut(seg(t,5.6,6.1)),tr:2});
+  flag('URU',PX1-50,PY0-38,72,t); flag('ARG',PX1-50,PY1+40,72,t);
+  for(const code of['URU','ARG']){ const L=M.lineup[code].starters, s0=code==='URU'?5.3:5.9;
+    L.forEach((p,i)=>{ const u=backOut(seg(t,s0+i*.07,s0+i*.07+.4)); if(u<=0) return;
+      const px=code==='ARG'?PX0+40+p.y*(PX1-PX0-80):PX1-40-p.y*(PX1-PX0-80);
+      const d=48+(p.x-.1)/.77*(PMID-PY0-125), py=code==='ARG'?PY1-d:PY0+d;
+      X.save(); X.translate(px,py); X.scale(u,u);
+      X.shadowColor='rgba(0,0,0,.5)'; X.shadowBlur=14; X.beginPath(); X.arc(0,0,31,0,7); X.fillStyle=COL[code]; X.fill(); X.shadowColor='transparent';
+      X.lineWidth=3; X.strokeStyle='rgba(255,255,255,.85)'; X.stroke();
+      T(String(p.no),0,2,28,{w:900,c:INK}); T(sur(p.name),0,56,23,{w:800,mw:200,sh:'rgba(0,0,0,.9)',sb:8});
+      const ru=backOut(seg(t,7.4+i*.05+(code==='ARG'?.3:0),7.8+i*.05+(code==='ARG'?.3:0)));
+      if(ru>0){ const r=num(p.rating); X.save(); X.translate(34,-28); X.scale(ru,ru); rr(-30,-17,60,34,17); X.fillStyle=ratingCol(r); X.fill(); T(r.toFixed(1),0,1,21,{w:900,c:INK}); X.restore(); }
+      X.restore(); }); }
+  X.restore();
+}
+
+// ---------- S2 match ----------
+function scoreboard(t,a){
+  if(a<=0) return; const sc=score(t); X.save(); X.globalAlpha=a;
+  rr(70,230,940,250,40); X.fillStyle='rgba(10,16,30,.72)'; X.fill(); X.strokeStyle='rgba(255,255,255,.12)'; X.lineWidth=2; X.stroke();
+  flag('ARG',190,330,150,t); flag('URU',890,330,150,t);
+  T('ARG',190,428,32,{w:900,tr:4,c:COL.ARG}); T('URU',890,428,32,{w:900,tr:4,c:COL.URU});
+  for(const [code,x] of[['ARG',430],['URU',650]]){ const g=GOALS.filter(q=>q.team===code&&t>=q.t+1.1).pop(); const p=g?Math.exp(-(t-g.t-1.1)*3)*.35:0;
+    X.save(); X.translate(x,335); X.scale(1+p,1+p); T(String(sc[code]),0,0,150,{w:900,sh:p>.02?COL[code]:null,sb:40}); X.restore(); }
+  T('–',540,330,90,{w:700,c:DIM});
+  X.restore();
+}
+function clockPill(t,m,a){ if(a<=0) return; const s=clockStr(t,m); X.save(); X.globalAlpha=a; const w=Math.max(150,tw(s,46,900)+70);
+  rr(W/2-w/2,500,w,70,35); X.fillStyle=s==='FT'||s==='HT'?'#f4f7fb':'#e8253a'; X.fill(); T(s,W/2,537,46,{w:900,c:s==='FT'||s==='HT'?INK:'#fff'}); X.restore(); }
+const BX0=120,BX1=960,BY=640, mx=m=>BX0+(BX1-BX0)*clamp(m/92);
+function timeline(t,m,a){ if(a<=0) return; X.save(); X.globalAlpha=a;
+  rr(BX0,BY-5,BX1-BX0,10,5); X.fillStyle='rgba(255,255,255,.12)'; X.fill();
+  const g=X.createLinearGradient(BX0,0,BX1,0); g.addColorStop(0,'#e8253a'); g.addColorStop(1,'#ff7a59'); rr(BX0,BY-5,Math.max(10,mx(m)-BX0),10,5); X.fillStyle=g; X.fill();
+  for(const [k,l] of[[0,"0'"],[45,'HT'],[90,"90'"]]){ X.fillStyle='rgba(255,255,255,.35)'; X.fillRect(mx(k)-1,BY-14,2,28); T(l,mx(k),BY+48,22,{w:700,c:DIM}); }
+  T(NAME.ARG,BX0,BY-62,20,{w:800,al:'left',tr:3,c:COL.ARG}); T(NAME.URU,BX1,BY-62,20,{w:800,al:'right',tr:3,c:COL.URU});
+  for(const r of ROWS){ if(!(t>=r.t)) continue; const u=backOut(seg(t,r.t,r.t+.35)); const x=mx(r.k), up=r.team==='ARG'?-1:1;
+    // own goal: marker sits on the side that benefited (URU)
+    X.save(); X.translate(x,BY+up*26); X.scale(u,u);
+    if(r.type==='goal'){ X.beginPath(); X.arc(0,up*4,15,0,7); X.fillStyle=COL[r.team]; X.fill(); X.lineWidth=3; X.strokeStyle='#fff'; X.stroke(); }
+    else if(r.type==='card'){ rr(-7,-10+up*2,14,20,3); X.fillStyle='#ffd400'; X.fill(); }
+    else { X.beginPath(); X.arc(0,0,5,0,7); X.fillStyle='rgba(255,255,255,.65)'; X.fill(); }
+    X.restore(); }
+  X.beginPath(); X.arc(mx(m),BY,11,0,7); X.fillStyle='#fff'; X.shadowColor='#ff5a5a'; X.shadowBlur=20; X.fill(); X.restore();
+}
+const FY0=760, RH=96;
+function feed(t,a){ if(a<=0) return; X.save(); X.globalAlpha=a; X.save(); X.beginPath(); X.rect(0,FY0-20,W,1620-FY0+20); X.clip();
+  const shown=ROWS.filter(r=>t>=r.t);
+  shown.slice().reverse().forEach((r,idx)=>{
+    // smooth slot position: each newer row pushes this one down
+    let slot=0; for(const q of shown) if(q.t>r.t) slot+=easeOut(seg(t,q.t,q.t+.3));
+    const u=easeOut(seg(t,r.t+.12,r.t+.4)), y=FY0+slot*RH, fade=clamp(1-(y-1400)/200); if(fade<=0) return;
+    X.save(); X.globalAlpha*=u*fade; X.translate(60*(1-u)*(r.team==='ARG'?-1:1),0);
+    const isG=r.type==='goal', c=COL[r.team];
+    rr(70,y,940,RH-14,22); X.fillStyle=isG?c:'rgba(255,255,255,.07)'; X.fill();
+    if(!isG){ X.fillStyle=c; rr(70,y,8,RH-14,4); X.fill(); }
+    const ink=isG?INK:WHITE, cy=y+(RH-14)/2, min=r.add?`${r.min}+${r.add}'`:`${r.min}'`;
+    T(min,150,cy,34,{w:900,c:ink,mw:120}); flag(r.team==='URU'&&r.ownGoal?'URU':r.team,250,cy,66,t,{r:6});
+    let title='',sub='';
+    if(isG){ title=r.ownGoal?`GOAL · ${sur(r.player)} (OG)`:`GOAL · ${sur(r.player)}`; sub=r.ownGoal?'OWN GOAL · URUGUAY LEAD':`ASSIST: ${r.assist}`;
+      X.save(); X.translate(950,cy); X.beginPath(); X.arc(0,0,22,0,7); X.fillStyle='#fff'; X.fill(); X.lineWidth=3; X.strokeStyle=INK; X.stroke(); T('⚽',0,2,30,{c:INK}); X.restore(); }
+    else if(r.type==='card'){ title=sur(r.player); sub='YELLOW CARD'; rr(930,cy-22,30,44,5); X.fillStyle='#ffd400'; X.fill(); }
+    else { title='⇄ '+r.on.map(sur).join(', '); sub='OFF: '+r.off.map(sur).join(', '); }
+    T(title,305,cy-14,34,{w:900,al:'left',c:ink,mw:600}); T(sub,305,cy+22,22,{w:700,al:'left',c:isG?'rgba(7,16,29,.75)':DIM,tr:1,mw:600});
+    X.restore(); });
+  X.restore(); X.restore();
+}
+function rays(cx,cy,t,c,a){ X.save(); X.globalAlpha*=a; X.translate(cx,cy); X.rotate(t*.25); X.fillStyle=c;
+  for(let i=0;i<18;i++){ X.rotate(Math.PI*2/18); X.beginPath(); X.moveTo(0,0); X.lineTo(1400,-90); X.lineTo(1400,90); X.closePath(); X.fill(); } X.restore(); }
+const GLINE=['URUGUAY TAKE THE LEAD','TWO GOALS IN FIVE MINUTES','ARGENTINA PULL ONE BACK'];
+function goalOverlay(t){
+  for(const g of GOALS){ const a=t-g.t; if(a<0||a>GOAL_D) continue;
+    const inU=easeOut(a/.35), outU=easeIn((a-(GOAL_D-.4))/.4), c=COL[g.team];
+    X.save(); X.beginPath(); // diagonal wipe
+    const sh=2400*(1-inU), e=-2400*outU; X.moveTo(-200+sh+e,-200); X.lineTo(W+900+sh+e,-200); X.lineTo(W+200+sh+e,H+200); X.lineTo(-900+sh+e,H+200); X.closePath(); X.clip();
+    X.fillStyle=c; X.fillRect(0,0,W,H);
+    if(g.team==='ARG'){ X.fillStyle='rgba(255,255,255,.35)'; X.fillRect(0,H*.36,W,H*.28); } // albiceleste band
+    rays(W/2,760,t,'rgba(255,255,255,.12)',1);
+    const v=X.createRadialGradient(W/2,H/2,300,W/2,H/2,1200); v.addColorStop(0,'rgba(0,0,0,0)'); v.addColorStop(1,'rgba(0,0,0,.28)'); X.fillStyle=v; X.fillRect(0,0,W,H);
+    flag(g.team,W/2,470,230,t);
+    const p=backOut(seg(a,.25,.7)); X.save(); X.translate(W/2,760); X.scale(p,p); X.rotate(-.04);
+    T('GOAL',0,0,250,{w:900,c:INK,tr:-4}); X.restore();
+    const n=easeOut(seg(a,.55,.95));
+    const parts=g.player.split(' '); const last=sur(g.player), first=last.includes('.')?parts[0].toUpperCase():parts.slice(0,-1).join(' ').toUpperCase();
+    T(first,W/2,918,40,{w:700,c:INK,a:n,tr:6}); T(last.replace(/^M\. /,''),W/2,1010,104,{w:900,c:INK,a:n,mw:940});
+    const tag=g.ownGoal?'OWN GOAL':`ASSIST · ${g.assist.toUpperCase()}`, w=tw(tag,32,800,3)+60;
+    X.save(); X.globalAlpha*=easeOut(seg(a,.75,1.1)); rr(W/2-w/2,1085,w,62,31); X.fillStyle=INK; X.fill(); T(tag,W/2,1117,32,{w:800,c:c,tr:3}); X.restore();
+    const s=score(g.t+2), k=easeOut(seg(a,1.0,1.35));
+    X.save(); X.globalAlpha*=k; X.translate(0,40*(1-k));
+    T(`${g.min}'`,W/2,1245,64,{w:900,c:INK});
+    rr(W/2-300,1310,600,150,30); X.fillStyle='rgba(7,16,29,.92)'; X.fill();
+    flag('ARG',W/2-220,1385,92,t); flag('URU',W/2+220,1385,92,t);
+    const pop=1+.25*Math.exp(-Math.max(0,a-1.1)*4)*(a>1.1?1:0);
+    for(const [code,x] of[['ARG',W/2-80],['URU',W/2+80]]){ X.save(); X.translate(x,1388); if(code===g.team) X.scale(pop,pop); T(String(s[code]),0,0,100,{w:900,c:code===g.team?COL[code]:WHITE}); X.restore(); }
+    T('–',W/2,1383,60,{w:700,c:DIM});
+    T(GLINE[g.i],W/2,1530,38,{w:900,c:INK,tr:3,a:easeOut(seg(a,1.3,1.7))});
+    X.restore(); X.restore(); }
+}
+function statRow(y,label,a,b,u,o={}){ // two-sided bar, values may be "674 (90%)"
+  const va=num(a), vb=num(b), tot=(va+vb)||1, half=360, wa=half*va/tot*u*2*(o.k||.5), wb=half*vb/tot*u*2*(o.k||.5);
+  T(label,W/2,y-26,24,{w:800,tr:4,c:DIM});
+  const fa=o.fmt?o.fmt(va):String(Math.round(va*u)), fb=o.fmt?o.fmt(vb):String(Math.round(vb*u));
+  T(fa,110,y+12,40,{w:900,al:'left',c:va>vb?COL.ARG:WHITE}); T(fb,970,y+12,40,{w:900,al:'right',c:vb>va?COL.URU:WHITE});
+  rr(W/2-half,y+6,half*2,12,6); X.fillStyle='rgba(255,255,255,.08)'; X.fill();
+  if(wa>1){ rr(W/2-wa-3,y+6,wa,12,6); X.fillStyle=COL.ARG; X.fill(); } if(wb>1){ rr(W/2+3,y+6,wb,12,6); X.fillStyle=COL.URU; X.fill(); }
+}
+function htOverlay(t){ const a=t-HT_T; if(a<0||a>HT_D) return; const u=vis(t,HT_T,HT_T+HT_D,.35,.35);
+  X.save(); X.globalAlpha=u; X.fillStyle='rgba(4,6,11,.72)'; X.fillRect(0,0,W,H);
+  X.translate(0,40*(1-easeOut(a/.4))); rr(70,700,940,860,40); X.fillStyle='rgba(16,24,42,.96)'; X.fill(); X.strokeStyle='rgba(255,255,255,.14)'; X.lineWidth=2; X.stroke();
+  T('HALF-TIME',W/2,790,64,{w:900,tr:6}); T('0 – 0',W/2,890,90,{w:900,c:WHITE});
+  T('ARGENTINA ON TOP, NO BREAKTHROUGH',W/2,975,28,{w:800,tr:2,c:DIM});
+  const rows=[['POSSESSION %',...S1.BallPossesion],['SHOTS',...S1.total_shots],['ON TARGET',...S1.ShotsOnTarget],['GOALKEEPER SAVES',...S1.keeper_saves]];
+  rows.forEach((r,i)=>statRow(1080+i*115,r[0],r[1],r[2],easeOut(seg(a,.4+i*.12,1.1+i*.12)),{k:.5}));
+  X.restore(); }
+function fullTimeFlash(t){ const a=t-FT_T; if(a<0||a>1.4) return; const u=Math.min(easeOut(a/.2),1-seg(a,.9,1.4));
+  X.save(); X.globalAlpha=u; X.fillStyle='rgba(255,255,255,.9)'; const h=180*easeOut(a/.3); X.fillRect(0,H/2-h/2+100,W,h);
+  T('FULL-TIME',W/2,H/2+100,120,{w:900,c:INK,tr:4}); X.restore(); }
+function match(t){
+  if(t<T2-.1||t>T4+.6) return;
+  const m=minuteAt(t), a=vis(t,T2,T4,.5,.5);
+  scoreboard(t,a); clockPill(t,m,a*easeOut(seg(t,T2+.3,T2+.7)));
+  timeline(t,m,a*easeOut(seg(t,T2+.4,T2+.9))*(1-seg(t,T3,T3+.5)));
+  feed(t,a*(1-seg(t,FT_T+.2,FT_T+.7)));
+  if(t<HT_T) T('FIRST HALF',W/2,1150,30,{w:800,tr:8,c:DIM,a:vis(t,T2+.8,HT_T,.4,.3)});
+  if(t<HT_T) T('NOTHING TO SEPARATE THEM',W/2,1200,36,{w:900,tr:2,a:vis(t,T2+1.2,HT_T,.4,.3)});
+  if(t>HT_T+HT_D&&t<ROWS[0].t) T('SECOND HALF',W/2,1150,30,{w:800,tr:8,c:DIM,a:vis(t,HT_T+HT_D,ROWS[0].t+.3,.2,.3)});
+  stats(t); htOverlay(t); goalOverlay(t); fullTimeFlash(t);
+}
+
+// ---------- S3 full-time stats ----------
+function stats(t){ const a=vis(t,T3,T4,.4,.5); if(a<=0) return; X.save(); X.globalAlpha=a;
+  T('MATCH STATS',W/2,620,40,{w:900,tr:8,a:easeOut(seg(t,T3,T3+.5))});
+  const pct=s=>parseInt(String(s).match(/\((\d+)%\)/)[1]);
+  const rows=[['POSSESSION %',...ST.BallPossesion],['SHOTS',...ST.total_shots],['SHOTS ON TARGET',...ST.ShotsOnTarget],['BIG CHANCES',...ST.big_chance],
+    ['TOUCHES IN OPP. BOX',...ST.touches_opp_box],['PASSES',...ST.passes],['PASS ACCURACY %',pct(ST.accurate_passes[0]),pct(ST.accurate_passes[1])],
+    ['CORNERS',...ST.corners],['GOALKEEPER SAVES',...ST.keeper_saves]];
+  rows.forEach((r,i)=>statRow(730+i*102,r[0],r[1],r[2],easeOut(seg(t,T3+.35+i*.14,T3+1.15+i*.14))));
+  X.restore(); }
+
+// ---------- S4 story ----------
+function countUp(v,u){ return Math.round(v*easeOut(u)); }
+function story(t){ const a=vis(t,T4,T5,.45,.45); if(a<=0) return; X.save(); X.globalAlpha=a;
+  T('THE BALL WENT ONE WAY.',W/2,330,52,{w:900,a:easeOut(seg(t,T4+.1,T4+.6))});
+  T('THE RESULT WENT THE OTHER.',W/2,400,52,{w:900,c:COL.URU,a:easeOut(seg(t,T4+.5,T4+1.0))});
+  const panel=(code,y,vals,t0)=>{ const u=easeOut(seg(t,t0,t0+.5)); X.save(); X.globalAlpha*=u; X.translate(80*(1-u)*(code==='ARG'?-1:1),0);
+    rr(70,y,940,430,36); X.fillStyle='rgba(255,255,255,.06)'; X.fill(); X.strokeStyle=COL[code]; X.globalAlpha*=.9; X.lineWidth=3; X.stroke(); X.globalAlpha/=.9;
+    flag(code,170,y+75,110,t); T(NAME[code],250,y+75,46,{w:900,al:'left',c:COL[code],tr:3});
+    vals.forEach(([v,suf,l],i)=>{ const x=230+i*310, k=seg(t,t0+.4+i*.25,t0+1.3+i*.25);
+      T(countUp(v,k)+suf,x,y+245,i===2?150:120,{w:900,c:i===2?COL[code]:WHITE}); T(l,x,y+350,26,{w:800,tr:4,c:DIM}); });
+    X.restore(); };
+  panel('ARG',520,[[ST.BallPossesion[0],'%','POSSESSION'],[ST.total_shots[0],'','SHOTS'],[1,'','GOAL']],T4+.9);
+  panel('URU',1010,[[ST.BallPossesion[1],'%','POSSESSION'],[ST.total_shots[1],'','SHOTS'],[2,'','GOALS']],T4+1.5);
+  T('Uruguay struck twice in five minutes after the break: 48’ and 53’',W/2,1530,30,{w:700,c:DIM,a:easeOut(seg(t,T4+3.2,T4+3.8)),mw:940});
+  X.restore(); }
+
+// ---------- S5 player of the match ----------
+function potm(t){ const a=vis(t,T5,T6,.45,.45); if(a<=0) return; X.save(); X.globalAlpha=a;
+  const P=M.potm, r=num(P.rating), u=easeOut(seg(t,T5+.2,T5+.8));
+  T('PLAYER OF THE MATCH',W/2,340,48,{w:900,tr:6,c:COL.URU,a:u});
+  rays(W/2,740,t,'rgba(244,196,48,.06)',u);
+  const k=ease(seg(t,T5+.5,T5+1.7)); X.save(); X.translate(W/2,740);
+  X.lineWidth=26; X.strokeStyle='rgba(255,255,255,.1)'; X.beginPath(); X.arc(0,0,230,0,7); X.stroke();
+  X.strokeStyle=COL.URU; X.lineCap='round'; X.shadowColor=COL.URU; X.shadowBlur=30; X.beginPath(); X.arc(0,0,230,-Math.PI/2,-Math.PI/2+Math.PI*2*(r/10)*k); X.stroke(); X.restore();
+  T((r*k).toFixed(1),W/2,720,170,{w:900}); T('FOTMOB RATING',W/2,830,26,{w:800,tr:5,c:DIM});
+  const n=easeOut(seg(t,T5+1.2,T5+1.7)); flag('URU',W/2,1070,120,t,{a:n});
+  T('GIORGIAN',W/2,1180,44,{w:700,tr:8,a:n}); T('DE ARRASCAETA',W/2,1255,92,{w:900,a:n,mw:960});
+  const g=GOALS.find(q=>q.assist&&q.assist===P.name);
+  T(`Assist for ${g.player}’s ${g.min}’ winner`,W/2,1345,34,{w:700,c:DIM,a:easeOut(seg(t,T5+1.7,T5+2.2))});
+  const al=M.lineup.ARG.starters.reduce((b,p)=>num(p.rating)>num(b.rating)?p:b), ag=GOALS.find(q=>q.team==='ARG');
+  const v=easeOut(seg(t,T5+2.4,T5+2.9)); X.save(); X.globalAlpha*=v; rr(130,1430,820,110,28); X.fillStyle='rgba(117,170,219,.12)'; X.fill();
+  flag('ARG',215,1485,80,t); T(`BEST FOR ARGENTINA: ${al.name.toUpperCase()} · ${num(al.rating).toFixed(1)}`,290,1470,26,{w:900,al:'left',c:COL.ARG,mw:620});
+  T(`Scored the ${ag.min}’ consolation`,290,1506,24,{w:700,al:'left',c:DIM}); X.restore();
+  X.restore(); }
+
+// ---------- S6 outro ----------
+function outro(t){ const a=vis(t,T6,END+1,.5,.1); if(a<=0) return; X.save(); X.globalAlpha=a;
+  const u=easeOut(seg(t,T6+.1,T6+.7));
+  T('FULL-TIME',W/2,520,40,{w:900,tr:10,c:DIM,a:u});
+  flag('ARG',230,770,220,t,{a:u}); flag('URU',850,770,220,t,{a:u});
+  const s=backOut(seg(t,T6+.4,T6+.9)); X.save(); X.translate(W/2,770); X.scale(s,s); T('1–2',0,0,170,{w:900}); X.restore();
+  T('ARGENTINA',230,930,46,{w:900,c:COL.ARG,a:u,mw:330}); T('URUGUAY',850,930,46,{w:900,c:COL.URU,a:u,mw:330});
+  const v=easeOut(seg(t,T6+.9,T6+1.4));
+  T('Álvarez 73’',230,1000,30,{w:700,c:DIM,a:v}); T('Balerdi 48’ (OG)',850,1000,30,{w:700,c:DIM,a:v}); T('M. Araújo 53’',850,1045,30,{w:700,c:DIM,a:v});
+  const w=easeOut(seg(t,T6+1.4,T6+1.9)); X.save(); X.globalAlpha*=w; X.fillStyle='rgba(255,255,255,.18)'; X.fillRect(W/2-260,1150,520,2); X.restore();
+  T('INTERNATIONAL FRIENDLY',W/2,1215,32,{w:800,tr:6,a:w}); T('LA BOMBONERA · 13 NOV 2026',W/2,1265,30,{w:700,tr:3,c:DIM,a:w});
+  X.restore(); }
+
+// ---------- frame ----------
+function frame(f){ const t=f/FPS; X.setTransform(1,0,0,1,0,0); X.globalAlpha=1; bg(t,f);
+  intro(t); lineups(t); match(t); story(t); potm(t); outro(t);
+  T('DATA: FOTMOB / OPTA',W/2,1720,20,{w:700,tr:5,c:'rgba(220,230,245,.35)'});
+  const fo=seg(t,END-.7,END); if(fo>0){ X.fillStyle=`rgba(0,0,0,${fo})`; X.fillRect(0,0,W,H); } }
+window.FPS=FPS; window.TOTAL=TOTAL;
+window.TIMES={T2,HT_T,FT_T,T3,T4,T5,T6,END,goals:GOALS.map(g=>g.t)};
+document.fonts.load(`900 40px "Inter Display"`).then(()=>Promise.all([700,800].map(w=>document.fonts.load(`${w} 40px "Inter Display"`)))).then(()=>{ frame(0); window.READY=true; });
+</script></body></html>
