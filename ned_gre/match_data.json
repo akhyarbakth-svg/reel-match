@@ -1,0 +1,1250 @@
+{
+ "source": "FotMob match 5181833 (Opta data)",
+ "match": "Netherlands 7-0 Greece, UEFA Nations League A Grp. 2 round 5, Fri, Nov 13, 2026, 19:45 UTC",
+ "home": "NED",
+ "away": "GRE",
+ "shots": [
+  {
+   "team": "NED",
+   "min": 6,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.3735,
+   "x": 97.3771929818,
+   "y": 27.782619046999997,
+   "player": "Crysencio Summerville",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GRE",
+   "min": 10,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0171,
+   "x": 92.3,
+   "y": 16.9928662435,
+   "player": "Konstantinos Karetsas",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 12,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1113,
+   "x": 100.3534482762,
+   "y": 42.4084375,
+   "player": "Tijjani Reijnders",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 17,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.0539,
+   "x": 92.2,
+   "y": 21.897324844499998,
+   "player": "Crysencio Summerville",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 18,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0578,
+   "x": 99.21052631570001,
+   "y": 40.889761905,
+   "player": "Cody Gakpo",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 18,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.6883,
+   "x": 101.3017241382,
+   "y": 33.5425,
+   "player": "Tijjani Reijnders",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 22,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.04,
+   "x": 100.1637931038,
+   "y": 47.2937579586,
+   "player": "Cody Gakpo",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 23,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.5497,
+   "x": 97.8596491223,
+   "y": 34.22875,
+   "player": "Denzel Dumfries",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 28,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0395,
+   "x": 84.06165048560001,
+   "y": 42.2928125,
+   "player": "Joey Veerman",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GRE",
+   "min": 30,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0659,
+   "x": 102.25000000019999,
+   "y": 41.8303125,
+   "player": "Konstantinos Mavropanos",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GRE",
+   "min": 32,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.022,
+   "x": 92.6,
+   "y": 15.7317197461,
+   "player": "Konstantinos Karetsas",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 33,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.1576,
+   "x": 98.535087719,
+   "y": 27.950714285,
+   "player": "Denzel Dumfries",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 33,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.6047,
+   "x": 103.19827586219999,
+   "y": 38.284285716,
+   "player": "Tijjani Reijnders",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 40,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.809,
+   "x": 102.06034482780001,
+   "y": 32.6275,
+   "player": "Jurriën Timber",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GRE",
+   "min": 44,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.0388,
+   "x": 92.9,
+   "y": 50.7969426736,
+   "player": "Christos Tzolis",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GRE",
+   "min": 47,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0561,
+   "x": 90,
+   "y": 30.416249999999994,
+   "player": "Vangelis Pavlidis",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "GRE",
+   "min": 51,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0239,
+   "x": 78.655825244,
+   "y": 38.872619049,
+   "player": "Nectarios Triantis",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 56,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "SetPiece",
+   "shotType": "RightFoot",
+   "xg": 0.0322,
+   "x": 82.1470873792,
+   "y": 43.440254772100005,
+   "player": "Crysencio Summerville",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GRE",
+   "min": 56,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.0411,
+   "x": 79.782038836,
+   "y": 28.623095236999998,
+   "player": "Christos Tzolis",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 59,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.3547,
+   "x": 101.3017241382,
+   "y": 43.5803821607,
+   "player": "Jurriën Timber",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 61,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1069,
+   "x": 92.2,
+   "y": 25.302500000000002,
+   "player": "Donyell Malen",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 73,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.331,
+   "x": 96.1228070165,
+   "y": 33.084999999999994,
+   "player": "Crysencio Summerville",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 77,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.031,
+   "x": 89.8,
+   "y": 48.554904456,
+   "player": "Noa Lang",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 82,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.06,
+   "x": 90.3,
+   "y": 24.955625,
+   "player": "Denzel Dumfries",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "GRE",
+   "min": 90,
+   "add": 0,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0896,
+   "x": 93.8,
+   "y": 37.27875,
+   "player": "Anastasios Douvikas",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GRE",
+   "min": 90,
+   "add": 0,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0366,
+   "x": 95.54385964789999,
+   "y": 36.21125,
+   "player": "Georgios Vagiannidis",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   -11
+  ],
+  [
+   2,
+   5
+  ],
+  [
+   3,
+   16
+  ],
+  [
+   4,
+   16
+  ],
+  [
+   5,
+   -11
+  ],
+  [
+   6,
+   -22
+  ],
+  [
+   7,
+   -5
+  ],
+  [
+   8,
+   11
+  ],
+  [
+   9,
+   22
+  ],
+  [
+   10,
+   0
+  ],
+  [
+   11,
+   -5
+  ],
+  [
+   12,
+   100
+  ],
+  [
+   13,
+   100
+  ],
+  [
+   14,
+   100
+  ],
+  [
+   15,
+   19
+  ],
+  [
+   16,
+   24
+  ],
+  [
+   17,
+   27
+  ],
+  [
+   18,
+   100
+  ],
+  [
+   19,
+   100
+  ],
+  [
+   20,
+   100
+  ],
+  [
+   21,
+   -22
+  ],
+  [
+   22,
+   5
+  ],
+  [
+   23,
+   71
+  ],
+  [
+   24,
+   81
+  ],
+  [
+   25,
+   54
+  ],
+  [
+   26,
+   22
+  ],
+  [
+   27,
+   -5
+  ],
+  [
+   28,
+   38
+  ],
+  [
+   29,
+   14
+  ],
+  [
+   30,
+   -19
+  ],
+  [
+   31,
+   -62
+  ],
+  [
+   32,
+   -54
+  ],
+  [
+   33,
+   87
+  ],
+  [
+   34,
+   87
+  ],
+  [
+   35,
+   100
+  ],
+  [
+   36,
+   27
+  ],
+  [
+   37,
+   38
+  ],
+  [
+   38,
+   -33
+  ],
+  [
+   39,
+   -27
+  ],
+  [
+   40,
+   98
+  ],
+  [
+   41,
+   100
+  ],
+  [
+   42,
+   100
+  ],
+  [
+   43,
+   19
+  ],
+  [
+   44,
+   79
+  ],
+  [
+   45,
+   98
+  ],
+  [
+   45.5,
+   71
+  ],
+  [
+   46,
+   0
+  ],
+  [
+   47,
+   -49
+  ],
+  [
+   48,
+   -49
+  ],
+  [
+   49,
+   -35
+  ],
+  [
+   50,
+   14
+  ],
+  [
+   51,
+   14
+  ],
+  [
+   52,
+   -16
+  ],
+  [
+   53,
+   -19
+  ],
+  [
+   54,
+   -30
+  ],
+  [
+   55,
+   -5
+  ],
+  [
+   56,
+   -14
+  ],
+  [
+   57,
+   -8
+  ],
+  [
+   58,
+   -16
+  ],
+  [
+   59,
+   5
+  ],
+  [
+   60,
+   11
+  ],
+  [
+   61,
+   41
+  ],
+  [
+   62,
+   30
+  ],
+  [
+   63,
+   46
+  ],
+  [
+   64,
+   65
+  ],
+  [
+   65,
+   76
+  ],
+  [
+   66,
+   43
+  ],
+  [
+   67,
+   -5
+  ],
+  [
+   68,
+   -16
+  ],
+  [
+   69,
+   0
+  ],
+  [
+   70,
+   0
+  ],
+  [
+   71,
+   11
+  ],
+  [
+   72,
+   22
+  ],
+  [
+   73,
+   76
+  ],
+  [
+   74,
+   60
+  ],
+  [
+   75,
+   38
+  ],
+  [
+   76,
+   -16
+  ],
+  [
+   77,
+   11
+  ],
+  [
+   78,
+   -3
+  ],
+  [
+   79,
+   -8
+  ],
+  [
+   80,
+   -19
+  ],
+  [
+   81,
+   33
+  ],
+  [
+   82,
+   57
+  ],
+  [
+   83,
+   30
+  ],
+  [
+   84,
+   -3
+  ],
+  [
+   85,
+   -49
+  ],
+  [
+   86,
+   -43
+  ],
+  [
+   87,
+   -27
+  ],
+  [
+   88,
+   3
+  ],
+  [
+   89,
+   -3
+  ],
+  [
+   90,
+   -60
+  ],
+  [
+   90.5,
+   -62
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "var",
+   "min": 24,
+   "team": "GRE",
+   "player": "Fotis Ioannidis",
+   "decision": [
+    "Goal ruled out",
+    "foul"
+   ]
+  },
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 1
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 1
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    53,
+    47
+   ],
+   "expected_goals": [
+    "4.40",
+    "0.39"
+   ],
+   "total_shots": [
+    17,
+    9
+   ],
+   "ShotsOnTarget": [
+    13,
+    1
+   ],
+   "touches_opp_box": [
+    42,
+    24
+   ],
+   "big_chance": [
+    8,
+    0
+   ],
+   "big_chance_missed_title": [
+    2,
+    0
+   ],
+   "accurate_passes": [
+    "491 (90%)",
+    "419 (87%)"
+   ],
+   "yellow_cards": [
+    0,
+    0
+   ],
+   "corners": [
+    5,
+    4
+   ],
+   "ShotsOffTarget": [
+    2,
+    4
+   ],
+   "blocked_shots": [
+    2,
+    4
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    15,
+    7
+   ],
+   "shots_outside_box": [
+    2,
+    2
+   ],
+   "expected_goals_open_play": [
+    "4.31",
+    "0.29"
+   ],
+   "expected_goals_set_play": [
+    "0.09",
+    "0.10"
+   ],
+   "expected_goals_non_penalty": [
+    "4.40",
+    "0.39"
+   ],
+   "expected_goals_on_target": [
+    "6.23",
+    "0.04"
+   ],
+   "passes": [
+    543,
+    480
+   ],
+   "own_half_passes": [
+    243,
+    236
+   ],
+   "opposition_half_passes": [
+    248,
+    183
+   ],
+   "long_balls_accurate": [
+    "19 (70%)",
+    "26 (52%)"
+   ],
+   "accurate_crosses": [
+    "3 (25%)",
+    "4 (36%)"
+   ],
+   "player_throws": [
+    11,
+    11
+   ],
+   "Offsides": [
+    2,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    11,
+    16
+   ],
+   "interceptions": [
+    10,
+    14
+   ],
+   "shot_blocks": [
+    4,
+    2
+   ],
+   "clearances": [
+    8,
+    19
+   ],
+   "keeper_saves": [
+    1,
+    6
+   ],
+   "duel_won": [
+    36,
+    30
+   ],
+   "ground_duels_won": [
+    "31 (54%)",
+    "26 (46%)"
+   ],
+   "aerials_won": [
+    "5 (56%)",
+    "4 (44%)"
+   ],
+   "dribbles_succeeded": [
+    "13 (57%)",
+    "5 (38%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    5,
+    9
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    60,
+    40
+   ],
+   "expected_goals": [
+    "3.49",
+    "0.14"
+   ],
+   "total_shots": [
+    11,
+    4
+   ],
+   "ShotsOnTarget": [
+    8,
+    1
+   ],
+   "touches_opp_box": [
+    27,
+    14
+   ],
+   "big_chance": [
+    6,
+    0
+   ],
+   "big_chance_missed_title": [
+    1,
+    0
+   ],
+   "accurate_passes": [
+    "295 (93%)",
+    "183 (88%)"
+   ],
+   "yellow_cards": [
+    0,
+    0
+   ],
+   "corners": [
+    4,
+    1
+   ],
+   "ShotsOffTarget": [
+    2,
+    2
+   ],
+   "blocked_shots": [
+    1,
+    1
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    10,
+    4
+   ],
+   "shots_outside_box": [
+    1,
+    0
+   ],
+   "expected_goals_open_play": [
+    "3.43",
+    "0.08"
+   ],
+   "expected_goals_set_play": [
+    "0.06",
+    "0.07"
+   ],
+   "expected_goals_non_penalty": [
+    "3.49",
+    "0.14"
+   ],
+   "expected_goals_on_target": [
+    "4.58",
+    "0.04"
+   ],
+   "passes": [
+    316,
+    209
+   ],
+   "own_half_passes": [
+    121,
+    121
+   ],
+   "opposition_half_passes": [
+    174,
+    62
+   ],
+   "long_balls_accurate": [
+    "12 (92%)",
+    "13 (50%)"
+   ],
+   "accurate_crosses": [
+    "3 (38%)",
+    "2 (40%)"
+   ],
+   "player_throws": [
+    5,
+    5
+   ],
+   "Offsides": [
+    2,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    6,
+    6
+   ],
+   "interceptions": [
+    5,
+    5
+   ],
+   "shot_blocks": [
+    1,
+    1
+   ],
+   "clearances": [
+    5,
+    12
+   ],
+   "keeper_saves": [
+    1,
+    3
+   ],
+   "duel_won": [
+    20,
+    13
+   ],
+   "ground_duels_won": [
+    "16 (57%)",
+    "12 (43%)"
+   ],
+   "aerials_won": [
+    "4 (80%)",
+    "1 (20%)"
+   ],
+   "dribbles_succeeded": [
+    "6 (60%)",
+    "5 (56%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    1,
+    6
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    45,
+    55
+   ],
+   "expected_goals": [
+    "0.92",
+    "0.25"
+   ],
+   "total_shots": [
+    6,
+    5
+   ],
+   "ShotsOnTarget": [
+    5,
+    0
+   ],
+   "touches_opp_box": [
+    15,
+    10
+   ],
+   "big_chance": [
+    2,
+    0
+   ],
+   "big_chance_missed_title": [
+    1,
+    0
+   ],
+   "accurate_passes": [
+    "196 (86%)",
+    "236 (87%)"
+   ],
+   "yellow_cards": [
+    0,
+    0
+   ],
+   "corners": [
+    1,
+    3
+   ],
+   "ShotsOffTarget": [
+    0,
+    2
+   ],
+   "blocked_shots": [
+    1,
+    3
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    5,
+    3
+   ],
+   "shots_outside_box": [
+    1,
+    2
+   ],
+   "expected_goals_open_play": [
+    "0.88",
+    "0.21"
+   ],
+   "expected_goals_set_play": [
+    "0.03",
+    "0.04"
+   ],
+   "expected_goals_non_penalty": [
+    "0.92",
+    "0.25"
+   ],
+   "expected_goals_on_target": [
+    "1.64",
+    "0.00"
+   ],
+   "passes": [
+    227,
+    271
+   ],
+   "own_half_passes": [
+    122,
+    115
+   ],
+   "opposition_half_passes": [
+    74,
+    121
+   ],
+   "long_balls_accurate": [
+    "7 (50%)",
+    "13 (54%)"
+   ],
+   "accurate_crosses": [
+    "0 (0%)",
+    "2 (33%)"
+   ],
+   "player_throws": [
+    6,
+    7
+   ],
+   "Offsides": [
+    0,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    5,
+    10
+   ],
+   "interceptions": [
+    5,
+    9
+   ],
+   "shot_blocks": [
+    3,
+    1
+   ],
+   "clearances": [
+    3,
+    7
+   ],
+   "keeper_saves": [
+    0,
+    3
+   ],
+   "duel_won": [
+    16,
+    17
+   ],
+   "ground_duels_won": [
+    "15 (52%)",
+    "14 (48%)"
+   ],
+   "aerials_won": [
+    "1 (25%)",
+    "3 (75%)"
+   ],
+   "dribbles_succeeded": [
+    "7 (54%)",
+    "0 (0%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    4,
+    3
+   ]
+  }
+ }
+}
