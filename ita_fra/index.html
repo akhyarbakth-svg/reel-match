@@ -1,0 +1,587 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Italy v France reel</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+@font-face{font-family:'Barlow Condensed';font-weight:700;src:url(fonts/BarlowCondensed-Bold.ttf)}
+@font-face{font-family:'Barlow Semi Condensed';font-weight:600;src:url(fonts/BarlowSemiCondensed-SemiBold.ttf)}
+@font-face{font-family:'Barlow Semi Condensed';font-weight:700;src:url(fonts/BarlowSemiCondensed-Bold.ttf)}
+/* team themes sampled from the crests: Italy = FIGC azzurro (brightened to lead, white halo from the shield) · France = the FFF rooster's red comb (red leads, crest-gold halo); both kits are blue, so France takes the crest colours to stay readable */
+:root{--A:#2a8bff;--A2:#eef6ff;--Al:#8cc4ff;--Eb:#ff2a3d;--Eg:#e2c27a;--Ebl:#ff8a94;--Egl:#ff3b4b;--Y:#c6ff3d;--ice:#dbe7ff;--dim:#7886a6;--hair:rgba(190,212,255,.22)}
+html,body{width:1080px;height:1920px;background:#03050b;overflow:hidden;color:#eaf2ff;font-family:'Bahnschrift','Barlow Semi Condensed','Segoe UI',sans-serif}
+#stage{position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:540px 860px}
+.abs{position:absolute}
+.mono{font-family:'Consolas,'JetBrains Mono'',monospace}
+#bg{position:absolute;inset:-80px;background:radial-gradient(ellipse 72% 40% at 50% 42%,#10203f 0%,rgba(9,16,34,.55) 48%,rgba(3,5,11,0) 78%),linear-gradient(#03050b,#050b18 46%,#03050b)}
+#tint{position:absolute;inset:-80px;opacity:0;mix-blend-mode:screen}
+canvas#gl,#bloom{position:absolute;left:0;top:0;width:1080px;height:1920px}
+#bloom{mix-blend-mode:screen;opacity:.8}
+#vig{position:absolute;inset:-80px;background:radial-gradient(ellipse 78% 62% at 50% 46%,rgba(0,0,0,0) 52%,rgba(0,0,0,.72) 100%)}
+#flash{position:absolute;inset:0;opacity:0;background:#fff}
+.br{position:absolute;width:46px;height:46px;border-color:rgba(200,220,255,.35);border-style:solid;border-width:0}
+.br.tl{left:26px;top:26px;border-left-width:2px;border-top-width:2px}
+.br.tr{right:26px;top:26px;border-right-width:2px;border-top-width:2px}
+.br.bl{left:26px;bottom:26px;border-left-width:2px;border-bottom-width:2px}
+.br.bb{right:26px;bottom:26px;border-right-width:2px;border-bottom-width:2px}
+
+#top{left:64px;right:64px;top:50px;display:flex;justify-content:space-between;align-items:center;font:600 21px Consolas,'JetBrains Mono';letter-spacing:3px;color:#a9b7d6}
+#top b{color:#fff;font-weight:700}
+#top .rp{color:#cfd9ef;display:flex;align-items:center;gap:10px}
+#top .rp i{width:12px;height:12px;border-radius:50%;background:var(--Y);box-shadow:0 0 10px var(--Y)}
+#topl{left:64px;right:64px;top:88px;height:1px;background:linear-gradient(90deg,rgba(200,220,255,.4),rgba(200,220,255,.08) 60%,rgba(200,220,255,0))}
+
+.team{position:absolute;left:64px;height:136px;width:700px}
+.team .bar{position:absolute;left:0;top:14px;width:6px;height:108px;border-radius:3px}
+.team .crest{position:absolute;left:18px;top:16px;width:104px;height:104px;object-fit:contain;filter:drop-shadow(0 0 12px rgba(0,0,0,.8))}
+.team .rc{position:absolute;left:98px;top:84px;width:20px;height:27px;border-radius:3px;background:#ff2330;border:2px solid #fff;box-shadow:0 0 14px #ff2330;transform:rotate(10deg);opacity:0}
+.team .code{position:absolute;left:138px;top:14px;font-size:54px;font-weight:700;letter-spacing:2px;line-height:1}
+.team .name{position:absolute;left:140px;top:76px;font:600 16px Consolas,'JetBrains Mono';letter-spacing:4px;color:var(--dim)}
+.team .score{position:absolute;left:258px;top:0;width:120px;height:136px;text-align:center;font:700 158px/136px 'Agency FB','Barlow Condensed';transform-origin:50% 60%}
+.team .mini{position:absolute;left:396px;top:16px;font:600 20px Consolas,'JetBrains Mono';letter-spacing:2px;color:var(--dim);line-height:36px;white-space:nowrap}
+.team .mini b{color:#eef4ff;font-size:27px;margin-left:12px;font-weight:700}
+.team .mins{font:700 19px Consolas,'JetBrains Mono';color:#d4ddf0;letter-spacing:0;height:36px}
+.team .mins span{margin-right:9px}
+.team .burst{position:absolute;left:318px;top:68px;width:10px;height:10px;border-radius:50%;border:3px solid #fff;opacity:0;transform:translate(-50%,-50%)}
+#vs{left:0;right:0;top:1060px;height:300px;opacity:0}
+#vs img{position:absolute;top:0;width:210px;height:210px;object-fit:contain;filter:drop-shadow(0 0 28px rgba(0,0,0,.9))}
+#vs .a{left:170px}#vs .e{right:170px}
+#vs .x{position:absolute;left:0;right:0;top:58px;text-align:center;font:700 86px/1 'Agency FB','Barlow Condensed';letter-spacing:4px;color:#f2f5ff;text-shadow:0 0 22px rgba(0,0,0,.95)}
+#vs .s{position:absolute;left:0;right:0;top:236px;text-align:center;font:700 22px Consolas,'JetBrains Mono';letter-spacing:5px;color:#c3cde4;text-shadow:0 0 10px #000,0 0 4px #000}
+
+#clock{right:50px;top:104px;width:214px;height:250px}
+#clock svg{position:absolute;left:0;top:0}
+#clock .m{position:absolute;left:0;top:0;width:214px;height:214px;display:flex;align-items:center;justify-content:center;font:700 86px 'Agency FB','Barlow Condensed';letter-spacing:1px}
+#clock .h{position:absolute;left:0;top:220px;width:214px;text-align:center;font:600 18px Consolas,'JetBrains Mono';letter-spacing:4px;color:#a9b7d6}
+
+#call{left:0;right:0;top:1086px;text-align:center;opacity:0}
+#call .t{position:relative;display:inline-block;font:700 214px/1 'Agency FB','Barlow Condensed';letter-spacing:10px}
+#call .t:before,#call .t:after{content:attr(data-text);position:absolute;left:0;top:0;width:100%;text-align:center;mix-blend-mode:screen}
+#call .t:before{color:#22e6ff;clip-path:inset(var(--c1,0%) 0 var(--c2,100%) 0);transform:translateX(var(--g1,0px))}
+#call .t:after{color:#ff2a6d;clip-path:inset(var(--c3,0%) 0 var(--c4,100%) 0);transform:translateX(var(--g2,0px))}
+#call .n{display:flex;align-items:center;justify-content:center;gap:16px;font:700 46px 'Bahnschrift','Barlow Semi Condensed';letter-spacing:3px;margin-top:2px;text-shadow:0 0 18px rgba(0,0,0,.9),0 2px 4px #000}
+#call .n img{width:62px;height:62px;object-fit:contain;filter:drop-shadow(0 0 10px rgba(0,0,0,.9))}
+#call .n .card{display:inline-block;width:34px;height:46px;border-radius:4px;background:#ff2330;border:2.5px solid #fff;box-shadow:0 0 18px #ff2330;transform:rotate(10deg)}
+#call .chip{display:inline-block;margin-top:16px;font:700 23px Consolas,'JetBrains Mono';letter-spacing:3px;padding:9px 20px 8px;background:rgba(6,12,26,.72);border:1.5px solid rgba(220,230,255,.35);position:relative}
+#call .chip:before,#call .chip:after{content:'';position:absolute;width:12px;height:12px;border:2px solid var(--Y)}
+#call .chip:before{left:-5px;top:-5px;border-right:0;border-bottom:0}
+#call .chip:after{right:-5px;bottom:-5px;border-left:0;border-top:0}
+
+#tag{left:0;top:0;opacity:0;width:0;height:0}
+#tag .dot{position:absolute;left:-9px;top:-9px;width:18px;height:18px;border-radius:50%;border:2.5px solid #fff;box-shadow:0 0 12px #fff}
+#tag .ln{position:absolute;left:0;top:-1px;width:78px;height:2px;background:linear-gradient(90deg,#fff,rgba(255,255,255,.5));transform-origin:0 50%;transform:rotate(-42deg)}
+#tag .box{position:absolute;left:56px;bottom:50px;padding:8px 14px 7px 64px;background:rgba(5,10,22,.8);border-left:4px solid #fff;white-space:nowrap}
+#tag .box img{position:absolute;left:10px;top:50%;width:44px;height:44px;margin-top:-22px;object-fit:contain}
+#tag .box b{display:block;font:700 34px/1 Consolas,'JetBrains Mono';letter-spacing:1px}
+#tag .box span{display:block;font:700 16px Consolas,'JetBrains Mono';letter-spacing:3px;color:#b8c5e0;margin-top:5px}
+
+.glab{position:absolute;left:0;top:0;font:700 19px Consolas,'JetBrains Mono';letter-spacing:1px;color:var(--Y);opacity:0;white-space:nowrap;text-shadow:0 0 8px #000,0 0 3px #000}
+
+#stats{left:64px;right:64px;top:1062px;opacity:0}
+#stats .hd{display:flex;justify-content:space-between;align-items:center;height:58px}
+#stats .hd span{display:flex;align-items:center;gap:12px;font:700 17px Consolas,'JetBrains Mono';letter-spacing:4px;color:#a9b7d6}
+#stats .hd img{width:50px;height:50px;object-fit:contain}
+#stats .r{display:flex;align-items:flex-end;height:76px}
+#stats .v{width:150px;font:700 54px/1 'Agency FB','Barlow Condensed';letter-spacing:1px}
+#stats .v.b{text-align:right}
+#stats .mid{flex:1;padding:0 18px 8px}
+#stats .lab{text-align:center;font:700 18px Consolas,'JetBrains Mono';letter-spacing:5px;color:#a9b7d6;margin-bottom:9px}
+#stats .bar{display:flex;gap:6px;height:10px}
+#stats .bar i{display:block;height:10px;-webkit-mask:repeating-linear-gradient(90deg,#000 0 9px,transparent 9px 12px)}
+#stats .bar i.a{background:repeating-linear-gradient(90deg,var(--A) 0 12px,var(--A2) 12px 24px);box-shadow:0 0 10px rgba(47,107,255,.7)}
+#stats .bar i.e{background:repeating-linear-gradient(90deg,var(--Eb) 0 12px,var(--Eg) 12px 24px);box-shadow:0 0 10px rgba(255,42,42,.75)}
+#stats .v.e{background:linear-gradient(180deg,var(--Ebl) 18%,var(--Egl) 82%);-webkit-background-clip:text;background-clip:text;color:transparent}
+#tlc{left:64px;top:1576px;width:952px;height:168px;pointer-events:none}
+#tlc img{position:absolute;left:8px;width:30px;height:30px;object-fit:contain;opacity:.85}
+#stats .bar .sp{flex:1}
+
+#ins{left:64px;right:64px;top:1452px;height:66px;display:flex;align-items:center;gap:20px;padding:0 22px;background:linear-gradient(90deg,rgba(20,34,64,.62),rgba(10,18,36,.25));border:1px solid rgba(190,212,255,.16)}
+#ins:before{content:'';position:absolute;left:-1px;top:-1px;width:16px;height:16px;border-left:3px solid var(--Y);border-top:3px solid var(--Y)}
+#ins:after{content:'';position:absolute;right:-1px;bottom:-1px;width:16px;height:16px;border-right:3px solid var(--Y);border-bottom:3px solid var(--Y)}
+#ins .k{font:700 19px Consolas,'JetBrains Mono';letter-spacing:3px;color:var(--Y);white-space:nowrap}
+#ins .tx{font:600 25px 'Bahnschrift','Barlow Semi Condensed';letter-spacing:1px;white-space:nowrap;overflow:hidden;color:#f1f5ff}
+#ins .cur{display:inline-block;width:13px;height:26px;background:var(--Y);margin-left:-14px}
+
+#tlh{left:64px;right:64px;top:1546px;display:flex;justify-content:space-between;font:700 18px Consolas,'JetBrains Mono';letter-spacing:3px;color:#97a5c4}
+#tl{left:64px;top:1576px;width:952px;height:168px}
+#axis{left:64px;right:64px;top:1750px;font:600 17px Consolas,'JetBrains Mono';letter-spacing:3px;color:#66728f;display:flex;justify-content:space-between}
+#brand{left:64px;right:64px;top:1830px;display:flex;justify-content:space-between;align-items:center;font-size:27px;font-weight:700;letter-spacing:.8px}
+#brand .l img{display:block;height:36px;filter:drop-shadow(0 0 10px rgba(242,243,238,.18))}
+#brand .r{display:flex;align-items:center;gap:12px;font:600 18px Consolas,'JetBrains Mono';letter-spacing:5px;color:#9ba3ae}
+#brand .r i{width:10px;height:10px;border-radius:50%;background:var(--Y);box-shadow:0 0 10px var(--Y)}
+</style></head><body>
+<div id="stage">
+<div id="bg"></div>
+<div id="tint"></div>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<canvas id="bloom" width="540" height="960"></canvas>
+<div id="vig"></div>
+<div class="br tl"></div><div class="br tr"></div><div class="br bl"></div><div class="br bb"></div>
+
+<div class="abs" id="top"><span><b>NATIONS LEAGUE</b> &nbsp;▸&nbsp; A1 · MD5 &nbsp;▸&nbsp; 12 NOV 2026</span><span class="rp"><i></i>MATCH REPLAY</span></div>
+<div class="abs" id="topl"></div>
+
+<div class="team" id="tA" style="top:112px"><div class="bar" style="background:linear-gradient(var(--A),var(--A2));box-shadow:0 -6px 16px var(--A),0 6px 16px var(--A2)"></div><img class="crest" src="logo_ita.png" alt=""><i class="rc"></i><div class="code">ITA</div><div class="name">ITALY</div><div class="burst"></div><div class="score">0</div>
+ <div class="mini"><div>xG<b class="xg">0.00</b></div><div>SHOTS<b class="sh">0</b></div><div class="mins"></div></div></div>
+<div class="team" id="tE" style="top:262px"><div class="bar" style="background:linear-gradient(var(--Eb),var(--Eg));box-shadow:0 -6px 16px var(--Eb),0 6px 16px var(--Eg)"></div><img class="crest" src="logo_fra.png" alt=""><i class="rc"></i><div class="code">FRA</div><div class="name">FRANCE</div><div class="burst"></div><div class="score">0</div>
+ <div class="mini"><div>xG<b class="xg">0.00</b></div><div>SHOTS<b class="sh">0</b></div><div class="mins"></div></div></div>
+
+<div class="abs" id="clock"><svg width="214" height="214" viewBox="0 0 214 214"><g id="ticks"></g>
+ <circle cx="107" cy="107" r="84" fill="none" stroke="rgba(190,212,255,.13)" stroke-width="7"/>
+ <circle id="prog" cx="107" cy="107" r="84" fill="none" stroke="#c6ff3d" stroke-width="7" stroke-linecap="round" transform="rotate(-90 107 107)" stroke-dasharray="527.79" stroke-dashoffset="527.79" style="filter:drop-shadow(0 0 6px rgba(198,255,61,.8))"/>
+ <circle id="phd" cx="107" cy="23" r="7" fill="#fff" style="filter:drop-shadow(0 0 6px #fff)"/></svg>
+ <div class="m">0'</div><div class="h">1ST HALF</div></div>
+
+<div class="abs" id="tag"><i class="ln"></i><i class="dot"></i><div class="box"><img class="iA" src="logo_ita.png" alt=""><img class="iE" src="logo_fra.png" alt=""><b></b><span></span></div></div>
+<div id="glabs"></div>
+
+<div class="abs" id="vs"><img class="a" src="logo_ita.png" alt=""><img class="e" src="logo_fra.png" alt=""><div class="x">VS</div><div class="s">SAN SIRO · MILAN</div></div>
+<div class="abs" id="call"><div class="t" data-text="GOAL">GOAL</div><div class="n"></div><div class="chip"></div></div>
+<div class="abs" id="stats"></div>
+
+<div class="abs" id="ins"><span class="k">◆ INSIGHT</span><span class="tx"></span><i class="cur"></i></div>
+<div class="abs" id="tlh"><span>MOMENTUM ▸ ATTACKING PRESSURE</span><span class="r"></span></div>
+<canvas class="abs" id="tl" width="952" height="168"></canvas>
+<div class="abs" id="tlc"><img src="logo_ita.png" alt="" style="top:4px"><img src="logo_fra.png" alt="" style="top:134px"></div>
+<div class="abs" id="axis"><span>00'</span><span>HALF-TIME</span><span>FULL-TIME</span></div>
+<div class="abs" id="brand"><span class="l"><img src="../gs_logo.png" alt="Game State"></span><span class="r"><i></i>FOOTBALL · DATA · LIVE</span></div>
+</div>
+<div id="flash"></div>
+
+<script src="../three.min.js"></script>
+<script src="data.js"></script>
+<script>
+// ================= UTILS =================
+const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
+const ease=u=>{u=clamp(u);return u<.5?4*u*u*u:1-Math.pow(-2*u+2,3)/2;};
+const easeOut=u=>1-Math.pow(1-clamp(u),3);
+const backOut=u=>{u=clamp(u);const c=2.2;return 1+(c+1)*Math.pow(u-1,3)+c*Math.pow(u-1,2);};
+function spring(a,w,z){ return a<=0?0:1-Math.exp(-z*a)*Math.cos(w*a); }
+function hash(n){ const s=Math.sin(n*127.1+311.7)*43758.5453; return (s-Math.floor(s))*2-1; }
+
+// ================= DATA =================
+const FPS=30; // END (clock runs to 90+4) comes from data.js
+// team themes: A = Italy azzurro / deep-azzurro stripes with a thin white trim line, E = France rooster red / deep-red stripes with a thin crest-gold trim line.
+// Single-colour uses (glow, rings) take TC; TC2 is the halo (Italy's white, France's gold)
+const COL_EB=new THREE.Color('#c8101e'), COL_EG=new THREE.Color('#6e0710');
+const TC={A:'#2a8bff',E:'#ff2a3d'}, TC2={A:'#eef6ff',E:'#e2c27a'}, TC3={A:0x2a8bff,E:0xff2a3d};
+const RED='#ff2330', ICE='#dbe7ff';
+// EVENTS, OTHER (every other shot) and MOM (attacking momentum) come from data.js: FotMob / Opta, not modelled
+function smoothMom(sig){ const out=[]; for(let i=0;i<=END*4;i++){ const m=i/4; let a=0,w=0; for(const [mm,v] of MOM){ const k=Math.exp(-(mm-m)*(mm-m)/(2*sig*sig)); a+=v*k; w+=k; } out.push(a/w); } return out; }
+const DOM_S=smoothMom(1.6), MOM_S=smoothMom(1.0);
+function samp(arr,m){ const u=clamp(m,0,END)*4, i=Math.floor(u), f=u-i; return i>=arr.length-1?arr[arr.length-1]:arr[i]+(arr[i+1]-arr[i])*f; }
+// dominance (+ = Italy on top) drives the territory front line on the surface
+function dom(m){ return 0.9*samp(DOM_S,m); }
+let seed2=99;function rnd2(){seed2=(seed2*16807)%2147483647;return (seed2-1)/2147483646;}
+const SHOTS=EVENTS.map((e,i)=>({...e,ei:i})).filter(e=>e.x!==undefined); // var / red events have no shot location
+OTHER.forEach(([m,team,xg,x,z,k])=>SHOTS.push({m,team,type:'shot',xg,x,z,k}));
+SHOTS.sort((a,b)=>a.m-b.m);
+const GOALS=EVENTS.filter(e=>e.type==='goal');
+
+// ================= TIME MAP (clock holds on each event) =================
+const RATE=1/0.19, CREEP=0.3, INTRO=2.4, IMPACT=0.33, FT_LEN=Math.round(6.4*FPS);
+const isChance=e=>e.type==='miss'||e.type==='post'||e.type==='save';
+const dwellT=EVENTS.map(e=>e.type==='goal'?1.8:(isChance(e)?1.4:1.5));
+const HT_HOLD=1.4; // clock pauses on HT so the half-time xG read gets air
+const mArr=[], htArr=[], trig=EVENTS.map(()=>-1); let FT_FRAME=0;
+(function(){ let m=0,hold=0,cur=-1,next=0,f=0,ht=0,htDone=false; const L=EVENTS.length-1;
+ while(true){ const t=f/FPS; let inHT=false;
+  if(t<INTRO){}
+  else if(hold>0){ m+=CREEP/dwellT[cur]/FPS; hold-=1/FPS; if(hold<=0)cur=-1; }
+  else if(ht>0){ ht-=1/FPS; inHT=true; }
+  else if(m<END){ m=Math.min(END,m+RATE/FPS);
+    if(!htDone&&m>=45.9){ m=45.9; ht=HT_HOLD; htDone=true; inHT=true; }
+    else if(next<EVENTS.length&&m>=EVENTS[next].m){ m=EVENTS[next].m; cur=next; trig[next]=t; hold=dwellT[next]; next++; } }
+  else if(!FT_FRAME&&t>=trig[L]+dwellT[L]+0.5) FT_FRAME=f;
+  mArr.push(m); htArr.push(inHT); f++; if(FT_FRAME&&f>=FT_FRAME+FT_LEN) break; } })();
+const TOTAL=mArr.length;
+function tOfMinute(mm){ for(let f=0;f<TOTAL;f++) if(f/FPS>=INTRO&&mArr[f]>=mm) return f/FPS; return 1e9; }
+SHOTS.forEach(s=>{ s.t=s.type==='shot'?tOfMinute(s.m):trig[s.ei]; s.ti=s.type==='shot'?s.t:s.t+IMPACT; });
+
+// ================= SURFACE MODEL =================
+const W=105,H=68,SX=150,SZ=96,K=70;
+function nz(a,b){return Math.sin(a*1.7+Math.sin(b*1.3))*Math.cos(b*1.1-Math.sin(a*.9));}
+function boundary(z,m){ return dom(m)*46 + 7*Math.sin(z*.13+m*.12) + 3*Math.sin(z*.31-m*.2); }
+const CUR={m:0,t:0,k:0,vib:0,vph:0};
+let SP=[], RIP=[], SURGE=[], HA=0, HE=0, WV=0;
+const HT_T=(()=>{ for(let f=0;f<TOTAL;f++) if(htArr[f]) return f/FPS; return 1e9; })(), KO2_T=HT_T+HT_HOLD;
+
+function buildFX(f){ const t=f/FPS, k=CUR.k, ftU=f>=FT_FRAME?(f-FT_FRAME)/FPS:-1;
+  SP=[]; RIP=[]; SURGE=[]; let vib=0, vph=0;
+  // centre-spot pulses: kick-off, half-time whistle, second-half kick-off
+  for(const [t0,amp] of [[INTRO,2.2],[HT_T,2.6],[KO2_T,2.2]]){ const a=t-t0; if(a>=0&&a<3.2) RIP.push({x:0,z:0,a,amp,v:42,team:'C',str:.7*Math.exp(-a/1.0)}); }
+  for(const s of SHOTS){ const a=t-s.t; if(a<0) continue; let env=0,dx=0,dz=0; const sgn=s.team==='A'?1:-1;
+    if(s.type==='shot'){ if(a>1.8) continue; env=spring(a,20,7)*Math.exp(-a/0.55); if(a<1.6) RIP.push({x:s.x,z:s.z,a,amp:1.3,v:48,team:s.team,str:.5*Math.exp(-a/0.4)}); }
+    else if(s.type==='goal'){ const dw=dwellT[s.ei]; if(a>dw+2.4) continue;
+      env=spring(a,16,3.6); if(a>dw) env*=Math.exp(-(a-dw)/0.42);
+      dx=1.8*Math.exp(-2.4*a)*Math.sin(15*a)*sgn; dz=1.4*Math.exp(-2.4*a)*Math.cos(12*a);
+      if(a<3.2) RIP.push({x:s.x,z:s.z,a,amp:4.0,v:58,team:s.team,str:Math.exp(-a/0.9)});
+      const a3=a-IMPACT; if(a3>0&&a3<3.0) SURGE.push({sg:sgn,a:a3,amp:2.8}); // a wall of water rolls back from the net across the whole pitch
+      const a2=a-IMPACT; if(a2>0&&a2<1.6){ const v=1.25*Math.exp(-a2/0.4); if(v>vib){vib=v;vph=a2;} } }
+    else if(isChance(s)){ const dw=dwellT[s.ei]; if(a>dw+2.4) continue; const a2=a-IMPACT;
+      env=spring(a,16,3.6); if(a2>0) env*=0.55+0.45*Math.exp(-a2/0.5)+0.06*Math.exp(-a2/0.4)*Math.sin(a2*40); if(a>dw) env*=Math.exp(-(a-dw)/0.42);
+      if(a<2.8) RIP.push({x:s.x,z:s.z,a,amp:2.8,v:52,team:s.team,str:.8*Math.exp(-a/0.8)});
+      if(a2>0&&a2<2.6) SURGE.push({sg:sgn,a:a2,amp:1.5});
+      if(a2>0&&a2<1.2){ const v=0.7*Math.exp(-a2/0.3); if(v>vib){vib=v;vph=a2;} } }
+    else { // penalty: erupts, gets blocked, collapses with a shudder
+      if(a>2.6) continue; const a2=a-IMPACT;
+      env=spring(a,16,3.6); if(a2>0) env=env*Math.exp(-a2/0.17)*(1+0.3*Math.sin(a2*58))+0.07*Math.exp(-a2/0.9);
+      dz=a2>0?2.2*Math.exp(-4*a2)*Math.sin(44*a2):0;
+      if(a<2.4) RIP.push({x:s.x,z:s.z,a,amp:2.2,v:52,team:'P',str:Math.exp(-a/0.8)});
+      if(a2>0&&a2<1.4){ const v=1.0*Math.exp(-a2/0.32); if(v>vib){vib=v;vph=a2;} } }
+    SP.push({x:s.x+dx,z:s.z+dz,h:Math.max(0,s.xg*K*env)*(1-k),sg:s.type==='shot'?2.6:3.0,team:s.team}); }
+  // VAR call / red card: no shot, the whole surface shudders
+  EVENTS.forEach((e,i)=>{ if(e.type==='goal'||trig[i]<0) return; const a2=t-trig[i]-IMPACT; if(a2>0&&a2<1.4){ const v=(e.type==='red'?1.15:0.85)*Math.exp(-a2/0.3); if(v>vib){vib=v;vph=a2;} } });
+  if(ftU>=0){ SHOTS.forEach(s=>{ const a=ftU-(0.8+1.9*s.m/END); if(a<=0) return;
+      SP.push({x:s.x,z:s.z,h:0.55*s.xg*K*spring(a,15,6.5)*(1+0.015*Math.sin(t*4+s.m)),sg:s.type==='shot'?2.1:2.4,team:s.team,ft:1}); }); }
+  CUR.vib=vib; CUR.vph=vph; }
+
+// swell: three crossing wave trains that never stop (they also drive the foam on the crests)
+function swell(x,z,t){ return 0.95*Math.sin(x*.105-t*1.9+0.8*Math.sin(z*.06+t*.35))+0.65*Math.sin(z*.14+x*.04+t*1.4)+0.35*Math.sin((x-z)*.21-t*2.8); }
+function height(x,z){ const m=CUR.m,t=CUR.t,k=CUR.k; let h=0; HA=0; HE=0; const sw=swell(x,z,t); WV=sw;
+  if(k<1){ let b=0.9*nz(x*.07+t*.6,z*.09-t*.4)+0.4*nz(x*.17-t*.5,z*.2+t*.3)+sw;
+    // momentum surge: whoever is on top sends rolling waves towards the goal they attack
+    const dm=dom(m), ph=0.6*Math.sin(z*.09+t*.5); b+=(0.25+1.9*Math.max(0,dm))*Math.sin(x*.2-t*4.0+ph)*(0.45+0.55*THREE.MathUtils.smoothstep(x,-40,30))
+      +(0.25+1.9*Math.max(0,-dm))*Math.sin(-x*.2-t*4.0+ph)*(0.45+0.55*THREE.MathUtils.smoothstep(-x,-40,30));
+    const bd=boundary(z,m), d=Math.abs(dom(m)); b+=Math.exp(-Math.pow((x-bd)/10,2))*(1.2+2.8*d);
+    const ex=Math.max(0,Math.abs(x)-W/2)/6, ez=Math.max(0,Math.abs(z)-H/2)/6; b+=1.5*(ex*ex+ez*ez);
+    for(const r of RIP){ const dx=x-r.x,dz=z-r.z,q=Math.sqrt(dx*dx+dz*dz)-r.v*r.a; if(q<-70||q>16) continue; b+=r.amp*Math.exp(-r.a/0.9)*Math.sin(q*0.7)*Math.exp(-q*q/300); } // longer ripple trains
+    for(const s of SURGE){ const d=s.sg*x-(52.5-55*s.a)+3*Math.sin(z*.12); if(d<-14||d>60) continue; // d>0: the front has already passed
+      b+=s.amp*Math.exp(-s.a/1.3)*(Math.exp(-d*d/50)+(d>0?0.55*Math.sin(d*.55)*Math.exp(-d/16):0)); }
+    if(CUR.vib>0) b+=CUR.vib*(Math.sin(CUR.vph*52)*Math.sin(x*.34+z*.22)+0.6*Math.cos(CUR.vph*45)*Math.sin(x*.19-z*.41));
+    h+=b*(1-k); }
+  if(k>0) h+=0.35*k*sw; // the surface keeps breathing under the FT spikes
+  for(const s of SP){ const dx=x-s.x,dz=z-s.z; const v=s.h*Math.exp(-(dx*dx+dz*dz)/(2*s.sg*s.sg)); h+=v; if(s.team==='A')HA+=v; else HE+=v; }
+  return h; }
+
+// ================= THREE SCENE =================
+const glc=document.getElementById('gl');
+const renderer=new THREE.WebGLRenderer({canvas:glc,antialias:true,alpha:true,preserveDrawingBuffer:true});
+renderer.setPixelRatio(1); renderer.setSize(1080,1920,false); renderer.setClearColor(0x000000,0);
+const scene=new THREE.Scene();
+const camera=new THREE.PerspectiveCamera(24,1080/1920,1,2000);
+const group=new THREE.Group(); scene.add(group);
+
+// --- holographic floor grid
+const floorMat=new THREE.ShaderMaterial({transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,
+  uniforms:{uA:{value:0},uRing:{value:new THREE.Vector2(0,0)},uRingC:{value:new THREE.Color(1,1,1)},uT:{value:0}},
+  vertexShader:`varying vec2 vP; void main(){ vP=position.xz; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0); }`,
+  fragmentShader:`uniform float uA,uT; uniform vec2 uRing; uniform vec3 uRingC; varying vec2 vP;
+  float grid(vec2 p,float s){ vec2 g=p/s; vec2 w=abs(fract(g-0.5)-0.5)/max(fwidth(g),vec2(1e-4)); return 1.0-clamp(min(w.x,w.y),0.0,1.0); }
+  void main(){ float r=length(vP); float fade=1.0-smoothstep(70.0,300.0,r); vec2 wp=vP+vec2(3.0*sin(vP.y*0.045+uT*1.2),2.0*sin(vP.x*0.04-uT*0.9)); // the floor grid ripples too
+    vec3 c=vec3(0.16,0.30,0.58)*grid(wp+vec2(0.0,uT*6.0),10.0)*0.45+vec3(0.30,0.50,0.92)*grid(wp+vec2(0.0,uT*6.0),50.0)*0.45;
+    float q=r-uRing.x; c+=uRingC*uRing.y*0.7*exp(-q*q/60.0);
+    gl_FragColor=vec4(c*fade*uA,1.0); }`});
+const floor=new THREE.Mesh(new THREE.PlaneGeometry(700,700).rotateX(-Math.PI/2),floorMat); floor.position.y=-19; group.add(floor);
+// ground shadow
+const sc=document.createElement('canvas');sc.width=sc.height=256;const sx=sc.getContext('2d');const gr=sx.createRadialGradient(128,128,10,128,128,128);gr.addColorStop(0,'rgba(0,0,0,.9)');gr.addColorStop(.6,'rgba(0,0,0,.5)');gr.addColorStop(1,'rgba(0,0,0,0)');sx.fillStyle=gr;sx.fillRect(0,0,256,256);
+const shadow=new THREE.Mesh(new THREE.PlaneGeometry(160,108),new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(sc),transparent:true,depthWrite:false}));
+shadow.rotation.x=-Math.PI/2; shadow.position.set(-4,-18.5,6); group.add(shadow);
+
+// --- particles (data motes)
+const dotC=document.createElement('canvas');dotC.width=dotC.height=64;{const g=dotC.getContext('2d');const r=g.createRadialGradient(32,32,0,32,32,32);r.addColorStop(0,'rgba(255,255,255,1)');r.addColorStop(.3,'rgba(200,225,255,.6)');r.addColorStop(1,'rgba(200,225,255,0)');g.fillStyle=r;g.fillRect(0,0,64,64);}
+const dotTex=new THREE.CanvasTexture(dotC);
+const NP=420, pBase=new Float32Array(NP*4), pPos=new Float32Array(NP*3);
+for(let i=0;i<NP;i++){ pBase[i*4]=(rnd2()-.5)*360; pBase[i*4+1]=rnd2()*150-25; pBase[i*4+2]=(rnd2()-.5)*300; pBase[i*4+3]=2+rnd2()*6; }
+const pGeo=new THREE.BufferGeometry(); pGeo.setAttribute('position',new THREE.BufferAttribute(pPos,3));
+const pMat=new THREE.PointsMaterial({size:2.0,map:dotTex,transparent:true,opacity:.55,depthWrite:false,blending:THREE.AdditiveBlending,color:0x9cc8ff});
+group.add(new THREE.Points(pGeo,pMat));
+
+// --- the surface (holographic shader)
+const geo=new THREE.PlaneGeometry(W+14,H+10,SX,SZ); geo.rotateX(-Math.PI/2);
+const pos=geo.attributes.position; const colors=new Float32Array(pos.count*3); geo.setAttribute('tcol',new THREE.BufferAttribute(colors,3));
+const SH_N=4;
+const surfMat=new THREE.ShaderMaterial({side:THREE.DoubleSide,
+  uniforms:{uLight:{value:new THREE.Vector3(-.5,.8,.35).normalize()},uReveal:{value:999},uScan:{value:-999},uScanA:{value:0},uGridA:{value:.16},
+    uShock:{value:[...Array(SH_N)].map(()=>new THREE.Vector4())},uShockC:{value:[...Array(SH_N)].map(()=>new THREE.Color())}},
+  vertexShader:`attribute vec3 tcol; varying vec3 vCol,vN,vV; varying float vH; varying vec2 vXZ;
+  void main(){ vCol=tcol; vH=position.y; vXZ=position.xz; vec4 wp=modelMatrix*vec4(position,1.0); vN=normalize(mat3(modelMatrix)*normal); vV=cameraPosition-wp.xyz; gl_Position=projectionMatrix*viewMatrix*wp; }`,
+  fragmentShader:`uniform vec3 uLight; uniform float uReveal,uScan,uScanA,uGridA; uniform vec4 uShock[${SH_N}]; uniform vec3 uShockC[${SH_N}];
+  varying vec3 vCol,vN,vV; varying float vH; varying vec2 vXZ;
+  void main(){ if(vXZ.x>uReveal) discard;
+    vec3 N=normalize(vN); if(!gl_FrontFacing) N=-N; vec3 V=normalize(vV); vec3 L=normalize(uLight);
+    float dif=max(dot(N,L),0.0); float spec=pow(max(dot(N,normalize(L+V)),0.0),36.0);
+    vec3 c=vCol*(0.40+0.74*dif)+vec3(0.9,0.95,1.0)*spec*0.22;
+    vec2 g=vXZ/3.5; vec2 gw=abs(fract(g-0.5)-0.5)/max(fwidth(g),vec2(1e-4)); float ln=1.0-clamp(min(gw.x,gw.y),0.0,1.0);
+    c+=vec3(0.75,0.88,1.0)*ln*uGridA;
+    float fr=pow(1.0-abs(dot(N,V)),3.0); c+=vec3(0.55,0.78,1.0)*fr*0.25;
+    for(int i=0;i<${SH_N};i++){ vec4 s=uShock[i]; if(s.w>0.002){ float d=length(vXZ-s.xy); float q=d-s.z; float q2=d-s.z*0.62;
+      c+=uShockC[i]*s.w*(exp(-q*q/2.5)*1.6+exp(-q2*q2/1.6)*0.55); } }
+    float sc=vXZ.x-uScan; c+=vec3(0.65,0.88,1.0)*exp(-sc*sc/2.2)*uScanA;
+    float re=vXZ.x-uReveal; c+=vec3(0.75,0.95,1.0)*exp(-re*re/1.5)*1.6;
+    gl_FragColor=vec4(c,1.0); }`});
+const surf=new THREE.Mesh(geo,surfMat); group.add(surf);
+
+// --- pitch lines (neon)
+const paths=[]; function rect(x0,z0,x1,z1){paths.push([[x0,z0],[x1,z0],[x1,z1],[x0,z1],[x0,z0]]);}
+rect(-52.5,-34,52.5,34); paths.push([[0,-34],[0,34]]);
+for(const s of[-1,1]){ rect(s*52.5,-20.2,s*36,20.2); rect(s*52.5,-9.2,s*47,9.2);
+  const arc=[];for(let a=-0.93;a<=0.93;a+=.05)arc.push([s*41.5-s*9.15*Math.cos(a),9.15*Math.sin(a)]); paths.push(arc); }
+{const c=[];for(let a=0;a<=Math.PI*2+.01;a+=.1)c.push([9.15*Math.cos(a),9.15*Math.sin(a)]);paths.push(c);}
+const lineMat=new THREE.ShaderMaterial({transparent:true,uniforms:{uC:{value:new THREE.Color(0xeaf3ff)},uO:{value:.6},uReveal:{value:999}},
+  vertexShader:`varying float vX; void main(){ vX=position.x; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0); }`,
+  fragmentShader:`uniform vec3 uC; uniform float uO,uReveal; varying float vX; void main(){ if(vX>uReveal) discard; gl_FragColor=vec4(uC,uO); }`});
+const lineObjs=[];
+function densify(p){ const out=[]; for(let i=1;i<p.length;i++){ const a=p[i-1],b=p[i]; const n=Math.max(1,Math.ceil(Math.hypot(b[0]-a[0],b[1]-a[1])/1.2)); for(let k=0;k<n;k++)out.push([a[0]+(b[0]-a[0])*k/n,a[1]+(b[1]-a[1])*k/n]); } out.push(p[p.length-1]); return out; }
+for(const p of paths){ const pts=densify(p); const g=new THREE.BufferGeometry(); g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(pts.length*3),3));
+  const l=new THREE.Line(g,lineMat); l.userData.pts=pts; group.add(l); lineObjs.push(l); }
+
+// --- goal frames (neon wireframe) + net flash
+const GH=4.0, GD=2.6;
+function makeGoal(sgn){ const v=[]; const L=(a,b)=>v.push(...a,...b);
+  for(const z of[-3.66,3.66]){ L([0,0,z],[0,GH,z]); L([0,GH,z],[GD,GH*.75,z]); L([GD,GH*.75,z],[GD,0,z]); L([0,0,z],[GD,0,z]); }
+  L([0,GH,-3.66],[0,GH,3.66]); L([GD,GH*.75,-3.66],[GD,GH*.75,3.66]); L([GD,0,-3.66],[GD,0,3.66]);
+  for(let z=-2.4;z<=2.41;z+=1.2) L([GD,0,z],[GD,GH*.75,z]);
+  const g=new THREE.BufferGeometry(); g.setAttribute('position',new THREE.Float32BufferAttribute(v,3));
+  const ls=new THREE.LineSegments(g,new THREE.LineBasicMaterial({color:0xeaf3ff,transparent:true,opacity:.75,blending:THREE.AdditiveBlending,depthWrite:false}));
+  ls.scale.x=sgn; group.add(ls);
+  const net=new THREE.Mesh(new THREE.PlaneGeometry(7.32,GH),new THREE.MeshBasicMaterial({color:0xffffff,transparent:true,opacity:0,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide}));
+  net.rotation.y=Math.PI/2; group.add(net); return {ls,net,sgn}; }
+const goalR=makeGoal(1), goalL=makeGoal(-1);
+
+// --- shot comet (light trail into the net)
+const cometMat=new THREE.MeshBasicMaterial({color:0xf2ffd6,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false});
+const cometGlowMat=new THREE.MeshBasicMaterial({color:0xc6ff3d,transparent:true,opacity:.35,blending:THREE.AdditiveBlending,depthWrite:false});
+const comet=new THREE.Mesh(new THREE.BufferGeometry(),cometMat), cometGlow=new THREE.Mesh(new THREE.BufferGeometry(),cometGlowMat);
+group.add(comet); group.add(cometGlow);
+const head=new THREE.Sprite(new THREE.SpriteMaterial({map:dotTex,color:0xffffff,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,depthTest:false})); head.scale.set(10,10,1); group.add(head);
+
+// --- penalty shield (hexagon)
+const shield=new THREE.Group();
+{ const hex=[]; for(let i=0;i<=6;i++){const a=i/6*Math.PI*2+Math.PI/6; hex.push(new THREE.Vector3(0,Math.sin(a)*4.2,Math.cos(a)*4.2));}
+  const lm=new THREE.LineBasicMaterial({color:0xc6ff3d,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false});
+  const l1=new THREE.Line(new THREE.BufferGeometry().setFromPoints(hex),lm); shield.add(l1);
+  const l2=l1.clone(); l2.scale.setScalar(.62); shield.add(l2);
+  const fill=new THREE.Mesh(new THREE.CircleGeometry(4.2,6),new THREE.MeshBasicMaterial({color:0xc6ff3d,transparent:true,opacity:.25,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide}));
+  fill.rotation.y=Math.PI/2; fill.rotation.x=Math.PI/6; shield.add(fill); shield.userData={lm,fill}; }
+group.add(shield);
+
+// --- FT goal rings
+const ringC=document.createElement('canvas');ringC.width=ringC.height=128;{const g=ringC.getContext('2d');g.strokeStyle='#c6ff3d';g.lineWidth=11;g.shadowColor='#c6ff3d';g.shadowBlur=12;g.beginPath();g.arc(64,64,44,0,7);g.stroke();}
+const ringTex=new THREE.CanvasTexture(ringC);
+const goalShots=SHOTS.filter(s=>s.type==='goal');
+const rings=goalShots.map(()=>{ const s=new THREE.Sprite(new THREE.SpriteMaterial({map:ringTex,transparent:true,depthTest:false,depthWrite:false})); group.add(s); return s; });
+const glabsEl=document.getElementById('glabs'); const glabs=goalShots.map(s=>{ const d=document.createElement('div'); d.className='glab'; d.textContent=s.min; glabsEl.appendChild(d); return d; });
+
+// ================= SURFACE UPDATE =================
+const tmp=new THREE.Color(), cA=new THREE.Color(), cE=new THREE.Color(), WHITE=new THREE.Color(1,1,1);
+// territory carries the crests: Italy azzurro / deep-azzurro stripes with a thin white trim line, France red / deep-red stripes with a thin gold trim line; every stripe bends with the swell
+const CR=new THREE.Color('#1a7ae6').multiplyScalar(.66), CR2=new THREE.Color('#0a3f9c').multiplyScalar(.66), CWH=new THREE.Color('#dfeeff').multiplyScalar(.6), UGD=new THREE.Color('#d9b45c').multiplyScalar(.62);
+function itaCol(z,out,s){ return out.copy(CR).lerp(CR2,stripe(z+STRIPE/4)).lerp(CWH,0.6*Math.exp(-Math.pow(Math.sin(z*Math.PI/STRIPE)/0.06,2))).multiplyScalar(s); }
+function fraCol(z,out,s){ return out.copy(EB_DEEP).lerp(EG_DEEP,stripe(z)).lerp(UGD,0.6*Math.exp(-Math.pow(Math.sin(z*Math.PI/STRIPE)/0.06,2))).multiplyScalar(s); }
+const FOAM=new THREE.Color('#e4ecff');
+const EB_DEEP=COL_EB.clone().multiplyScalar(.62), EG_DEEP=COL_EG.clone().multiplyScalar(.62);
+const AB_HI=new THREE.Color('#45a0ff'), AG_HI=new THREE.Color('#e6f2ff'), EB_HI=new THREE.Color('#ff2a3d'), EG_HI=new THREE.Color('#f0d28c'); // Italy's spikes run azzurro -> white with height, France's red -> crest gold
+const STRIPE=68/5;
+function stripe(z){ return THREE.MathUtils.smoothstep(Math.sin(z*2*Math.PI/STRIPE),-0.2,0.2); }
+function updateSurface(){ const m=CUR.m,k=CUR.k;
+  for(let i=0;i<pos.count;i++){ const x=pos.getX(i), z=pos.getZ(i); const h=height(x,z), wv=WV; pos.setY(i,h); const zw=z+2.2*Math.sin(x*.11-CUR.t*1.3), sz=stripe(zw);
+    if(k<1){ const u=THREE.MathUtils.smoothstep(x-boundary(z,m),-5,5); itaCol(zw,cA,1); fraCol(zw,cE,1); tmp.copy(cA).lerp(cE,u); } else tmp.setRGB(0,0,0);
+    if(k>0){ const u2=THREE.MathUtils.smoothstep(x,-0.5,0.5); itaCol(zw,cA,.7); fraCol(zw,cE,.7); tmp.lerp(cA.lerp(cE,u2),k); }
+    tmp.lerp(FOAM,clamp((wv-0.9)/1.4)*(0.3-0.12*k)); // foam on the swell crests
+    if(HA>0.05) tmp.lerp(cA.copy(AB_HI).lerp(AG_HI,clamp((h-3)/30)),clamp(HA/5)*.9); if(HE>0.05) tmp.lerp(cE.copy(EB_HI).lerp(EG_HI,clamp((h-3)/30)),clamp(HE/5)*.9);
+    tmp.lerp(WHITE,clamp((h-14)/50)*.32);
+    colors[i*3]=tmp.r; colors[i*3+1]=tmp.g; colors[i*3+2]=tmp.b; }
+  pos.needsUpdate=true; geo.attributes.tcol.needsUpdate=true; geo.computeVertexNormals();
+  for(const l of lineObjs){ const a=l.geometry.attributes.position, pts=l.userData.pts; for(let i=0;i<pts.length;i++){ a.setXYZ(i,pts[i][0],height(pts[i][0],pts[i][1])+0.16,pts[i][1]); } a.needsUpdate=true; } }
+
+// ================= HUD =================
+const $=s=>document.querySelector(s); const tl=$('#tl').getContext('2d');
+const ticksG=$('#ticks'); for(let i=0;i<31;i++){ const a=i/31*Math.PI*2-Math.PI/2; const r1=97,r2=i%5===0?106:102; const ln=document.createElementNS('http://www.w3.org/2000/svg','line');
+  ln.setAttribute('x1',107+Math.cos(a)*r1);ln.setAttribute('y1',107+Math.sin(a)*r1);ln.setAttribute('x2',107+Math.cos(a)*r2);ln.setAttribute('y2',107+Math.sin(a)*r2);ln.setAttribute('stroke-width',i%5===0?3:2); ticksG.appendChild(ln); }
+const tickEls=[...ticksG.children];
+function clockStr(m){ return m>=91? "90+"+Math.floor(m-90)+"'" : Math.floor(m)+"'"; }
+function shotsLast10(m){ let a=0,e=0; for(const s of SHOTS) if(s.m<=m&&s.m>m-10) (s.team==='A'?a++:e++); return [a,e]; }
+function pressure(m){ return clamp(samp(MOM_S,m),-1,1); }
+const PR=[]; for(let i=0;i<=END*4;i++) PR.push(pressure(i/4));
+function drawTL(m,f){ const w=952,h=168,mid=h/2,amp=h/2-16; tl.clearRect(0,0,w,h);
+  const X=mm=>mm/END*w;
+  tl.lineWidth=1; for(let q=0;q<=END;q+=15){ tl.strokeStyle=q===45?'rgba(190,212,255,.22)':'rgba(190,212,255,.08)'; tl.beginPath(); tl.moveTo(X(q)+.5,6); tl.lineTo(X(q)+.5,h-6); tl.stroke(); }
+  tl.strokeStyle='rgba(190,212,255,.22)'; tl.beginPath(); tl.moveTo(0,mid+.5); tl.lineTo(w,mid+.5); tl.stroke();
+  const N=Math.floor(Math.min(m,END)*4); if(N<1) return;
+  const grd=tl.createLinearGradient(0,0,0,h); grd.addColorStop(0,'rgba(70,155,255,.85)'); grd.addColorStop(.25,'rgba(60,145,255,.42)'); grd.addColorStop(.5,'rgba(42,139,255,.02)'); grd.addColorStop(.5,'rgba(255,42,61,.02)'); grd.addColorStop(.75,'rgba(255,42,61,.3)'); grd.addColorStop(1,'rgba(200,16,30,.6)');
+  tl.beginPath(); tl.moveTo(0,mid); for(let i=0;i<=N;i++) tl.lineTo(X(i/4),mid-PR[i]*amp); tl.lineTo(X(N/4),mid); tl.closePath(); tl.fillStyle=grd; tl.fill();
+  tl.save(); tl.shadowColor='rgba(170,210,255,.9)'; tl.shadowBlur=10; tl.lineWidth=3; tl.lineJoin='round'; tl.strokeStyle='#eef5ff';
+  tl.beginPath(); for(let i=0;i<=N;i++){ const y=mid-PR[i]*amp; i?tl.lineTo(X(i/4),y):tl.moveTo(X(i/4),y); } tl.stroke(); tl.restore();
+  const t=f/FPS;
+  for(const e of EVENTS){ const ei=EVENTS.indexOf(e); if(trig[ei]<0||t<trig[ei]+IMPACT) continue; const a=t-trig[ei]-IMPACT; const x=X(e.m), y=e.team==='A'?mid-amp-4:mid+amp+4; const pop=1+1.2*Math.exp(-a*6);
+    tl.save(); if(e.type==='goal'){ tl.shadowColor=TC2[e.team]; tl.shadowBlur=14; tl.fillStyle=TC[e.team]; tl.beginPath(); tl.arc(x,y,8.5*pop,0,7); tl.fill(); tl.lineWidth=2.5; tl.strokeStyle='#fff'; tl.stroke(); }
+    else if(e.type==='red'){ const cx=x+5, cy=y+(e.team==='A'?17:-17); /* inside the strip on either side */ tl.translate(cx,cy); tl.rotate(.17); tl.shadowColor=RED; tl.shadowBlur=12; tl.fillStyle=RED; tl.fillRect(-5.5*pop,-7.5*pop,11*pop,15*pop); tl.lineWidth=2; tl.strokeStyle='#fff'; tl.strokeRect(-5.5*pop,-7.5*pop,11*pop,15*pop); }
+    else { tl.shadowColor=ICE; tl.shadowBlur=10; tl.strokeStyle=ICE; tl.lineWidth=3; const r=6.5*pop; tl.beginPath(); tl.moveTo(x-r,y-r); tl.lineTo(x+r,y+r); tl.moveTo(x+r,y-r); tl.lineTo(x-r,y+r); tl.stroke(); }
+    tl.restore(); }
+  const px=X(Math.min(m,END)), py=mid-PR[Math.min(N,PR.length-1)]*amp;
+  const pg=tl.createLinearGradient(0,0,0,h); pg.addColorStop(0,'rgba(255,255,255,0)'); pg.addColorStop(.5,'rgba(255,255,255,.9)'); pg.addColorStop(1,'rgba(255,255,255,0)');
+  tl.strokeStyle=pg; tl.lineWidth=2; tl.beginPath(); tl.moveTo(px,2); tl.lineTo(px,h-2); tl.stroke();
+  tl.save(); tl.shadowColor='#fff'; tl.shadowBlur=14; tl.fillStyle='#fff'; tl.beginPath(); tl.arc(px,py,5.5,0,7); tl.fill(); tl.restore(); }
+
+// insight ticker copy (all derived from the match data above)
+// FotMob's per-shot xG sums to its official half totals here (HT 0.31 / 1.20, FT 2.35 / 1.63), so no per-half scaling
+function xgLive(team,t){ let x=0,n=0; for(const s of SHOTS){ if(s.team!==team) continue; const a=t-s.ti; if(a<0) continue; x+=s.xg*clamp(a/0.35); n++; } return [x,n]; }
+function insight(f){ const t=f/FPS, m=mArr[f];
+  if(f>=FT_FRAME) return (f-FT_FRAME)/FPS<3.2?['ft','xG 2.35–1.63 · SHOTS 11–18 · ON TARGET 5–5']:['ft2','ITALY 2ND HALF: 2.04 xG ON 31% OF THE BALL'];
+  let last=-1; EVENTS.forEach((e,i)=>{ if(trig[i]>=0&&t>=trig[i]+IMPACT) last=i; });
+  if(t<0.9) return ['boot','SYNCING MATCH MODEL …'];
+  if(last<0) return ['intro','TALLER SPIKE = BIGGER CHANCE · COLOUR = TERRITORY'];
+  if(last===0) return m<19?['g0','OLISE PUTS FRANCE AHEAD · 0–1']:['p0','FRANCE: 7 SHOTS IN THE FIRST 17 MINUTES'];
+  if(last===1) return ['g1','PIO ESPOSITO LEVELS IT · 1–1'];
+  if(last===2) return m<45.9?['c2','BARCOLA HITS THE POST · STILL 1–1']:['ht','HT 1–1 · xG 0.31–1.20 · FRANCE ON TOP'];
+  if(last===3) return ['c3','SEBASTIANO ESPOSITO: PENALTY OFF TARGET'];
+  if(last===4) return ['g4','FRATTESI TURNS IT AROUND · 2–1'];
+  return m<84?['g5','PIO ESPOSITO FROM THE SPOT · 3–1']:['p5','FRANCE CHASE IT · 4 SHOTS FROM THE 84TH MIN']; }
+const insStart={}; for(let f=0;f<TOTAL;f++){ const k=insight(f)[0]; if(!(k in insStart)) insStart[k]=f; }
+
+const STATS=[['11','SHOTS','18',11,18,0],['5','ON TARGET','5',5,5,0],['2.35','xG','1.63',2.35,1.63,2],['35%','POSSESSION','65%',35,65,0]]; // FotMob / Opta
+$('#stats').innerHTML=`<div class="hd"><span><img src="logo_ita.png" alt="">ITALY</span><span>FRANCE<img src="logo_fra.png" alt=""></span></div>`+
+  STATS.map(r=>`<div class="r"><div class="v" style="color:#8cb0ff">${r[0]}</div><div class="mid"><div class="lab">${r[1]}</div><div class="bar"><i class="a"></i><span class="sp"></span><i class="e"></i></div></div><div class="v b e">${r[2]}</div></div>`).join('');
+const statRows=[...document.querySelectorAll('#stats .r')];
+
+function lastImpact(team,t){ let li=-1; EVENTS.forEach((e,i)=>{ if(e.type==='goal'&&e.team===team&&trig[i]>=0&&t>=trig[i]+IMPACT) li=trig[i]+IMPACT; }); return li; }
+function activeEvent(t){ let ev=-1; EVENTS.forEach((e,i)=>{ if(trig[i]>=0&&t>=trig[i]&&t<trig[i]+dwellT[i]+1.0) ev=i; }); return ev; }
+
+function setHUD(f){ const m=mArr[f], t=f/FPS, ft=f>=FT_FRAME, ftU=ft?(f-FT_FRAME)/FPS:-1;
+  // intro build-in
+  const inA=(d)=>0.3+0.7*easeOut((t-d)/0.35);
+  [['#top',0],['#topl',.05],['#tA',.08],['#tE',.14],['#clock',.12],['#ins',.22],['#tlh',.26],['#tl',.28],['#tlc',.28],['#axis',.3],['#brand',.32]].forEach(([s,d])=>{ const u=inA(d); const el=$(s); el.style.opacity=u; el.style.translate=`0 ${(1-u)*18}px`; });
+  // intro crest lockup, cleared before the first event
+  { const vin=easeOut((t-0.1)/0.45), vout=clamp((3.6-t)/0.4); /* gone before Olise's 10' */ $('#vs').style.opacity=Math.min(vin,vout);
+    $('#vs .a').style.transform=`translateX(${((1-vin)*-90).toFixed(1)}px) scale(${(0.85+0.15*backOut((t-0.1)/0.5)).toFixed(3)})`;
+    $('#vs .e').style.transform=`translateX(${((1-vin)*90).toFixed(1)}px) scale(${(0.85+0.15*backOut((t-0.1)/0.5)).toFixed(3)})`;
+    $('#vs .x').style.opacity=easeOut((t-0.4)/0.3); $('#vs .s').style.opacity=easeOut((t-0.55)/0.3); }
+  // red card badge on the crest of the side that's down to 10 (none in this match)
+  { const ri=EVENTS.findIndex(e=>e.type==='red'); const a=ri>=0&&trig[ri]>=0?t-trig[ri]-IMPACT:-1; const rc=$('#t'+(ri>=0?EVENTS[ri].team:'A')+' .rc');
+    rc.style.opacity=a>=0?1:0; rc.style.transform=`rotate(10deg) scale(${a>=0?(1+1.4*Math.exp(-a*6)*Math.cos(a*14)).toFixed(3):1})`; }
+  // scores + jump
+  for(const [team,id] of [['A','#tA'],['E','#tE']]){ let sc=0,mins=[]; GOALS.forEach(g=>{ const ei=EVENTS.indexOf(g); if(g.team===team&&trig[ei]>=0&&t>=trig[ei]+IMPACT){ sc++; mins.push(g.min);} });
+    const el=$(id+' .score'); el.textContent=sc; const li=lastImpact(team,t); const a=li>=0?t-li:99; const col=TC[team], col2=TC2[team];
+    const s=1+0.75*Math.exp(-a*5.5)*Math.cos(a*17), jy=-34*Math.exp(-a*5)*Math.abs(Math.sin(a*13));
+    el.style.transform=`translateY(${jy}px) scale(${s})`; const gl=Math.exp(-a*2.2); el.style.textShadow=`0 0 ${10+40*gl}px ${col2}, 0 0 ${4+12*gl}px ${col}`; el.style.color=gl>.05?`color-mix(in srgb, ${col} ${Math.round(gl*70)}%, #fff)`:'#fff';
+    const bu=$(id+' .burst'); const bs=easeOut(a/0.6); bu.style.opacity=a<0.6?(1-bs):0; bu.style.width=bu.style.height=(10+bs*220)+'px'; bu.style.borderColor=col;
+    $(id+' .mins').innerHTML=mins.map(x=>`<span><span style="color:${col};text-shadow:0 0 8px ${col2}">●</span>${x}</span>`).join('');
+    const [xg,n]=xgLive(team,t); $(id+' .xg').textContent=xg.toFixed(2); $(id+' .sh').textContent=n; }
+  // clock ring
+  const isHT=htArr[f]; $('#clock .m').textContent=ft?'FT':(isHT?'HT':clockStr(m)); $('#clock .m').style.fontSize=(ft||isHT?96:(m>=91?66:86))+'px';
+  $('#clock .h').textContent=ft?'FULL TIME':(isHT?'HALF-TIME':(m<46?'1ST HALF':'2ND HALF'));
+  const pr=Math.min(1,m/END); $('#prog').setAttribute('stroke-dashoffset',527.79*(1-pr));
+  const pa=pr*Math.PI*2-Math.PI/2; $('#phd').setAttribute('cx',107+Math.cos(pa)*84); $('#phd').setAttribute('cy',107+Math.sin(pa)*84); $('#phd').style.opacity=ft?0:1;
+  tickEls.forEach((el,i)=>el.setAttribute('stroke',i/31<=pr?'rgba(198,255,61,.85)':'rgba(190,212,255,.25)'));
+  // insight ticker (typewriter)
+  const [ik,itx]=insight(f); const n=Math.floor((f-insStart[ik])/FPS*48); $('#ins .tx').textContent=itx.slice(0,n);
+  $('#ins .cur').style.opacity=(n<itx.length||Math.floor(t*2.5)%2===0)?1:0;
+  // pressure tag
+  const [sa,se]=shotsLast10(m); const tr=$('#tlh .r');
+  if(!ft&&sa+se>=3&&m>6){ const tm=sa>=se?'#8cb0ff':'#ff7a8a'; tr.innerHTML=`<span style="color:${tm}">▲ ${sa+se} SHOTS · LAST 10'</span>`; } else tr.innerHTML=ft?'<span style="color:#c6ff3d">◆ FULL MATCH</span>':'';
+  drawTL(m,f);
+  // callout
+  const call=$('#call'), ev=activeEvent(t);
+  if(ev>=0&&!ft){ const E=EVENTS[ev], a=t-trig[ev]-IMPACT, dw=dwellT[ev]; const isG=E.type==='goal', isR=E.type==='red', isC=isChance(E); const col=isG?TC[E.team]:(isR?RED:ICE), col2=isG?TC2[E.team]:(isC?TC[E.team]:col);
+    const o=a<0?0:Math.min(1,a/0.06)*clamp((dw+0.75-a)/0.25); call.style.opacity=o;
+    const T=call.querySelector('.t'); const word=isG?(E.word||'GOAL'):(isR?'RED CARD':(isC?({post:'WOODWORK',save:'SAVED'}[E.type]||'MISSED'):'NO GOAL')); if(T.textContent!==word){T.textContent=word;T.dataset.text=word;}
+    const big=isG&&!E.word; T.style.fontSize=big?'214px':'178px'; // HAT-TRICK is over twice as long as GOAL: set it like the other long words
+    const sp=1+0.55*Math.exp(-Math.max(0,a)*9)*Math.cos(Math.max(0,a)*20); T.style.transform=`skewX(-8deg) scale(${sp})`; T.style.letterSpacing=((big?10:6)+(big?40:22)*Math.exp(-Math.max(0,a)*10))+'px';
+    T.style.color=col; T.style.textShadow=`0 0 30px ${col}, 0 0 64px ${col2}cc, 0 4px 0 #000`;
+    const gA=a>=0&&a<0.32?1:(a<0.9&&Math.abs(hash(f*3.1))>0.82?0.6:0); const g1=(hash(f*1.7)*26*gA).toFixed(1), g2=(hash(f*2.3)*26*gA).toFixed(1);
+    const c1=Math.abs(hash(f*5.1))*70, c3=Math.abs(hash(f*7.7))*70; T.style.setProperty('--g1',g1+'px'); T.style.setProperty('--g2',g2+'px');
+    T.style.setProperty('--c1',c1+'%'); T.style.setProperty('--c2',(gA?100-c1-18:100)+'%'); T.style.setProperty('--c3',c3+'%'); T.style.setProperty('--c4',(gA?100-c3-14:100)+'%');
+    const N=call.querySelector('.n'), C=call.querySelector('.chip');
+    const crest=`<img src="${E.team==='A'?'logo_ita.png':'logo_fra.png'}" alt="">`;
+    if(N.dataset.ev!==String(ev)){ N.dataset.ev=ev; // rebuild only on change so the crest <img> isn't re-decoded every frame
+    N.innerHTML=`${isR?'<i class="card"></i>':crest}<span>${E.name} <span style="color:${col}">·</span> ${E.min}</span>`;
+    C.innerHTML=isG?`xG ${E.xg.toFixed(2)} <span style="color:#6f7d9c">|</span> ${E.xg<0.5?`1-IN-${Math.round(1/E.xg)}`:`${Math.round(E.xg*100)}%`} CHANCE`
+        +(E.word?` <span style="color:#6f7d9c">▸</span> <span style="color:${TC[E.team]}">${GOALS.filter(g=>g.name===E.name&&g.team===E.team).map(g=>g.min).join(' ')}</span>`:'') // hat-trick: list all three minutes
+      :isC?`xG ${E.xg.toFixed(2)} <span style="color:#6f7d9c">|</span> ${Math.round(E.xg*100)}% CHANCE <span style="color:#6f7d9c">▸</span> <span style="color:${TC[E.team]}">${E.note||(E.type==='post'?'OFF THE POST':(E.type==='save'?'SAVED BY '+E.by:'OFF TARGET'))}</span>`
+      :isR?`<span style="color:#ff6b73">${E.why}</span> <span style="color:#6f7d9c">|</span> DOWN TO 10`:`<span style="color:${ICE}">VAR</span> <span style="color:#6f7d9c">▸</span> GOAL RULED OUT${E.why?' · '+E.why:''}`; }
+    const un=easeOut((a-0.08)/0.25), uc=easeOut((a-0.16)/0.25); N.style.opacity=un; N.style.transform=`translateY(${(1-un)*22}px)`; C.style.opacity=uc; C.style.transform=`translateY(${(1-uc)*22}px)`; }
+  else call.style.opacity=0;
+  // FT stats
+  const st=$('#stats'); st.style.opacity=ft?easeOut((ftU-0.45)/0.3):0;
+  statRows.forEach((row,i)=>{ const r=STATS[i]; const u=ft?easeOut((ftU-0.5-i*0.14)/0.55):0; row.style.opacity=ft?clamp((ftU-0.5-i*0.14)/0.2):0; row.style.transform=`translateX(${(1-u)*-30}px)`;
+    const va=row.querySelector('.v'), vb=row.querySelector('.v.b'); const fmt=(v,d,pct)=>(d?(v*u).toFixed(d):Math.round(v*u))+(pct?'%':'');
+    va.textContent=fmt(r[3],r[5],r[1]==='POSSESSION'); vb.textContent=fmt(r[4],r[5],r[1]==='POSSESSION');
+    const tot=r[3]+r[4]; row.querySelector('i.a').style.width=(r[3]/tot*100*u*0.97)+'%'; row.querySelector('i.e').style.width=(r[4]/tot*100*u*0.97)+'%'; });
+}
+
+// ================= FRAME =================
+const V=new THREE.Vector3(), YAX=new THREE.Vector3(0,1,0);
+const stage=document.getElementById('stage'), bloomC=document.getElementById('bloom'), bctx=bloomC.getContext('2d');
+function project(x,y,z){ V.set(x,y,z); group.localToWorld(V); V.project(camera); return [(V.x+1)/2*1080,(1-V.y)/2*1920]; }
+function frame(f){ f=Math.max(0,Math.min(TOTAL-1,f)); const t=f/FPS, m=mArr[f], ft=f>=FT_FRAME, ftU=ft?(f-FT_FRAME)/FPS:-1;
+  const k=ft?ease(ftU/0.9):0; CUR.m=m; CUR.t=t; CUR.k=k;
+  buildFX(f); setHUD(f); updateSurface();
+  // ---- shake / flash / tint from event impacts
+  let shake=0, flash=0, tintO=0, tintC=['#4f88ff','#4f88ff'], ca=0, emph=0, ex=0, ez=0, horiz=0, lift=0, lx=0, lz=0;
+  EVENTS.forEach((E,i)=>{ if(trig[i]<0) return; const a=t-trig[i], a2=a-IMPACT, dw=dwellT[i]; if(a<0||a>dw+2) return; const isG=E.type==='goal';
+    if(a<IMPACT) shake=Math.max(shake,0.35*Math.exp(-a/0.12));
+    if(a2>=0){ shake=Math.max(shake,(isG?1:0.85)*Math.exp(-a2/0.3)); flash=Math.max(flash,(isG?0.42:0.3)*Math.exp(-a2/0.07)); ca=Math.max(ca,Math.exp(-a2/0.16));
+      tintO=Math.max(tintO,(isG?0.55:0.4)*Math.exp(-a2/0.55)+(isG?0.16:0.08)*clamp((dw+0.6-a)/0.5));
+      const isC=isChance(E); tintC=isG||isC?(E.team==='A'?['#2a8bff','#eef6ff']:['#ff2a3d','#e2c27a']):(E.type==='red'?[RED,RED]:[ICE,'#7f9cd6']); if(E.type==='var') horiz=1; }
+    const s=SHOTS.find(s=>s.ei===i); const e=Math.sin(clamp(a/(dw+0.7))*Math.PI); if(s&&e>emph){ emph=e; ex=s.x; ez=s.z; } });
+  // a tall spike at the far (France-attacking, -x) end would climb into the scoreboard: pull back and centre on it while it's up,
+  // starting just before the clock hits the minute so the spring overshoot is already covered (Olise's 0.40 sits right on the threshold: no lift)
+  EVENTS.forEach((E,i)=>{ const s=SHOTS.find(s=>s.ei===i); if(trig[i]<0||!s||s.x>=0) return; const a=t-trig[i];
+    const l=clamp((s.xg-0.4)/0.4)*clamp((a+0.3)/0.3)*clamp((dwellT[i]+1.0-a)/0.5); if(l>lift){ lift=l; lx=s.x; lz=s.z; } });
+  if(ft&&ftU<0.5){ flash=Math.max(flash,0.5*Math.exp(-ftU/0.1)); shake=Math.max(shake,0.5*Math.exp(-ftU/0.2)); ca=Math.max(ca,Math.exp(-ftU/0.15)); }
+  const sxp=hash(f*1.31)*(horiz?30:20)*shake, syp=hash(f*2.17)*(horiz?8:20)*shake, srt=hash(f*3.7)*0.9*shake;
+  stage.style.transform=`translate(${sxp.toFixed(2)}px,${syp.toFixed(2)}px) rotate(${srt.toFixed(3)}deg) scale(${(1+0.035*shake).toFixed(4)})`;
+  $('#flash').style.opacity=flash; const ti=$('#tint'); ti.style.opacity=tintO; ti.style.background=`radial-gradient(ellipse 75% 50% at 50% 44%, ${tintC[0]}66 0%, ${tintC[1]}33 45%, transparent 80%)`;
+  glc.style.filter=ca>0.04?`drop-shadow(${(ca*9).toFixed(1)}px 0 0 rgba(255,40,110,.55)) drop-shadow(${(-ca*9).toFixed(1)}px 0 0 rgba(40,230,255,.55))`:'none';
+  // ---- shader uniforms
+  const u=surfMat.uniforms; const rev=t<INTRO?-50+116*easeOut(t/INTRO):999; u.uReveal.value=rev; lineMat.uniforms.uReveal.value=rev;
+  if(ft&&ftU<1.1){ u.uScan.value=-64+128*ease(ftU/1.0); u.uScanA.value=Math.sin(clamp(ftU/1.0)*Math.PI)*1.3; }
+  else { const ph=(t%5)/5; u.uScan.value=-64+128*ph; u.uScanA.value=t<INTRO?0:0.32*Math.sin(ph*Math.PI); }
+  u.uGridA.value=0.16+0.1*k; lineMat.uniforms.uO.value=0.55+0.35*k;
+  const shocks=RIP.slice().sort((a,b)=>b.str-a.str).slice(0,SH_N);
+  for(let i=0;i<SH_N;i++){ const r=shocks[i]; if(r){ u.uShock.value[i].set(r.x,r.z,r.v*r.a,r.str*(1-k)); u.uShockC.value[i].set(TC3[r.team]??0xc6ff3d); } else u.uShock.value[i].set(0,0,0,0); }
+  floorMat.uniforms.uA.value=0.35+0.65*easeOut(t/0.8); floorMat.uniforms.uT.value=t;
+  { let fr=0,fs=0,fc=0xffffff; EVENTS.forEach((E,i)=>{ if(trig[i]<0) return; const a2=t-trig[i]-IMPACT; if(a2>0&&a2<2){ fr=a2*170; fs=Math.exp(-a2/0.7); fc=E.type==='goal'?TC3[E.team]:(E.type==='red'?0xff2330:0xdbe7ff); } });
+    if(ft&&ftU<2){ fr=ftU*170; fs=Math.exp(-ftU/0.7)*.8; fc=0xcfe0ff; } floorMat.uniforms.uRing.value.set(fr,fs); floorMat.uniforms.uRingC.value.set(fc); }
+  // particles
+  for(let i=0;i<NP;i++){ const sp=pBase[i*4+3]; pPos[i*3]=pBase[i*4]+Math.sin(t*.3+i)*3; pPos[i*3+1]=-25+((pBase[i*4+1]+25+t*sp)%150); pPos[i*3+2]=pBase[i*4+2]; } pGeo.attributes.position.needsUpdate=true;
+  pMat.opacity=0.5*easeOut(t/0.8);
+  // goals frames + net flash
+  for(const G of [goalR,goalL]){ const gx=G.sgn*52.5, base=height(gx,0)*(1-k); G.ls.position.set(gx,base,0); G.net.position.set(gx+G.sgn*1.3,base+GH/2,0);
+    let fl=0,col=0xeaf3ff; EVENTS.forEach((E,i)=>{ if(trig[i]<0||(E.type!=='goal'&&E.type!=='post')) return; const s=SHOTS.find(s=>s.ei===i); if(Math.sign(s.x)!==G.sgn) return; const a2=t-trig[i]-IMPACT; if(a2>=0&&a2<1.5){ const isW=E.type==='post'; fl=Math.max(fl,(isW?0.8:1)*Math.exp(-a2/(isW?0.22:0.35))); col=isW?0xffffff:TC3[E.team]; } });
+    G.ls.material.color.set(fl>0.05?col:0xeaf3ff); G.ls.material.opacity=(0.7+0.3*fl)*(t<INTRO?ease(t/INTRO):1); G.net.material.color.set(col); G.net.material.opacity=col===0xffffff?0:fl*0.7; } // woodwork rings the frame, the net stays dark
+  // comet + shield
+  comet.visible=cometGlow.visible=head.visible=false; shield.visible=false;
+  EVENTS.forEach((E,i)=>{ if(trig[i]<0) return; const a=t-trig[i]; if(a<0||a>1.1) return; const s=SHOTS.find(s=>s.ei===i); if(!s) return; const sg=Math.sign(s.x); cometGlowMat.color.set(TC3[E.team]);
+    const isP=E.type==='pen'||E.type==='save', isM=E.type==='miss', isW=E.type==='post'; // a miss flies wide of the post, woodwork ends on it, a save stops at the keeper's shield
+    const gx=sg*(isP?51.0:(isW?52.5:53.6)), gz=isP?(E.type==='save'?clamp(s.z,-2,2)*0.5:0):(isM||isW?(s.z>=0?1:-1)*(isM?6.6:3.66):(s.z>0?2.0:-2.0)*(Math.abs(s.z)>3?1:0.4));
+    const p0=new THREE.Vector3(s.x,2.0,s.z), p2=new THREE.Vector3(gx,height(sg*52.5,0)*(1-k)+(isP?2.4:2.0),gz);
+    const p1=p0.clone().lerp(p2,.5); p1.y+=isP?5:9; const curve=new THREE.QuadraticBezierCurve3(p0,p1,p2);
+    const hp=clamp(a/IMPACT), tp=clamp((a-IMPACT)/0.32); if(tp>=1) { } else { const pts=[]; for(let j=0;j<=24;j++) pts.push(curve.getPoint(tp*hp+(hp-tp*hp)*j/24));
+      const cc=new THREE.CatmullRomCurve3(pts); comet.geometry.dispose(); cometGlow.geometry.dispose(); comet.geometry=new THREE.TubeGeometry(cc,40,0.5,6); cometGlow.geometry=new THREE.TubeGeometry(cc,40,1.5,8);
+      comet.visible=cometGlow.visible=true; cometMat.opacity=1-tp; cometGlowMat.opacity=.4*(1-tp); }
+    if(a<IMPACT+0.08){ head.visible=true; head.position.copy(curve.getPoint(hp)); }
+    if(isP&&a>=IMPACT-0.04){ const a2=a-IMPACT; shield.visible=true; shield.position.set(sg*50.6,height(sg*52.5,0)+4.2,gz); const sc=0.9+1.5*easeOut(a2/0.28); shield.scale.setScalar(sc);
+      const o=clamp(1-a2/0.75); shield.userData.lm.opacity=o; shield.userData.fill.material.opacity=0.85*o*Math.exp(-Math.max(0,a2)/0.22); } });
+  // ---- camera
+  // no half turn: Italy's end (+x: both 0.79 penalties) sits nearest the camera; France's far-end spikes are handled by the lift above
+  const ry=-0.82+0.10*Math.sin(t*.35)+k*0.16+(ft?ftU*0.035:0); group.rotation.y=ry;
+  V.set(ex,0,ez).applyAxisAngle(YAX,ry); let tx=V.x*0.32*emph, tz=V.z*0.32*emph; V.set(lx,0,lz).applyAxisAngle(YAX,ry); tx+=V.x*0.45*lift; tz+=V.z*0.45*lift;
+  const dist=520-emph*40*(1-lift)+lift*120+k*95, el=0.62+0.14*k, dz=Math.sqrt(1-el*el);
+  const cs=shake*3.2;
+  camera.position.set(tx+hash(f*4.3)*cs, dist*el+hash(f*5.9)*cs, dist*dz*1.1+tz);
+  camera.lookAt(tx,-4-k*24+lift*8,tz); camera.rotateZ(hash(f*6.1)*0.006*shake);
+  group.position.set(0,k*6,0);
+  camera.updateMatrixWorld(); group.updateMatrixWorld(true);
+  // FT rings + labels
+  goalShots.forEach((s,j)=>{ const r=rings[j], L=glabs[j]; if(!ft){ r.visible=false; L.style.opacity=0; return; }
+    const a=ftU-(0.8+1.9*s.m/END)-0.12; const top=height(s.x,s.z)+3.2; const sc=4.6*backOut(a/0.3); r.visible=a>0; r.scale.set(sc,sc,1); r.position.set(s.x,top,s.z);
+    const [px,py]=project(s.x,top,s.z); L.style.opacity=clamp((a-0.1)/0.2); const lr=20; L.style.transform=`translate(${(px+lr).toFixed(1)}px,${(py-12).toFixed(1)}px)`; });
+  renderer.render(scene,camera);
+  // ---- bloom
+  bctx.clearRect(0,0,540,960); bctx.filter='brightness(1.0) contrast(1.75) blur(9px)'; bctx.drawImage(glc,0,0,540,960); bctx.filter='none';
+  // ---- AR tag following the event spike
+  const tag=$('#tag'); const evi=activeEvent(t);
+  const tagS=evi>=0?SHOTS.find(s=>s.ei===evi):null;
+  if(tagS&&!ft){ const E=EVENTS[evi], a=t-trig[evi]; const s=tagS; const sp=SP.find(p=>Math.abs(p.x-s.x)<3&&Math.abs(p.z-s.z)<3&&!p.ft);
+    const top=height(sp?sp.x:s.x,sp?sp.z:s.z)+1.2; let [px,py]=project(sp?sp.x:s.x,top,sp?sp.z:s.z); py=Math.max(py,516); // keep the box under the scoreboard while a tall spike overshoots
+    const o=clamp((a-0.12)/0.12)*clamp((dwellT[evi]+0.35-a)/0.2); tag.style.opacity=o; tag.style.transform=`translate(${px.toFixed(1)}px,${py.toFixed(1)}px)`;
+    const col=TC[E.team]; tag.querySelector('.box').style.borderLeftColor=col; tag.querySelector('.dot').style.borderColor=col; tag.querySelector('.dot').style.boxShadow=`0 0 14px ${TC2[E.team]}`;
+    tag.querySelector('b').textContent='xG '+E.xg.toFixed(2); tag.querySelector('span').textContent=E.team==='A'?'ITALY SHOT':'FRANCE SHOT';
+    tag.querySelector('.iA').style.display=E.team==='A'?'block':'none'; tag.querySelector('.iE').style.display=E.team==='E'?'block':'none';
+    const flip=px>760; tag.querySelector('.box').style.left=flip?'auto':'56px'; tag.querySelector('.box').style.right=flip?'56px':'auto'; tag.querySelector('.ln').style.transform=flip?'rotate(-138deg)':'rotate(-42deg)'; }
+  else tag.style.opacity=0;
+  return {m:CUR.m,ft:FT_FRAME,total:TOTAL}; }
+window.frame=frame; window.FT_FRAME=FT_FRAME; window.TOTAL=TOTAL; window.trig=trig; window.FPS=FPS;
+frame(0);
+window.addEventListener('load',()=>{ window.READY=true; }); // render_par.py waits for the crests to decode
+</script></body></html>

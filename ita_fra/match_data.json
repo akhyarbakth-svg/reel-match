@@ -1,0 +1,1317 @@
+{
+ "source": "FotMob match 5181797 (Opta data)",
+ "match": "Italy 3-1 France, UEFA Nations League A Grp. 1 round 5, Thu, Nov 12, 2026, 19:45 UTC",
+ "home": "ITA",
+ "away": "FRA",
+ "shots": [
+  {
+   "team": "FRA",
+   "min": 3,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0888,
+   "x": 98.4385964909,
+   "y": 45.1918471296,
+   "player": "Désiré Doué",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 9,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.1494,
+   "x": 102.9137931036,
+   "y": 26.516562500000003,
+   "player": "Adrien Rabiot",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 10,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.027,
+   "x": 78.655825244,
+   "y": 24.419617839300003,
+   "player": "Lucas Da Cunha",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 10,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.4031,
+   "x": 97.2807017537,
+   "y": 28.791190475,
+   "player": "Michael Olise",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 15,
+   "add": null,
+   "type": "Miss",
+   "situation": "SetPiece",
+   "shotType": "LeftFoot",
+   "xg": 0.0468,
+   "x": 87.1044117644,
+   "y": 32.856249999999996,
+   "player": "Lucas Da Cunha",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 15,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "SetPiece",
+   "shotType": "Header",
+   "xg": 0.0293,
+   "x": 97.3771929818,
+   "y": 43.5803821607,
+   "player": "Adrien Rabiot",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 17,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.0945,
+   "x": 100.3534482762,
+   "y": 46.312866238400005,
+   "player": "Bradley Barcola",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ITA",
+   "min": 26,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1961,
+   "x": 101.58620689680001,
+   "y": 38.452380954,
+   "player": "Francesco Pio Esposito",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ITA",
+   "min": 28,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0239,
+   "x": 98.14912280659999,
+   "y": 48.2746496788,
+   "player": "Sebastiano Esposito",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 32,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0253,
+   "x": 83.160679612,
+   "y": 44.2109554094,
+   "player": "Rayan Cherki",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 35,
+   "add": null,
+   "type": "Post",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.1426,
+   "x": 89.7,
+   "y": 39.292857143999996,
+   "player": "Bradley Barcola",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ITA",
+   "min": 36,
+   "add": null,
+   "type": "Miss",
+   "situation": "SetPiece",
+   "shotType": "Header",
+   "xg": 0.0294,
+   "x": 94.2894736826,
+   "y": 31.78875,
+   "player": "Francesco Pio Esposito",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 38,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1936,
+   "x": 100.44827586240001,
+   "y": 30.328,
+   "player": "Bradley Barcola",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ITA",
+   "min": 45,
+   "add": 0,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0607,
+   "x": 92.6,
+   "y": 17.6234394922,
+   "player": "Nicolò Barella",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 51,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.079,
+   "x": 96.2192982446,
+   "y": 43.044375,
+   "player": "Bradley Barcola",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 51,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0154,
+   "x": 74.4888349536,
+   "y": 48.4848407617,
+   "player": "Adrien Rabiot",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 52,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0621,
+   "x": 85.17205882280001,
+   "y": 36.51625,
+   "player": "Rayan Cherki",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ITA",
+   "min": 53,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0661,
+   "x": 96.2192982446,
+   "y": 28.875238094000004,
+   "player": "Francesco Pio Esposito",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ITA",
+   "min": 53,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0523,
+   "x": 91.3,
+   "y": 27.866666666,
+   "player": "Francesco Pio Esposito",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ITA",
+   "min": 54,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.042,
+   "x": 94.09649122639999,
+   "y": 37.744,
+   "player": "Davide Frattesi",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 58,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0489,
+   "x": 96.2192982446,
+   "y": 50.586751590700004,
+   "player": "Adrien Rabiot",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ITA",
+   "min": 60,
+   "add": null,
+   "type": "Miss",
+   "situation": "Penalty",
+   "shotType": "RightFoot",
+   "xg": 0.7884,
+   "x": 94,
+   "y": 34,
+   "player": "Sebastiano Esposito",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ITA",
+   "min": 63,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1716,
+   "x": 97.1842105256,
+   "y": 39.040714287,
+   "player": "Davide Frattesi",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ITA",
+   "min": 75,
+   "add": null,
+   "type": "Goal",
+   "situation": "Penalty",
+   "shotType": "RightFoot",
+   "xg": 0.7884,
+   "x": 94,
+   "y": 34,
+   "player": "Francesco Pio Esposito",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 84,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0215,
+   "x": 81.471359224,
+   "y": 26.0540625,
+   "player": "Michael Olise",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ITA",
+   "min": 85,
+   "add": null,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.1272,
+   "x": 46.400000001,
+   "y": 47.4338853472,
+   "player": "Federico Dimarco",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 87,
+   "add": null,
+   "type": "Miss",
+   "situation": "FreeKick",
+   "shotType": "LeftFoot",
+   "xg": 0.0353,
+   "x": 79.55679611760002,
+   "y": 47.714140124400004,
+   "player": "Michael Olise",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 89,
+   "add": null,
+   "type": "Miss",
+   "situation": "SetPiece",
+   "shotType": "RightFoot",
+   "xg": 0.1518,
+   "x": 96.9912280694,
+   "y": 35.525000000000006,
+   "player": "Jérémy Jacquet",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 90,
+   "add": 4,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0178,
+   "x": 84.51213592239999,
+   "y": 24.2794904507,
+   "player": "Michael Olise",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   2,
+   11
+  ],
+  [
+   3,
+   -5
+  ],
+  [
+   4,
+   -16
+  ],
+  [
+   5,
+   -49
+  ],
+  [
+   6,
+   -49
+  ],
+  [
+   7,
+   -49
+  ],
+  [
+   8,
+   -22
+  ],
+  [
+   9,
+   -100
+  ],
+  [
+   10,
+   -100
+  ],
+  [
+   11,
+   -100
+  ],
+  [
+   12,
+   -100
+  ],
+  [
+   13,
+   14
+  ],
+  [
+   14,
+   -8
+  ],
+  [
+   15,
+   -8
+  ],
+  [
+   16,
+   -16
+  ],
+  [
+   17,
+   3
+  ],
+  [
+   18,
+   3
+  ],
+  [
+   19,
+   -24
+  ],
+  [
+   20,
+   -16
+  ],
+  [
+   21,
+   -24
+  ],
+  [
+   22,
+   22
+  ],
+  [
+   23,
+   11
+  ],
+  [
+   24,
+   16
+  ],
+  [
+   25,
+   -24
+  ],
+  [
+   26,
+   100
+  ],
+  [
+   27,
+   100
+  ],
+  [
+   28,
+   100
+  ],
+  [
+   29,
+   35
+  ],
+  [
+   30,
+   46
+  ],
+  [
+   31,
+   -3
+  ],
+  [
+   32,
+   -19
+  ],
+  [
+   33,
+   -24
+  ],
+  [
+   34,
+   -8
+  ],
+  [
+   35,
+   -54
+  ],
+  [
+   36,
+   -33
+  ],
+  [
+   37,
+   -38
+  ],
+  [
+   38,
+   -57
+  ],
+  [
+   39,
+   -79
+  ],
+  [
+   40,
+   -84
+  ],
+  [
+   41,
+   -38
+  ],
+  [
+   42,
+   -27
+  ],
+  [
+   43,
+   -33
+  ],
+  [
+   44,
+   -16
+  ],
+  [
+   45,
+   -11
+  ],
+  [
+   45.5,
+   0
+  ],
+  [
+   46,
+   -11
+  ],
+  [
+   47,
+   11
+  ],
+  [
+   48,
+   92
+  ],
+  [
+   49,
+   100
+  ],
+  [
+   50,
+   84
+  ],
+  [
+   51,
+   -57
+  ],
+  [
+   52,
+   -73
+  ],
+  [
+   53,
+   -3
+  ],
+  [
+   54,
+   76
+  ],
+  [
+   55,
+   87
+  ],
+  [
+   56,
+   16
+  ],
+  [
+   57,
+   -57
+  ],
+  [
+   58,
+   -46
+  ],
+  [
+   59,
+   -49
+  ],
+  [
+   60,
+   11
+  ],
+  [
+   61,
+   16
+  ],
+  [
+   62,
+   22
+  ],
+  [
+   63,
+   90
+  ],
+  [
+   64,
+   46
+  ],
+  [
+   65,
+   14
+  ],
+  [
+   66,
+   -76
+  ],
+  [
+   67,
+   -33
+  ],
+  [
+   68,
+   -14
+  ],
+  [
+   69,
+   -8
+  ],
+  [
+   70,
+   -19
+  ],
+  [
+   71,
+   -11
+  ],
+  [
+   72,
+   5
+  ],
+  [
+   73,
+   8
+  ],
+  [
+   74,
+   19
+  ],
+  [
+   75,
+   14
+  ],
+  [
+   76,
+   11
+  ],
+  [
+   77,
+   -11
+  ],
+  [
+   78,
+   -22
+  ],
+  [
+   79,
+   -16
+  ],
+  [
+   80,
+   -5
+  ],
+  [
+   81,
+   -5
+  ],
+  [
+   82,
+   -16
+  ],
+  [
+   83,
+   -33
+  ],
+  [
+   84,
+   -100
+  ],
+  [
+   85,
+   -100
+  ],
+  [
+   86,
+   -87
+  ],
+  [
+   87,
+   -5
+  ],
+  [
+   88,
+   -22
+  ],
+  [
+   89,
+   -92
+  ],
+  [
+   90,
+   -100
+  ],
+  [
+   90.5,
+   -60
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 13,
+   "team": "FRA",
+   "player": "Jérémy Jacquet",
+   "reason": "Foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 39,
+   "team": "ITA",
+   "player": "Francesco Pio Esposito",
+   "reason": "Time wasting"
+  },
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 1
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 70,
+   "team": "ITA",
+   "player": "Alessandro Bastoni",
+   "reason": "Dissent"
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 4
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 90,
+   "team": "FRA",
+   "player": "Junior Kroupi",
+   "reason": "Foul"
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    35,
+    65
+   ],
+   "expected_goals": [
+    "2.35",
+    "1.63"
+   ],
+   "total_shots": [
+    11,
+    18
+   ],
+   "ShotsOnTarget": [
+    5,
+    5
+   ],
+   "touches_opp_box": [
+    19,
+    36
+   ],
+   "big_chance": [
+    4,
+    4
+   ],
+   "big_chance_missed_title": [
+    1,
+    3
+   ],
+   "accurate_passes": [
+    "253 (80%)",
+    "538 (91%)"
+   ],
+   "yellow_cards": [
+    2,
+    2
+   ],
+   "corners": [
+    4,
+    3
+   ],
+   "ShotsOffTarget": [
+    5,
+    9
+   ],
+   "blocked_shots": [
+    1,
+    4
+   ],
+   "shots_woodwork": [
+    0,
+    2
+   ],
+   "shots_inside_box": [
+    10,
+    10
+   ],
+   "shots_outside_box": [
+    1,
+    8
+   ],
+   "expected_goals_open_play": [
+    "0.70",
+    "1.37"
+   ],
+   "expected_goals_set_play": [
+    "0.07",
+    "0.26"
+   ],
+   "expected_goals_non_penalty": [
+    "0.77",
+    "1.63"
+   ],
+   "expected_goals_on_target": [
+    "1.85",
+    "1.39"
+   ],
+   "passes": [
+    316,
+    588
+   ],
+   "own_half_passes": [
+    145,
+    226
+   ],
+   "opposition_half_passes": [
+    108,
+    312
+   ],
+   "long_balls_accurate": [
+    "23 (49%)",
+    "19 (63%)"
+   ],
+   "accurate_crosses": [
+    "5 (38%)",
+    "4 (18%)"
+   ],
+   "player_throws": [
+    13,
+    17
+   ],
+   "Offsides": [
+    1,
+    2
+   ],
+   "matchstats.headers.tackles": [
+    17,
+    9
+   ],
+   "interceptions": [
+    15,
+    7
+   ],
+   "shot_blocks": [
+    3,
+    1
+   ],
+   "clearances": [
+    30,
+    14
+   ],
+   "keeper_saves": [
+    4,
+    2
+   ],
+   "duel_won": [
+    44,
+    27
+   ],
+   "ground_duels_won": [
+    "38 (60%)",
+    "25 (40%)"
+   ],
+   "aerials_won": [
+    "6 (75%)",
+    "2 (25%)"
+   ],
+   "dribbles_succeeded": [
+    "4 (40%)",
+    "6 (50%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    10,
+    18
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    38,
+    62
+   ],
+   "expected_goals": [
+    "0.31",
+    "1.20"
+   ],
+   "total_shots": [
+    4,
+    10
+   ],
+   "ShotsOnTarget": [
+    2,
+    3
+   ],
+   "touches_opp_box": [
+    7,
+    16
+   ],
+   "big_chance": [
+    1,
+    4
+   ],
+   "big_chance_missed_title": [
+    0,
+    3
+   ],
+   "accurate_passes": [
+    "157 (82%)",
+    "284 (95%)"
+   ],
+   "yellow_cards": [
+    1,
+    1
+   ],
+   "corners": [
+    2,
+    1
+   ],
+   "ShotsOffTarget": [
+    2,
+    5
+   ],
+   "blocked_shots": [
+    0,
+    2
+   ],
+   "shots_woodwork": [
+    0,
+    1
+   ],
+   "shots_inside_box": [
+    4,
+    7
+   ],
+   "shots_outside_box": [
+    0,
+    3
+   ],
+   "expected_goals_open_play": [
+    "0.28",
+    "1.12"
+   ],
+   "expected_goals_set_play": [
+    "0.03",
+    "0.08"
+   ],
+   "expected_goals_non_penalty": [
+    "0.31",
+    "1.20"
+   ],
+   "expected_goals_on_target": [
+    "0.68",
+    "0.84"
+   ],
+   "passes": [
+    191,
+    300
+   ],
+   "own_half_passes": [
+    91,
+    114
+   ],
+   "opposition_half_passes": [
+    66,
+    170
+   ],
+   "long_balls_accurate": [
+    "16 (62%)",
+    "10 (71%)"
+   ],
+   "accurate_crosses": [
+    "2 (33%)",
+    "3 (19%)"
+   ],
+   "player_throws": [
+    6,
+    5
+   ],
+   "Offsides": [
+    1,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    5,
+    4
+   ],
+   "interceptions": [
+    5,
+    5
+   ],
+   "shot_blocks": [
+    1,
+    0
+   ],
+   "clearances": [
+    14,
+    9
+   ],
+   "keeper_saves": [
+    2,
+    1
+   ],
+   "duel_won": [
+    18,
+    13
+   ],
+   "ground_duels_won": [
+    "15 (56%)",
+    "12 (44%)"
+   ],
+   "aerials_won": [
+    "3 (75%)",
+    "1 (25%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (33%)",
+    "3 (60%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    5,
+    9
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    31,
+    69
+   ],
+   "expected_goals": [
+    "2.04",
+    "0.43"
+   ],
+   "total_shots": [
+    7,
+    8
+   ],
+   "ShotsOnTarget": [
+    3,
+    2
+   ],
+   "touches_opp_box": [
+    12,
+    20
+   ],
+   "big_chance": [
+    3,
+    0
+   ],
+   "big_chance_missed_title": [
+    1,
+    0
+   ],
+   "accurate_passes": [
+    "96 (77%)",
+    "254 (88%)"
+   ],
+   "yellow_cards": [
+    1,
+    1
+   ],
+   "corners": [
+    2,
+    2
+   ],
+   "ShotsOffTarget": [
+    3,
+    4
+   ],
+   "blocked_shots": [
+    1,
+    2
+   ],
+   "shots_woodwork": [
+    0,
+    1
+   ],
+   "shots_inside_box": [
+    6,
+    3
+   ],
+   "shots_outside_box": [
+    1,
+    5
+   ],
+   "expected_goals_open_play": [
+    "0.42",
+    "0.24"
+   ],
+   "expected_goals_set_play": [
+    "0.04",
+    "0.19"
+   ],
+   "expected_goals_non_penalty": [
+    "0.46",
+    "0.43"
+   ],
+   "expected_goals_on_target": [
+    "1.17",
+    "0.55"
+   ],
+   "passes": [
+    125,
+    288
+   ],
+   "own_half_passes": [
+    54,
+    112
+   ],
+   "opposition_half_passes": [
+    42,
+    142
+   ],
+   "long_balls_accurate": [
+    "7 (33%)",
+    "9 (56%)"
+   ],
+   "accurate_crosses": [
+    "3 (43%)",
+    "1 (17%)"
+   ],
+   "player_throws": [
+    7,
+    12
+   ],
+   "Offsides": [
+    0,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    12,
+    5
+   ],
+   "interceptions": [
+    10,
+    2
+   ],
+   "shot_blocks": [
+    2,
+    1
+   ],
+   "clearances": [
+    16,
+    5
+   ],
+   "keeper_saves": [
+    2,
+    1
+   ],
+   "duel_won": [
+    26,
+    14
+   ],
+   "ground_duels_won": [
+    "23 (64%)",
+    "13 (36%)"
+   ],
+   "aerials_won": [
+    "3 (75%)",
+    "1 (25%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (50%)",
+    "3 (43%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    5,
+    9
+   ]
+  }
+ }
+}
