@@ -1,0 +1,1269 @@
+{
+ "source": "FotMob match 5181858 (Opta data)",
+ "match": "England 2-1 Croatia, UEFA Nations League A Grp. 3 round 5, Thu, Nov 12, 2026, 19:45 UTC",
+ "home": "ENG",
+ "away": "CRO",
+ "shots": [
+  {
+   "team": "CRO",
+   "min": 1,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.085,
+   "x": 97.4736842099,
+   "y": 28.118809523000003,
+   "player": "Mateo Kovačić",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRO",
+   "min": 5,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0554,
+   "x": 97.6666666661,
+   "y": 40.385476190999995,
+   "player": "Joško Gvardiol",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 16,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.03,
+   "x": 84.286893204,
+   "y": 30.244,
+   "player": "Elliot Anderson",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 18,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0617,
+   "x": 90.4,
+   "y": 20.4960509585,
+   "player": "Trent Alexander-Arnold",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "CRO",
+   "min": 22,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0166,
+   "x": 76.6286407784,
+   "y": 47.994394901599996,
+   "player": "Josip Mišić",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 24,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.8102,
+   "x": 101.3017241382,
+   "y": 33.00875,
+   "player": "Morgan Rogers",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 27,
+   "add": null,
+   "type": "Miss",
+   "situation": "SetPiece",
+   "shotType": "OtherBodyParts",
+   "xg": 0.0202,
+   "x": 97.4736842099,
+   "y": 26.0540625,
+   "player": "Daniel Burn",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 29,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0617,
+   "x": 92.5,
+   "y": 44.841528658099996,
+   "player": "Lewis Hall",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 30,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0288,
+   "x": 98.6315789471,
+   "y": 27.950714285,
+   "player": "Daniel Burn",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "CRO",
+   "min": 33,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0272,
+   "x": 76.8538834968,
+   "y": 39.881190477,
+   "player": "Mateo Kovačić",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 35,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0633,
+   "x": 96.79824561320001,
+   "y": 23.859108284899996,
+   "player": "Jude Bellingham",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 40,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0225,
+   "x": 82.4849514568,
+   "y": 18.814522295299998,
+   "player": "Trent Alexander-Arnold",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRO",
+   "min": 42,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0242,
+   "x": 82.03446602,
+   "y": 49.605859870500005,
+   "player": "Martin Baturina",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 48,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0388,
+   "x": 91.1,
+   "y": 51.147261145099996,
+   "player": "Anthony Gordon",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 51,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.3721,
+   "x": 97.0877192975,
+   "y": 30.267999999999997,
+   "player": "Harry Kane",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 55,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1185,
+   "x": 88.6,
+   "y": 28.286904761,
+   "player": "Jude Bellingham",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 55,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0207,
+   "x": 86.889705882,
+   "y": 44.5612738809,
+   "player": "Anthony Gordon",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRO",
+   "min": 59,
+   "add": null,
+   "type": "Goal",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.5669,
+   "x": 101.58620689680001,
+   "y": 34.305,
+   "player": "Petar Sučić",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 64,
+   "add": null,
+   "type": "Goal",
+   "situation": "Penalty",
+   "shotType": "RightFoot",
+   "xg": 0.7884,
+   "x": 94,
+   "y": 34,
+   "player": "Harry Kane",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRO",
+   "min": 69,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0243,
+   "x": 91.9,
+   "y": 21.9673885388,
+   "player": "Petar Sučić",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRO",
+   "min": 76,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "SetPiece",
+   "shotType": "Header",
+   "xg": 0.039,
+   "x": 96.3157894727,
+   "y": 28.454999999,
+   "player": "Ante Budimir",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRO",
+   "min": 82,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0612,
+   "x": 91,
+   "y": 30.244,
+   "player": "Nikola Vlašić",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRO",
+   "min": 87,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0911,
+   "x": 95.8333333322,
+   "y": 21.7571974559,
+   "player": "Ante Budimir",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "CRO",
+   "min": 87,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.1962,
+   "x": 102.4396551726,
+   "y": 37.756,
+   "player": "Joško Gvardiol",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 89,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.1695,
+   "x": 99.59482758659999,
+   "y": 34.68625,
+   "player": "Daniel Burn",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "CRO",
+   "min": 90,
+   "add": 2,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0149,
+   "x": 96.8947368413,
+   "y": 26.0540625,
+   "player": "Luka Vušković",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "CRO",
+   "min": 90,
+   "add": 2,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.1057,
+   "x": 101.58620689680001,
+   "y": 39.376904763,
+   "player": "Ante Budimir",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 90,
+   "add": 4,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.129,
+   "x": 90.8,
+   "y": 35.75375,
+   "player": "Morgan Rogers",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   -100
+  ],
+  [
+   2,
+   -92
+  ],
+  [
+   3,
+   -100
+  ],
+  [
+   4,
+   -5
+  ],
+  [
+   5,
+   -16
+  ],
+  [
+   6,
+   -16
+  ],
+  [
+   7,
+   -8
+  ],
+  [
+   8,
+   3
+  ],
+  [
+   9,
+   8
+  ],
+  [
+   10,
+   16
+  ],
+  [
+   11,
+   16
+  ],
+  [
+   12,
+   22
+  ],
+  [
+   13,
+   27
+  ],
+  [
+   14,
+   22
+  ],
+  [
+   15,
+   19
+  ],
+  [
+   16,
+   19
+  ],
+  [
+   17,
+   14
+  ],
+  [
+   18,
+   33
+  ],
+  [
+   19,
+   38
+  ],
+  [
+   20,
+   49
+  ],
+  [
+   21,
+   22
+  ],
+  [
+   22,
+   -24
+  ],
+  [
+   23,
+   -35
+  ],
+  [
+   24,
+   -3
+  ],
+  [
+   25,
+   38
+  ],
+  [
+   26,
+   38
+  ],
+  [
+   27,
+   73
+  ],
+  [
+   28,
+   52
+  ],
+  [
+   29,
+   73
+  ],
+  [
+   30,
+   98
+  ],
+  [
+   31,
+   100
+  ],
+  [
+   32,
+   100
+  ],
+  [
+   33,
+   71
+  ],
+  [
+   34,
+   0
+  ],
+  [
+   35,
+   0
+  ],
+  [
+   36,
+   38
+  ],
+  [
+   37,
+   54
+  ],
+  [
+   38,
+   60
+  ],
+  [
+   39,
+   54
+  ],
+  [
+   40,
+   54
+  ],
+  [
+   41,
+   38
+  ],
+  [
+   42,
+   0
+  ],
+  [
+   43,
+   -49
+  ],
+  [
+   44,
+   -54
+  ],
+  [
+   45,
+   -71
+  ],
+  [
+   46,
+   -11
+  ],
+  [
+   47,
+   -19
+  ],
+  [
+   48,
+   3
+  ],
+  [
+   49,
+   14
+  ],
+  [
+   50,
+   22
+  ],
+  [
+   51,
+   60
+  ],
+  [
+   52,
+   65
+  ],
+  [
+   53,
+   76
+  ],
+  [
+   54,
+   38
+  ],
+  [
+   55,
+   43
+  ],
+  [
+   56,
+   33
+  ],
+  [
+   57,
+   -22
+  ],
+  [
+   58,
+   -54
+  ],
+  [
+   59,
+   -100
+  ],
+  [
+   60,
+   -87
+  ],
+  [
+   61,
+   -60
+  ],
+  [
+   62,
+   5
+  ],
+  [
+   63,
+   5
+  ],
+  [
+   64,
+   0
+  ],
+  [
+   65,
+   0
+  ],
+  [
+   66,
+   5
+  ],
+  [
+   67,
+   16
+  ],
+  [
+   68,
+   16
+  ],
+  [
+   69,
+   -5
+  ],
+  [
+   70,
+   -8
+  ],
+  [
+   71,
+   -30
+  ],
+  [
+   72,
+   3
+  ],
+  [
+   73,
+   11
+  ],
+  [
+   74,
+   -16
+  ],
+  [
+   75,
+   -33
+  ],
+  [
+   76,
+   -73
+  ],
+  [
+   77,
+   -27
+  ],
+  [
+   78,
+   -8
+  ],
+  [
+   79,
+   16
+  ],
+  [
+   80,
+   14
+  ],
+  [
+   81,
+   -11
+  ],
+  [
+   82,
+   -76
+  ],
+  [
+   83,
+   -100
+  ],
+  [
+   84,
+   -100
+  ],
+  [
+   85,
+   -49
+  ],
+  [
+   86,
+   -11
+  ],
+  [
+   87,
+   -100
+  ],
+  [
+   88,
+   -95
+  ],
+  [
+   89,
+   -41
+  ],
+  [
+   90,
+   81
+  ],
+  [
+   90.5,
+   10
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 63,
+   "team": "CRO",
+   "player": "Ivan Smolčić",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 4
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    54,
+    46
+   ],
+   "expected_goals": [
+    "2.80",
+    "1.32"
+   ],
+   "total_shots": [
+    15,
+    13
+   ],
+   "ShotsOnTarget": [
+    4,
+    5
+   ],
+   "touches_opp_box": [
+    35,
+    24
+   ],
+   "big_chance": [
+    3,
+    3
+   ],
+   "big_chance_missed_title": [
+    1,
+    2
+   ],
+   "accurate_passes": [
+    "496 (89%)",
+    "408 (88%)"
+   ],
+   "yellow_cards": [
+    0,
+    1
+   ],
+   "corners": [
+    6,
+    7
+   ],
+   "ShotsOffTarget": [
+    6,
+    6
+   ],
+   "blocked_shots": [
+    5,
+    2
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    12,
+    10
+   ],
+   "shots_outside_box": [
+    3,
+    3
+   ],
+   "expected_goals_open_play": [
+    "1.82",
+    "0.35"
+   ],
+   "expected_goals_set_play": [
+    "0.20",
+    "0.98"
+   ],
+   "expected_goals_non_penalty": [
+    "2.01",
+    "1.32"
+   ],
+   "expected_goals_on_target": [
+    "2.43",
+    "1.16"
+   ],
+   "passes": [
+    557,
+    466
+   ],
+   "own_half_passes": [
+    260,
+    220
+   ],
+   "opposition_half_passes": [
+    236,
+    188
+   ],
+   "long_balls_accurate": [
+    "30 (61%)",
+    "16 (39%)"
+   ],
+   "accurate_crosses": [
+    "4 (27%)",
+    "4 (24%)"
+   ],
+   "player_throws": [
+    16,
+    9
+   ],
+   "Offsides": [
+    1,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    15,
+    22
+   ],
+   "interceptions": [
+    5,
+    6
+   ],
+   "shot_blocks": [
+    2,
+    6
+   ],
+   "clearances": [
+    25,
+    18
+   ],
+   "keeper_saves": [
+    4,
+    1
+   ],
+   "duel_won": [
+    49,
+    52
+   ],
+   "ground_duels_won": [
+    "35 (46%)",
+    "41 (54%)"
+   ],
+   "aerials_won": [
+    "14 (56%)",
+    "11 (44%)"
+   ],
+   "dribbles_succeeded": [
+    "11 (50%)",
+    "11 (61%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    9,
+    9
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    53,
+    47
+   ],
+   "expected_goals": [
+    "1.09",
+    "0.23"
+   ],
+   "total_shots": [
+    8,
+    5
+   ],
+   "ShotsOnTarget": [
+    1,
+    2
+   ],
+   "touches_opp_box": [
+    16,
+    7
+   ],
+   "big_chance": [
+    1,
+    0
+   ],
+   "big_chance_missed_title": [
+    0,
+    0
+   ],
+   "accurate_passes": [
+    "284 (91%)",
+    "245 (89%)"
+   ],
+   "yellow_cards": [
+    0,
+    0
+   ],
+   "corners": [
+    2,
+    3
+   ],
+   "ShotsOffTarget": [
+    3,
+    2
+   ],
+   "blocked_shots": [
+    4,
+    1
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    6,
+    2
+   ],
+   "shots_outside_box": [
+    2,
+    3
+   ],
+   "expected_goals_open_play": [
+    "1.05",
+    "0.17"
+   ],
+   "expected_goals_set_play": [
+    "0.04",
+    "0.06"
+   ],
+   "expected_goals_non_penalty": [
+    "1.09",
+    "0.23"
+   ],
+   "expected_goals_on_target": [
+    "0.86",
+    "0.09"
+   ],
+   "passes": [
+    312,
+    274
+   ],
+   "own_half_passes": [
+    136,
+    127
+   ],
+   "opposition_half_passes": [
+    148,
+    118
+   ],
+   "long_balls_accurate": [
+    "15 (79%)",
+    "10 (43%)"
+   ],
+   "accurate_crosses": [
+    "3 (33%)",
+    "0 (0%)"
+   ],
+   "player_throws": [
+    4,
+    5
+   ],
+   "Offsides": [
+    0,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    6,
+    15
+   ],
+   "interceptions": [
+    3,
+    1
+   ],
+   "shot_blocks": [
+    1,
+    4
+   ],
+   "clearances": [
+    12,
+    14
+   ],
+   "keeper_saves": [
+    2,
+    0
+   ],
+   "duel_won": [
+    20,
+    30
+   ],
+   "ground_duels_won": [
+    "15 (37%)",
+    "26 (63%)"
+   ],
+   "aerials_won": [
+    "5 (56%)",
+    "4 (44%)"
+   ],
+   "dribbles_succeeded": [
+    "6 (43%)",
+    "6 (67%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    5,
+    3
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    56,
+    44
+   ],
+   "expected_goals": [
+    "1.71",
+    "1.10"
+   ],
+   "total_shots": [
+    7,
+    8
+   ],
+   "ShotsOnTarget": [
+    3,
+    3
+   ],
+   "touches_opp_box": [
+    19,
+    17
+   ],
+   "big_chance": [
+    2,
+    3
+   ],
+   "big_chance_missed_title": [
+    1,
+    2
+   ],
+   "accurate_passes": [
+    "212 (87%)",
+    "163 (85%)"
+   ],
+   "yellow_cards": [
+    0,
+    1
+   ],
+   "corners": [
+    4,
+    4
+   ],
+   "ShotsOffTarget": [
+    3,
+    4
+   ],
+   "blocked_shots": [
+    1,
+    1
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    6,
+    8
+   ],
+   "shots_outside_box": [
+    1,
+    0
+   ],
+   "expected_goals_open_play": [
+    "0.77",
+    "0.18"
+   ],
+   "expected_goals_set_play": [
+    "0.16",
+    "0.92"
+   ],
+   "expected_goals_non_penalty": [
+    "0.92",
+    "1.10"
+   ],
+   "expected_goals_on_target": [
+    "1.57",
+    "1.07"
+   ],
+   "passes": [
+    245,
+    192
+   ],
+   "own_half_passes": [
+    124,
+    93
+   ],
+   "opposition_half_passes": [
+    88,
+    70
+   ],
+   "long_balls_accurate": [
+    "15 (50%)",
+    "6 (33%)"
+   ],
+   "accurate_crosses": [
+    "1 (17%)",
+    "4 (50%)"
+   ],
+   "player_throws": [
+    12,
+    4
+   ],
+   "Offsides": [
+    1,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    9,
+    7
+   ],
+   "interceptions": [
+    2,
+    5
+   ],
+   "shot_blocks": [
+    1,
+    2
+   ],
+   "clearances": [
+    13,
+    4
+   ],
+   "keeper_saves": [
+    2,
+    1
+   ],
+   "duel_won": [
+    29,
+    22
+   ],
+   "ground_duels_won": [
+    "20 (57%)",
+    "15 (43%)"
+   ],
+   "aerials_won": [
+    "9 (56%)",
+    "7 (44%)"
+   ],
+   "dribbles_succeeded": [
+    "5 (63%)",
+    "5 (56%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    4,
+    6
+   ]
+  }
+ }
+}
