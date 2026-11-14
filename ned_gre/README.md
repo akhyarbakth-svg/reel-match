@@ -24,7 +24,7 @@ Needs Node Playwright (Chromium) and `ffmpeg` on PATH.
 
 ```bash
 node render.js preview prev 50 545 1150                          # full-size PNG frames
-node render.js video Netherlands_vs_Greece_NL_Reel_180p.mp4 180 4 # 180x320 at 30 fps, 4 workers
+node render.js video Netherlands_vs_Greece_NL_Reel_1080p.mp4 1080 4 # 1080x1920 at 30 fps, 4 workers
 ```
 
-Frames are captured at 1080×1920 and downscaled with Lanczos when encoding. Pass a different width to get a different size, for example `1080` gives full HD.
+Frames are captured at 1080×1920 and encoded at full size by default. A smaller width (for example `720`) downscales with Lanczos.

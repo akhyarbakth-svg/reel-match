@@ -1,6 +1,6 @@
 // Render index.html frame by frame with headless Chromium, then encode with ffmpeg.
 //   node render.js preview <outdir> <frame> [frame ...]     -> full-size PNGs for checking
-//   node render.js video <out.mp4> [width=180] [workers=4]   -> 30 fps H.264, downscaled from 1080x1920 (width 180 -> 180x320)
+//   node render.js video <out.mp4> [width=1080] [workers=4]  -> 30 fps H.264 at 1080x1920 (a smaller width downscales)
 const { chromium } = require('playwright');
 const path = require('path'), fs = require('fs'), os = require('os'), { execFileSync } = require('child_process');
 const URL = 'file://' + path.join(__dirname, 'index.html');
@@ -33,7 +33,7 @@ async function worker(lo, hi, dir, id) {
     for (const f of rest.map(Number)) { await pg.evaluate(`frame(${f})`); await pg.screenshot({ path: path.join(out, `f_${f}.png`) }); }
     await b.close(); return;
   }
-  const width = Number(rest[0] || 180), N = Number(rest[1] || 4);
+  const width = Number(rest[0] || 1080), N = Number(rest[1] || 4);
   const { b, pg } = await open(); const total = await pg.evaluate('TOTAL'); await b.close();
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'reel-frames-'));
   const step = Math.ceil(total / N);
@@ -42,7 +42,7 @@ async function worker(lo, hi, dir, id) {
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-framerate', '30', '-i', path.join(dir, 'f_%05d.jpg'),
     '-vf', `scale=${width}:${h}:flags=lanczos:in_range=pc:out_range=tv:in_color_matrix=bt601:out_color_matrix=bt709`,
     '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '30', '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709',
-    '-crf', '18', '-preset', 'medium', '-movflags', '+faststart', out], { stdio: 'inherit' });
+    '-crf', '16', '-preset', 'medium', '-movflags', '+faststart', out], { stdio: 'inherit' });
   fs.rmSync(dir, { recursive: true, force: true });
   console.log('encoded', out, `${width}x${h}`, total, 'frames');
 })();
