@@ -1,0 +1,1410 @@
+{
+ "source": "FotMob match 5181870 (Opta data)",
+ "match": "Portugal 1-4 Denmark, UEFA Nations League A Grp. 4 round 5, Sat, Nov 14, 2026, 19:45 UTC",
+ "venue": {
+  "name": "Estádio Municipal de Braga",
+  "city": "Braga",
+  "country": "Portugal",
+  "lat": 41.562553702,
+  "long": -8.429903984,
+  "capacity": 30286,
+  "surface": "grass"
+ },
+ "home": "POR",
+ "away": "DEN",
+ "shots": [
+  {
+   "team": "DEN",
+   "min": 6,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0369,
+   "x": 82.93543689360001,
+   "y": 35.448750000000004,
+   "player": "Pierre-Emile Højbjerg",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 8,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.1056,
+   "x": 97.1842105256,
+   "y": 39.797142858,
+   "player": "Morten Hjulmand",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 9,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0158,
+   "x": 83.160679612,
+   "y": 52.758726114000005,
+   "player": "Rasmus Højlund",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "POR",
+   "min": 11,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0707,
+   "x": 78.655825244,
+   "y": 27.278333333000003,
+   "player": "Vítinha",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 13,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.061,
+   "x": 96.79824561320001,
+   "y": 45.1217834353,
+   "player": "Mohamed Daramy",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "POR",
+   "min": 19,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0207,
+   "x": 82.8228155344,
+   "y": 20.9864968186,
+   "player": "Pedro Neto",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "POR",
+   "min": 26,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0998,
+   "x": 94.9649122793,
+   "y": 21.547006373000002,
+   "player": "João Félix",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "POR",
+   "min": 28,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.037,
+   "x": 95.640350876,
+   "y": 36.135000000000005,
+   "player": "Renato Veiga",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 35,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.032,
+   "x": 94.1929824545,
+   "y": 19.0947770725,
+   "player": "Gustav Isaksen",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 40,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.0606,
+   "x": 96.605263157,
+   "y": 30.291999999999998,
+   "player": "Rasmus Højlund",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 43,
+   "add": null,
+   "type": "Goal",
+   "situation": "Penalty",
+   "shotType": "RightFoot",
+   "xg": 0.7884,
+   "x": 94,
+   "y": 34,
+   "player": "Pierre-Emile Højbjerg",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 49,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.2967,
+   "x": 98.3421052628,
+   "y": 38.620476192,
+   "player": "Rasmus Højlund",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "POR",
+   "min": 55,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0173,
+   "x": 77.3043689336,
+   "y": 48.905222927500006,
+   "player": "Rúben Neves",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 56,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0606,
+   "x": 86.0308823524,
+   "y": 33.2375,
+   "player": "Rasmus Højlund",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 56,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0261,
+   "x": 80.0072815544,
+   "y": 29.883809522,
+   "player": "Morten Hjulmand",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 57,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1778,
+   "x": 90.5,
+   "y": 40.553571429,
+   "player": "Rasmus Højlund",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 63,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0635,
+   "x": 90.5,
+   "y": 34.4575,
+   "player": "Joakim Mæhle",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "POR",
+   "min": 65,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.2715,
+   "x": 97.1842105256,
+   "y": 39.713095239,
+   "player": "Trincão",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 67,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.016,
+   "x": 75.38980582720001,
+   "y": 37.732,
+   "player": "Mathias Jensen",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "POR",
+   "min": 71,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0234,
+   "x": 92.2,
+   "y": 21.897324844499998,
+   "player": "João Palhinha",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "POR",
+   "min": 71,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0519,
+   "x": 95.8333333322,
+   "y": 37.12625,
+   "player": "Rúben Dias",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 75,
+   "add": null,
+   "type": "Goal",
+   "situation": "SetPiece",
+   "shotType": "Header",
+   "xg": 0.1201,
+   "x": 96.2192982446,
+   "y": 31.559999999999995,
+   "player": "Joachim Andersen",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "POR",
+   "min": 77,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0187,
+   "x": 81.5839805832,
+   "y": 24.2094267564,
+   "player": "Bruno Fernandes",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "POR",
+   "min": 78,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0689,
+   "x": 95.8333333322,
+   "y": 36.05875,
+   "player": "João Palhinha",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "POR",
+   "min": 78,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0345,
+   "x": 87.53382352919999,
+   "y": 24.699872616500002,
+   "player": "Trincão",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "POR",
+   "min": 84,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0475,
+   "x": 89.8,
+   "y": 30.256,
+   "player": "Trincão",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 86,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.0342,
+   "x": 93.2,
+   "y": 35.60125,
+   "player": "Mathias Jensen",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 90,
+   "add": 0,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0774,
+   "x": 89.7,
+   "y": 45.6122292954,
+   "player": "Victor Froholdt",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "DEN",
+   "min": 90,
+   "add": 0,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.2556,
+   "x": 92,
+   "y": 31.254999999999995,
+   "player": "William Osula",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "POR",
+   "min": 90,
+   "add": 1,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0233,
+   "x": 81.471359224,
+   "y": 23.9992356735,
+   "player": "Alberto Costa",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "POR",
+   "min": 90,
+   "add": 3,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.2198,
+   "x": 97.7631578942,
+   "y": 31.026249999999997,
+   "player": "João Neves",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "POR",
+   "min": 90,
+   "add": 3,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.2443,
+   "x": 102.06034482780001,
+   "y": 27.950714285,
+   "player": "Bernardo Silva",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   2,
+   -8
+  ],
+  [
+   3,
+   0
+  ],
+  [
+   4,
+   0
+  ],
+  [
+   5,
+   14
+  ],
+  [
+   6,
+   -22
+  ],
+  [
+   7,
+   -22
+  ],
+  [
+   8,
+   -33
+  ],
+  [
+   9,
+   -11
+  ],
+  [
+   10,
+   -16
+  ],
+  [
+   11,
+   -11
+  ],
+  [
+   12,
+   -22
+  ],
+  [
+   13,
+   -11
+  ],
+  [
+   14,
+   -71
+  ],
+  [
+   15,
+   -60
+  ],
+  [
+   16,
+   -100
+  ],
+  [
+   17,
+   -60
+  ],
+  [
+   18,
+   -60
+  ],
+  [
+   19,
+   -3
+  ],
+  [
+   20,
+   0
+  ],
+  [
+   21,
+   -19
+  ],
+  [
+   22,
+   -19
+  ],
+  [
+   23,
+   -16
+  ],
+  [
+   24,
+   30
+  ],
+  [
+   25,
+   24
+  ],
+  [
+   26,
+   38
+  ],
+  [
+   27,
+   38
+  ],
+  [
+   28,
+   62
+  ],
+  [
+   29,
+   52
+  ],
+  [
+   30,
+   57
+  ],
+  [
+   31,
+   65
+  ],
+  [
+   32,
+   60
+  ],
+  [
+   33,
+   54
+  ],
+  [
+   34,
+   33
+  ],
+  [
+   35,
+   -11
+  ],
+  [
+   36,
+   -22
+  ],
+  [
+   37,
+   -27
+  ],
+  [
+   38,
+   11
+  ],
+  [
+   39,
+   5
+  ],
+  [
+   40,
+   -27
+  ],
+  [
+   41,
+   -22
+  ],
+  [
+   42,
+   -27
+  ],
+  [
+   43,
+   0
+  ],
+  [
+   44,
+   11
+  ],
+  [
+   45,
+   -3
+  ],
+  [
+   45.5,
+   -25
+  ],
+  [
+   46,
+   5
+  ],
+  [
+   47,
+   -8
+  ],
+  [
+   48,
+   8
+  ],
+  [
+   49,
+   -73
+  ],
+  [
+   50,
+   -60
+  ],
+  [
+   51,
+   -71
+  ],
+  [
+   52,
+   11
+  ],
+  [
+   53,
+   30
+  ],
+  [
+   54,
+   33
+  ],
+  [
+   55,
+   33
+  ],
+  [
+   56,
+   -14
+  ],
+  [
+   57,
+   -71
+  ],
+  [
+   58,
+   -71
+  ],
+  [
+   59,
+   -38
+  ],
+  [
+   60,
+   22
+  ],
+  [
+   61,
+   24
+  ],
+  [
+   62,
+   -3
+  ],
+  [
+   63,
+   -14
+  ],
+  [
+   64,
+   -22
+  ],
+  [
+   65,
+   81
+  ],
+  [
+   66,
+   81
+  ],
+  [
+   67,
+   100
+  ],
+  [
+   68,
+   -5
+  ],
+  [
+   69,
+   -5
+  ],
+  [
+   70,
+   -14
+  ],
+  [
+   71,
+   46
+  ],
+  [
+   72,
+   62
+  ],
+  [
+   73,
+   52
+  ],
+  [
+   74,
+   5
+  ],
+  [
+   75,
+   -33
+  ],
+  [
+   76,
+   0
+  ],
+  [
+   77,
+   16
+  ],
+  [
+   78,
+   38
+  ],
+  [
+   79,
+   5
+  ],
+  [
+   80,
+   5
+  ],
+  [
+   81,
+   5
+  ],
+  [
+   82,
+   5
+  ],
+  [
+   83,
+   -16
+  ],
+  [
+   84,
+   38
+  ],
+  [
+   85,
+   38
+  ],
+  [
+   86,
+   24
+  ],
+  [
+   87,
+   -30
+  ],
+  [
+   88,
+   -43
+  ],
+  [
+   89,
+   -30
+  ],
+  [
+   90,
+   -84
+  ],
+  [
+   90.5,
+   46
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "goal",
+   "min": 43,
+   "add": null,
+   "team": "DEN",
+   "player": "Pierre-Emile Højbjerg",
+   "score": [
+    0,
+    1
+   ]
+  },
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 2
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 46,
+   "team": "POR",
+   "player": "Rúben Dias",
+   "reason": "Foul"
+  },
+  {
+   "type": "goal",
+   "min": 50,
+   "add": null,
+   "team": "DEN",
+   "player": "Rasmus Højlund",
+   "score": [
+    0,
+    2
+   ]
+  },
+  {
+   "type": "goal",
+   "min": 57,
+   "add": null,
+   "team": "DEN",
+   "player": "Rasmus Højlund",
+   "score": [
+    0,
+    3
+   ]
+  },
+  {
+   "type": "goal",
+   "min": 75,
+   "add": null,
+   "team": "DEN",
+   "player": "Joachim Andersen",
+   "score": [
+    0,
+    4
+   ]
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 87,
+   "team": "POR",
+   "player": "João Palhinha",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 3
+  },
+  {
+   "type": "goal",
+   "min": 90,
+   "add": 3,
+   "team": "POR",
+   "player": "Bernardo Silva",
+   "score": [
+    1,
+    4
+   ]
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    51,
+    49
+   ],
+   "expected_goals": [
+    "1.20",
+    "2.23"
+   ],
+   "total_shots": [
+    15,
+    17
+   ],
+   "ShotsOnTarget": [
+    8,
+    6
+   ],
+   "touches_opp_box": [
+    24,
+    27
+   ],
+   "big_chance": [
+    4,
+    4
+   ],
+   "big_chance_missed_title": [
+    3,
+    2
+   ],
+   "accurate_passes": [
+    "398 (84%)",
+    "369 (82%)"
+   ],
+   "yellow_cards": [
+    2,
+    0
+   ],
+   "corners": [
+    6,
+    7
+   ],
+   "ShotsOffTarget": [
+    4,
+    2
+   ],
+   "blocked_shots": [
+    3,
+    9
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    9,
+    12
+   ],
+   "shots_outside_box": [
+    6,
+    5
+   ],
+   "expected_goals_open_play": [
+    "1.00",
+    "1.21"
+   ],
+   "expected_goals_set_play": [
+    "0.19",
+    "0.23"
+   ],
+   "expected_goals_non_penalty": [
+    "1.20",
+    "1.44"
+   ],
+   "expected_goals_on_target": [
+    "1.43",
+    "2.80"
+   ],
+   "passes": [
+    474,
+    448
+   ],
+   "own_half_passes": [
+    161,
+    179
+   ],
+   "opposition_half_passes": [
+    237,
+    190
+   ],
+   "long_balls_accurate": [
+    "16 (44%)",
+    "25 (43%)"
+   ],
+   "accurate_crosses": [
+    "3 (19%)",
+    "3 (23%)"
+   ],
+   "player_throws": [
+    18,
+    19
+   ],
+   "Offsides": [
+    5,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    9,
+    12
+   ],
+   "interceptions": [
+    4,
+    9
+   ],
+   "shot_blocks": [
+    9,
+    3
+   ],
+   "clearances": [
+    23,
+    20
+   ],
+   "keeper_saves": [
+    1,
+    7
+   ],
+   "duel_won": [
+    31,
+    50
+   ],
+   "ground_duels_won": [
+    "15 (29%)",
+    "36 (71%)"
+   ],
+   "aerials_won": [
+    "16 (53%)",
+    "14 (47%)"
+   ],
+   "dribbles_succeeded": [
+    "4 (36%)",
+    "6 (60%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    19,
+    4
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    47,
+    53
+   ],
+   "expected_goals": [
+    "0.23",
+    "1.10"
+   ],
+   "total_shots": [
+    4,
+    7
+   ],
+   "ShotsOnTarget": [
+    2,
+    2
+   ],
+   "touches_opp_box": [
+    9,
+    10
+   ],
+   "big_chance": [
+    1,
+    2
+   ],
+   "big_chance_missed_title": [
+    1,
+    1
+   ],
+   "accurate_passes": [
+    "187 (83%)",
+    "205 (82%)"
+   ],
+   "yellow_cards": [
+    0,
+    0
+   ],
+   "corners": [
+    2,
+    5
+   ],
+   "ShotsOffTarget": [
+    1,
+    1
+   ],
+   "blocked_shots": [
+    1,
+    4
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    2,
+    5
+   ],
+   "shots_outside_box": [
+    2,
+    2
+   ],
+   "expected_goals_open_play": [
+    "0.19",
+    "0.21"
+   ],
+   "expected_goals_set_play": [
+    "0.04",
+    "0.11"
+   ],
+   "expected_goals_non_penalty": [
+    "0.23",
+    "0.31"
+   ],
+   "expected_goals_on_target": [
+    "0.19",
+    "1.07"
+   ],
+   "passes": [
+    225,
+    250
+   ],
+   "own_half_passes": [
+    85,
+    106
+   ],
+   "opposition_half_passes": [
+    102,
+    99
+   ],
+   "long_balls_accurate": [
+    "8 (38%)",
+    "12 (43%)"
+   ],
+   "accurate_crosses": [
+    "1 (17%)",
+    "1 (13%)"
+   ],
+   "player_throws": [
+    8,
+    12
+   ],
+   "Offsides": [
+    2,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    4,
+    2
+   ],
+   "interceptions": [
+    3,
+    4
+   ],
+   "shot_blocks": [
+    3,
+    1
+   ],
+   "clearances": [
+    15,
+    9
+   ],
+   "keeper_saves": [
+    1,
+    2
+   ],
+   "duel_won": [
+    16,
+    23
+   ],
+   "ground_duels_won": [
+    "6 (32%)",
+    "13 (68%)"
+   ],
+   "aerials_won": [
+    "10 (50%)",
+    "10 (50%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (67%)",
+    "3 (75%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    9,
+    2
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    56,
+    44
+   ],
+   "expected_goals": [
+    "0.97",
+    "1.13"
+   ],
+   "total_shots": [
+    11,
+    10
+   ],
+   "ShotsOnTarget": [
+    6,
+    4
+   ],
+   "touches_opp_box": [
+    15,
+    17
+   ],
+   "big_chance": [
+    3,
+    2
+   ],
+   "big_chance_missed_title": [
+    2,
+    1
+   ],
+   "accurate_passes": [
+    "211 (85%)",
+    "164 (83%)"
+   ],
+   "yellow_cards": [
+    2,
+    0
+   ],
+   "corners": [
+    4,
+    2
+   ],
+   "ShotsOffTarget": [
+    3,
+    1
+   ],
+   "blocked_shots": [
+    2,
+    5
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    7,
+    7
+   ],
+   "shots_outside_box": [
+    4,
+    3
+   ],
+   "expected_goals_open_play": [
+    "0.81",
+    "1.01"
+   ],
+   "expected_goals_set_play": [
+    "0.16",
+    "0.12"
+   ],
+   "expected_goals_non_penalty": [
+    "0.97",
+    "1.13"
+   ],
+   "expected_goals_on_target": [
+    "1.24",
+    "1.73"
+   ],
+   "passes": [
+    249,
+    198
+   ],
+   "own_half_passes": [
+    76,
+    73
+   ],
+   "opposition_half_passes": [
+    135,
+    91
+   ],
+   "long_balls_accurate": [
+    "8 (53%)",
+    "13 (43%)"
+   ],
+   "accurate_crosses": [
+    "2 (20%)",
+    "2 (40%)"
+   ],
+   "player_throws": [
+    10,
+    7
+   ],
+   "Offsides": [
+    3,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    5,
+    10
+   ],
+   "interceptions": [
+    1,
+    5
+   ],
+   "shot_blocks": [
+    6,
+    2
+   ],
+   "clearances": [
+    8,
+    11
+   ],
+   "keeper_saves": [
+    0,
+    5
+   ],
+   "duel_won": [
+    15,
+    27
+   ],
+   "ground_duels_won": [
+    "9 (28%)",
+    "23 (72%)"
+   ],
+   "aerials_won": [
+    "6 (60%)",
+    "4 (40%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (25%)",
+    "3 (50%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    10,
+    2
+   ]
+  }
+ }
+}
