@@ -1,0 +1,1279 @@
+{
+ "source": "FotMob match 5181869 (Opta data)",
+ "match": "Norway 3-1 Wales, UEFA Nations League A Grp. 4 round 5, Sat, Nov 14, 2026, 17:00 UTC",
+ "home": "NOR",
+ "away": "WAL",
+ "shots": [
+  {
+   "team": "WAL",
+   "min": 2,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1404,
+   "x": 93.3,
+   "y": 31.7125,
+   "player": "Harry Wilson",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NOR",
+   "min": 6,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0171,
+   "x": 96.50877192889999,
+   "y": 49.0453503161,
+   "player": "Antonio Nusa",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "NOR",
+   "min": 7,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0399,
+   "x": 98.14912280659999,
+   "y": 40.133333334,
+   "player": "Thelo Aasgaard",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NOR",
+   "min": 15,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.1568,
+   "x": 99.3070175438,
+   "y": 30.316,
+   "player": "Torbjørn Heggem",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "WAL",
+   "min": 18,
+   "add": null,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.1668,
+   "x": 85.9235294112,
+   "y": 31.7125,
+   "player": "Daniel James",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NOR",
+   "min": 19,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.0733,
+   "x": 96.605263157,
+   "y": 33.2375,
+   "player": "Thelo Aasgaard",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "WAL",
+   "min": 22,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0508,
+   "x": 88.9,
+   "y": 32.551249999999996,
+   "player": "Daniel James",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NOR",
+   "min": 27,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0447,
+   "x": 86.6749999996,
+   "y": 33.31375,
+   "player": "Martin Ødegaard",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "NOR",
+   "min": 29,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0173,
+   "x": 84.9573529404,
+   "y": 46.7332484042,
+   "player": "Antonio Nusa",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NOR",
+   "min": 31,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0447,
+   "x": 86.78235294080001,
+   "y": 34,
+   "player": "Thelo Aasgaard",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "WAL",
+   "min": 43,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0625,
+   "x": 96.2192982446,
+   "y": 22.107515927399998,
+   "player": "Daniel James",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "WAL",
+   "min": 48,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0239,
+   "x": 96.0263157884,
+   "y": 20.2858598756,
+   "player": "Brennan Johnson",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NOR",
+   "min": 54,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.1135,
+   "x": 97.6666666661,
+   "y": 42.00375,
+   "player": "Sander Berge",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "NOR",
+   "min": 59,
+   "add": null,
+   "type": "Goal",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0612,
+   "x": 88.9,
+   "y": 33.8475,
+   "player": "Antonio Nusa",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "WAL",
+   "min": 65,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0336,
+   "x": 90.9,
+   "y": 20.145732487,
+   "player": "Mark Harris",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NOR",
+   "min": 68,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.5731,
+   "x": 98.7280701752,
+   "y": 31.78875,
+   "player": "Andreas Schjelderup",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "WAL",
+   "min": 70,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0199,
+   "x": 83.94902912639999,
+   "y": 20.145732487,
+   "player": "Neco Williams",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NOR",
+   "min": 75,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1157,
+   "x": 90.3,
+   "y": 35.9825,
+   "player": "Andreas Schjelderup",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "WAL",
+   "min": 76,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0679,
+   "x": 95.9298245603,
+   "y": 22.247643316,
+   "player": "David Brooks",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "WAL",
+   "min": 76,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0798,
+   "x": 86.24558823480001,
+   "y": 33.2375,
+   "player": "Ethan Ampadu",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "WAL",
+   "min": 79,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0687,
+   "x": 87.21176470559999,
+   "y": 35.143750000000004,
+   "player": "Rubin Colwill",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "WAL",
+   "min": 79,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1787,
+   "x": 95.640350876,
+   "y": 26.6321875,
+   "player": "David Brooks",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NOR",
+   "min": 84,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0238,
+   "x": 87.6411764704,
+   "y": 23.2985987305,
+   "player": "Martin Ødegaard",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NOR",
+   "min": 88,
+   "add": null,
+   "type": "Goal",
+   "situation": "Penalty",
+   "shotType": "LeftFoot",
+   "xg": 0.7884,
+   "x": 94,
+   "y": 34,
+   "player": "Erling Haaland",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "WAL",
+   "min": 89,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0615,
+   "x": 95.54385964789999,
+   "y": 46.1727388498,
+   "player": "Brennan Johnson",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NOR",
+   "min": 90,
+   "add": 3,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0409,
+   "x": 100.3534482762,
+   "y": 47.2937579586,
+   "player": "Antonio Nusa",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NOR",
+   "min": 90,
+   "add": 3,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.3417,
+   "x": 100.732758621,
+   "y": 30.316,
+   "player": "Erling Haaland",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   2,
+   -38
+  ],
+  [
+   3,
+   -33
+  ],
+  [
+   4,
+   -27
+  ],
+  [
+   5,
+   16
+  ],
+  [
+   6,
+   22
+  ],
+  [
+   7,
+   71
+  ],
+  [
+   8,
+   49
+  ],
+  [
+   9,
+   38
+  ],
+  [
+   10,
+   -5
+  ],
+  [
+   11,
+   0
+  ],
+  [
+   12,
+   -11
+  ],
+  [
+   13,
+   -11
+  ],
+  [
+   14,
+   27
+  ],
+  [
+   15,
+   76
+  ],
+  [
+   16,
+   60
+  ],
+  [
+   17,
+   33
+  ],
+  [
+   18,
+   -5
+  ],
+  [
+   19,
+   54
+  ],
+  [
+   20,
+   49
+  ],
+  [
+   21,
+   38
+  ],
+  [
+   22,
+   -54
+  ],
+  [
+   23,
+   -49
+  ],
+  [
+   24,
+   -38
+  ],
+  [
+   25,
+   -19
+  ],
+  [
+   26,
+   -5
+  ],
+  [
+   27,
+   49
+  ],
+  [
+   28,
+   73
+  ],
+  [
+   29,
+   73
+  ],
+  [
+   30,
+   19
+  ],
+  [
+   31,
+   41
+  ],
+  [
+   32,
+   27
+  ],
+  [
+   33,
+   65
+  ],
+  [
+   34,
+   60
+  ],
+  [
+   35,
+   60
+  ],
+  [
+   36,
+   43
+  ],
+  [
+   37,
+   57
+  ],
+  [
+   38,
+   79
+  ],
+  [
+   39,
+   33
+  ],
+  [
+   40,
+   30
+  ],
+  [
+   41,
+   8
+  ],
+  [
+   42,
+   33
+  ],
+  [
+   43,
+   -43
+  ],
+  [
+   44,
+   -38
+  ],
+  [
+   45,
+   -22
+  ],
+  [
+   45.5,
+   19
+  ],
+  [
+   46,
+   0
+  ],
+  [
+   47,
+   -22
+  ],
+  [
+   48,
+   -33
+  ],
+  [
+   49,
+   -33
+  ],
+  [
+   50,
+   -11
+  ],
+  [
+   51,
+   -16
+  ],
+  [
+   52,
+   5
+  ],
+  [
+   53,
+   27
+  ],
+  [
+   54,
+   81
+  ],
+  [
+   55,
+   33
+  ],
+  [
+   56,
+   -33
+  ],
+  [
+   57,
+   -71
+  ],
+  [
+   58,
+   -35
+  ],
+  [
+   59,
+   30
+  ],
+  [
+   60,
+   30
+  ],
+  [
+   61,
+   22
+  ],
+  [
+   62,
+   0
+  ],
+  [
+   63,
+   0
+  ],
+  [
+   64,
+   0
+  ],
+  [
+   65,
+   -16
+  ],
+  [
+   66,
+   16
+  ],
+  [
+   67,
+   33
+  ],
+  [
+   68,
+   100
+  ],
+  [
+   69,
+   100
+  ],
+  [
+   70,
+   100
+  ],
+  [
+   71,
+   -5
+  ],
+  [
+   72,
+   -5
+  ],
+  [
+   73,
+   0
+  ],
+  [
+   74,
+   5
+  ],
+  [
+   75,
+   0
+  ],
+  [
+   76,
+   -27
+  ],
+  [
+   77,
+   -43
+  ],
+  [
+   78,
+   -57
+  ],
+  [
+   79,
+   -90
+  ],
+  [
+   80,
+   -79
+  ],
+  [
+   81,
+   -81
+  ],
+  [
+   82,
+   -27
+  ],
+  [
+   83,
+   -16
+  ],
+  [
+   84,
+   22
+  ],
+  [
+   85,
+   76
+  ],
+  [
+   86,
+   65
+  ],
+  [
+   87,
+   49
+  ],
+  [
+   88,
+   0
+  ],
+  [
+   89,
+   -11
+  ],
+  [
+   90,
+   11
+  ],
+  [
+   90.5,
+   -4
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 16,
+   "team": "WAL",
+   "player": "Ethan Ampadu",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 1
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 86,
+   "team": "WAL",
+   "player": "Connor Roberts",
+   "reason": "Foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 88,
+   "team": "WAL",
+   "player": "Harry Wilson",
+   "reason": null
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 6
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    55,
+    45
+   ],
+   "expected_goals": [
+    "2.45",
+    "0.95"
+   ],
+   "total_shots": [
+    15,
+    12
+   ],
+   "ShotsOnTarget": [
+    6,
+    5
+   ],
+   "touches_opp_box": [
+    35,
+    26
+   ],
+   "big_chance": [
+    4,
+    1
+   ],
+   "big_chance_missed_title": [
+    2,
+    0
+   ],
+   "accurate_passes": [
+    "535 (88%)",
+    "425 (84%)"
+   ],
+   "yellow_cards": [
+    0,
+    3
+   ],
+   "corners": [
+    8,
+    2
+   ],
+   "ShotsOffTarget": [
+    4,
+    6
+   ],
+   "blocked_shots": [
+    5,
+    1
+   ],
+   "shots_woodwork": [
+    0,
+    1
+   ],
+   "shots_inside_box": [
+    11,
+    8
+   ],
+   "shots_outside_box": [
+    4,
+    4
+   ],
+   "expected_goals_open_play": [
+    "1.29",
+    "0.93"
+   ],
+   "expected_goals_set_play": [
+    "0.37",
+    "0.02"
+   ],
+   "expected_goals_non_penalty": [
+    "1.66",
+    "0.95"
+   ],
+   "expected_goals_on_target": [
+    "2.10",
+    "0.84"
+   ],
+   "passes": [
+    608,
+    503
+   ],
+   "own_half_passes": [
+    341,
+    233
+   ],
+   "opposition_half_passes": [
+    194,
+    192
+   ],
+   "long_balls_accurate": [
+    "17 (43%)",
+    "18 (46%)"
+   ],
+   "accurate_crosses": [
+    "4 (22%)",
+    "1 (14%)"
+   ],
+   "player_throws": [
+    7,
+    12
+   ],
+   "Offsides": [
+    2,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    11,
+    11
+   ],
+   "interceptions": [
+    12,
+    9
+   ],
+   "shot_blocks": [
+    1,
+    6
+   ],
+   "clearances": [
+    11,
+    25
+   ],
+   "keeper_saves": [
+    4,
+    2
+   ],
+   "duel_won": [
+    35,
+    27
+   ],
+   "ground_duels_won": [
+    "26 (55%)",
+    "21 (45%)"
+   ],
+   "aerials_won": [
+    "9 (60%)",
+    "6 (40%)"
+   ],
+   "dribbles_succeeded": [
+    "6 (55%)",
+    "3 (75%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    9,
+    9
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    57,
+    43
+   ],
+   "expected_goals": [
+    "0.39",
+    "0.42"
+   ],
+   "total_shots": [
+    7,
+    4
+   ],
+   "ShotsOnTarget": [
+    0,
+    1
+   ],
+   "touches_opp_box": [
+    13,
+    8
+   ],
+   "big_chance": [
+    0,
+    0
+   ],
+   "big_chance_missed_title": [
+    0,
+    0
+   ],
+   "accurate_passes": [
+    "298 (89%)",
+    "216 (85%)"
+   ],
+   "yellow_cards": [
+    0,
+    1
+   ],
+   "corners": [
+    5,
+    0
+   ],
+   "ShotsOffTarget": [
+    4,
+    3
+   ],
+   "blocked_shots": [
+    3,
+    0
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    4,
+    3
+   ],
+   "shots_outside_box": [
+    3,
+    1
+   ],
+   "expected_goals_open_play": [
+    "0.20",
+    "0.42"
+   ],
+   "expected_goals_set_play": [
+    "0.20",
+    "0.00"
+   ],
+   "expected_goals_non_penalty": [
+    "0.39",
+    "0.42"
+   ],
+   "expected_goals_on_target": [
+    "0.00",
+    "0.16"
+   ],
+   "passes": [
+    336,
+    253
+   ],
+   "own_half_passes": [
+    167,
+    148
+   ],
+   "opposition_half_passes": [
+    131,
+    68
+   ],
+   "long_balls_accurate": [
+    "9 (45%)",
+    "9 (43%)"
+   ],
+   "accurate_crosses": [
+    "4 (33%)",
+    "1 (20%)"
+   ],
+   "player_throws": [
+    4,
+    5
+   ],
+   "Offsides": [
+    1,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    5,
+    2
+   ],
+   "interceptions": [
+    8,
+    6
+   ],
+   "shot_blocks": [
+    0,
+    3
+   ],
+   "clearances": [
+    3,
+    14
+   ],
+   "keeper_saves": [
+    1,
+    0
+   ],
+   "duel_won": [
+    19,
+    9
+   ],
+   "ground_duels_won": [
+    "12 (67%)",
+    "6 (33%)"
+   ],
+   "aerials_won": [
+    "7 (70%)",
+    "3 (30%)"
+   ],
+   "dribbles_succeeded": [
+    "3 (75%)",
+    "1 (100%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    4,
+    4
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    52,
+    48
+   ],
+   "expected_goals": [
+    "2.06",
+    "0.53"
+   ],
+   "total_shots": [
+    8,
+    8
+   ],
+   "ShotsOnTarget": [
+    6,
+    4
+   ],
+   "touches_opp_box": [
+    22,
+    18
+   ],
+   "big_chance": [
+    4,
+    1
+   ],
+   "big_chance_missed_title": [
+    2,
+    0
+   ],
+   "accurate_passes": [
+    "237 (87%)",
+    "209 (84%)"
+   ],
+   "yellow_cards": [
+    0,
+    2
+   ],
+   "corners": [
+    3,
+    2
+   ],
+   "ShotsOffTarget": [
+    0,
+    3
+   ],
+   "blocked_shots": [
+    2,
+    1
+   ],
+   "shots_woodwork": [
+    0,
+    1
+   ],
+   "shots_inside_box": [
+    7,
+    5
+   ],
+   "shots_outside_box": [
+    1,
+    3
+   ],
+   "expected_goals_open_play": [
+    "1.10",
+    "0.51"
+   ],
+   "expected_goals_set_play": [
+    "0.17",
+    "0.02"
+   ],
+   "expected_goals_non_penalty": [
+    "1.27",
+    "0.53"
+   ],
+   "expected_goals_on_target": [
+    "2.10",
+    "0.68"
+   ],
+   "passes": [
+    272,
+    250
+   ],
+   "own_half_passes": [
+    174,
+    85
+   ],
+   "opposition_half_passes": [
+    63,
+    124
+   ],
+   "long_balls_accurate": [
+    "8 (40%)",
+    "9 (50%)"
+   ],
+   "accurate_crosses": [
+    "0 (0%)",
+    "0 (0%)"
+   ],
+   "player_throws": [
+    3,
+    7
+   ],
+   "Offsides": [
+    1,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    6,
+    9
+   ],
+   "interceptions": [
+    4,
+    3
+   ],
+   "shot_blocks": [
+    1,
+    3
+   ],
+   "clearances": [
+    8,
+    11
+   ],
+   "keeper_saves": [
+    3,
+    2
+   ],
+   "duel_won": [
+    16,
+    18
+   ],
+   "ground_duels_won": [
+    "14 (48%)",
+    "15 (52%)"
+   ],
+   "aerials_won": [
+    "2 (40%)",
+    "3 (60%)"
+   ],
+   "dribbles_succeeded": [
+    "3 (43%)",
+    "2 (67%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    5,
+    5
+   ]
+  }
+ }
+}
