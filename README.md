@@ -7,7 +7,7 @@ Data comes from FotMob (Opta): the shot map, momentum, cards, VAR calls and team
 ## Build
 
 ```bash
-python -I fetch_data.py https://www.fotmob.com/match/5795498   # -> match_data.json
+python -I fetch_data.py https://www.fotmob.com/match/5795498   # -> match_data.json (optional 2nd arg: output dir)
 python -I build_data.py                                       # -> data.js
 ```
 
