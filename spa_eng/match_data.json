@@ -1,0 +1,1378 @@
+{
+ "source": "FotMob match 5181860 (Opta data)",
+ "match": "Spain 2-3 England, UEFA Nations League A Grp. 3 round 6, Sun, Nov 15, 2026, 19:45 UTC",
+ "home": "ESP",
+ "away": "ENG",
+ "shots": [
+  {
+   "team": "ENG",
+   "min": 2,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.3961,
+   "x": 99.50000000040001,
+   "y": 35.448750000000004,
+   "player": "Jude Bellingham",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 2,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "ThrowInSetPiece",
+   "shotType": "RightFoot",
+   "xg": 0.1541,
+   "x": 91.4,
+   "y": 37.744,
+   "player": "Anthony Gordon",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 7,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0742,
+   "x": 84.85,
+   "y": 37.78,
+   "player": "Harry Kane",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 18,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.185,
+   "x": 100.732758621,
+   "y": 37.72,
+   "player": "Morgan Rogers",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 22,
+   "add": null,
+   "type": "Miss",
+   "situation": "SetPiece",
+   "shotType": "Header",
+   "xg": 0.0697,
+   "x": 95.0614035074,
+   "y": 34.22875,
+   "player": "Pedro Porro",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 26,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.019,
+   "x": 80.79563106879999,
+   "y": 26.574375,
+   "player": "Pedro Porro",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 36,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0391,
+   "x": 93.2,
+   "y": 21.3368152901,
+   "player": "Lamine Yamal",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 39,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.0527,
+   "x": 96.7017543851,
+   "y": 29.211428570000002,
+   "player": "Jude Bellingham",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 40,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0804,
+   "x": 96.50877192889999,
+   "y": 26.6321875,
+   "player": "Mikel Merino",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 45,
+   "add": 0,
+   "type": "Goal",
+   "situation": "Penalty",
+   "shotType": "RightFoot",
+   "xg": 0.7884,
+   "x": 94,
+   "y": 34,
+   "player": "Harry Kane",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 53,
+   "add": null,
+   "type": "Goal",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.3092,
+   "x": 101.58620689680001,
+   "y": 32.474999999999994,
+   "player": "Ezri Konsa",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 57,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.2918,
+   "x": 98.6315789471,
+   "y": 25.7071875,
+   "player": "Ben White",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 65,
+   "add": null,
+   "type": "Goal",
+   "situation": "Penalty",
+   "shotType": "LeftFoot",
+   "xg": 0.7884,
+   "x": 94,
+   "y": 34,
+   "player": "Mikel Oyarzabal",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 73,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.2237,
+   "x": 101.0172413796,
+   "y": 30.256,
+   "player": "Aymeric Laporte",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 73,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.1409,
+   "x": 96.0263157884,
+   "y": 30.279999999999998,
+   "player": "Fermín López",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 73,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0183,
+   "x": 83.6111650488,
+   "y": 47.2236942643,
+   "player": "Álex Baena",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ENG",
+   "min": 74,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0258,
+   "x": 79.1063106808,
+   "y": 27.446428571,
+   "player": "Harry Kane",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 75,
+   "add": null,
+   "type": "Goal",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.4802,
+   "x": 94.38596491070001,
+   "y": 36.440000000000005,
+   "player": "Nico Williams",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 76,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0243,
+   "x": 93.7,
+   "y": 50.7969426736,
+   "player": "Nico Williams",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 77,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1551,
+   "x": 90.7,
+   "y": 29.379523808000002,
+   "player": "Fermín López",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 79,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0286,
+   "x": 101.681034483,
+   "y": 20.9864968186,
+   "player": "Lamine Yamal",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 80,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0204,
+   "x": 83.2733009712,
+   "y": 20.145732487,
+   "player": "Lamine Yamal",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 82,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0191,
+   "x": 89.5,
+   "y": 20.145732487,
+   "player": "Lamine Yamal",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 84,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.0842,
+   "x": 89.5,
+   "y": 38.452380954,
+   "player": "Nico Williams",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 84,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0637,
+   "x": 83.49854368960001,
+   "y": 36.97375,
+   "player": "Álex Baena",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 85,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.1907,
+   "x": 101.3017241382,
+   "y": 37.768,
+   "player": "Pedro Porro",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 86,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0228,
+   "x": 90.3,
+   "y": 22.808152870399997,
+   "player": "Pedro Porro",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 88,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0317,
+   "x": 89.7,
+   "y": 19.5852229326,
+   "player": "Lamine Yamal",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 90,
+   "add": 1,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0661,
+   "x": 96.2192982446,
+   "y": 26.516562500000003,
+   "player": "Fermín López",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 90,
+   "add": 1,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1187,
+   "x": 96.4122807008,
+   "y": 37.768,
+   "player": "Aymeric Laporte",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 90,
+   "add": 2,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0172,
+   "x": 86.352941176,
+   "y": 16.362292994799997,
+   "player": "Lamine Yamal",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "ESP",
+   "min": 90,
+   "add": 2,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0344,
+   "x": 83.94902912639999,
+   "y": 28.539047618000005,
+   "player": "Pedri",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   -11
+  ],
+  [
+   2,
+   -100
+  ],
+  [
+   3,
+   -100
+  ],
+  [
+   4,
+   -100
+  ],
+  [
+   5,
+   -19
+  ],
+  [
+   6,
+   -14
+  ],
+  [
+   7,
+   -41
+  ],
+  [
+   8,
+   -49
+  ],
+  [
+   9,
+   -65
+  ],
+  [
+   10,
+   -43
+  ],
+  [
+   11,
+   -27
+  ],
+  [
+   12,
+   -5
+  ],
+  [
+   13,
+   0
+  ],
+  [
+   14,
+   0
+  ],
+  [
+   15,
+   5
+  ],
+  [
+   16,
+   5
+  ],
+  [
+   17,
+   -5
+  ],
+  [
+   18,
+   -100
+  ],
+  [
+   19,
+   -100
+  ],
+  [
+   20,
+   -100
+  ],
+  [
+   21,
+   3
+  ],
+  [
+   22,
+   35
+  ],
+  [
+   23,
+   35
+  ],
+  [
+   24,
+   49
+  ],
+  [
+   25,
+   16
+  ],
+  [
+   26,
+   33
+  ],
+  [
+   27,
+   8
+  ],
+  [
+   28,
+   8
+  ],
+  [
+   29,
+   -8
+  ],
+  [
+   30,
+   0
+  ],
+  [
+   31,
+   16
+  ],
+  [
+   32,
+   22
+  ],
+  [
+   33,
+   33
+  ],
+  [
+   34,
+   16
+  ],
+  [
+   35,
+   -5
+  ],
+  [
+   36,
+   5
+  ],
+  [
+   37,
+   0
+  ],
+  [
+   38,
+   16
+  ],
+  [
+   39,
+   -43
+  ],
+  [
+   40,
+   -16
+  ],
+  [
+   41,
+   -5
+  ],
+  [
+   42,
+   33
+  ],
+  [
+   43,
+   11
+  ],
+  [
+   44,
+   0
+  ],
+  [
+   45,
+   0
+  ],
+  [
+   45.5,
+   -4
+  ],
+  [
+   46,
+   -8
+  ],
+  [
+   47,
+   8
+  ],
+  [
+   48,
+   3
+  ],
+  [
+   49,
+   33
+  ],
+  [
+   50,
+   22
+  ],
+  [
+   51,
+   22
+  ],
+  [
+   52,
+   -5
+  ],
+  [
+   53,
+   -71
+  ],
+  [
+   54,
+   -65
+  ],
+  [
+   55,
+   -49
+  ],
+  [
+   56,
+   5
+  ],
+  [
+   57,
+   -100
+  ],
+  [
+   58,
+   -100
+  ],
+  [
+   59,
+   -100
+  ],
+  [
+   60,
+   11
+  ],
+  [
+   61,
+   11
+  ],
+  [
+   62,
+   11
+  ],
+  [
+   63,
+   49
+  ],
+  [
+   64,
+   49
+  ],
+  [
+   65,
+   49
+  ],
+  [
+   66,
+   -11
+  ],
+  [
+   67,
+   5
+  ],
+  [
+   68,
+   5
+  ],
+  [
+   69,
+   22
+  ],
+  [
+   70,
+   35
+  ],
+  [
+   71,
+   46
+  ],
+  [
+   72,
+   52
+  ],
+  [
+   73,
+   100
+  ],
+  [
+   74,
+   100
+  ],
+  [
+   75,
+   100
+  ],
+  [
+   76,
+   76
+  ],
+  [
+   77,
+   100
+  ],
+  [
+   78,
+   49
+  ],
+  [
+   79,
+   49
+  ],
+  [
+   80,
+   68
+  ],
+  [
+   81,
+   100
+  ],
+  [
+   82,
+   100
+  ],
+  [
+   83,
+   100
+  ],
+  [
+   84,
+   100
+  ],
+  [
+   85,
+   100
+  ],
+  [
+   86,
+   100
+  ],
+  [
+   87,
+   100
+  ],
+  [
+   88,
+   76
+  ],
+  [
+   89,
+   100
+  ],
+  [
+   90,
+   98
+  ],
+  [
+   90.5,
+   81
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 15,
+   "team": "ENG",
+   "player": "Declan Rice",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 3
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 50,
+   "team": "ESP",
+   "player": "Marc Cucurella",
+   "reason": "Foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 57,
+   "team": "ESP",
+   "player": "Lamine Yamal",
+   "reason": "Dissent"
+  },
+  {
+   "type": "card",
+   "card": "Red",
+   "min": 63,
+   "team": "ENG",
+   "player": "Elliot Anderson",
+   "reason": "Professional foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 67,
+   "team": "ENG",
+   "player": "Djed Spence",
+   "reason": "Dissent"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 68,
+   "team": "ESP",
+   "player": "Álex Baena",
+   "reason": "Simulation"
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 4
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    64,
+    36
+   ],
+   "expected_goals": [
+    "2.73",
+    "2.28"
+   ],
+   "total_shots": [
+    23,
+    9
+   ],
+   "ShotsOnTarget": [
+    7,
+    5
+   ],
+   "touches_opp_box": [
+    47,
+    22
+   ],
+   "big_chance": [
+    3,
+    5
+   ],
+   "big_chance_missed_title": [
+    1,
+    2
+   ],
+   "accurate_passes": [
+    "462 (86%)",
+    "243 (82%)"
+   ],
+   "yellow_cards": [
+    3,
+    2
+   ],
+   "corners": [
+    4,
+    6
+   ],
+   "ShotsOffTarget": [
+    10,
+    1
+   ],
+   "blocked_shots": [
+    6,
+    3
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    17,
+    7
+   ],
+   "shots_outside_box": [
+    6,
+    2
+   ],
+   "expected_goals_open_play": [
+    "1.44",
+    "0.63"
+   ],
+   "expected_goals_set_play": [
+    "0.50",
+    "0.86"
+   ],
+   "expected_goals_non_penalty": [
+    "1.94",
+    "1.49"
+   ],
+   "expected_goals_on_target": [
+    "2.29",
+    "2.42"
+   ],
+   "passes": [
+    540,
+    298
+   ],
+   "own_half_passes": [
+    200,
+    153
+   ],
+   "opposition_half_passes": [
+    262,
+    90
+   ],
+   "long_balls_accurate": [
+    "22 (58%)",
+    "20 (44%)"
+   ],
+   "accurate_crosses": [
+    "5 (36%)",
+    "4 (27%)"
+   ],
+   "player_throws": [
+    20,
+    14
+   ],
+   "Offsides": [
+    1,
+    2
+   ],
+   "matchstats.headers.tackles": [
+    9,
+    14
+   ],
+   "interceptions": [
+    6,
+    10
+   ],
+   "shot_blocks": [
+    3,
+    5
+   ],
+   "clearances": [
+    8,
+    32
+   ],
+   "keeper_saves": [
+    2,
+    6
+   ],
+   "duel_won": [
+    35,
+    56
+   ],
+   "ground_duels_won": [
+    "25 (35%)",
+    "46 (65%)"
+   ],
+   "aerials_won": [
+    "10 (50%)",
+    "10 (50%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (22%)",
+    "18 (90%)"
+   ],
+   "red_cards": [
+    0,
+    1
+   ],
+   "fouls": [
+    14,
+    15
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    54,
+    46
+   ],
+   "expected_goals": [
+    "0.21",
+    "1.65"
+   ],
+   "total_shots": [
+    4,
+    6
+   ],
+   "ShotsOnTarget": [
+    0,
+    3
+   ],
+   "touches_opp_box": [
+    5,
+    16
+   ],
+   "big_chance": [
+    0,
+    3
+   ],
+   "big_chance_missed_title": [
+    0,
+    2
+   ],
+   "accurate_passes": [
+    "178 (81%)",
+    "154 (86%)"
+   ],
+   "yellow_cards": [
+    0,
+    1
+   ],
+   "corners": [
+    0,
+    3
+   ],
+   "ShotsOffTarget": [
+    3,
+    1
+   ],
+   "blocked_shots": [
+    1,
+    2
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    3,
+    5
+   ],
+   "shots_outside_box": [
+    1,
+    1
+   ],
+   "expected_goals_open_play": [
+    "0.14",
+    "0.31"
+   ],
+   "expected_goals_set_play": [
+    "0.07",
+    "0.55"
+   ],
+   "expected_goals_non_penalty": [
+    "0.21",
+    "0.86"
+   ],
+   "expected_goals_on_target": [
+    "0.00",
+    "1.59"
+   ],
+   "passes": [
+    219,
+    180
+   ],
+   "own_half_passes": [
+    111,
+    93
+   ],
+   "opposition_half_passes": [
+    67,
+    61
+   ],
+   "long_balls_accurate": [
+    "11 (52%)",
+    "10 (50%)"
+   ],
+   "accurate_crosses": [
+    "1 (20%)",
+    "3 (27%)"
+   ],
+   "player_throws": [
+    11,
+    11
+   ],
+   "Offsides": [
+    1,
+    2
+   ],
+   "matchstats.headers.tackles": [
+    5,
+    7
+   ],
+   "interceptions": [
+    4,
+    7
+   ],
+   "shot_blocks": [
+    2,
+    1
+   ],
+   "clearances": [
+    5,
+    12
+   ],
+   "keeper_saves": [
+    2,
+    0
+   ],
+   "duel_won": [
+    21,
+    28
+   ],
+   "ground_duels_won": [
+    "12 (33%)",
+    "24 (67%)"
+   ],
+   "aerials_won": [
+    "9 (69%)",
+    "4 (31%)"
+   ],
+   "dribbles_succeeded": [
+    "0 (0%)",
+    "8 (89%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    9,
+    8
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    73,
+    27
+   ],
+   "expected_goals": [
+    "2.52",
+    "0.63"
+   ],
+   "total_shots": [
+    19,
+    3
+   ],
+   "ShotsOnTarget": [
+    7,
+    2
+   ],
+   "touches_opp_box": [
+    42,
+    6
+   ],
+   "big_chance": [
+    3,
+    2
+   ],
+   "big_chance_missed_title": [
+    1,
+    0
+   ],
+   "accurate_passes": [
+    "284 (88%)",
+    "89 (75%)"
+   ],
+   "yellow_cards": [
+    3,
+    1
+   ],
+   "corners": [
+    4,
+    3
+   ],
+   "ShotsOffTarget": [
+    7,
+    0
+   ],
+   "blocked_shots": [
+    5,
+    1
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    14,
+    2
+   ],
+   "shots_outside_box": [
+    5,
+    1
+   ],
+   "expected_goals_open_play": [
+    "1.30",
+    "0.32"
+   ],
+   "expected_goals_set_play": [
+    "0.43",
+    "0.31"
+   ],
+   "expected_goals_non_penalty": [
+    "1.73",
+    "0.63"
+   ],
+   "expected_goals_on_target": [
+    "2.29",
+    "0.83"
+   ],
+   "passes": [
+    321,
+    118
+   ],
+   "own_half_passes": [
+    89,
+    60
+   ],
+   "opposition_half_passes": [
+    195,
+    29
+   ],
+   "long_balls_accurate": [
+    "11 (65%)",
+    "10 (40%)"
+   ],
+   "accurate_crosses": [
+    "4 (44%)",
+    "1 (25%)"
+   ],
+   "player_throws": [
+    9,
+    3
+   ],
+   "Offsides": [
+    0,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    4,
+    7
+   ],
+   "interceptions": [
+    2,
+    3
+   ],
+   "shot_blocks": [
+    1,
+    4
+   ],
+   "clearances": [
+    3,
+    20
+   ],
+   "keeper_saves": [
+    0,
+    6
+   ],
+   "duel_won": [
+    14,
+    28
+   ],
+   "ground_duels_won": [
+    "13 (37%)",
+    "22 (63%)"
+   ],
+   "aerials_won": [
+    "1 (14%)",
+    "6 (86%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (29%)",
+    "10 (91%)"
+   ],
+   "red_cards": [
+    0,
+    1
+   ],
+   "fouls": [
+    5,
+    7
+   ]
+  }
+ }
+}
