@@ -1,0 +1,1467 @@
+{
+ "source": "FotMob match 5181799 (Opta data)",
+ "match": "France 2-1 Turkiye, UEFA Nations League A Grp. 1 round 6, Sun, Nov 15, 2026, 19:45 UTC",
+ "home": "FRA",
+ "away": "TUR",
+ "shots": [
+  {
+   "team": "TUR",
+   "min": 3,
+   "add": null,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.0111,
+   "x": 74.714077672,
+   "y": 1.3774407591,
+   "player": "Barış Alper Yılmaz",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 6,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0222,
+   "x": 83.0480582528,
+   "y": 53.0389808912,
+   "player": "Adrien Rabiot",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "TUR",
+   "min": 10,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0303,
+   "x": 80.0072815544,
+   "y": 30.645,
+   "player": "Arda Güler",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 11,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.097,
+   "x": 96.0263157884,
+   "y": 35.448750000000004,
+   "player": "Adrien Rabiot",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 13,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0377,
+   "x": 85.9235294112,
+   "y": 24.419617839300003,
+   "player": "Rayan Cherki",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 14,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1052,
+   "x": 92.6,
+   "y": 37.732,
+   "player": "Adrien Rabiot",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 14,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0393,
+   "x": 93.3,
+   "y": 44.4211464923,
+   "player": "Kylian Mbappé",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "TUR",
+   "min": 16,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.065,
+   "x": 89.9,
+   "y": 31.559999999999995,
+   "player": "Deniz Gül",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "TUR",
+   "min": 17,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0291,
+   "x": 96.8947368413,
+   "y": 39.376904763,
+   "player": "Abdülkerim Bardakci",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 21,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.4239,
+   "x": 94.1929824545,
+   "y": 43.440254772100005,
+   "player": "Bradley Barcola",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 23,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0686,
+   "x": 92.9,
+   "y": 43.720509549300004,
+   "player": "Bradley Barcola",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "TUR",
+   "min": 32,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0525,
+   "x": 94.09649122639999,
+   "y": 45.752356684000006,
+   "player": "Arda Güler",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "TUR",
+   "min": 32,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0255,
+   "x": 97.3771929818,
+   "y": 40.217380953,
+   "player": "Deniz Gül",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 34,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.3257,
+   "x": 93.2,
+   "y": 27.614523809,
+   "player": "Kylian Mbappé",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 34,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0229,
+   "x": 84.85,
+   "y": 22.247643316,
+   "player": "Michael Olise",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "TUR",
+   "min": 35,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.3693,
+   "x": 93.3,
+   "y": 30.34,
+   "player": "İsmail Yüksek",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 38,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0278,
+   "x": 90.8,
+   "y": 18.1138853523,
+   "player": "Michael Olise",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 42,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.2144,
+   "x": 100.06896551759999,
+   "y": 41.9459375,
+   "player": "Andy Diouf",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 48,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FreeKick",
+   "shotType": "LeftFoot",
+   "xg": 0.0964,
+   "x": 86.5676470584,
+   "y": 42.46625,
+   "player": "Michael Olise",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 49,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0151,
+   "x": 100.9224137934,
+   "y": 45.6122292954,
+   "player": "Adrien Rabiot",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "TUR",
+   "min": 49,
+   "add": null,
+   "type": "Goal",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0,
+   "x": 1.7068965516,
+   "y": 34.533750000000005,
+   "player": "Emirhan Topçu",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": true
+  },
+  {
+   "team": "FRA",
+   "min": 49,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.8635,
+   "x": 102.4396551726,
+   "y": 34.22875,
+   "player": "Bradley Barcola",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "TUR",
+   "min": 52,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0674,
+   "x": 95.73684210409999,
+   "y": 40.217380953,
+   "player": "Can Uzun",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "TUR",
+   "min": 59,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0726,
+   "x": 97.3771929818,
+   "y": 25.071250000000003,
+   "player": "Arda Güler",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "TUR",
+   "min": 60,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "OtherBodyParts",
+   "xg": 0.197,
+   "x": 101.206896552,
+   "y": 34.305,
+   "player": "Abdülkerim Bardakci",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 61,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.0458,
+   "x": 90.4,
+   "y": 20.9864968186,
+   "player": "Michael Olise",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 64,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.2991,
+   "x": 90.5,
+   "y": 36.135000000000005,
+   "player": "Kylian Mbappé",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 65,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0236,
+   "x": 100.9224137934,
+   "y": 46.1727388498,
+   "player": "Junior Kroupi",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "TUR",
+   "min": 67,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0242,
+   "x": 78.9936893216,
+   "y": 27.950714285,
+   "player": "Arda Güler",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "TUR",
+   "min": 70,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1147,
+   "x": 80.79563106879999,
+   "y": 31.1025,
+   "player": "Arda Güler",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 73,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1025,
+   "x": 94.675438595,
+   "y": 30.95,
+   "player": "Kylian Mbappé",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 75,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0964,
+   "x": 98.0526315785,
+   "y": 40.721666666999994,
+   "player": "Kylian Mbappé",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 75,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0432,
+   "x": 82.37233009760001,
+   "y": 41.7146875,
+   "player": "Eduardo Camavinga",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 77,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0358,
+   "x": 85.17205882280001,
+   "y": 44.7014012695,
+   "player": "Eduardo Camavinga",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 80,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1507,
+   "x": 97.0877192975,
+   "y": 44.5612738809,
+   "player": "Junior Kroupi",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "TUR",
+   "min": 83,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0549,
+   "x": 94.09649122639999,
+   "y": 31.7125,
+   "player": "Abdülkerim Bardakci",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "FRA",
+   "min": 88,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1997,
+   "x": 89.8,
+   "y": 33.61875,
+   "player": "Lucas Da Cunha",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "TUR",
+   "min": 90,
+   "add": 0,
+   "type": "Goal",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.4276,
+   "x": 99.784482759,
+   "y": 36.135000000000005,
+   "player": "Abdülkerim Bardakci",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   33
+  ],
+  [
+   2,
+   60
+  ],
+  [
+   3,
+   71
+  ],
+  [
+   4,
+   38
+  ],
+  [
+   5,
+   43
+  ],
+  [
+   6,
+   43
+  ],
+  [
+   7,
+   38
+  ],
+  [
+   8,
+   11
+  ],
+  [
+   9,
+   11
+  ],
+  [
+   10,
+   3
+  ],
+  [
+   11,
+   38
+  ],
+  [
+   12,
+   38
+  ],
+  [
+   13,
+   62
+  ],
+  [
+   14,
+   81
+  ],
+  [
+   15,
+   76
+  ],
+  [
+   16,
+   65
+  ],
+  [
+   17,
+   -14
+  ],
+  [
+   18,
+   -19
+  ],
+  [
+   19,
+   -5
+  ],
+  [
+   20,
+   3
+  ],
+  [
+   21,
+   19
+  ],
+  [
+   22,
+   5
+  ],
+  [
+   23,
+   35
+  ],
+  [
+   24,
+   19
+  ],
+  [
+   25,
+   71
+  ],
+  [
+   26,
+   52
+  ],
+  [
+   27,
+   71
+  ],
+  [
+   28,
+   35
+  ],
+  [
+   29,
+   35
+  ],
+  [
+   30,
+   27
+  ],
+  [
+   31,
+   -8
+  ],
+  [
+   32,
+   -90
+  ],
+  [
+   33,
+   -95
+  ],
+  [
+   34,
+   -27
+  ],
+  [
+   35,
+   19
+  ],
+  [
+   36,
+   35
+  ],
+  [
+   37,
+   19
+  ],
+  [
+   38,
+   95
+  ],
+  [
+   39,
+   79
+  ],
+  [
+   40,
+   46
+  ],
+  [
+   41,
+   11
+  ],
+  [
+   42,
+   100
+  ],
+  [
+   43,
+   100
+  ],
+  [
+   44,
+   100
+  ],
+  [
+   45,
+   -8
+  ],
+  [
+   45.5,
+   -8
+  ],
+  [
+   46,
+   16
+  ],
+  [
+   47,
+   16
+  ],
+  [
+   48,
+   30
+  ],
+  [
+   49,
+   19
+  ],
+  [
+   50,
+   19
+  ],
+  [
+   51,
+   -5
+  ],
+  [
+   52,
+   -54
+  ],
+  [
+   53,
+   -54
+  ],
+  [
+   54,
+   11
+  ],
+  [
+   55,
+   49
+  ],
+  [
+   56,
+   43
+  ],
+  [
+   57,
+   22
+  ],
+  [
+   58,
+   33
+  ],
+  [
+   59,
+   16
+  ],
+  [
+   60,
+   -81
+  ],
+  [
+   61,
+   -73
+  ],
+  [
+   62,
+   -54
+  ],
+  [
+   63,
+   5
+  ],
+  [
+   64,
+   3
+  ],
+  [
+   65,
+   35
+  ],
+  [
+   66,
+   73
+  ],
+  [
+   67,
+   60
+  ],
+  [
+   68,
+   30
+  ],
+  [
+   69,
+   -11
+  ],
+  [
+   70,
+   -14
+  ],
+  [
+   71,
+   -14
+  ],
+  [
+   72,
+   0
+  ],
+  [
+   73,
+   65
+  ],
+  [
+   74,
+   100
+  ],
+  [
+   75,
+   100
+  ],
+  [
+   76,
+   100
+  ],
+  [
+   77,
+   100
+  ],
+  [
+   78,
+   19
+  ],
+  [
+   79,
+   5
+  ],
+  [
+   80,
+   14
+  ],
+  [
+   81,
+   19
+  ],
+  [
+   82,
+   3
+  ],
+  [
+   83,
+   -76
+  ],
+  [
+   84,
+   -79
+  ],
+  [
+   85,
+   -79
+  ],
+  [
+   86,
+   -84
+  ],
+  [
+   87,
+   -54
+  ],
+  [
+   88,
+   -38
+  ],
+  [
+   89,
+   11
+  ],
+  [
+   90,
+   -76
+  ],
+  [
+   90.5,
+   14
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "var",
+   "min": 39,
+   "team": "FRA",
+   "player": "Kylian Mbappé",
+   "decision": [
+    "Goal ruled out",
+    "offside"
+   ]
+  },
+  {
+   "type": "var",
+   "min": 53,
+   "team": "TUR",
+   "player": "Arda Güler",
+   "decision": [
+    "Goal ruled out",
+    "offside"
+   ]
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 55,
+   "team": "TUR",
+   "player": "Sergen Yalçin",
+   "reason": null
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 55,
+   "team": "FRA",
+   "player": "Ibrahima Konaté",
+   "reason": "Foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 56,
+   "team": "TUR",
+   "player": "Barış Alper Yılmaz",
+   "reason": "Foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 72,
+   "team": "TUR",
+   "player": "Salih Özcan",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 4
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    60,
+    40
+   ],
+   "expected_goals": [
+    "3.36",
+    "1.54"
+   ],
+   "total_shots": [
+    23,
+    14
+   ],
+   "ShotsOnTarget": [
+    8,
+    3
+   ],
+   "touches_opp_box": [
+    51,
+    20
+   ],
+   "big_chance": [
+    7,
+    3
+   ],
+   "big_chance_missed_title": [
+    6,
+    2
+   ],
+   "accurate_passes": [
+    "553 (89%)",
+    "337 (84%)"
+   ],
+   "yellow_cards": [
+    1,
+    2
+   ],
+   "corners": [
+    8,
+    5
+   ],
+   "ShotsOffTarget": [
+    9,
+    6
+   ],
+   "blocked_shots": [
+    6,
+    5
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    17,
+    10
+   ],
+   "shots_outside_box": [
+    6,
+    4
+   ],
+   "expected_goals_open_play": [
+    "2.34",
+    "0.81"
+   ],
+   "expected_goals_set_play": [
+    "1.02",
+    "0.73"
+   ],
+   "expected_goals_non_penalty": [
+    "3.36",
+    "1.54"
+   ],
+   "expected_goals_on_target": [
+    "1.11",
+    "0.99"
+   ],
+   "passes": [
+    620,
+    401
+   ],
+   "own_half_passes": [
+    215,
+    214
+   ],
+   "opposition_half_passes": [
+    338,
+    123
+   ],
+   "long_balls_accurate": [
+    "18 (55%)",
+    "27 (50%)"
+   ],
+   "accurate_crosses": [
+    "1 (13%)",
+    "4 (44%)"
+   ],
+   "player_throws": [
+    12,
+    13
+   ],
+   "Offsides": [
+    2,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    17,
+    14
+   ],
+   "interceptions": [
+    10,
+    12
+   ],
+   "shot_blocks": [
+    5,
+    6
+   ],
+   "clearances": [
+    9,
+    16
+   ],
+   "keeper_saves": [
+    2,
+    7
+   ],
+   "duel_won": [
+    44,
+    44
+   ],
+   "ground_duels_won": [
+    "38 (53%)",
+    "34 (47%)"
+   ],
+   "aerials_won": [
+    "6 (38%)",
+    "10 (63%)"
+   ],
+   "dribbles_succeeded": [
+    "10 (56%)",
+    "7 (50%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    13,
+    11
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    60,
+    40
+   ],
+   "expected_goals": [
+    "1.38",
+    "0.58"
+   ],
+   "total_shots": [
+    11,
+    7
+   ],
+   "ShotsOnTarget": [
+    5,
+    1
+   ],
+   "touches_opp_box": [
+    29,
+    7
+   ],
+   "big_chance": [
+    3,
+    1
+   ],
+   "big_chance_missed_title": [
+    3,
+    1
+   ],
+   "accurate_passes": [
+    "298 (90%)",
+    "193 (87%)"
+   ],
+   "yellow_cards": [
+    0,
+    0
+   ],
+   "corners": [
+    3,
+    2
+   ],
+   "ShotsOffTarget": [
+    4,
+    3
+   ],
+   "blocked_shots": [
+    2,
+    3
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    8,
+    5
+   ],
+   "shots_outside_box": [
+    3,
+    2
+   ],
+   "expected_goals_open_play": [
+    "1.36",
+    "0.53"
+   ],
+   "expected_goals_set_play": [
+    "0.02",
+    "0.05"
+   ],
+   "expected_goals_non_penalty": [
+    "1.38",
+    "0.58"
+   ],
+   "expected_goals_on_target": [
+    "0.69",
+    "0.32"
+   ],
+   "passes": [
+    332,
+    223
+   ],
+   "own_half_passes": [
+    96,
+    133
+   ],
+   "opposition_half_passes": [
+    202,
+    60
+   ],
+   "long_balls_accurate": [
+    "10 (59%)",
+    "11 (44%)"
+   ],
+   "accurate_crosses": [
+    "0 (0%)",
+    "1 (100%)"
+   ],
+   "player_throws": [
+    7,
+    7
+   ],
+   "Offsides": [
+    1,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    9,
+    2
+   ],
+   "interceptions": [
+    4,
+    7
+   ],
+   "shot_blocks": [
+    3,
+    2
+   ],
+   "clearances": [
+    3,
+    11
+   ],
+   "keeper_saves": [
+    1,
+    5
+   ],
+   "duel_won": [
+    23,
+    16
+   ],
+   "ground_duels_won": [
+    "19 (61%)",
+    "12 (39%)"
+   ],
+   "aerials_won": [
+    "4 (50%)",
+    "4 (50%)"
+   ],
+   "dribbles_succeeded": [
+    "7 (88%)",
+    "5 (56%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    5,
+    3
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    61,
+    39
+   ],
+   "expected_goals": [
+    "1.97",
+    "0.96"
+   ],
+   "total_shots": [
+    12,
+    7
+   ],
+   "ShotsOnTarget": [
+    3,
+    2
+   ],
+   "touches_opp_box": [
+    22,
+    13
+   ],
+   "big_chance": [
+    4,
+    2
+   ],
+   "big_chance_missed_title": [
+    3,
+    1
+   ],
+   "accurate_passes": [
+    "255 (89%)",
+    "144 (81%)"
+   ],
+   "yellow_cards": [
+    1,
+    2
+   ],
+   "corners": [
+    5,
+    3
+   ],
+   "ShotsOffTarget": [
+    5,
+    3
+   ],
+   "blocked_shots": [
+    4,
+    2
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    9,
+    5
+   ],
+   "shots_outside_box": [
+    3,
+    2
+   ],
+   "expected_goals_open_play": [
+    "0.97",
+    "0.28"
+   ],
+   "expected_goals_set_play": [
+    "1.00",
+    "0.68"
+   ],
+   "expected_goals_non_penalty": [
+    "1.97",
+    "0.96"
+   ],
+   "expected_goals_on_target": [
+    "0.42",
+    "0.67"
+   ],
+   "passes": [
+    288,
+    178
+   ],
+   "own_half_passes": [
+    119,
+    81
+   ],
+   "opposition_half_passes": [
+    136,
+    63
+   ],
+   "long_balls_accurate": [
+    "8 (50%)",
+    "16 (55%)"
+   ],
+   "accurate_crosses": [
+    "1 (20%)",
+    "3 (38%)"
+   ],
+   "player_throws": [
+    5,
+    6
+   ],
+   "Offsides": [
+    1,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    8,
+    12
+   ],
+   "interceptions": [
+    6,
+    5
+   ],
+   "shot_blocks": [
+    2,
+    4
+   ],
+   "clearances": [
+    6,
+    5
+   ],
+   "keeper_saves": [
+    1,
+    2
+   ],
+   "duel_won": [
+    21,
+    28
+   ],
+   "ground_duels_won": [
+    "19 (46%)",
+    "22 (54%)"
+   ],
+   "aerials_won": [
+    "2 (25%)",
+    "6 (75%)"
+   ],
+   "dribbles_succeeded": [
+    "3 (30%)",
+    "2 (40%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    8,
+    8
+   ]
+  }
+ }
+}
