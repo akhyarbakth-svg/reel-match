@@ -1,0 +1,1294 @@
+{
+ "source": "FotMob match 5181835 (Opta data)",
+ "match": "Germany 5-0 Netherlands, UEFA Nations League A Grp. 2 round 6, Mon, Nov 16, 2026, 19:45 UTC",
+ "home": "GER",
+ "away": "NED",
+ "shots": [
+  {
+   "team": "NED",
+   "min": 9,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.0275,
+   "x": 95.35087719170001,
+   "y": 26.774047619,
+   "player": "Donyell Malen",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 13,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0203,
+   "x": 83.49854368960001,
+   "y": 47.714140124400004,
+   "player": "Derry Scherhant",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 23,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "SetPiece",
+   "shotType": "Header",
+   "xg": 0.0766,
+   "x": 95.8333333322,
+   "y": 35.6775,
+   "player": "Kai Havertz",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 25,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.6947,
+   "x": 101.58620689680001,
+   "y": 34.07625,
+   "player": "Donyell Malen",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 32,
+   "add": null,
+   "type": "Post",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0793,
+   "x": 91.5,
+   "y": 42.813125,
+   "player": "Derry Scherhant",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 40,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0334,
+   "x": 81.24611650560001,
+   "y": 24.6298089222,
+   "player": "Aleksandar Pavlović",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 41,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0343,
+   "x": 94,
+   "y": 49.25554139900001,
+   "player": "Derry Scherhant",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 46,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0485,
+   "x": 88.6,
+   "y": 41.225952381,
+   "player": "Derry Scherhant",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 46,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1529,
+   "x": 93.4,
+   "y": 42.119375,
+   "player": "Derry Scherhant",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 48,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.0794,
+   "x": 96.8947368413,
+   "y": 29.211428570000002,
+   "player": "Denzel Dumfries",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 51,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.07,
+   "x": 86.889705882,
+   "y": 24.84,
+   "player": "Brajan Gruda",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 52,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.021,
+   "x": 77.529611652,
+   "y": 43.3001273835,
+   "player": "Florian Wirtz",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 57,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0378,
+   "x": 85.279411764,
+   "y": 43.1021875,
+   "player": "Cody Gakpo",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 60,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0489,
+   "x": 83.49854368960001,
+   "y": 31.4075,
+   "player": "Florian Wirtz",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 65,
+   "add": null,
+   "type": "Goal",
+   "situation": "SetPiece",
+   "shotType": "Header",
+   "xg": 0.1341,
+   "x": 96.605263157,
+   "y": 34.4575,
+   "player": "Nico Schlotterbeck",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 67,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0437,
+   "x": 78.655825244,
+   "y": 30.492499999999996,
+   "player": "Florian Wirtz",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 71,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.2352,
+   "x": 100.06896551759999,
+   "y": 29.463571426999998,
+   "player": "Florian Wirtz",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 73,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0216,
+   "x": 82.7101941752,
+   "y": 21.547006373000002,
+   "player": "Brajan Gruda",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 74,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0342,
+   "x": 84.9573529404,
+   "y": 31.1025,
+   "player": "Aleksandar Pavlović",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 77,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0743,
+   "x": 100.06896551759999,
+   "y": 47.50394904150001,
+   "player": "Derry Scherhant",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 77,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.2575,
+   "x": 97.95614035039999,
+   "y": 27.614523809,
+   "player": "Brajan Gruda",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "GER",
+   "min": 82,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0255,
+   "x": 93.4,
+   "y": 29.043333332,
+   "player": "Jonathan Tah",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 83,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1221,
+   "x": 91.4,
+   "y": 25.765,
+   "player": "Crysencio Summerville",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 85,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0193,
+   "x": 74.82669903120001,
+   "y": 40.049285714999996,
+   "player": "Ruben van Bommel",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 90,
+   "add": 1,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0657,
+   "x": 91.4,
+   "y": 46.7332484042,
+   "player": "Ruben van Bommel",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 90,
+   "add": 1,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0154,
+   "x": 75.5024271864,
+   "y": 47.013503181400004,
+   "player": "Joey Veerman",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "NED",
+   "min": 90,
+   "add": 2,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.0531,
+   "x": 97.7631578942,
+   "y": 28.118809523000003,
+   "player": "Mexx Meerdink",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   16
+  ],
+  [
+   2,
+   11
+  ],
+  [
+   3,
+   14
+  ],
+  [
+   4,
+   -16
+  ],
+  [
+   5,
+   5
+  ],
+  [
+   6,
+   3
+  ],
+  [
+   7,
+   33
+  ],
+  [
+   8,
+   22
+  ],
+  [
+   9,
+   11
+  ],
+  [
+   10,
+   16
+  ],
+  [
+   11,
+   27
+  ],
+  [
+   12,
+   49
+  ],
+  [
+   13,
+   38
+  ],
+  [
+   14,
+   22
+  ],
+  [
+   15,
+   -27
+  ],
+  [
+   16,
+   -11
+  ],
+  [
+   17,
+   11
+  ],
+  [
+   18,
+   60
+  ],
+  [
+   19,
+   -8
+  ],
+  [
+   20,
+   -35
+  ],
+  [
+   21,
+   -41
+  ],
+  [
+   22,
+   5
+  ],
+  [
+   23,
+   35
+  ],
+  [
+   24,
+   46
+  ],
+  [
+   25,
+   -38
+  ],
+  [
+   26,
+   -57
+  ],
+  [
+   27,
+   -68
+  ],
+  [
+   28,
+   8
+  ],
+  [
+   29,
+   8
+  ],
+  [
+   30,
+   8
+  ],
+  [
+   31,
+   27
+  ],
+  [
+   32,
+   43
+  ],
+  [
+   33,
+   27
+  ],
+  [
+   34,
+   11
+  ],
+  [
+   35,
+   11
+  ],
+  [
+   36,
+   43
+  ],
+  [
+   37,
+   49
+  ],
+  [
+   38,
+   16
+  ],
+  [
+   39,
+   -5
+  ],
+  [
+   40,
+   35
+  ],
+  [
+   41,
+   68
+  ],
+  [
+   42,
+   68
+  ],
+  [
+   43,
+   5
+  ],
+  [
+   44,
+   -16
+  ],
+  [
+   45,
+   -19
+  ],
+  [
+   46,
+   11
+  ],
+  [
+   47,
+   11
+  ],
+  [
+   48,
+   -24
+  ],
+  [
+   49,
+   -19
+  ],
+  [
+   50,
+   19
+  ],
+  [
+   51,
+   84
+  ],
+  [
+   52,
+   100
+  ],
+  [
+   53,
+   95
+  ],
+  [
+   54,
+   60
+  ],
+  [
+   55,
+   -30
+  ],
+  [
+   56,
+   -57
+  ],
+  [
+   57,
+   -68
+  ],
+  [
+   58,
+   -22
+  ],
+  [
+   59,
+   -5
+  ],
+  [
+   60,
+   49
+  ],
+  [
+   61,
+   62
+  ],
+  [
+   62,
+   76
+  ],
+  [
+   63,
+   43
+  ],
+  [
+   64,
+   24
+  ],
+  [
+   65,
+   30
+  ],
+  [
+   66,
+   24
+  ],
+  [
+   67,
+   24
+  ],
+  [
+   68,
+   49
+  ],
+  [
+   69,
+   43
+  ],
+  [
+   70,
+   22
+  ],
+  [
+   71,
+   100
+  ],
+  [
+   72,
+   100
+  ],
+  [
+   73,
+   100
+  ],
+  [
+   74,
+   8
+  ],
+  [
+   75,
+   11
+  ],
+  [
+   76,
+   14
+  ],
+  [
+   77,
+   22
+  ],
+  [
+   78,
+   22
+  ],
+  [
+   79,
+   33
+  ],
+  [
+   80,
+   52
+  ],
+  [
+   81,
+   68
+  ],
+  [
+   82,
+   81
+  ],
+  [
+   83,
+   -35
+  ],
+  [
+   84,
+   -49
+  ],
+  [
+   85,
+   -68
+  ],
+  [
+   86,
+   3
+  ],
+  [
+   87,
+   46
+  ],
+  [
+   88,
+   52
+  ],
+  [
+   89,
+   73
+  ],
+  [
+   90,
+   22
+  ],
+  [
+   90.5,
+   -44
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "goal",
+   "min": 41,
+   "add": null,
+   "team": "GER",
+   "player": "Derry Scherhant",
+   "assist": "assist by Joshua Kimmich"
+  },
+  {
+   "type": "goal",
+   "min": 60,
+   "add": null,
+   "team": "GER",
+   "player": "Florian Wirtz",
+   "assist": null
+  },
+  {
+   "type": "goal",
+   "min": 65,
+   "add": null,
+   "team": "GER",
+   "player": "Nico Schlotterbeck",
+   "assist": "assist by Brajan Gruda"
+  },
+  {
+   "type": "goal",
+   "min": 71,
+   "add": null,
+   "team": "GER",
+   "player": "Florian Wirtz",
+   "assist": "assist by Brajan Gruda"
+  },
+  {
+   "type": "goal",
+   "min": 78,
+   "add": null,
+   "team": "GER",
+   "player": "Brajan Gruda",
+   "assist": null
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 86,
+   "team": "NED",
+   "player": "Mexx Meerdink",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 2
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    56,
+    44
+   ],
+   "expected_goals": [
+    "1.39",
+    "1.11"
+   ],
+   "total_shots": [
+    18,
+    9
+   ],
+   "ShotsOnTarget": [
+    10,
+    1
+   ],
+   "touches_opp_box": [
+    50,
+    19
+   ],
+   "big_chance": [
+    3,
+    1
+   ],
+   "big_chance_missed_title": [
+    1,
+    1
+   ],
+   "accurate_passes": [
+    "429 (86%)",
+    "314 (80%)"
+   ],
+   "yellow_cards": [
+    0,
+    1
+   ],
+   "corners": [
+    3,
+    2
+   ],
+   "ShotsOffTarget": [
+    4,
+    4
+   ],
+   "blocked_shots": [
+    4,
+    4
+   ],
+   "shots_woodwork": [
+    2,
+    0
+   ],
+   "shots_inside_box": [
+    10,
+    6
+   ],
+   "shots_outside_box": [
+    8,
+    3
+   ],
+   "expected_goals_open_play": [
+    "1.16",
+    "1.11"
+   ],
+   "expected_goals_set_play": [
+    "0.24",
+    "0.00"
+   ],
+   "expected_goals_non_penalty": [
+    "1.39",
+    "1.11"
+   ],
+   "expected_goals_on_target": [
+    "2.65",
+    "0.16"
+   ],
+   "passes": [
+    497,
+    392
+   ],
+   "own_half_passes": [
+    156,
+    217
+   ],
+   "opposition_half_passes": [
+    273,
+    97
+   ],
+   "long_balls_accurate": [
+    "23 (61%)",
+    "35 (50%)"
+   ],
+   "accurate_crosses": [
+    "7 (32%)",
+    "7 (50%)"
+   ],
+   "player_throws": [
+    21,
+    16
+   ],
+   "Offsides": [
+    2,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    10,
+    22
+   ],
+   "interceptions": [
+    5,
+    10
+   ],
+   "shot_blocks": [
+    4,
+    4
+   ],
+   "clearances": [
+    16,
+    21
+   ],
+   "keeper_saves": [
+    1,
+    5
+   ],
+   "duel_won": [
+    37,
+    56
+   ],
+   "ground_duels_won": [
+    "30 (42%)",
+    "42 (58%)"
+   ],
+   "aerials_won": [
+    "7 (33%)",
+    "14 (67%)"
+   ],
+   "dribbles_succeeded": [
+    "5 (33%)",
+    "11 (85%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    9,
+    15
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    58,
+    42
+   ],
+   "expected_goals": [
+    "0.24",
+    "0.72"
+   ],
+   "total_shots": [
+    5,
+    2
+   ],
+   "ShotsOnTarget": [
+    2,
+    0
+   ],
+   "touches_opp_box": [
+    22,
+    7
+   ],
+   "big_chance": [
+    1,
+    1
+   ],
+   "big_chance_missed_title": [
+    1,
+    1
+   ],
+   "accurate_passes": [
+    "229 (87%)",
+    "157 (80%)"
+   ],
+   "yellow_cards": [
+    0,
+    0
+   ],
+   "corners": [
+    1,
+    0
+   ],
+   "ShotsOffTarget": [
+    1,
+    2
+   ],
+   "blocked_shots": [
+    2,
+    0
+   ],
+   "shots_woodwork": [
+    1,
+    0
+   ],
+   "shots_inside_box": [
+    3,
+    2
+   ],
+   "shots_outside_box": [
+    2,
+    0
+   ],
+   "expected_goals_open_play": [
+    "0.17",
+    "0.72"
+   ],
+   "expected_goals_set_play": [
+    "0.08",
+    "0.00"
+   ],
+   "expected_goals_non_penalty": [
+    "0.24",
+    "0.72"
+   ],
+   "expected_goals_on_target": [
+    "0.25",
+    "0.00"
+   ],
+   "passes": [
+    263,
+    197
+   ],
+   "own_half_passes": [
+    70,
+    108
+   ],
+   "opposition_half_passes": [
+    159,
+    49
+   ],
+   "long_balls_accurate": [
+    "11 (55%)",
+    "21 (50%)"
+   ],
+   "accurate_crosses": [
+    "2 (18%)",
+    "4 (80%)"
+   ],
+   "player_throws": [
+    14,
+    6
+   ],
+   "Offsides": [
+    1,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    2,
+    10
+   ],
+   "interceptions": [
+    4,
+    4
+   ],
+   "shot_blocks": [
+    0,
+    2
+   ],
+   "clearances": [
+    4,
+    12
+   ],
+   "keeper_saves": [
+    0,
+    1
+   ],
+   "duel_won": [
+    15,
+    28
+   ],
+   "ground_duels_won": [
+    "14 (41%)",
+    "20 (59%)"
+   ],
+   "aerials_won": [
+    "1 (11%)",
+    "8 (89%)"
+   ],
+   "dribbles_succeeded": [
+    "1 (25%)",
+    "4 (100%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    6,
+    11
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    55,
+    45
+   ],
+   "expected_goals": [
+    "1.15",
+    "0.39"
+   ],
+   "total_shots": [
+    13,
+    7
+   ],
+   "ShotsOnTarget": [
+    8,
+    1
+   ],
+   "touches_opp_box": [
+    28,
+    12
+   ],
+   "big_chance": [
+    2,
+    0
+   ],
+   "big_chance_missed_title": [
+    0,
+    0
+   ],
+   "accurate_passes": [
+    "200 (85%)",
+    "157 (81%)"
+   ],
+   "yellow_cards": [
+    0,
+    1
+   ],
+   "corners": [
+    2,
+    2
+   ],
+   "ShotsOffTarget": [
+    3,
+    2
+   ],
+   "blocked_shots": [
+    2,
+    4
+   ],
+   "shots_woodwork": [
+    1,
+    0
+   ],
+   "shots_inside_box": [
+    7,
+    4
+   ],
+   "shots_outside_box": [
+    6,
+    3
+   ],
+   "expected_goals_open_play": [
+    "0.99",
+    "0.39"
+   ],
+   "expected_goals_set_play": [
+    "0.16",
+    "0.00"
+   ],
+   "expected_goals_non_penalty": [
+    "1.15",
+    "0.39"
+   ],
+   "expected_goals_on_target": [
+    "2.40",
+    "0.16"
+   ],
+   "passes": [
+    234,
+    195
+   ],
+   "own_half_passes": [
+    86,
+    109
+   ],
+   "opposition_half_passes": [
+    114,
+    48
+   ],
+   "long_balls_accurate": [
+    "12 (67%)",
+    "14 (50%)"
+   ],
+   "accurate_crosses": [
+    "5 (45%)",
+    "3 (33%)"
+   ],
+   "player_throws": [
+    7,
+    10
+   ],
+   "Offsides": [
+    1,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    8,
+    12
+   ],
+   "interceptions": [
+    1,
+    6
+   ],
+   "shot_blocks": [
+    4,
+    2
+   ],
+   "clearances": [
+    12,
+    9
+   ],
+   "keeper_saves": [
+    1,
+    4
+   ],
+   "duel_won": [
+    22,
+    28
+   ],
+   "ground_duels_won": [
+    "16 (42%)",
+    "22 (58%)"
+   ],
+   "aerials_won": [
+    "6 (50%)",
+    "6 (50%)"
+   ],
+   "dribbles_succeeded": [
+    "4 (36%)",
+    "7 (78%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    3,
+    4
+   ]
+  }
+ }
+}
