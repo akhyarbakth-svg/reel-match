@@ -1,0 +1,1567 @@
+{
+ "source": "FotMob match 5868133 (Opta data)",
+ "match": "Barcelona 3-2 Villarreal, LaLiga round 13, Sun, Nov 22, 2026, 13:00 UTC",
+ "venue": "Spotify Camp Nou · Barcelona",
+ "home": "BAR",
+ "away": "VIL",
+ "shots": [
+  {
+   "team": "VIL",
+   "min": 5,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0352,
+   "x": 79.782038836,
+   "y": 31.7125,
+   "player": "Tajon Buchanan",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": 1167220
+  },
+  {
+   "team": "VIL",
+   "min": 7,
+   "add": null,
+   "type": "Goal",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.0641,
+   "x": 95.9298245603,
+   "y": 47.0835668757,
+   "player": "Tani Oluwaseyi",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": 1167220
+  },
+  {
+   "team": "BAR",
+   "min": 9,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0229,
+   "x": 89.4,
+   "y": 15.521528663199998,
+   "player": "Lamine Yamal",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 17,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0258,
+   "x": 85.6014705876,
+   "y": 29.295476189000002,
+   "player": "Karim Adeyemi",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 17,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0594,
+   "x": 84.9573529404,
+   "y": 30.267999999999997,
+   "player": "Karim Adeyemi",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 23,
+   "add": null,
+   "type": "Post",
+   "situation": "Penalty",
+   "shotType": "LeftFoot",
+   "xg": 0.7884,
+   "x": 94,
+   "y": 34,
+   "player": "Lamine Yamal",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 25,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0259,
+   "x": 89.3,
+   "y": 18.674394906699998,
+   "player": "Lamine Yamal",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "VIL",
+   "min": 31,
+   "add": null,
+   "type": "Miss",
+   "situation": "ThrowInSetPiece",
+   "shotType": "LeftFoot",
+   "xg": 0.0323,
+   "x": 82.37233009760001,
+   "y": 25.360312500000003,
+   "player": "Pape Gueye",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 35,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0638,
+   "x": 100.3534482762,
+   "y": 26.343125,
+   "player": "Eric García",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 36,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.068,
+   "x": 94.1929824545,
+   "y": 23.718980896300003,
+   "player": "Lamine Yamal",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 39,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0536,
+   "x": 90.2,
+   "y": 28.875238094000004,
+   "player": "Marc Bernal",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 39,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0132,
+   "x": 78.2053398072,
+   "y": 46.873375792800005,
+   "player": "João Cancelo",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 40,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0132,
+   "x": 75.0519417496,
+   "y": 44.7014012695,
+   "player": "Karim Adeyemi",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": 151001
+  },
+  {
+   "team": "BAR",
+   "min": 42,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0272,
+   "x": 96.3157894727,
+   "y": 51.147261145099996,
+   "player": "Lamine Yamal",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": 151001
+  },
+  {
+   "team": "BAR",
+   "min": 45,
+   "add": 1,
+   "type": "AttemptSaved",
+   "situation": "FreeKick",
+   "shotType": "LeftFoot",
+   "xg": 0.1437,
+   "x": 86.24558823480001,
+   "y": 32.856249999999996,
+   "player": "Raphinha",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 45,
+   "add": 2,
+   "type": "Miss",
+   "situation": "SetPiece",
+   "shotType": "Header",
+   "xg": 0.2802,
+   "x": 101.0172413796,
+   "y": 32.09375,
+   "player": "Gerard Martín",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 45,
+   "add": 3,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.2973,
+   "x": 100.6379310348,
+   "y": 30.873749999999998,
+   "player": "Eric García",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": 151001
+  },
+  {
+   "team": "BAR",
+   "min": 45,
+   "add": 3,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1983,
+   "x": 100.8275862072,
+   "y": 30.267999999999997,
+   "player": "Fermín López",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 48,
+   "add": null,
+   "type": "Miss",
+   "situation": "FreeKick",
+   "shotType": "LeftFoot",
+   "xg": 0.0991,
+   "x": 81.92184466079999,
+   "y": 32.779999999999994,
+   "player": "Lamine Yamal",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 52,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.018,
+   "x": 80.68300970960001,
+   "y": 41.772499999999994,
+   "player": "Pedri",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 53,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.135,
+   "x": 92.7,
+   "y": 42.581875,
+   "player": "Fermín López",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": 151001
+  },
+  {
+   "team": "BAR",
+   "min": 53,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.1849,
+   "x": 101.4913793106,
+   "y": 40.553571429,
+   "player": "Marc Bernal",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 57,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0285,
+   "x": 93.6,
+   "y": 46.7332484042,
+   "player": "João Cancelo",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false,
+   "keeperId": 151001
+  },
+  {
+   "team": "BAR",
+   "min": 57,
+   "add": null,
+   "type": "Goal",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.1049,
+   "x": 97.4736842099,
+   "y": 37.744,
+   "player": "Gerard Martín",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": 151001
+  },
+  {
+   "team": "BAR",
+   "min": 59,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0199,
+   "x": 79.3315533992,
+   "y": 38.620476192,
+   "player": "João Cancelo",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": 151001
+  },
+  {
+   "team": "BAR",
+   "min": 61,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1415,
+   "x": 91.7,
+   "y": 39.040714287,
+   "player": "Fermín López",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": 151001
+  },
+  {
+   "team": "VIL",
+   "min": 63,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0236,
+   "x": 80.345145632,
+   "y": 43.9307006322,
+   "player": "Alberto Moleiro",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "VIL",
+   "min": 67,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0,
+   "x": 2.9396551722,
+   "y": 34.305,
+   "player": "Pau Navarro",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": true,
+   "keeperId": 151001
+  },
+  {
+   "team": "BAR",
+   "min": 69,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0935,
+   "x": 93.1,
+   "y": 30.267999999999997,
+   "player": "Lamine Yamal",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 72,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0776,
+   "x": 97.3771929818,
+   "y": 47.013503181400004,
+   "player": "Anthony Gordon",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": 151001
+  },
+  {
+   "team": "BAR",
+   "min": 74,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0408,
+   "x": 82.37233009760001,
+   "y": 42.8709375,
+   "player": "Dani Olmo",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 79,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0701,
+   "x": 90.5,
+   "y": 26.111875,
+   "player": "Lamine Yamal",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 83,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1049,
+   "x": 86.24558823480001,
+   "y": 35.448750000000004,
+   "player": "Dani Olmo",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": 151001
+  },
+  {
+   "team": "BAR",
+   "min": 86,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0141,
+   "x": 78.655825244,
+   "y": 41.8303125,
+   "player": "Anthony Gordon",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "keeperId": null
+  },
+  {
+   "team": "BAR",
+   "min": 90,
+   "add": 5,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0581,
+   "x": 87.6411764704,
+   "y": 43.650445855,
+   "player": "Lamine Yamal",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false,
+   "keeperId": null
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   -11
+  ],
+  [
+   2,
+   -11
+  ],
+  [
+   3,
+   33
+  ],
+  [
+   4,
+   43
+  ],
+  [
+   5,
+   33
+  ],
+  [
+   6,
+   -5
+  ],
+  [
+   7,
+   -27
+  ],
+  [
+   8,
+   -16
+  ],
+  [
+   9,
+   5
+  ],
+  [
+   10,
+   98
+  ],
+  [
+   11,
+   98
+  ],
+  [
+   12,
+   71
+  ],
+  [
+   13,
+   11
+  ],
+  [
+   14,
+   16
+  ],
+  [
+   15,
+   19
+  ],
+  [
+   16,
+   35
+  ],
+  [
+   17,
+   46
+  ],
+  [
+   18,
+   54
+  ],
+  [
+   19,
+   43
+  ],
+  [
+   20,
+   27
+  ],
+  [
+   21,
+   16
+  ],
+  [
+   22,
+   0
+  ],
+  [
+   23,
+   0
+  ],
+  [
+   24,
+   16
+  ],
+  [
+   25,
+   27
+  ],
+  [
+   26,
+   54
+  ],
+  [
+   27,
+   60
+  ],
+  [
+   28,
+   65
+  ],
+  [
+   29,
+   33
+  ],
+  [
+   30,
+   11
+  ],
+  [
+   31,
+   -16
+  ],
+  [
+   32,
+   -11
+  ],
+  [
+   33,
+   0
+  ],
+  [
+   34,
+   30
+  ],
+  [
+   35,
+   90
+  ],
+  [
+   36,
+   95
+  ],
+  [
+   37,
+   79
+  ],
+  [
+   38,
+   41
+  ],
+  [
+   39,
+   79
+  ],
+  [
+   40,
+   71
+  ],
+  [
+   41,
+   27
+  ],
+  [
+   42,
+   5
+  ],
+  [
+   43,
+   38
+  ],
+  [
+   44,
+   76
+  ],
+  [
+   45,
+   43
+  ],
+  [
+   45.5,
+   62
+  ],
+  [
+   46,
+   -5
+  ],
+  [
+   47,
+   -3
+  ],
+  [
+   48,
+   -3
+  ],
+  [
+   49,
+   3
+  ],
+  [
+   50,
+   16
+  ],
+  [
+   51,
+   38
+  ],
+  [
+   52,
+   49
+  ],
+  [
+   53,
+   100
+  ],
+  [
+   54,
+   81
+  ],
+  [
+   55,
+   71
+  ],
+  [
+   56,
+   5
+  ],
+  [
+   57,
+   81
+  ],
+  [
+   58,
+   81
+  ],
+  [
+   59,
+   100
+  ],
+  [
+   60,
+   38
+  ],
+  [
+   61,
+   92
+  ],
+  [
+   62,
+   60
+  ],
+  [
+   63,
+   43
+  ],
+  [
+   64,
+   22
+  ],
+  [
+   65,
+   27
+  ],
+  [
+   66,
+   38
+  ],
+  [
+   67,
+   27
+  ],
+  [
+   68,
+   27
+  ],
+  [
+   69,
+   76
+  ],
+  [
+   70,
+   87
+  ],
+  [
+   71,
+   100
+  ],
+  [
+   72,
+   100
+  ],
+  [
+   73,
+   87
+  ],
+  [
+   74,
+   52
+  ],
+  [
+   75,
+   30
+  ],
+  [
+   76,
+   35
+  ],
+  [
+   77,
+   16
+  ],
+  [
+   78,
+   33
+  ],
+  [
+   79,
+   54
+  ],
+  [
+   80,
+   43
+  ],
+  [
+   81,
+   27
+  ],
+  [
+   82,
+   0
+  ],
+  [
+   83,
+   38
+  ],
+  [
+   84,
+   43
+  ],
+  [
+   85,
+   65
+  ],
+  [
+   86,
+   43
+  ],
+  [
+   87,
+   30
+  ],
+  [
+   88,
+   14
+  ],
+  [
+   89,
+   30
+  ],
+  [
+   90,
+   57
+  ],
+  [
+   90.5,
+   -3
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "goal",
+   "min": 5,
+   "add": null,
+   "team": "VIL",
+   "player": "Tajon Buchanan",
+   "ownGoal": false,
+   "score": [
+    0,
+    1
+   ],
+   "assist": null
+  },
+  {
+   "type": "goal",
+   "min": 7,
+   "add": null,
+   "team": "VIL",
+   "player": "Tani Oluwaseyi",
+   "ownGoal": false,
+   "score": [
+    0,
+    2
+   ],
+   "assist": "assist by Alberto Moleiro"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 11,
+   "add": null,
+   "team": "VIL",
+   "player": "Pape Gueye",
+   "reason": "Foul"
+  },
+  {
+   "type": "missedPen",
+   "min": 23,
+   "team": "BAR",
+   "player": "Lamine Yamal"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 32,
+   "add": null,
+   "team": "VIL",
+   "player": "Alberto Moleiro",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 3
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 47,
+   "add": null,
+   "team": "VIL",
+   "player": "Pau Navarro",
+   "reason": "Foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 49,
+   "add": null,
+   "team": "VIL",
+   "player": "Alex Freeman",
+   "reason": "Foul"
+  },
+  {
+   "type": "goal",
+   "min": 57,
+   "add": null,
+   "team": "BAR",
+   "player": "Gerard Martín",
+   "ownGoal": false,
+   "score": [
+    1,
+    2
+   ],
+   "assist": "assist by Pedri"
+  },
+  {
+   "type": "goal",
+   "min": 61,
+   "add": null,
+   "team": "BAR",
+   "player": "Fermín López",
+   "ownGoal": false,
+   "score": [
+    2,
+    2
+   ],
+   "assist": "assist by Lamine Yamal"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 63,
+   "add": null,
+   "team": "VIL",
+   "player": "Carlos Romero",
+   "reason": "Foul"
+  },
+  {
+   "type": "goal",
+   "min": 67,
+   "add": null,
+   "team": "BAR",
+   "player": "Pau Navarro",
+   "ownGoal": true,
+   "score": [
+    3,
+    2
+   ],
+   "assist": null
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 74,
+   "add": null,
+   "team": "BAR",
+   "player": "Hans-Dieter Flick",
+   "reason": "Dissent"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 76,
+   "add": null,
+   "team": "BAR",
+   "player": "Raphinha",
+   "reason": "Foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 80,
+   "add": null,
+   "team": "BAR",
+   "player": "Marc Bernal",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 5
+  },
+  {
+   "type": "card",
+   "card": "YellowRed",
+   "min": 90,
+   "add": 3,
+   "team": "VIL",
+   "player": "Pau Navarro",
+   "reason": "Persistent infringement"
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    70,
+    30
+   ],
+   "expected_goals": [
+    "3.27",
+    "0.16"
+   ],
+   "total_shots": [
+    30,
+    4
+   ],
+   "ShotsOnTarget": [
+    9,
+    2
+   ],
+   "touches_opp_box": [
+    51,
+    4
+   ],
+   "big_chance": [
+    8,
+    1
+   ],
+   "big_chance_missed_title": [
+    6,
+    0
+   ],
+   "accurate_passes": [
+    "550 (89%)",
+    "199 (72%)"
+   ],
+   "yellow_cards": [
+    2,
+    4
+   ],
+   "corners": [
+    10,
+    0
+   ],
+   "ShotsOffTarget": [
+    11,
+    2
+   ],
+   "blocked_shots": [
+    10,
+    0
+   ],
+   "shots_woodwork": [
+    2,
+    0
+   ],
+   "shots_inside_box": [
+    18,
+    1
+   ],
+   "shots_outside_box": [
+    12,
+    3
+   ],
+   "expected_goals_open_play": [
+    "1.61",
+    "0.12"
+   ],
+   "expected_goals_set_play": [
+    "0.88",
+    "0.03"
+   ],
+   "expected_goals_non_penalty": [
+    "2.48",
+    "0.16"
+   ],
+   "expected_goals_on_target": [
+    "2.17",
+    "0.13"
+   ],
+   "passes": [
+    621,
+    276
+   ],
+   "own_half_passes": [
+    247,
+    138
+   ],
+   "opposition_half_passes": [
+    303,
+    61
+   ],
+   "long_balls_accurate": [
+    "9 (39%)",
+    "11 (22%)"
+   ],
+   "accurate_crosses": [
+    "5 (22%)",
+    "1 (50%)"
+   ],
+   "player_throws": [
+    16,
+    12
+   ],
+   "Offsides": [
+    2,
+    2
+   ],
+   "matchstats.headers.tackles": [
+    17,
+    22
+   ],
+   "interceptions": [
+    3,
+    5
+   ],
+   "shot_blocks": [
+    0,
+    10
+   ],
+   "clearances": [
+    9,
+    37
+   ],
+   "keeper_saves": [
+    0,
+    7
+   ],
+   "duel_won": [
+    51,
+    38
+   ],
+   "ground_duels_won": [
+    "46 (55%)",
+    "37 (45%)"
+   ],
+   "aerials_won": [
+    "5 (83%)",
+    "1 (17%)"
+   ],
+   "dribbles_succeeded": [
+    "11 (46%)",
+    "4 (31%)"
+   ],
+   "red_cards": [
+    0,
+    1
+   ],
+   "fouls": [
+    11,
+    19
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    74,
+    26
+   ],
+   "expected_goals": [
+    "2.08",
+    "0.13"
+   ],
+   "total_shots": [
+    15,
+    3
+   ],
+   "ShotsOnTarget": [
+    3,
+    2
+   ],
+   "touches_opp_box": [
+    20,
+    2
+   ],
+   "big_chance": [
+    3,
+    1
+   ],
+   "big_chance_missed_title": [
+    3,
+    0
+   ],
+   "accurate_passes": [
+    "245 (86%)",
+    "66 (65%)"
+   ],
+   "yellow_cards": [
+    0,
+    2
+   ],
+   "corners": [
+    6,
+    0
+   ],
+   "ShotsOffTarget": [
+    5,
+    1
+   ],
+   "blocked_shots": [
+    7,
+    0
+   ],
+   "shots_woodwork": [
+    1,
+    0
+   ],
+   "shots_inside_box": [
+    10,
+    1
+   ],
+   "shots_outside_box": [
+    5,
+    2
+   ],
+   "expected_goals_open_play": [
+    "0.80",
+    "0.10"
+   ],
+   "expected_goals_set_play": [
+    "0.49",
+    "0.03"
+   ],
+   "expected_goals_non_penalty": [
+    "1.29",
+    "0.13"
+   ],
+   "expected_goals_on_target": [
+    "0.29",
+    "0.13"
+   ],
+   "passes": [
+    284,
+    101
+   ],
+   "own_half_passes": [
+    102,
+    48
+   ],
+   "opposition_half_passes": [
+    143,
+    18
+   ],
+   "long_balls_accurate": [
+    "2 (25%)",
+    "5 (20%)"
+   ],
+   "accurate_crosses": [
+    "2 (17%)",
+    "1 (50%)"
+   ],
+   "player_throws": [
+    8,
+    4
+   ],
+   "Offsides": [
+    1,
+    2
+   ],
+   "matchstats.headers.tackles": [
+    7,
+    9
+   ],
+   "interceptions": [
+    0,
+    3
+   ],
+   "shot_blocks": [
+    0,
+    7
+   ],
+   "clearances": [
+    3,
+    14
+   ],
+   "keeper_saves": [
+    0,
+    3
+   ],
+   "duel_won": [
+    28,
+    16
+   ],
+   "ground_duels_won": [
+    "24 (62%)",
+    "15 (38%)"
+   ],
+   "aerials_won": [
+    "4 (80%)",
+    "1 (20%)"
+   ],
+   "dribbles_succeeded": [
+    "8 (57%)",
+    "1 (25%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    5,
+    10
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    66,
+    34
+   ],
+   "expected_goals": [
+    "1.19",
+    "0.02"
+   ],
+   "total_shots": [
+    15,
+    1
+   ],
+   "ShotsOnTarget": [
+    6,
+    0
+   ],
+   "touches_opp_box": [
+    31,
+    2
+   ],
+   "big_chance": [
+    5,
+    0
+   ],
+   "big_chance_missed_title": [
+    3,
+    0
+   ],
+   "accurate_passes": [
+    "305 (91%)",
+    "133 (76%)"
+   ],
+   "yellow_cards": [
+    2,
+    2
+   ],
+   "corners": [
+    4,
+    0
+   ],
+   "ShotsOffTarget": [
+    6,
+    1
+   ],
+   "blocked_shots": [
+    3,
+    0
+   ],
+   "shots_woodwork": [
+    1,
+    0
+   ],
+   "shots_inside_box": [
+    8,
+    0
+   ],
+   "shots_outside_box": [
+    7,
+    1
+   ],
+   "expected_goals_open_play": [
+    "0.80",
+    "0.02"
+   ],
+   "expected_goals_set_play": [
+    "0.39",
+    "0.00"
+   ],
+   "expected_goals_non_penalty": [
+    "1.19",
+    "0.02"
+   ],
+   "expected_goals_on_target": [
+    "1.88",
+    "0.00"
+   ],
+   "passes": [
+    337,
+    175
+   ],
+   "own_half_passes": [
+    145,
+    90
+   ],
+   "opposition_half_passes": [
+    160,
+    43
+   ],
+   "long_balls_accurate": [
+    "7 (47%)",
+    "6 (24%)"
+   ],
+   "accurate_crosses": [
+    "3 (27%)",
+    0
+   ],
+   "player_throws": [
+    8,
+    8
+   ],
+   "Offsides": [
+    1,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    10,
+    13
+   ],
+   "interceptions": [
+    3,
+    2
+   ],
+   "shot_blocks": [
+    0,
+    3
+   ],
+   "clearances": [
+    6,
+    23
+   ],
+   "keeper_saves": [
+    0,
+    4
+   ],
+   "duel_won": [
+    23,
+    22
+   ],
+   "ground_duels_won": [
+    0,
+    0
+   ],
+   "aerials_won": [
+    "1 (100%)",
+    "0 (0%)"
+   ],
+   "dribbles_succeeded": [
+    "3 (30%)",
+    "3 (33%)"
+   ],
+   "red_cards": [
+    0,
+    1
+   ],
+   "fouls": [
+    6,
+    9
+   ]
+  }
+ },
+ "keepers": {
+  "1167220": "Joan García",
+  "151001": "Péter Gulácsi"
+ }
+}
