@@ -21,3 +21,7 @@ python -I render_par.py frames 5 1245               # 5 parallel workers -> MP4 
 ```
 
 `index.html` is deterministic per frame: `frame(f)` draws frame `f`. You can also open it directly in a browser.
+
+## Other reels
+
+- [`reel_liv_mun/`](reel_liv_mun/): Liverpool 4-0 Man United (PL MD11, 22 Nov 2026, Anfield)

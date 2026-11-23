@@ -1,0 +1,1484 @@
+{
+ "source": "FotMob match 5795521 (Opta data)",
+ "match": "Liverpool 4-0 Manchester United, Premier League round 11, Sun, Nov 22, 2026, 16:30 UTC",
+ "home": "LIV",
+ "away": "MUN",
+ "shots": [
+  {
+   "team": "LIV",
+   "min": 2,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0767,
+   "x": 87.31911764680001,
+   "y": 23.158471341899997,
+   "player": "Bradley Barcola",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "MUN",
+   "min": 5,
+   "add": null,
+   "type": "Miss",
+   "situation": "FreeKick",
+   "shotType": "RightFoot",
+   "xg": 0.0351,
+   "x": 75.277184468,
+   "y": 31.636249999999997,
+   "player": "Bruno Fernandes",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 6,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.3011,
+   "x": 95.2543859636,
+   "y": 27.446428571,
+   "player": "Alexander Isak",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 7,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0201,
+   "x": 94.4824561388,
+   "y": 31.4075,
+   "player": "Virgil van Dijk",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 10,
+   "add": null,
+   "type": "Goal",
+   "situation": "FreeKick",
+   "shotType": "RightFoot",
+   "xg": 0.1681,
+   "x": 87.1044117644,
+   "y": 31.78875,
+   "player": "Dominik Szoboszlai",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MUN",
+   "min": 12,
+   "add": null,
+   "type": "Miss",
+   "situation": "IndividualPlay",
+   "shotType": "RightFoot",
+   "xg": 0.012,
+   "x": 81.0208737872,
+   "y": 41.31,
+   "player": "Kobbie Mainoo",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 13,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.3189,
+   "x": 99.8793103452,
+   "y": 34.68625,
+   "player": "Florian Wirtz",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 16,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.186,
+   "x": 90.5,
+   "y": 35.6775,
+   "player": "Alexander Isak",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 21,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1742,
+   "x": 98.24561403470001,
+   "y": 34.915000000000006,
+   "player": "Alexander Isak",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "MUN",
+   "min": 29,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0546,
+   "x": 80.68300970960001,
+   "y": 31.026249999999997,
+   "player": "Bruno Fernandes",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 34,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.026,
+   "x": 77.0791262152,
+   "y": 32.0175,
+   "player": "Rio Ngumoha",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MUN",
+   "min": 35,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0243,
+   "x": 78.655825244,
+   "y": 29.547619046,
+   "player": "Youri Tielemans",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 39,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0886,
+   "x": 86.889705882,
+   "y": 38.620476192,
+   "player": "Alexis Mac Allister",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 40,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.2085,
+   "x": 100.06896551759999,
+   "y": 30.492499999999996,
+   "player": "Alexander Isak",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 45,
+   "add": 0,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0484,
+   "x": 91,
+   "y": 43.16,
+   "player": "Dominik Szoboszlai",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 45,
+   "add": 0,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0213,
+   "x": 93.6,
+   "y": 45.1217834353,
+   "player": "Rio Ngumoha",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 46,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0176,
+   "x": 74.0383495168,
+   "y": 37.12625,
+   "player": "Dominik Szoboszlai",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 48,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0332,
+   "x": 83.6111650488,
+   "y": 42.235,
+   "player": "Dominik Szoboszlai",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MUN",
+   "min": 51,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.0383,
+   "x": 78.9936893216,
+   "y": 40.30142857199999,
+   "player": "Joshua Zirkzee",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "MUN",
+   "min": 52,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0164,
+   "x": 96.2192982446,
+   "y": 27.278333333000003,
+   "player": "Matthijs de Ligt",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 61,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0329,
+   "x": 81.0208737872,
+   "y": 31.1025,
+   "player": "Alexis Mac Allister",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 62,
+   "add": null,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.2118,
+   "x": 96.7017543851,
+   "y": 23.2985987305,
+   "player": "Alexander Isak",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 64,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0317,
+   "x": 90.7,
+   "y": 47.9243312073,
+   "player": "Rio Ngumoha",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 64,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.2353,
+   "x": 96.8947368413,
+   "y": 40.133333334,
+   "player": "Bradley Barcola",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 66,
+   "add": null,
+   "type": "Goal",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.6291,
+   "x": 97.2807017537,
+   "y": 36.8975,
+   "player": "Rio Ngumoha",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 68,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.3908,
+   "x": 96.3157894727,
+   "y": 30.492499999999996,
+   "player": "Bradley Barcola",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 75,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.235,
+   "x": 92.8,
+   "y": 37.78,
+   "player": "Alexander Isak",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 75,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0245,
+   "x": 85.3867647052,
+   "y": 24.699872616500002,
+   "player": "Dominik Szoboszlai",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 76,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.1984,
+   "x": 98.535087719,
+   "y": 31.78875,
+   "player": "Virgil van Dijk",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 77,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.048,
+   "x": 90,
+   "y": 32.09375,
+   "player": "Trey Nyoni",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MUN",
+   "min": 79,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.1162,
+   "x": 97.6666666661,
+   "y": 29.295476189000002,
+   "player": "Joshua Zirkzee",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MUN",
+   "min": 79,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0203,
+   "x": 82.93543689360001,
+   "y": 47.50394904150001,
+   "player": "Bruno Fernandes",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 82,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.532,
+   "x": 96.2192982446,
+   "y": 39.713095239,
+   "player": "Víctor Muñoz",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 85,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.0258,
+   "x": 76.1781553416,
+   "y": 37.05,
+   "player": "Dominik Szoboszlai",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 89,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0379,
+   "x": 91.9,
+   "y": 42.8709375,
+   "player": "Florian Wirtz",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "LIV",
+   "min": 90,
+   "add": 1,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0266,
+   "x": 90.3,
+   "y": 43.3001273835,
+   "player": "Dominik Szoboszlai",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "MUN",
+   "min": 90,
+   "add": 2,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.301,
+   "x": 93.6,
+   "y": 25.186875,
+   "player": "Bruno Fernandes",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MUN",
+   "min": 90,
+   "add": 3,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0335,
+   "x": 95.35087719170001,
+   "y": 32.24625,
+   "player": "Harry Maguire",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   2,
+   5
+  ],
+  [
+   3,
+   16
+  ],
+  [
+   4,
+   11
+  ],
+  [
+   5,
+   5
+  ],
+  [
+   6,
+   49
+  ],
+  [
+   7,
+   54
+  ],
+  [
+   8,
+   62
+  ],
+  [
+   9,
+   8
+  ],
+  [
+   10,
+   8
+  ],
+  [
+   11,
+   -11
+  ],
+  [
+   12,
+   0
+  ],
+  [
+   13,
+   100
+  ],
+  [
+   14,
+   100
+  ],
+  [
+   15,
+   100
+  ],
+  [
+   16,
+   41
+  ],
+  [
+   17,
+   52
+  ],
+  [
+   18,
+   43
+  ],
+  [
+   19,
+   5
+  ],
+  [
+   20,
+   5
+  ],
+  [
+   21,
+   100
+  ],
+  [
+   22,
+   100
+  ],
+  [
+   23,
+   100
+  ],
+  [
+   24,
+   43
+  ],
+  [
+   25,
+   54
+  ],
+  [
+   26,
+   54
+  ],
+  [
+   27,
+   16
+  ],
+  [
+   28,
+   19
+  ],
+  [
+   29,
+   -19
+  ],
+  [
+   30,
+   8
+  ],
+  [
+   31,
+   11
+  ],
+  [
+   32,
+   71
+  ],
+  [
+   33,
+   87
+  ],
+  [
+   34,
+   81
+  ],
+  [
+   35,
+   33
+  ],
+  [
+   36,
+   43
+  ],
+  [
+   37,
+   11
+  ],
+  [
+   38,
+   43
+  ],
+  [
+   39,
+   41
+  ],
+  [
+   40,
+   100
+  ],
+  [
+   41,
+   100
+  ],
+  [
+   42,
+   100
+  ],
+  [
+   43,
+   -16
+  ],
+  [
+   44,
+   16
+  ],
+  [
+   45,
+   92
+  ],
+  [
+   45.5,
+   60
+  ],
+  [
+   46,
+   3
+  ],
+  [
+   47,
+   8
+  ],
+  [
+   48,
+   68
+  ],
+  [
+   49,
+   76
+  ],
+  [
+   50,
+   87
+  ],
+  [
+   51,
+   33
+  ],
+  [
+   52,
+   19
+  ],
+  [
+   53,
+   16
+  ],
+  [
+   54,
+   27
+  ],
+  [
+   55,
+   35
+  ],
+  [
+   56,
+   65
+  ],
+  [
+   57,
+   49
+  ],
+  [
+   58,
+   65
+  ],
+  [
+   59,
+   92
+  ],
+  [
+   60,
+   87
+  ],
+  [
+   61,
+   81
+  ],
+  [
+   62,
+   27
+  ],
+  [
+   63,
+   33
+  ],
+  [
+   64,
+   100
+  ],
+  [
+   65,
+   87
+  ],
+  [
+   66,
+   100
+  ],
+  [
+   67,
+   100
+  ],
+  [
+   68,
+   100
+  ],
+  [
+   69,
+   41
+  ],
+  [
+   70,
+   35
+  ],
+  [
+   71,
+   -5
+  ],
+  [
+   72,
+   -5
+  ],
+  [
+   73,
+   -5
+  ],
+  [
+   74,
+   -16
+  ],
+  [
+   75,
+   16
+  ],
+  [
+   76,
+   98
+  ],
+  [
+   77,
+   100
+  ],
+  [
+   78,
+   73
+  ],
+  [
+   79,
+   30
+  ],
+  [
+   80,
+   -35
+  ],
+  [
+   81,
+   38
+  ],
+  [
+   82,
+   60
+  ],
+  [
+   83,
+   60
+  ],
+  [
+   84,
+   49
+  ],
+  [
+   85,
+   0
+  ],
+  [
+   86,
+   11
+  ],
+  [
+   87,
+   11
+  ],
+  [
+   88,
+   -38
+  ],
+  [
+   89,
+   -16
+  ],
+  [
+   90,
+   -5
+  ],
+  [
+   90.5,
+   100
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "card",
+   "card": "Red",
+   "min": 8,
+   "team": "MUN",
+   "player": "Leny Yoro",
+   "reason": "Professional foul"
+  },
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 4
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 62,
+   "team": "LIV",
+   "player": "Bradley Barcola",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 2
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    63,
+    37
+   ],
+   "expected_goals": [
+    "4.35",
+    "0.65"
+   ],
+   "total_shots": [
+    28,
+    10
+   ],
+   "ShotsOnTarget": [
+    11,
+    3
+   ],
+   "touches_opp_box": [
+    60,
+    9
+   ],
+   "big_chance": [
+    9,
+    0
+   ],
+   "big_chance_missed_title": [
+    6,
+    0
+   ],
+   "accurate_passes": [
+    "514 (88%)",
+    "261 (77%)"
+   ],
+   "yellow_cards": [
+    1,
+    0
+   ],
+   "corners": [
+    15,
+    5
+   ],
+   "ShotsOffTarget": [
+    7,
+    5
+   ],
+   "blocked_shots": [
+    10,
+    2
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    19,
+    4
+   ],
+   "shots_outside_box": [
+    9,
+    6
+   ],
+   "expected_goals_open_play": [
+    "3.94",
+    "0.55"
+   ],
+   "expected_goals_set_play": [
+    "0.41",
+    "0.10"
+   ],
+   "expected_goals_non_penalty": [
+    "4.35",
+    "0.65"
+   ],
+   "expected_goals_on_target": [
+    "3.68",
+    "0.32"
+   ],
+   "physical_metrics_distance_covered": [
+    110124,
+    101021
+   ],
+   "physical_metrics_running": [
+    21238,
+    20298
+   ],
+   "physical_metrics_sprinting": [
+    3381,
+    2487
+   ],
+   "physical_metrics_number_of_sprints": [
+    140,
+    110
+   ],
+   "passes": [
+    581,
+    341
+   ],
+   "own_half_passes": [
+    135,
+    187
+   ],
+   "opposition_half_passes": [
+    379,
+    74
+   ],
+   "long_balls_accurate": [
+    "18 (55%)",
+    "16 (31%)"
+   ],
+   "accurate_crosses": [
+    "3 (13%)",
+    "3 (25%)"
+   ],
+   "player_throws": [
+    15,
+    13
+   ],
+   "Offsides": [
+    2,
+    2
+   ],
+   "matchstats.headers.tackles": [
+    12,
+    18
+   ],
+   "interceptions": [
+    9,
+    9
+   ],
+   "shot_blocks": [
+    2,
+    10
+   ],
+   "clearances": [
+    14,
+    34
+   ],
+   "keeper_saves": [
+    4,
+    7
+   ],
+   "duel_won": [
+    45,
+    47
+   ],
+   "ground_duels_won": [
+    "30 (43%)",
+    "39 (57%)"
+   ],
+   "aerials_won": [
+    "15 (65%)",
+    "8 (35%)"
+   ],
+   "dribbles_succeeded": [
+    "11 (42%)",
+    "7 (47%)"
+   ],
+   "red_cards": [
+    0,
+    1
+   ],
+   "fouls": [
+    15,
+    7
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    60,
+    40
+   ],
+   "expected_goals": [
+    "1.64",
+    "0.13"
+   ],
+   "total_shots": [
+    12,
+    4
+   ],
+   "ShotsOnTarget": [
+    6,
+    1
+   ],
+   "touches_opp_box": [
+    26,
+    4
+   ],
+   "big_chance": [
+    2,
+    0
+   ],
+   "big_chance_missed_title": [
+    1,
+    0
+   ],
+   "accurate_passes": [
+    "257 (90%)",
+    "148 (80%)"
+   ],
+   "yellow_cards": [
+    0,
+    0
+   ],
+   "corners": [
+    6,
+    3
+   ],
+   "ShotsOffTarget": [
+    2,
+    2
+   ],
+   "blocked_shots": [
+    4,
+    1
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    8,
+    0
+   ],
+   "shots_outside_box": [
+    4,
+    4
+   ],
+   "expected_goals_open_play": [
+    "1.43",
+    "0.08"
+   ],
+   "expected_goals_set_play": [
+    "0.21",
+    "0.05"
+   ],
+   "expected_goals_non_penalty": [
+    "1.64",
+    "0.13"
+   ],
+   "expected_goals_on_target": [
+    "1.90",
+    "0.09"
+   ],
+   "physical_metrics_distance_covered": [
+    56828,
+    52874
+   ],
+   "physical_metrics_running": [
+    11220,
+    10625
+   ],
+   "physical_metrics_sprinting": [
+    1732,
+    1352
+   ],
+   "physical_metrics_number_of_sprints": [
+    74,
+    56
+   ],
+   "passes": [
+    285,
+    185
+   ],
+   "own_half_passes": [
+    63,
+    96
+   ],
+   "opposition_half_passes": [
+    194,
+    52
+   ],
+   "long_balls_accurate": [
+    "8 (57%)",
+    "7 (30%)"
+   ],
+   "accurate_crosses": [
+    "1 (14%)",
+    "0 (0%)"
+   ],
+   "player_throws": [
+    7,
+    8
+   ],
+   "Offsides": [
+    1,
+    2
+   ],
+   "matchstats.headers.tackles": [
+    6,
+    11
+   ],
+   "interceptions": [
+    5,
+    3
+   ],
+   "shot_blocks": [
+    1,
+    4
+   ],
+   "clearances": [
+    10,
+    14
+   ],
+   "keeper_saves": [
+    1,
+    4
+   ],
+   "duel_won": [
+    24,
+    25
+   ],
+   "ground_duels_won": [
+    "14 (37%)",
+    "24 (63%)"
+   ],
+   "aerials_won": [
+    "10 (91%)",
+    "1 (9%)"
+   ],
+   "dribbles_succeeded": [
+    "6 (40%)",
+    "4 (57%)"
+   ],
+   "red_cards": [
+    0,
+    1
+   ],
+   "fouls": [
+    9,
+    2
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    66,
+    34
+   ],
+   "expected_goals": [
+    "2.71",
+    "0.53"
+   ],
+   "total_shots": [
+    16,
+    6
+   ],
+   "ShotsOnTarget": [
+    5,
+    2
+   ],
+   "touches_opp_box": [
+    34,
+    5
+   ],
+   "big_chance": [
+    7,
+    0
+   ],
+   "big_chance_missed_title": [
+    5,
+    0
+   ],
+   "accurate_passes": [
+    "257 (87%)",
+    "113 (72%)"
+   ],
+   "yellow_cards": [
+    1,
+    0
+   ],
+   "corners": [
+    9,
+    2
+   ],
+   "ShotsOffTarget": [
+    5,
+    3
+   ],
+   "blocked_shots": [
+    6,
+    1
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    11,
+    4
+   ],
+   "shots_outside_box": [
+    5,
+    2
+   ],
+   "expected_goals_open_play": [
+    "2.51",
+    "0.48"
+   ],
+   "expected_goals_set_play": [
+    "0.20",
+    "0.05"
+   ],
+   "expected_goals_non_penalty": [
+    "2.71",
+    "0.53"
+   ],
+   "expected_goals_on_target": [
+    "1.78",
+    "0.23"
+   ],
+   "physical_metrics_distance_covered": [
+    53294,
+    48147
+   ],
+   "physical_metrics_running": [
+    10018,
+    9672
+   ],
+   "physical_metrics_sprinting": [
+    1649,
+    1134
+   ],
+   "physical_metrics_number_of_sprints": [
+    66,
+    54
+   ],
+   "passes": [
+    296,
+    156
+   ],
+   "own_half_passes": [
+    72,
+    91
+   ],
+   "opposition_half_passes": [
+    185,
+    22
+   ],
+   "long_balls_accurate": [
+    "10 (53%)",
+    "9 (31%)"
+   ],
+   "accurate_crosses": [
+    "2 (13%)",
+    "3 (100%)"
+   ],
+   "player_throws": [
+    8,
+    5
+   ],
+   "Offsides": [
+    1,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    6,
+    7
+   ],
+   "interceptions": [
+    4,
+    6
+   ],
+   "shot_blocks": [
+    1,
+    6
+   ],
+   "clearances": [
+    4,
+    20
+   ],
+   "keeper_saves": [
+    3,
+    3
+   ],
+   "duel_won": [
+    21,
+    22
+   ],
+   "ground_duels_won": [
+    "16 (52%)",
+    "15 (48%)"
+   ],
+   "aerials_won": [
+    "5 (42%)",
+    "7 (58%)"
+   ],
+   "dribbles_succeeded": [
+    "5 (45%)",
+    "3 (38%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    6,
+    5
+   ]
+  }
+ }
+}
