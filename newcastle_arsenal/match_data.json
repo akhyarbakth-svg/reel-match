@@ -1,0 +1,1346 @@
+{
+ "source": "FotMob match 5795523 (Opta data)",
+ "match": "Newcastle United 2-2 Arsenal, Premier League round 11, Sat, Nov 21, 2026, 17:30 UTC",
+ "home": "NEW",
+ "away": "ARS",
+ "shots": [
+  {
+   "team": "NEW",
+   "min": 3,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0157,
+   "x": 57.3799999986,
+   "y": 25.418125,
+   "player": "Jacob Murphy",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999508737
+  },
+  {
+   "team": "ARS",
+   "min": 6,
+   "add": null,
+   "type": "Post",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0318,
+   "x": 93.9,
+   "y": 18.604331212399998,
+   "player": "Noni Madueke",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999511943
+  },
+  {
+   "team": "NEW",
+   "min": 12,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0192,
+   "x": 80.345145632,
+   "y": 23.158471341899997,
+   "player": "Jacob Murphy",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false,
+   "id": 2999519553
+  },
+  {
+   "team": "ARS",
+   "min": 22,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.058,
+   "x": 91,
+   "y": 43.720509549300004,
+   "player": "Kai Havertz",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999531779
+  },
+  {
+   "team": "ARS",
+   "min": 26,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0392,
+   "x": 92.6,
+   "y": 21.687133761599995,
+   "player": "Noni Madueke",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999535743
+  },
+  {
+   "team": "ARS",
+   "min": 28,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.4286,
+   "x": 100.3534482762,
+   "y": 34.68625,
+   "player": "Bruno Guimarães",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999537179
+  },
+  {
+   "team": "ARS",
+   "min": 29,
+   "add": null,
+   "type": "Miss",
+   "situation": "SetPiece",
+   "shotType": "RightFoot",
+   "xg": 0.0218,
+   "x": 76.5160194192,
+   "y": 33.00875,
+   "player": "Declan Rice",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999538571
+  },
+  {
+   "team": "ARS",
+   "min": 33,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.4897,
+   "x": 94.09649122639999,
+   "y": 37.672,
+   "player": "Eberechi Eze",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999542361
+  },
+  {
+   "team": "ARS",
+   "min": 38,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0447,
+   "x": 81.35873786479999,
+   "y": 41.057857143,
+   "player": "Noni Madueke",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999548385
+  },
+  {
+   "team": "ARS",
+   "min": 39,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0425,
+   "x": 92.3,
+   "y": 22.107515927399998,
+   "player": "Riccardo Calafiori",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999549521
+  },
+  {
+   "team": "NEW",
+   "min": 42,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0387,
+   "x": 87.6411764704,
+   "y": 45.6122292954,
+   "player": "Harvey Barnes",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false,
+   "id": 2999552167
+  },
+  {
+   "team": "ARS",
+   "min": 43,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0762,
+   "x": 100.732758621,
+   "y": 24.419617839300003,
+   "player": "Noni Madueke",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999553881
+  },
+  {
+   "team": "ARS",
+   "min": 45,
+   "add": 0,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1224,
+   "x": 96.2192982446,
+   "y": 33.77125,
+   "player": "Noni Madueke",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false,
+   "id": 2999555391
+  },
+  {
+   "team": "ARS",
+   "min": 45,
+   "add": 2,
+   "type": "AttemptSaved",
+   "situation": "FreeKick",
+   "shotType": "RightFoot",
+   "xg": 0.0366,
+   "x": 81.471359224,
+   "y": 49.0453503161,
+   "player": "Eberechi Eze",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999557535
+  },
+  {
+   "team": "NEW",
+   "min": 49,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.2459,
+   "x": 93.5,
+   "y": 37.05,
+   "player": "Harvey Barnes",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999575939
+  },
+  {
+   "team": "NEW",
+   "min": 52,
+   "add": null,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.0479,
+   "x": 83.94902912639999,
+   "y": 45.8924840726,
+   "player": "Joseph Willock",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999577961
+  },
+  {
+   "team": "NEW",
+   "min": 60,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0286,
+   "x": 77.8674757296,
+   "y": 29.715714284,
+   "player": "Lewis Miley",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999586029
+  },
+  {
+   "team": "NEW",
+   "min": 62,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0899,
+   "x": 98.6315789471,
+   "y": 38.284285716,
+   "player": "Daniel Burn",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false,
+   "id": 2999587613
+  },
+  {
+   "team": "NEW",
+   "min": 62,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.6642,
+   "x": 103.7672413794,
+   "y": 34.915000000000006,
+   "player": "Joseph Willock",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999587637
+  },
+  {
+   "team": "NEW",
+   "min": 62,
+   "add": null,
+   "type": "Goal",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.285,
+   "x": 104.2413793104,
+   "y": 37.27875,
+   "player": "Malick Thiaw",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999587663
+  },
+  {
+   "team": "NEW",
+   "min": 65,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0148,
+   "x": 98.6315789471,
+   "y": 50.026242036300005,
+   "player": "Joseph Willock",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999590205
+  },
+  {
+   "team": "NEW",
+   "min": 73,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.1469,
+   "x": 84.286893204,
+   "y": 31.4075,
+   "player": "Joseph Willock",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false,
+   "id": 2999596261
+  },
+  {
+   "team": "ARS",
+   "min": 78,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0761,
+   "x": 91.1,
+   "y": 34.7625,
+   "player": "Noni Madueke",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999600077
+  },
+  {
+   "team": "NEW",
+   "min": 90,
+   "add": 7,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.1124,
+   "x": 87.963235294,
+   "y": 42.2928125,
+   "player": "Jacob Ramsey",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999614385
+  },
+  {
+   "team": "ARS",
+   "min": 90,
+   "add": 8,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.019,
+   "x": 90.1,
+   "y": 48.6249681503,
+   "player": "Viktor Gyökeres",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false,
+   "id": 2999614943
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   -5
+  ],
+  [
+   2,
+   -16
+  ],
+  [
+   3,
+   -5
+  ],
+  [
+   4,
+   -5
+  ],
+  [
+   5,
+   19
+  ],
+  [
+   6,
+   -14
+  ],
+  [
+   7,
+   -3
+  ],
+  [
+   8,
+   -27
+  ],
+  [
+   9,
+   -11
+  ],
+  [
+   10,
+   -16
+  ],
+  [
+   11,
+   -33
+  ],
+  [
+   12,
+   -16
+  ],
+  [
+   13,
+   -22
+  ],
+  [
+   14,
+   14
+  ],
+  [
+   15,
+   -11
+  ],
+  [
+   16,
+   -22
+  ],
+  [
+   17,
+   -30
+  ],
+  [
+   18,
+   -16
+  ],
+  [
+   19,
+   22
+  ],
+  [
+   20,
+   22
+  ],
+  [
+   21,
+   16
+  ],
+  [
+   22,
+   -27
+  ],
+  [
+   23,
+   -27
+  ],
+  [
+   24,
+   -27
+  ],
+  [
+   25,
+   -27
+  ],
+  [
+   26,
+   -38
+  ],
+  [
+   27,
+   -38
+  ],
+  [
+   28,
+   -100
+  ],
+  [
+   29,
+   -95
+  ],
+  [
+   30,
+   -95
+  ],
+  [
+   31,
+   -16
+  ],
+  [
+   32,
+   -16
+  ],
+  [
+   33,
+   -60
+  ],
+  [
+   34,
+   -54
+  ],
+  [
+   35,
+   -54
+  ],
+  [
+   36,
+   -11
+  ],
+  [
+   37,
+   -16
+  ],
+  [
+   38,
+   -27
+  ],
+  [
+   39,
+   -43
+  ],
+  [
+   40,
+   -38
+  ],
+  [
+   41,
+   -33
+  ],
+  [
+   42,
+   0
+  ],
+  [
+   43,
+   -19
+  ],
+  [
+   44,
+   -14
+  ],
+  [
+   45,
+   -76
+  ],
+  [
+   45.5,
+   -54
+  ],
+  [
+   46,
+   54
+  ],
+  [
+   47,
+   54
+  ],
+  [
+   48,
+   54
+  ],
+  [
+   49,
+   54
+  ],
+  [
+   50,
+   54
+  ],
+  [
+   51,
+   49
+  ],
+  [
+   52,
+   5
+  ],
+  [
+   53,
+   30
+  ],
+  [
+   54,
+   41
+  ],
+  [
+   55,
+   3
+  ],
+  [
+   56,
+   -22
+  ],
+  [
+   57,
+   -27
+  ],
+  [
+   58,
+   -5
+  ],
+  [
+   59,
+   5
+  ],
+  [
+   60,
+   22
+  ],
+  [
+   61,
+   38
+  ],
+  [
+   62,
+   87
+  ],
+  [
+   63,
+   71
+  ],
+  [
+   64,
+   60
+  ],
+  [
+   65,
+   22
+  ],
+  [
+   66,
+   22
+  ],
+  [
+   67,
+   22
+  ],
+  [
+   68,
+   0
+  ],
+  [
+   69,
+   0
+  ],
+  [
+   70,
+   0
+  ],
+  [
+   71,
+   0
+  ],
+  [
+   72,
+   -22
+  ],
+  [
+   73,
+   -11
+  ],
+  [
+   74,
+   -11
+  ],
+  [
+   75,
+   60
+  ],
+  [
+   76,
+   33
+  ],
+  [
+   77,
+   33
+  ],
+  [
+   78,
+   -71
+  ],
+  [
+   79,
+   -62
+  ],
+  [
+   80,
+   -79
+  ],
+  [
+   81,
+   -24
+  ],
+  [
+   82,
+   -24
+  ],
+  [
+   83,
+   -8
+  ],
+  [
+   84,
+   -19
+  ],
+  [
+   85,
+   5
+  ],
+  [
+   86,
+   11
+  ],
+  [
+   87,
+   -16
+  ],
+  [
+   88,
+   -43
+  ],
+  [
+   89,
+   -92
+  ],
+  [
+   90,
+   -54
+  ],
+  [
+   90.5,
+   -5
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 23,
+   "team": "NEW",
+   "player": "Amar Dedić",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 1
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 56,
+   "team": "ARS",
+   "player": "Declan Rice",
+   "reason": "Foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 58,
+   "team": "NEW",
+   "player": "Harvey Barnes",
+   "reason": "Foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 81,
+   "team": "NEW",
+   "player": "Daniel Burn",
+   "reason": "Foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 81,
+   "team": "ARS",
+   "player": "Noni Madueke",
+   "reason": null
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 9
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 90,
+   "team": "ARS",
+   "player": "Viktor Gyökeres",
+   "reason": "Dissent"
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    34,
+    66
+   ],
+   "expected_goals": [
+    "1.71",
+    "1.49"
+   ],
+   "total_shots": [
+    12,
+    13
+   ],
+   "ShotsOnTarget": [
+    3,
+    4
+   ],
+   "touches_opp_box": [
+    16,
+    22
+   ],
+   "big_chance": [
+    3,
+    4
+   ],
+   "big_chance_missed_title": [
+    1,
+    3
+   ],
+   "accurate_passes": [
+    "192 (73%)",
+    "456 (86%)"
+   ],
+   "yellow_cards": [
+    3,
+    3
+   ],
+   "corners": [
+    6,
+    3
+   ],
+   "ShotsOffTarget": [
+    5,
+    8
+   ],
+   "blocked_shots": [
+    4,
+    1
+   ],
+   "shots_woodwork": [
+    1,
+    1
+   ],
+   "shots_inside_box": [
+    5,
+    10
+   ],
+   "shots_outside_box": [
+    7,
+    3
+   ],
+   "expected_goals_open_play": [
+    "0.67",
+    "1.43"
+   ],
+   "expected_goals_set_play": [
+    "1.04",
+    "0.06"
+   ],
+   "expected_goals_non_penalty": [
+    "1.71",
+    "1.49"
+   ],
+   "expected_goals_on_target": [
+    "1.29",
+    "1.42"
+   ],
+   "physical_metrics_distance_covered": [
+    121495,
+    121294
+   ],
+   "physical_metrics_running": [
+    27050,
+    27710
+   ],
+   "physical_metrics_sprinting": [
+    2859,
+    2228
+   ],
+   "physical_metrics_number_of_sprints": [
+    131,
+    111
+   ],
+   "passes": [
+    262,
+    529
+   ],
+   "own_half_passes": [
+    105,
+    232
+   ],
+   "opposition_half_passes": [
+    87,
+    224
+   ],
+   "long_balls_accurate": [
+    "21 (45%)",
+    "17 (36%)"
+   ],
+   "accurate_crosses": [
+    "2 (14%)",
+    "1 (7%)"
+   ],
+   "player_throws": [
+    16,
+    19
+   ],
+   "Offsides": [
+    3,
+    3
+   ],
+   "matchstats.headers.tackles": [
+    15,
+    9
+   ],
+   "interceptions": [
+    7,
+    6
+   ],
+   "shot_blocks": [
+    1,
+    2
+   ],
+   "clearances": [
+    23,
+    22
+   ],
+   "keeper_saves": [
+    2,
+    1
+   ],
+   "duel_won": [
+    46,
+    52
+   ],
+   "ground_duels_won": [
+    "26 (42%)",
+    "36 (58%)"
+   ],
+   "aerials_won": [
+    "20 (56%)",
+    "16 (44%)"
+   ],
+   "dribbles_succeeded": [
+    "4 (50%)",
+    "7 (47%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    20,
+    7
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    35,
+    65
+   ],
+   "expected_goals": [
+    "0.07",
+    "1.39"
+   ],
+   "total_shots": [
+    3,
+    11
+   ],
+   "ShotsOnTarget": [
+    0,
+    3
+   ],
+   "touches_opp_box": [
+    2,
+    17
+   ],
+   "big_chance": [
+    0,
+    4
+   ],
+   "big_chance_missed_title": [
+    0,
+    3
+   ],
+   "accurate_passes": [
+    "119 (76%)",
+    "248 (86%)"
+   ],
+   "yellow_cards": [
+    1,
+    0
+   ],
+   "corners": [
+    0,
+    1
+   ],
+   "ShotsOffTarget": [
+    1,
+    7
+   ],
+   "blocked_shots": [
+    2,
+    1
+   ],
+   "shots_woodwork": [
+    0,
+    1
+   ],
+   "shots_inside_box": [
+    0,
+    8
+   ],
+   "shots_outside_box": [
+    3,
+    3
+   ],
+   "expected_goals_open_play": [
+    "0.07",
+    "1.33"
+   ],
+   "expected_goals_set_play": [
+    "0.00",
+    "0.06"
+   ],
+   "expected_goals_non_penalty": [
+    "0.07",
+    "1.39"
+   ],
+   "expected_goals_on_target": [
+    "0.00",
+    "1.30"
+   ],
+   "physical_metrics_distance_covered": [
+    60732,
+    61514
+   ],
+   "physical_metrics_running": [
+    13379,
+    13723
+   ],
+   "physical_metrics_sprinting": [
+    931,
+    913
+   ],
+   "physical_metrics_number_of_sprints": [
+    42,
+    44
+   ],
+   "passes": [
+    157,
+    288
+   ],
+   "own_half_passes": [
+    77,
+    112
+   ],
+   "opposition_half_passes": [
+    42,
+    136
+   ],
+   "long_balls_accurate": [
+    "14 (48%)",
+    "9 (39%)"
+   ],
+   "accurate_crosses": [
+    0,
+    "1 (11%)"
+   ],
+   "player_throws": [
+    10,
+    10
+   ],
+   "Offsides": [
+    1,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    9,
+    5
+   ],
+   "interceptions": [
+    5,
+    1
+   ],
+   "shot_blocks": [
+    1,
+    1
+   ],
+   "clearances": [
+    13,
+    5
+   ],
+   "keeper_saves": [
+    2,
+    0
+   ],
+   "duel_won": [
+    23,
+    30
+   ],
+   "ground_duels_won": [
+    "13 (41%)",
+    "19 (59%)"
+   ],
+   "aerials_won": [
+    "10 (48%)",
+    "11 (52%)"
+   ],
+   "dribbles_succeeded": [
+    "0 (0%)",
+    "6 (50%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    8,
+    4
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    32,
+    68
+   ],
+   "expected_goals": [
+    "1.64",
+    "0.10"
+   ],
+   "total_shots": [
+    9,
+    2
+   ],
+   "ShotsOnTarget": [
+    3,
+    1
+   ],
+   "touches_opp_box": [
+    14,
+    5
+   ],
+   "big_chance": [
+    3,
+    0
+   ],
+   "big_chance_missed_title": [
+    1,
+    0
+   ],
+   "accurate_passes": [
+    "73 (70%)",
+    "208 (86%)"
+   ],
+   "yellow_cards": [
+    2,
+    3
+   ],
+   "corners": [
+    6,
+    2
+   ],
+   "ShotsOffTarget": [
+    4,
+    1
+   ],
+   "blocked_shots": [
+    2,
+    0
+   ],
+   "shots_woodwork": [
+    1,
+    0
+   ],
+   "shots_inside_box": [
+    5,
+    2
+   ],
+   "shots_outside_box": [
+    4,
+    0
+   ],
+   "expected_goals_open_play": [
+    "0.60",
+    "0.10"
+   ],
+   "expected_goals_set_play": [
+    "1.04",
+    "0.00"
+   ],
+   "expected_goals_non_penalty": [
+    "1.64",
+    "0.10"
+   ],
+   "expected_goals_on_target": [
+    "1.29",
+    "0.12"
+   ],
+   "physical_metrics_distance_covered": [
+    60762,
+    59780
+   ],
+   "physical_metrics_running": [
+    13669,
+    13987
+   ],
+   "physical_metrics_sprinting": [
+    1927,
+    1314
+   ],
+   "physical_metrics_number_of_sprints": [
+    89,
+    67
+   ],
+   "passes": [
+    105,
+    241
+   ],
+   "own_half_passes": [
+    28,
+    120
+   ],
+   "opposition_half_passes": [
+    45,
+    88
+   ],
+   "long_balls_accurate": [
+    "7 (39%)",
+    "8 (33%)"
+   ],
+   "accurate_crosses": [
+    "2 (14%)",
+    "0 (0%)"
+   ],
+   "player_throws": [
+    6,
+    9
+   ],
+   "Offsides": [
+    2,
+    2
+   ],
+   "matchstats.headers.tackles": [
+    6,
+    4
+   ],
+   "interceptions": [
+    2,
+    5
+   ],
+   "shot_blocks": [
+    0,
+    1
+   ],
+   "clearances": [
+    10,
+    17
+   ],
+   "keeper_saves": [
+    0,
+    1
+   ],
+   "duel_won": [
+    23,
+    22
+   ],
+   "ground_duels_won": [
+    "13 (43%)",
+    "17 (57%)"
+   ],
+   "aerials_won": [
+    "10 (67%)",
+    "5 (33%)"
+   ],
+   "dribbles_succeeded": [
+    "4 (67%)",
+    "1 (33%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    12,
+    3
+   ]
+  }
+ }
+}
