@@ -1,0 +1,1392 @@
+{
+ "source": "FotMob match 6106243 (Opta data)",
+ "match": "Real Madrid 5-1 PSV Eindhoven, Champions League round 5, Tue, Nov 24, 2026, 20:00 UTC",
+ "home": "RMA",
+ "away": "PSV",
+ "shots": [
+  {
+   "team": "PSV",
+   "min": 3,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.2506,
+   "x": 97.6666666661,
+   "y": 32.856249999999996,
+   "player": "Sven Mijnans",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSV",
+   "min": 4,
+   "add": null,
+   "type": "Miss",
+   "situation": "ThrowInSetPiece",
+   "shotType": "RightFoot",
+   "xg": 0.1445,
+   "x": 89.5,
+   "y": 40.553571429,
+   "player": "Ruben van Bommel",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSV",
+   "min": 9,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0702,
+   "x": 94.9649122793,
+   "y": 22.177579621699998,
+   "player": "Sergiño Dest",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 11,
+   "add": null,
+   "type": "Post",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0344,
+   "x": 87.31911764680001,
+   "y": 46.452993627000005,
+   "player": "Vinícius Júnior",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 14,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.1613,
+   "x": 94.1929824545,
+   "y": 25.938437500000003,
+   "player": "Yan Diomande",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "PSV",
+   "min": 16,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0193,
+   "x": 83.6111650488,
+   "y": 23.158471341899997,
+   "player": "Sergiño Dest",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSV",
+   "min": 28,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0332,
+   "x": 80.11990291360001,
+   "y": 42.813125,
+   "player": "Kodai Sano",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSV",
+   "min": 32,
+   "add": null,
+   "type": "Goal",
+   "situation": "Penalty",
+   "shotType": "RightFoot",
+   "xg": 0.7884,
+   "x": 94,
+   "y": 34,
+   "player": "Ivan Perišić",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 34,
+   "add": null,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.026,
+   "x": 80.68300970960001,
+   "y": 50.7268789793,
+   "player": "Kylian Mbappé",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSV",
+   "min": 40,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0919,
+   "x": 91.9,
+   "y": 43.5103184664,
+   "player": "Sven Mijnans",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 45,
+   "add": 2,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0336,
+   "x": 91.3,
+   "y": 19.725350321199997,
+   "player": "Kylian Mbappé",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSV",
+   "min": 45,
+   "add": 3,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.1028,
+   "x": 97.0877192975,
+   "y": 29.547619046,
+   "player": "Kodai Sano",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 47,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.7883,
+   "x": 98.24561403470001,
+   "y": 36.135000000000005,
+   "player": "Kylian Mbappé",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 50,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1243,
+   "x": 92.3,
+   "y": 27.278333333000003,
+   "player": "Federico Valverde",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 52,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0929,
+   "x": 93.8,
+   "y": 31.254999999999995,
+   "player": "Arda Güler",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 53,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0809,
+   "x": 92.5,
+   "y": 30.267999999999997,
+   "player": "Kylian Mbappé",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 56,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.2065,
+   "x": 97.0877192975,
+   "y": 40.553571429,
+   "player": "Jude Bellingham",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 59,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0323,
+   "x": 90.7,
+   "y": 23.5788535077,
+   "player": "Federico Valverde",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 60,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0261,
+   "x": 82.4849514568,
+   "y": 39.208809525,
+   "player": "Jude Bellingham",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 63,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0359,
+   "x": 81.35873786479999,
+   "y": 30.492499999999996,
+   "player": "Yan Diomande",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 64,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.4574,
+   "x": 91.5,
+   "y": 30.279999999999998,
+   "player": "Kylian Mbappé",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "PSV",
+   "min": 65,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0508,
+   "x": 88.9,
+   "y": 35.29625000000001,
+   "player": "Sergiño Dest",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 66,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1022,
+   "x": 93.6,
+   "y": 43.044375,
+   "player": "Yan Diomande",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 66,
+   "add": null,
+   "type": "Post",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.5183,
+   "x": 96.605263157,
+   "y": 39.040714287,
+   "player": "Vinícius Júnior",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 69,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.2355,
+   "x": 97.3771929818,
+   "y": 44.5612738809,
+   "player": "Vinícius Júnior",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 69,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.017,
+   "x": 84.286893204,
+   "y": 18.5342675181,
+   "player": "Arda Güler",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 71,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0545,
+   "x": 92.7,
+   "y": 28.202857142,
+   "player": "Kylian Mbappé",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "PSV",
+   "min": 74,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1338,
+   "x": 89.7,
+   "y": 40.721666666999994,
+   "player": "Ruben van Bommel",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 77,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.1223,
+   "x": 93.3,
+   "y": 43.860636937900004,
+   "player": "Kylian Mbappé",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 80,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1359,
+   "x": 91,
+   "y": 33.00875,
+   "player": "Jude Bellingham",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 84,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.947,
+   "x": 97.7631578942,
+   "y": 30.95,
+   "player": "Kylian Mbappé",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 87,
+   "add": null,
+   "type": "Goal",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.3489,
+   "x": 95.4473684198,
+   "y": 39.376904763,
+   "player": "Vinícius Júnior",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 90,
+   "add": 2,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.0656,
+   "x": 95.9298245603,
+   "y": 39.208809525,
+   "player": "Kylian Mbappé",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "RMA",
+   "min": 90,
+   "add": 2,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1426,
+   "x": 97.0877192975,
+   "y": 27.614523809,
+   "player": "Bernardo Silva",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   -5
+  ],
+  [
+   2,
+   -27
+  ],
+  [
+   3,
+   -84
+  ],
+  [
+   4,
+   -100
+  ],
+  [
+   5,
+   -100
+  ],
+  [
+   6,
+   -19
+  ],
+  [
+   7,
+   43
+  ],
+  [
+   8,
+   49
+  ],
+  [
+   9,
+   5
+  ],
+  [
+   10,
+   -11
+  ],
+  [
+   11,
+   -16
+  ],
+  [
+   12,
+   0
+  ],
+  [
+   13,
+   -11
+  ],
+  [
+   14,
+   71
+  ],
+  [
+   15,
+   92
+  ],
+  [
+   16,
+   100
+  ],
+  [
+   17,
+   22
+  ],
+  [
+   18,
+   11
+  ],
+  [
+   19,
+   16
+  ],
+  [
+   20,
+   11
+  ],
+  [
+   21,
+   -16
+  ],
+  [
+   22,
+   -16
+  ],
+  [
+   23,
+   0
+  ],
+  [
+   24,
+   11
+  ],
+  [
+   25,
+   11
+  ],
+  [
+   26,
+   -5
+  ],
+  [
+   27,
+   -5
+  ],
+  [
+   28,
+   -33
+  ],
+  [
+   29,
+   -33
+  ],
+  [
+   30,
+   -27
+  ],
+  [
+   31,
+   0
+  ],
+  [
+   32,
+   0
+  ],
+  [
+   33,
+   -5
+  ],
+  [
+   34,
+   0
+  ],
+  [
+   35,
+   5
+  ],
+  [
+   36,
+   35
+  ],
+  [
+   37,
+   30
+  ],
+  [
+   38,
+   24
+  ],
+  [
+   39,
+   5
+  ],
+  [
+   40,
+   -30
+  ],
+  [
+   41,
+   -19
+  ],
+  [
+   42,
+   -52
+  ],
+  [
+   43,
+   -22
+  ],
+  [
+   44,
+   -22
+  ],
+  [
+   45,
+   22
+  ],
+  [
+   45.5,
+   18
+  ],
+  [
+   46,
+   0
+  ],
+  [
+   47,
+   100
+  ],
+  [
+   48,
+   100
+  ],
+  [
+   49,
+   100
+  ],
+  [
+   50,
+   35
+  ],
+  [
+   51,
+   43
+  ],
+  [
+   52,
+   71
+  ],
+  [
+   53,
+   76
+  ],
+  [
+   54,
+   100
+  ],
+  [
+   55,
+   54
+  ],
+  [
+   56,
+   43
+  ],
+  [
+   57,
+   60
+  ],
+  [
+   58,
+   87
+  ],
+  [
+   59,
+   57
+  ],
+  [
+   60,
+   35
+  ],
+  [
+   61,
+   8
+  ],
+  [
+   62,
+   5
+  ],
+  [
+   63,
+   27
+  ],
+  [
+   64,
+   71
+  ],
+  [
+   65,
+   100
+  ],
+  [
+   66,
+   100
+  ],
+  [
+   67,
+   100
+  ],
+  [
+   68,
+   100
+  ],
+  [
+   69,
+   27
+  ],
+  [
+   70,
+   49
+  ],
+  [
+   71,
+   100
+  ],
+  [
+   72,
+   100
+  ],
+  [
+   73,
+   87
+  ],
+  [
+   74,
+   -49
+  ],
+  [
+   75,
+   -60
+  ],
+  [
+   76,
+   0
+  ],
+  [
+   77,
+   81
+  ],
+  [
+   78,
+   79
+  ],
+  [
+   79,
+   57
+  ],
+  [
+   80,
+   79
+  ],
+  [
+   81,
+   71
+  ],
+  [
+   82,
+   54
+  ],
+  [
+   83,
+   5
+  ],
+  [
+   84,
+   100
+  ],
+  [
+   85,
+   100
+  ],
+  [
+   86,
+   100
+  ],
+  [
+   87,
+   27
+  ],
+  [
+   88,
+   33
+  ],
+  [
+   89,
+   57
+  ],
+  [
+   90,
+   41
+  ],
+  [
+   90.5,
+   63
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 30,
+   "team": "RMA",
+   "player": "Aurélien Tchouaméni",
+   "reason": "Foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 42,
+   "team": "PSV",
+   "player": "Filip Kostić",
+   "reason": "Dissent"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 44,
+   "team": "RMA",
+   "player": "Antonio Rüdiger",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 3
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 81,
+   "team": "RMA",
+   "player": "Eduardo Camavinga",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 3
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    62,
+    38
+   ],
+   "expected_goals": [
+    "4.79",
+    "1.69"
+   ],
+   "total_shots": [
+    24,
+    10
+   ],
+   "ShotsOnTarget": [
+    9,
+    1
+   ],
+   "touches_opp_box": [
+    53,
+    17
+   ],
+   "big_chance": [
+    8,
+    4
+   ],
+   "big_chance_missed_title": [
+    5,
+    3
+   ],
+   "accurate_passes": [
+    "571 (90%)",
+    "318 (82%)"
+   ],
+   "yellow_cards": [
+    3,
+    1
+   ],
+   "corners": [
+    4,
+    1
+   ],
+   "ShotsOffTarget": [
+    10,
+    7
+   ],
+   "blocked_shots": [
+    5,
+    2
+   ],
+   "shots_woodwork": [
+    2,
+    0
+   ],
+   "shots_inside_box": [
+    19,
+    8
+   ],
+   "shots_outside_box": [
+    5,
+    2
+   ],
+   "expected_goals_open_play": [
+    "4.74",
+    "0.75"
+   ],
+   "expected_goals_set_play": [
+    "0.05",
+    "0.14"
+   ],
+   "expected_goals_non_penalty": [
+    "4.79",
+    "0.90"
+   ],
+   "expected_goals_on_target": [
+    "4.08",
+    "0.93"
+   ],
+   "passes": [
+    632,
+    388
+   ],
+   "own_half_passes": [
+    288,
+    179
+   ],
+   "opposition_half_passes": [
+    283,
+    139
+   ],
+   "long_balls_accurate": [
+    "27 (53%)",
+    "15 (36%)"
+   ],
+   "accurate_crosses": [
+    "1 (33%)",
+    "3 (38%)"
+   ],
+   "player_throws": [
+    18,
+    18
+   ],
+   "Offsides": [
+    4,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    23,
+    28
+   ],
+   "interceptions": [
+    8,
+    11
+   ],
+   "shot_blocks": [
+    2,
+    4
+   ],
+   "clearances": [
+    11,
+    10
+   ],
+   "keeper_saves": [
+    0,
+    4
+   ],
+   "duel_won": [
+    51,
+    39
+   ],
+   "ground_duels_won": [
+    "43 (55%)",
+    "35 (45%)"
+   ],
+   "aerials_won": [
+    "8 (67%)",
+    "4 (33%)"
+   ],
+   "dribbles_succeeded": [
+    "10 (43%)",
+    "3 (30%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    6,
+    11
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    56,
+    44
+   ],
+   "expected_goals": [
+    "0.26",
+    "1.50"
+   ],
+   "total_shots": [
+    4,
+    8
+   ],
+   "ShotsOnTarget": [
+    0,
+    1
+   ],
+   "touches_opp_box": [
+    13,
+    13
+   ],
+   "big_chance": [
+    0,
+    4
+   ],
+   "big_chance_missed_title": [
+    0,
+    3
+   ],
+   "accurate_passes": [
+    "262 (89%)",
+    "184 (83%)"
+   ],
+   "yellow_cards": [
+    2,
+    1
+   ],
+   "corners": [
+    0,
+    0
+   ],
+   "ShotsOffTarget": [
+    3,
+    7
+   ],
+   "blocked_shots": [
+    1,
+    0
+   ],
+   "shots_woodwork": [
+    1,
+    0
+   ],
+   "shots_inside_box": [
+    2,
+    6
+   ],
+   "shots_outside_box": [
+    2,
+    2
+   ],
+   "expected_goals_open_play": [
+    "0.26",
+    "0.57"
+   ],
+   "expected_goals_set_play": [
+    "0.00",
+    "0.14"
+   ],
+   "expected_goals_non_penalty": [
+    "0.26",
+    "0.71"
+   ],
+   "expected_goals_on_target": [
+    "0.00",
+    "0.93"
+   ],
+   "passes": [
+    296,
+    223
+   ],
+   "own_half_passes": [
+    158,
+    111
+   ],
+   "opposition_half_passes": [
+    104,
+    73
+   ],
+   "long_balls_accurate": [
+    "11 (39%)",
+    "6 (32%)"
+   ],
+   "accurate_crosses": [
+    0,
+    "2 (40%)"
+   ],
+   "player_throws": [
+    10,
+    14
+   ],
+   "Offsides": [
+    2,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    18,
+    16
+   ],
+   "interceptions": [
+    5,
+    6
+   ],
+   "shot_blocks": [
+    0,
+    1
+   ],
+   "clearances": [
+    6,
+    1
+   ],
+   "keeper_saves": [
+    0,
+    0
+   ],
+   "duel_won": [
+    26,
+    22
+   ],
+   "ground_duels_won": [
+    "23 (52%)",
+    "21 (48%)"
+   ],
+   "aerials_won": [
+    "3 (75%)",
+    "1 (25%)"
+   ],
+   "dribbles_succeeded": [
+    "0 (0%)",
+    "3 (38%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    3,
+    5
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    67,
+    33
+   ],
+   "expected_goals": [
+    "4.53",
+    "0.18"
+   ],
+   "total_shots": [
+    20,
+    2
+   ],
+   "ShotsOnTarget": [
+    9,
+    0
+   ],
+   "touches_opp_box": [
+    40,
+    4
+   ],
+   "big_chance": [
+    8,
+    0
+   ],
+   "big_chance_missed_title": [
+    5,
+    0
+   ],
+   "accurate_passes": [
+    "309 (92%)",
+    "134 (81%)"
+   ],
+   "yellow_cards": [
+    1,
+    0
+   ],
+   "corners": [
+    4,
+    1
+   ],
+   "ShotsOffTarget": [
+    7,
+    0
+   ],
+   "blocked_shots": [
+    4,
+    2
+   ],
+   "shots_woodwork": [
+    1,
+    0
+   ],
+   "shots_inside_box": [
+    17,
+    2
+   ],
+   "shots_outside_box": [
+    3,
+    0
+   ],
+   "expected_goals_open_play": [
+    "4.48",
+    "0.18"
+   ],
+   "expected_goals_set_play": [
+    "0.05",
+    "0.00"
+   ],
+   "expected_goals_non_penalty": [
+    "4.53",
+    "0.18"
+   ],
+   "expected_goals_on_target": [
+    "4.08",
+    "0.00"
+   ],
+   "passes": [
+    336,
+    165
+   ],
+   "own_half_passes": [
+    130,
+    68
+   ],
+   "opposition_half_passes": [
+    179,
+    66
+   ],
+   "long_balls_accurate": [
+    "16 (70%)",
+    "9 (39%)"
+   ],
+   "accurate_crosses": [
+    "1 (33%)",
+    "1 (33%)"
+   ],
+   "player_throws": [
+    8,
+    4
+   ],
+   "Offsides": [
+    2,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    5,
+    12
+   ],
+   "interceptions": [
+    3,
+    5
+   ],
+   "shot_blocks": [
+    2,
+    3
+   ],
+   "clearances": [
+    5,
+    9
+   ],
+   "keeper_saves": [
+    0,
+    4
+   ],
+   "duel_won": [
+    25,
+    17
+   ],
+   "ground_duels_won": [
+    "20 (59%)",
+    "14 (41%)"
+   ],
+   "aerials_won": [
+    "5 (63%)",
+    "3 (38%)"
+   ],
+   "dribbles_succeeded": [
+    "10 (59%)",
+    "0 (0%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    3,
+    6
+   ]
+  }
+ }
+}

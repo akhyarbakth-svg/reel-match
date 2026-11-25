@@ -21,3 +21,9 @@ python -I render_par.py frames 5 1245               # 5 parallel workers -> MP4 
 ```
 
 `index.html` is deterministic per frame: `frame(f)` draws frame `f`. You can also open it directly in a browser.
+
+## Other reels
+
+- [`reel_rma_psv/`](reel_rma_psv/): Real Madrid 5-1 PSV (Champions League MD5, 24 Nov 2026)
+
+`fetch_data.py` takes an optional output folder: `python -I fetch_data.py <url> reel_rma_psv`.
