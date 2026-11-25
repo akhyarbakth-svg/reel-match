@@ -1,0 +1,1266 @@
+{
+ "source": "FotMob match 6106256 (Opta data)",
+ "match": "Manchester City 2-2 Napoli, Champions League round 5, Tue, Nov 24, 2026, 20:00 UTC",
+ "home": "MCI",
+ "away": "NAP",
+ "shots": [
+  {
+   "team": "MCI",
+   "min": 1,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.0521,
+   "x": 79.55679611760002,
+   "y": 26.516562500000003,
+   "player": "Elliot Anderson",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 6,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0265,
+   "x": 95.8333333322,
+   "y": 22.6680254818,
+   "player": "Enzo Fernández",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "NAP",
+   "min": 7,
+   "add": null,
+   "type": "Miss",
+   "situation": "SetPiece",
+   "shotType": "LeftFoot",
+   "xg": 0.1278,
+   "x": 98.0526315785,
+   "y": 26.169687500000002,
+   "player": "Scott McTominay",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NAP",
+   "min": 8,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0311,
+   "x": 93.6,
+   "y": 46.5931210156,
+   "player": "Scott McTominay",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 10,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.0646,
+   "x": 97.6666666661,
+   "y": 38.452380954,
+   "player": "Nico O'Reilly",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 19,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.028,
+   "x": 93.9,
+   "y": 19.445095544,
+   "player": "Rayan Cherki",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 19,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0644,
+   "x": 90.9,
+   "y": 41.483437499999994,
+   "player": "Allan",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "NAP",
+   "min": 27,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0226,
+   "x": 102.06034482780001,
+   "y": 50.867006367900004,
+   "player": "Rasmus Højlund",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 40,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.0605,
+   "x": 94.09649122639999,
+   "y": 30.95,
+   "player": "Erling Haaland",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NAP",
+   "min": 44,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.1242,
+   "x": 98.3421052628,
+   "y": 32.9325,
+   "player": "Sam Beukema",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NAP",
+   "min": 45,
+   "add": 0,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0205,
+   "x": 80.345145632,
+   "y": 46.312866238400005,
+   "player": "Noa Lang",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 50,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "SetPiece",
+   "shotType": "RightFoot",
+   "xg": 0.0536,
+   "x": 89.9,
+   "y": 22.6680254818,
+   "player": "Rayan Cherki",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "NAP",
+   "min": 55,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.0468,
+   "x": 93,
+   "y": 30.492499999999996,
+   "player": "Scott McTominay",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NAP",
+   "min": 55,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1287,
+   "x": 95.35087719170001,
+   "y": 42.8709375,
+   "player": "Rasmus Højlund",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 66,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.41,
+   "x": 102.53448275880001,
+   "y": 41.141904761999996,
+   "player": "Elliot Anderson",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 67,
+   "add": null,
+   "type": "Goal",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.1028,
+   "x": 93.1,
+   "y": 38.704523811,
+   "player": "Ayyoub Bouaddi",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 69,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0183,
+   "x": 74.0383495168,
+   "y": 29.379523808000002,
+   "player": "Matheus Nunes",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 72,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0775,
+   "x": 93.4,
+   "y": 25.591562500000002,
+   "player": "Matheus Nunes",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 74,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0294,
+   "x": 85.81617647,
+   "y": 16.9228025492,
+   "player": "Rayan Cherki",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NAP",
+   "min": 76,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1657,
+   "x": 96.50877192889999,
+   "y": 37.864047621,
+   "player": "Noa Lang",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 81,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0291,
+   "x": 91,
+   "y": 18.1839490466,
+   "player": "Iliman Ndiaye",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 81,
+   "add": null,
+   "type": "Post",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0662,
+   "x": 96.0263157884,
+   "y": 24.0692993678,
+   "player": "Joško Gvardiol",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 83,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0593,
+   "x": 101.4913793106,
+   "y": 22.247643316,
+   "player": "Elliot Anderson",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 83,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0921,
+   "x": 100.3534482762,
+   "y": 21.9673885388,
+   "player": "Elliot Anderson",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 86,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.086,
+   "x": 101.1120689658,
+   "y": 22.037452233099998,
+   "player": "Rayan Cherki",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "NAP",
+   "min": 90,
+   "add": 0,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "Header",
+   "xg": 0.0432,
+   "x": 93.8,
+   "y": 33.695,
+   "player": "Frank Anguissa",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "MCI",
+   "min": 90,
+   "add": 2,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0268,
+   "x": 81.80922330160001,
+   "y": 47.714140124400004,
+   "player": "Rayan Cherki",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   11
+  ],
+  [
+   2,
+   22
+  ],
+  [
+   3,
+   16
+  ],
+  [
+   4,
+   27
+  ],
+  [
+   5,
+   49
+  ],
+  [
+   6,
+   60
+  ],
+  [
+   7,
+   -27
+  ],
+  [
+   8,
+   -76
+  ],
+  [
+   9,
+   -76
+  ],
+  [
+   10,
+   65
+  ],
+  [
+   11,
+   100
+  ],
+  [
+   12,
+   95
+  ],
+  [
+   13,
+   8
+  ],
+  [
+   14,
+   -35
+  ],
+  [
+   15,
+   -22
+  ],
+  [
+   16,
+   5
+  ],
+  [
+   17,
+   33
+  ],
+  [
+   18,
+   49
+  ],
+  [
+   19,
+   100
+  ],
+  [
+   20,
+   100
+  ],
+  [
+   21,
+   100
+  ],
+  [
+   22,
+   33
+  ],
+  [
+   23,
+   22
+  ],
+  [
+   24,
+   22
+  ],
+  [
+   25,
+   22
+  ],
+  [
+   26,
+   27
+  ],
+  [
+   27,
+   0
+  ],
+  [
+   28,
+   16
+  ],
+  [
+   29,
+   11
+  ],
+  [
+   30,
+   38
+  ],
+  [
+   31,
+   35
+  ],
+  [
+   32,
+   -8
+  ],
+  [
+   33,
+   -8
+  ],
+  [
+   34,
+   0
+  ],
+  [
+   35,
+   98
+  ],
+  [
+   36,
+   100
+  ],
+  [
+   37,
+   90
+  ],
+  [
+   38,
+   52
+  ],
+  [
+   39,
+   35
+  ],
+  [
+   40,
+   41
+  ],
+  [
+   41,
+   24
+  ],
+  [
+   42,
+   27
+  ],
+  [
+   43,
+   -5
+  ],
+  [
+   44,
+   -87
+  ],
+  [
+   45,
+   -100
+  ],
+  [
+   45.5,
+   -81
+  ],
+  [
+   46,
+   5
+  ],
+  [
+   47,
+   -3
+  ],
+  [
+   48,
+   -8
+  ],
+  [
+   49,
+   8
+  ],
+  [
+   50,
+   27
+  ],
+  [
+   51,
+   43
+  ],
+  [
+   52,
+   27
+  ],
+  [
+   53,
+   33
+  ],
+  [
+   54,
+   11
+  ],
+  [
+   55,
+   -33
+  ],
+  [
+   56,
+   -49
+  ],
+  [
+   57,
+   -22
+  ],
+  [
+   58,
+   52
+  ],
+  [
+   59,
+   49
+  ],
+  [
+   60,
+   38
+  ],
+  [
+   61,
+   -30
+  ],
+  [
+   62,
+   -11
+  ],
+  [
+   63,
+   -11
+  ],
+  [
+   64,
+   57
+  ],
+  [
+   65,
+   79
+  ],
+  [
+   66,
+   100
+  ],
+  [
+   67,
+   100
+  ],
+  [
+   68,
+   100
+  ],
+  [
+   69,
+   81
+  ],
+  [
+   70,
+   60
+  ],
+  [
+   71,
+   87
+  ],
+  [
+   72,
+   100
+  ],
+  [
+   73,
+   98
+  ],
+  [
+   74,
+   81
+  ],
+  [
+   75,
+   54
+  ],
+  [
+   76,
+   11
+  ],
+  [
+   77,
+   -11
+  ],
+  [
+   78,
+   -11
+  ],
+  [
+   79,
+   27
+  ],
+  [
+   80,
+   46
+  ],
+  [
+   81,
+   43
+  ],
+  [
+   82,
+   54
+  ],
+  [
+   83,
+   62
+  ],
+  [
+   84,
+   60
+  ],
+  [
+   85,
+   76
+  ],
+  [
+   86,
+   71
+  ],
+  [
+   87,
+   54
+  ],
+  [
+   88,
+   11
+  ],
+  [
+   89,
+   -30
+  ],
+  [
+   90,
+   -57
+  ],
+  [
+   90.5,
+   15
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 81,
+   "team": "MCI",
+   "player": "Marc Guéhi",
+   "reason": "Dissent"
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 2
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 90,
+   "team": "MCI",
+   "player": "Gianluigi Donnarumma",
+   "reason": "Dissent"
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    63,
+    37
+   ],
+   "expected_goals": [
+    "1.34",
+    "0.71"
+   ],
+   "total_shots": [
+    18,
+    9
+   ],
+   "ShotsOnTarget": [
+    7,
+    3
+   ],
+   "touches_opp_box": [
+    61,
+    20
+   ],
+   "big_chance": [
+    2,
+    2
+   ],
+   "big_chance_missed_title": [
+    2,
+    1
+   ],
+   "accurate_passes": [
+    "611 (92%)",
+    "330 (83%)"
+   ],
+   "yellow_cards": [
+    2,
+    0
+   ],
+   "corners": [
+    9,
+    3
+   ],
+   "ShotsOffTarget": [
+    5,
+    5
+   ],
+   "blocked_shots": [
+    6,
+    1
+   ],
+   "shots_woodwork": [
+    1,
+    0
+   ],
+   "shots_inside_box": [
+    14,
+    8
+   ],
+   "shots_outside_box": [
+    4,
+    1
+   ],
+   "expected_goals_open_play": [
+    "1.00",
+    "0.46"
+   ],
+   "expected_goals_set_play": [
+    "0.34",
+    "0.25"
+   ],
+   "expected_goals_non_penalty": [
+    "1.34",
+    "0.71"
+   ],
+   "expected_goals_on_target": [
+    "1.20",
+    "0.68"
+   ],
+   "passes": [
+    667,
+    399
+   ],
+   "own_half_passes": [
+    185,
+    224
+   ],
+   "opposition_half_passes": [
+    426,
+    106
+   ],
+   "long_balls_accurate": [
+    "14 (74%)",
+    "19 (44%)"
+   ],
+   "accurate_crosses": [
+    "9 (26%)",
+    "5 (38%)"
+   ],
+   "player_throws": [
+    8,
+    14
+   ],
+   "Offsides": [
+    0,
+    2
+   ],
+   "matchstats.headers.tackles": [
+    10,
+    17
+   ],
+   "interceptions": [
+    8,
+    8
+   ],
+   "shot_blocks": [
+    1,
+    6
+   ],
+   "clearances": [
+    9,
+    42
+   ],
+   "keeper_saves": [
+    1,
+    5
+   ],
+   "duel_won": [
+    44,
+    37
+   ],
+   "ground_duels_won": [
+    "33 (52%)",
+    "30 (48%)"
+   ],
+   "aerials_won": [
+    "11 (61%)",
+    "7 (39%)"
+   ],
+   "dribbles_succeeded": [
+    "14 (58%)",
+    "5 (63%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    9,
+    9
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    66,
+    34
+   ],
+   "expected_goals": [
+    "0.30",
+    "0.33"
+   ],
+   "total_shots": [
+    6,
+    5
+   ],
+   "ShotsOnTarget": [
+    2,
+    1
+   ],
+   "touches_opp_box": [
+    16,
+    11
+   ],
+   "big_chance": [
+    1,
+    1
+   ],
+   "big_chance_missed_title": [
+    1,
+    1
+   ],
+   "accurate_passes": [
+    "351 (93%)",
+    "163 (84%)"
+   ],
+   "yellow_cards": [
+    0,
+    0
+   ],
+   "corners": [
+    4,
+    2
+   ],
+   "ShotsOffTarget": [
+    1,
+    3
+   ],
+   "blocked_shots": [
+    3,
+    1
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    5,
+    4
+   ],
+   "shots_outside_box": [
+    1,
+    1
+   ],
+   "expected_goals_open_play": [
+    "0.21",
+    "0.07"
+   ],
+   "expected_goals_set_play": [
+    "0.09",
+    "0.25"
+   ],
+   "expected_goals_non_penalty": [
+    "0.30",
+    "0.33"
+   ],
+   "expected_goals_on_target": [
+    "0.24",
+    "0.05"
+   ],
+   "passes": [
+    379,
+    193
+   ],
+   "own_half_passes": [
+    119,
+    103
+   ],
+   "opposition_half_passes": [
+    232,
+    60
+   ],
+   "long_balls_accurate": [
+    "10 (91%)",
+    "10 (53%)"
+   ],
+   "accurate_crosses": [
+    "5 (36%)",
+    "2 (29%)"
+   ],
+   "player_throws": [
+    6,
+    8
+   ],
+   "Offsides": [
+    0,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    6,
+    10
+   ],
+   "interceptions": [
+    5,
+    3
+   ],
+   "shot_blocks": [
+    1,
+    3
+   ],
+   "clearances": [
+    5,
+    16
+   ],
+   "keeper_saves": [
+    1,
+    2
+   ],
+   "duel_won": [
+    19,
+    19
+   ],
+   "ground_duels_won": [
+    0,
+    0
+   ],
+   "aerials_won": [
+    "6 (100%)",
+    "0 (0%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (29%)",
+    "5 (63%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    4,
+    5
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    59,
+    41
+   ],
+   "expected_goals": [
+    "1.05",
+    "0.38"
+   ],
+   "total_shots": [
+    12,
+    4
+   ],
+   "ShotsOnTarget": [
+    5,
+    2
+   ],
+   "touches_opp_box": [
+    45,
+    9
+   ],
+   "big_chance": [
+    1,
+    1
+   ],
+   "big_chance_missed_title": [
+    1,
+    0
+   ],
+   "accurate_passes": [
+    "260 (90%)",
+    "167 (81%)"
+   ],
+   "yellow_cards": [
+    2,
+    0
+   ],
+   "corners": [
+    5,
+    1
+   ],
+   "ShotsOffTarget": [
+    4,
+    2
+   ],
+   "blocked_shots": [
+    3,
+    0
+   ],
+   "shots_woodwork": [
+    1,
+    0
+   ],
+   "shots_inside_box": [
+    9,
+    4
+   ],
+   "shots_outside_box": [
+    3,
+    0
+   ],
+   "expected_goals_open_play": [
+    "0.80",
+    "0.38"
+   ],
+   "expected_goals_set_play": [
+    "0.25",
+    "0.00"
+   ],
+   "expected_goals_non_penalty": [
+    "1.05",
+    "0.38"
+   ],
+   "expected_goals_on_target": [
+    "0.96",
+    "0.62"
+   ],
+   "passes": [
+    288,
+    206
+   ],
+   "own_half_passes": [
+    66,
+    121
+   ],
+   "opposition_half_passes": [
+    194,
+    46
+   ],
+   "long_balls_accurate": [
+    "4 (50%)",
+    "9 (38%)"
+   ],
+   "accurate_crosses": [
+    "4 (20%)",
+    "3 (50%)"
+   ],
+   "player_throws": [
+    2,
+    6
+   ],
+   "Offsides": [
+    0,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    4,
+    7
+   ],
+   "interceptions": [
+    3,
+    5
+   ],
+   "shot_blocks": [
+    0,
+    3
+   ],
+   "clearances": [
+    4,
+    26
+   ],
+   "keeper_saves": [
+    0,
+    3
+   ],
+   "duel_won": [
+    25,
+    18
+   ],
+   "ground_duels_won": [
+    "20 (65%)",
+    "11 (35%)"
+   ],
+   "aerials_won": [
+    "5 (42%)",
+    "7 (58%)"
+   ],
+   "dribbles_succeeded": [
+    "12 (71%)",
+    0
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    5,
+    4
+   ]
+  }
+ }
+}
