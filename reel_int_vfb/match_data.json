@@ -1,0 +1,1369 @@
+{
+ "source": "FotMob match 6106253 (Opta data)",
+ "match": "Inter 2-0 VfB Stuttgart, Champions League round 5, Wed, Nov 25, 2026, 20:00 UTC",
+ "home": "INT",
+ "away": "VFB",
+ "shots": [
+  {
+   "team": "INT",
+   "min": 4,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0138,
+   "x": 101.3965517244,
+   "y": 45.1217834353,
+   "player": "Henrikh Mkhitaryan",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 4,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0157,
+   "x": 79.21893204,
+   "y": 42.6975,
+   "player": "Petar Sučić",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "VFB",
+   "min": 7,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "OtherBodyParts",
+   "xg": 0.0128,
+   "x": 97.95614035039999,
+   "y": 39.713095239,
+   "player": "Ermedin Demirović",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "VFB",
+   "min": 8,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0646,
+   "x": 91.1,
+   "y": 33.31375,
+   "player": "Ermedin Demirović",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "VFB",
+   "min": 15,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0708,
+   "x": 97.1842105256,
+   "y": 45.9625477669,
+   "player": "Chris Führich",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 16,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.3436,
+   "x": 95.640350876,
+   "y": 25.7071875,
+   "player": "Djed Spence",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 24,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0275,
+   "x": 101.58620689680001,
+   "y": 24.955625,
+   "player": "Yann Aurel Bisseck",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 24,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0973,
+   "x": 101.9655172416,
+   "y": 41.3678125,
+   "player": "Manuel Akanji",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 25,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0731,
+   "x": 93.1,
+   "y": 38.872619049,
+   "player": "Francesco Pio Esposito",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 26,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.1226,
+   "x": 98.24561403470001,
+   "y": 34.838750000000005,
+   "player": "Yann Aurel Bisseck",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 36,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.06,
+   "x": 91.6,
+   "y": 19.725350321199997,
+   "player": "Yann Aurel Bisseck",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 39,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.028,
+   "x": 76.966504856,
+   "y": 34.838750000000005,
+   "player": "Petar Sučić",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 42,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0987,
+   "x": 94.675438595,
+   "y": 43.16,
+   "player": "Marcus Thuram",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 43,
+   "add": null,
+   "type": "Post",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1179,
+   "x": 95.2543859636,
+   "y": 26.343125,
+   "player": "Nicolò Barella",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 45,
+   "add": 1,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.0267,
+   "x": 91,
+   "y": 46.5230573213,
+   "player": "Marcus Thuram",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 45,
+   "add": 2,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.2145,
+   "x": 100.6379310348,
+   "y": 34.838750000000005,
+   "player": "Marcus Thuram",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "VFB",
+   "min": 46,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0474,
+   "x": 87.963235294,
+   "y": 37.66,
+   "player": "Nikolas Nartey",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 57,
+   "add": null,
+   "type": "Goal",
+   "situation": "Penalty",
+   "shotType": "RightFoot",
+   "xg": 0.7884,
+   "x": 94,
+   "y": 34,
+   "player": "Petar Sučić",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "VFB",
+   "min": 59,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0951,
+   "x": 92.3,
+   "y": 41.8303125,
+   "player": "Ermedin Demirović",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "VFB",
+   "min": 61,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.3558,
+   "x": 101.206896552,
+   "y": 35.29625000000001,
+   "player": "Nikolas Nartey",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "VFB",
+   "min": 61,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.1546,
+   "x": 101.0172413796,
+   "y": 37.94809524,
+   "player": "Ermedin Demirović",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 63,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FreeKick",
+   "shotType": "LeftFoot",
+   "xg": 0.0706,
+   "x": 77.6422330112,
+   "y": 31.941249999999997,
+   "player": "Federico Dimarco",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "VFB",
+   "min": 71,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0453,
+   "x": 90.6,
+   "y": 22.878216564699997,
+   "player": "Jamie Leweling",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 74,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.225,
+   "x": 92.3,
+   "y": 31.1025,
+   "player": "Lautaro Martínez",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "VFB",
+   "min": 80,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FreeKick",
+   "shotType": "LeftFoot",
+   "xg": 0.0734,
+   "x": 86.99705882319999,
+   "y": 43.044375,
+   "player": "Maximilian Mittelstädt",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 82,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.066,
+   "x": 85.70882352880001,
+   "y": 22.177579621699998,
+   "player": "Francesco Pio Esposito",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "VFB",
+   "min": 83,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0864,
+   "x": 95.640350876,
+   "y": 41.5990625,
+   "player": "Bilal El Khannouss",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 86,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0485,
+   "x": 96.4122807008,
+   "y": 20.2858598756,
+   "player": "Lautaro Martínez",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "VFB",
+   "min": 90,
+   "add": 1,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0168,
+   "x": 78.7684466032,
+   "y": 27.446428571,
+   "player": "Tiago Tomás",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "VFB",
+   "min": 90,
+   "add": 3,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.018,
+   "x": 95.8333333322,
+   "y": 29.043333332,
+   "player": "Ramon Hendriks",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 90,
+   "add": 3,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "LeftFoot",
+   "xg": 0.1023,
+   "x": 91.9,
+   "y": 25.013437500000002,
+   "player": "Lautaro Martínez",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "INT",
+   "min": 90,
+   "add": 3,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.0262,
+   "x": 78.8810679624,
+   "y": 34.99125,
+   "player": "Aleksandar Stanković",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "VFB",
+   "min": 90,
+   "add": 4,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0228,
+   "x": 91.7,
+   "y": 46.312866238400005,
+   "player": "Maximilian Mittelstädt",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   -19
+  ],
+  [
+   2,
+   -30
+  ],
+  [
+   3,
+   -19
+  ],
+  [
+   4,
+   11
+  ],
+  [
+   5,
+   22
+  ],
+  [
+   6,
+   5
+  ],
+  [
+   7,
+   -68
+  ],
+  [
+   8,
+   -100
+  ],
+  [
+   9,
+   -100
+  ],
+  [
+   10,
+   -54
+  ],
+  [
+   11,
+   0
+  ],
+  [
+   12,
+   -11
+  ],
+  [
+   13,
+   -11
+  ],
+  [
+   14,
+   -11
+  ],
+  [
+   15,
+   -8
+  ],
+  [
+   16,
+   41
+  ],
+  [
+   17,
+   41
+  ],
+  [
+   18,
+   49
+  ],
+  [
+   19,
+   60
+  ],
+  [
+   20,
+   62
+  ],
+  [
+   21,
+   73
+  ],
+  [
+   22,
+   24
+  ],
+  [
+   23,
+   43
+  ],
+  [
+   24,
+   65
+  ],
+  [
+   25,
+   95
+  ],
+  [
+   26,
+   100
+  ],
+  [
+   27,
+   100
+  ],
+  [
+   28,
+   90
+  ],
+  [
+   29,
+   11
+  ],
+  [
+   30,
+   62
+  ],
+  [
+   31,
+   76
+  ],
+  [
+   32,
+   87
+  ],
+  [
+   33,
+   8
+  ],
+  [
+   34,
+   27
+  ],
+  [
+   35,
+   38
+  ],
+  [
+   36,
+   76
+  ],
+  [
+   37,
+   71
+  ],
+  [
+   38,
+   100
+  ],
+  [
+   39,
+   52
+  ],
+  [
+   40,
+   41
+  ],
+  [
+   41,
+   0
+  ],
+  [
+   42,
+   11
+  ],
+  [
+   43,
+   65
+  ],
+  [
+   44,
+   65
+  ],
+  [
+   45,
+   38
+  ],
+  [
+   45.5,
+   22
+  ],
+  [
+   46,
+   -22
+  ],
+  [
+   47,
+   -16
+  ],
+  [
+   48,
+   -14
+  ],
+  [
+   49,
+   95
+  ],
+  [
+   50,
+   90
+  ],
+  [
+   51,
+   100
+  ],
+  [
+   52,
+   -11
+  ],
+  [
+   53,
+   -5
+  ],
+  [
+   54,
+   -5
+  ],
+  [
+   55,
+   22
+  ],
+  [
+   56,
+   16
+  ],
+  [
+   57,
+   0
+  ],
+  [
+   58,
+   -5
+  ],
+  [
+   59,
+   -5
+  ],
+  [
+   60,
+   -16
+  ],
+  [
+   61,
+   0
+  ],
+  [
+   62,
+   0
+  ],
+  [
+   63,
+   11
+  ],
+  [
+   64,
+   -14
+  ],
+  [
+   65,
+   -14
+  ],
+  [
+   66,
+   -30
+  ],
+  [
+   67,
+   -33
+  ],
+  [
+   68,
+   -33
+  ],
+  [
+   69,
+   -16
+  ],
+  [
+   70,
+   -11
+  ],
+  [
+   71,
+   -38
+  ],
+  [
+   72,
+   -38
+  ],
+  [
+   73,
+   -27
+  ],
+  [
+   74,
+   33
+  ],
+  [
+   75,
+   33
+  ],
+  [
+   76,
+   11
+  ],
+  [
+   77,
+   -27
+  ],
+  [
+   78,
+   -38
+  ],
+  [
+   79,
+   -16
+  ],
+  [
+   80,
+   -16
+  ],
+  [
+   81,
+   -22
+  ],
+  [
+   82,
+   11
+  ],
+  [
+   83,
+   -38
+  ],
+  [
+   84,
+   -16
+  ],
+  [
+   85,
+   11
+  ],
+  [
+   86,
+   65
+  ],
+  [
+   87,
+   43
+  ],
+  [
+   88,
+   -27
+  ],
+  [
+   89,
+   -43
+  ],
+  [
+   90,
+   -43
+  ],
+  [
+   90.5,
+   -29
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 13,
+   "team": "INT",
+   "player": "Marcus Thuram",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 2
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 48,
+   "team": "VFB",
+   "player": "Finn Jeltsch",
+   "reason": "Foul"
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 79,
+   "team": "INT",
+   "player": "Manuel Akanji",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 4
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    51,
+    49
+   ],
+   "expected_goals": [
+    "2.57",
+    "1.06"
+   ],
+   "total_shots": [
+    20,
+    13
+   ],
+   "ShotsOnTarget": [
+    5,
+    2
+   ],
+   "touches_opp_box": [
+    41,
+    28
+   ],
+   "big_chance": [
+    3,
+    2
+   ],
+   "big_chance_missed_title": [
+    1,
+    2
+   ],
+   "accurate_passes": [
+    "434 (86%)",
+    "413 (85%)"
+   ],
+   "yellow_cards": [
+    2,
+    1
+   ],
+   "corners": [
+    11,
+    6
+   ],
+   "ShotsOffTarget": [
+    8,
+    6
+   ],
+   "blocked_shots": [
+    7,
+    5
+   ],
+   "shots_woodwork": [
+    1,
+    0
+   ],
+   "shots_inside_box": [
+    15,
+    10
+   ],
+   "shots_outside_box": [
+    5,
+    3
+   ],
+   "expected_goals_open_play": [
+    "1.17",
+    "0.43"
+   ],
+   "expected_goals_set_play": [
+    "0.61",
+    "0.63"
+   ],
+   "expected_goals_non_penalty": [
+    "1.78",
+    "1.06"
+   ],
+   "expected_goals_on_target": [
+    "2.07",
+    "0.54"
+   ],
+   "passes": [
+    503,
+    486
+   ],
+   "own_half_passes": [
+    207,
+    190
+   ],
+   "opposition_half_passes": [
+    227,
+    223
+   ],
+   "long_balls_accurate": [
+    "32 (49%)",
+    "13 (35%)"
+   ],
+   "accurate_crosses": [
+    "5 (21%)",
+    "6 (19%)"
+   ],
+   "player_throws": [
+    16,
+    11
+   ],
+   "Offsides": [
+    0,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    11,
+    17
+   ],
+   "interceptions": [
+    9,
+    12
+   ],
+   "shot_blocks": [
+    6,
+    7
+   ],
+   "clearances": [
+    33,
+    22
+   ],
+   "keeper_saves": [
+    1,
+    3
+   ],
+   "duel_won": [
+    32,
+    38
+   ],
+   "ground_duels_won": [
+    "22 (41%)",
+    "32 (59%)"
+   ],
+   "aerials_won": [
+    "10 (63%)",
+    "6 (38%)"
+   ],
+   "dribbles_succeeded": [
+    "2 (22%)",
+    "7 (58%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    9,
+    10
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    59,
+    41
+   ],
+   "expected_goals": [
+    "1.24",
+    "0.15"
+   ],
+   "total_shots": [
+    13,
+    3
+   ],
+   "ShotsOnTarget": [
+    2,
+    1
+   ],
+   "touches_opp_box": [
+    30,
+    7
+   ],
+   "big_chance": [
+    1,
+    1
+   ],
+   "big_chance_missed_title": [
+    1,
+    1
+   ],
+   "accurate_passes": [
+    "291 (89%)",
+    "182 (81%)"
+   ],
+   "yellow_cards": [
+    1,
+    0
+   ],
+   "corners": [
+    6,
+    2
+   ],
+   "ShotsOffTarget": [
+    7,
+    1
+   ],
+   "blocked_shots": [
+    4,
+    1
+   ],
+   "shots_woodwork": [
+    1,
+    0
+   ],
+   "shots_inside_box": [
+    11,
+    3
+   ],
+   "shots_outside_box": [
+    2,
+    0
+   ],
+   "expected_goals_open_play": [
+    "0.75",
+    "0.14"
+   ],
+   "expected_goals_set_play": [
+    "0.49",
+    "0.01"
+   ],
+   "expected_goals_non_penalty": [
+    "1.24",
+    "0.15"
+   ],
+   "expected_goals_on_target": [
+    "0.31",
+    "0.54"
+   ],
+   "passes": [
+    326,
+    225
+   ],
+   "own_half_passes": [
+    122,
+    87
+   ],
+   "opposition_half_passes": [
+    169,
+    95
+   ],
+   "long_balls_accurate": [
+    "19 (59%)",
+    "10 (38%)"
+   ],
+   "accurate_crosses": [
+    "5 (31%)",
+    "2 (18%)"
+   ],
+   "player_throws": [
+    12,
+    5
+   ],
+   "Offsides": [
+    0,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    5,
+    9
+   ],
+   "interceptions": [
+    4,
+    6
+   ],
+   "shot_blocks": [
+    1,
+    4
+   ],
+   "clearances": [
+    10,
+    14
+   ],
+   "keeper_saves": [
+    1,
+    2
+   ],
+   "duel_won": [
+    13,
+    20
+   ],
+   "ground_duels_won": [
+    "8 (32%)",
+    "17 (68%)"
+   ],
+   "aerials_won": [
+    "5 (63%)",
+    "3 (38%)"
+   ],
+   "dribbles_succeeded": [
+    "1 (33%)",
+    "4 (67%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    5,
+    2
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    40,
+    60
+   ],
+   "expected_goals": [
+    "1.33",
+    "0.92"
+   ],
+   "total_shots": [
+    7,
+    10
+   ],
+   "ShotsOnTarget": [
+    3,
+    1
+   ],
+   "touches_opp_box": [
+    11,
+    21
+   ],
+   "big_chance": [
+    2,
+    1
+   ],
+   "big_chance_missed_title": [
+    0,
+    1
+   ],
+   "accurate_passes": [
+    "143 (81%)",
+    "231 (89%)"
+   ],
+   "yellow_cards": [
+    1,
+    1
+   ],
+   "corners": [
+    5,
+    4
+   ],
+   "ShotsOffTarget": [
+    1,
+    5
+   ],
+   "blocked_shots": [
+    3,
+    4
+   ],
+   "shots_woodwork": [
+    0,
+    0
+   ],
+   "shots_inside_box": [
+    4,
+    7
+   ],
+   "shots_outside_box": [
+    3,
+    3
+   ],
+   "expected_goals_open_play": [
+    "0.42",
+    "0.30"
+   ],
+   "expected_goals_set_play": [
+    "0.12",
+    "0.62"
+   ],
+   "expected_goals_non_penalty": [
+    "0.54",
+    "0.92"
+   ],
+   "expected_goals_on_target": [
+    "1.76",
+    "0.00"
+   ],
+   "passes": [
+    177,
+    261
+   ],
+   "own_half_passes": [
+    85,
+    103
+   ],
+   "opposition_half_passes": [
+    58,
+    128
+   ],
+   "long_balls_accurate": [
+    "13 (39%)",
+    "3 (27%)"
+   ],
+   "accurate_crosses": [
+    "0 (0%)",
+    "4 (19%)"
+   ],
+   "player_throws": [
+    5,
+    6
+   ],
+   "Offsides": [
+    0,
+    1
+   ],
+   "matchstats.headers.tackles": [
+    6,
+    8
+   ],
+   "interceptions": [
+    5,
+    6
+   ],
+   "shot_blocks": [
+    5,
+    3
+   ],
+   "clearances": [
+    23,
+    8
+   ],
+   "keeper_saves": [
+    0,
+    1
+   ],
+   "duel_won": [
+    19,
+    18
+   ],
+   "ground_duels_won": [
+    "14 (48%)",
+    "15 (52%)"
+   ],
+   "aerials_won": [
+    "5 (63%)",
+    "3 (38%)"
+   ],
+   "dribbles_succeeded": [
+    "1 (17%)",
+    "3 (50%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    4,
+    8
+   ]
+  }
+ }
+}
