@@ -1,0 +1,1353 @@
+{
+ "source": "FotMob match 6106421 (Opta data)",
+ "match": "Sabah FK 1-4 Barcelona, Champions League round 5, Wed, Nov 25, 2026, 17:45 UTC",
+ "home": "SAB",
+ "away": "BAR",
+ "shots": [
+  {
+   "team": "SAB",
+   "min": 9,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.228,
+   "x": 91.5,
+   "y": 39.040714287,
+   "player": "Xayal Əliyev",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 16,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0379,
+   "x": 81.6966019424,
+   "y": 38.452380954,
+   "player": "Anthony Gordon",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SAB",
+   "min": 17,
+   "add": null,
+   "type": "Miss",
+   "situation": "ThrowInSetPiece",
+   "shotType": "RightFoot",
+   "xg": 0.0862,
+   "x": 93.5,
+   "y": 37.756,
+   "player": "Du Queiroz",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 20,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0345,
+   "x": 85.4941176464,
+   "y": 43.044375,
+   "player": "Gabriel Jesus",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 21,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0519,
+   "x": 85.81617647,
+   "y": 31.1025,
+   "player": "Pedri",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 22,
+   "add": null,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0348,
+   "x": 86.6749999996,
+   "y": 43.044375,
+   "player": "Gabriel Jesus",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SAB",
+   "min": 27,
+   "add": null,
+   "type": "Post",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0482,
+   "x": 90.1,
+   "y": 30.34,
+   "player": "Ivan Lepinjica",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 28,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0411,
+   "x": 86.4602941172,
+   "y": 35.448750000000004,
+   "player": "Alejandro Balde",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 31,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.3302,
+   "x": 97.7631578942,
+   "y": 33.8475,
+   "player": "Anthony Gordon",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 36,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.1243,
+   "x": 93.6,
+   "y": 40.553571429,
+   "player": "Pedri",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 39,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0309,
+   "x": 91.3,
+   "y": 48.7650955389,
+   "player": "Gabriel Jesus",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 43,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.2558,
+   "x": 97.0877192975,
+   "y": 28.959285713000003,
+   "player": "Karim Adeyemi",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 45,
+   "add": 0,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0415,
+   "x": 83.2733009712,
+   "y": 37.50750000000001,
+   "player": "Fermín López",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 45,
+   "add": 0,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0508,
+   "x": 96.2192982446,
+   "y": 42.813125,
+   "player": "Anthony Gordon",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 47,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0374,
+   "x": 85.81617647,
+   "y": 23.438726119099996,
+   "player": "Jules Koundé",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 51,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.1855,
+   "x": 93.6,
+   "y": 26.69,
+   "player": "Gabriel Jesus",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 51,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.5254,
+   "x": 99.6896551728,
+   "y": 37.72,
+   "player": "Anthony Gordon",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 54,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.2217,
+   "x": 93.3,
+   "y": 39.881190477,
+   "player": "Anthony Gordon",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 54,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.3497,
+   "x": 97.95614035039999,
+   "y": 28.202857142,
+   "player": "Gabriel Jesus",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 55,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.8339,
+   "x": 101.3017241382,
+   "y": 32.474999999999994,
+   "player": "Karim Adeyemi",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 58,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0208,
+   "x": 94.7719298231,
+   "y": 48.134522290199996,
+   "player": "Alejandro Balde",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 60,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.2006,
+   "x": 100.732758621,
+   "y": 35.83,
+   "player": "Jules Koundé",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 60,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.7577,
+   "x": 103.3879310346,
+   "y": 32.856249999999996,
+   "player": "Gabriel Jesus",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 60,
+   "add": null,
+   "type": "Goal",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.689,
+   "x": 103.19827586219999,
+   "y": 32.9325,
+   "player": "Gabriel Jesus",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SAB",
+   "min": 63,
+   "add": null,
+   "type": "Goal",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.2952,
+   "x": 97.4736842099,
+   "y": 30.492499999999996,
+   "player": "Joy-Lance Mickels",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SAB",
+   "min": 72,
+   "add": null,
+   "type": "Miss",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.3451,
+   "x": 91.7,
+   "y": 35.448750000000004,
+   "player": "Joy-Lance Mickels",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SAB",
+   "min": 78,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "Header",
+   "xg": 0.0712,
+   "x": 97.0877192975,
+   "y": 34.68625,
+   "player": "Steve Solvet",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 80,
+   "add": null,
+   "type": "Post",
+   "situation": "RegularPlay",
+   "shotType": "LeftFoot",
+   "xg": 0.0521,
+   "x": 92.3,
+   "y": 46.8033120985,
+   "player": "Karim Adeyemi",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SAB",
+   "min": 81,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "FastBreak",
+   "shotType": "RightFoot",
+   "xg": 0.048,
+   "x": 90.7,
+   "y": 44.5612738809,
+   "player": "Christian Nwachukwu",
+   "onTarget": true,
+   "blocked": true,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 88,
+   "add": null,
+   "type": "AttemptSaved",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.0418,
+   "x": 85.6014705876,
+   "y": 43.16,
+   "player": "João Cancelo",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "SAB",
+   "min": 88,
+   "add": null,
+   "type": "Miss",
+   "situation": "RegularPlay",
+   "shotType": "RightFoot",
+   "xg": 0.023,
+   "x": 83.160679612,
+   "y": 14.961019108799999,
+   "player": "Tellur Mütallimov",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 90,
+   "add": 2,
+   "type": "AttemptSaved",
+   "situation": "FromCorner",
+   "shotType": "LeftFoot",
+   "xg": 0.0335,
+   "x": 82.37233009760001,
+   "y": 24.4896815336,
+   "player": "Karim Adeyemi",
+   "onTarget": true,
+   "blocked": false,
+   "ownGoal": false
+  },
+  {
+   "team": "BAR",
+   "min": 90,
+   "add": 2,
+   "type": "Miss",
+   "situation": "FromCorner",
+   "shotType": "RightFoot",
+   "xg": 0.0344,
+   "x": 84.9573529404,
+   "y": 47.013503181400004,
+   "player": "Fermín López",
+   "onTarget": false,
+   "blocked": false,
+   "ownGoal": false
+  }
+ ],
+ "momentum": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   5
+  ],
+  [
+   2,
+   -5
+  ],
+  [
+   3,
+   0
+  ],
+  [
+   4,
+   -11
+  ],
+  [
+   5,
+   -5
+  ],
+  [
+   6,
+   -16
+  ],
+  [
+   7,
+   -49
+  ],
+  [
+   8,
+   16
+  ],
+  [
+   9,
+   5
+  ],
+  [
+   10,
+   16
+  ],
+  [
+   11,
+   -49
+  ],
+  [
+   12,
+   -22
+  ],
+  [
+   13,
+   0
+  ],
+  [
+   14,
+   -49
+  ],
+  [
+   15,
+   -76
+  ],
+  [
+   16,
+   -87
+  ],
+  [
+   17,
+   -33
+  ],
+  [
+   18,
+   -27
+  ],
+  [
+   19,
+   -33
+  ],
+  [
+   20,
+   -60
+  ],
+  [
+   21,
+   -60
+  ],
+  [
+   22,
+   -38
+  ],
+  [
+   23,
+   -33
+  ],
+  [
+   24,
+   -38
+  ],
+  [
+   25,
+   -33
+  ],
+  [
+   26,
+   0
+  ],
+  [
+   27,
+   16
+  ],
+  [
+   28,
+   22
+  ],
+  [
+   29,
+   11
+  ],
+  [
+   30,
+   11
+  ],
+  [
+   31,
+   -27
+  ],
+  [
+   32,
+   -27
+  ],
+  [
+   33,
+   -22
+  ],
+  [
+   34,
+   5
+  ],
+  [
+   35,
+   0
+  ],
+  [
+   36,
+   -100
+  ],
+  [
+   37,
+   -100
+  ],
+  [
+   38,
+   -100
+  ],
+  [
+   39,
+   -76
+  ],
+  [
+   40,
+   -54
+  ],
+  [
+   41,
+   -38
+  ],
+  [
+   42,
+   -11
+  ],
+  [
+   43,
+   -87
+  ],
+  [
+   44,
+   -100
+  ],
+  [
+   45,
+   -100
+  ],
+  [
+   45.5,
+   -65
+  ],
+  [
+   46,
+   -5
+  ],
+  [
+   47,
+   -38
+  ],
+  [
+   48,
+   -38
+  ],
+  [
+   49,
+   -16
+  ],
+  [
+   50,
+   16
+  ],
+  [
+   51,
+   -38
+  ],
+  [
+   52,
+   -54
+  ],
+  [
+   53,
+   -92
+  ],
+  [
+   54,
+   -81
+  ],
+  [
+   55,
+   -100
+  ],
+  [
+   56,
+   -100
+  ],
+  [
+   57,
+   -100
+  ],
+  [
+   58,
+   -43
+  ],
+  [
+   59,
+   -38
+  ],
+  [
+   60,
+   -87
+  ],
+  [
+   61,
+   -60
+  ],
+  [
+   62,
+   -43
+  ],
+  [
+   63,
+   100
+  ],
+  [
+   64,
+   100
+  ],
+  [
+   65,
+   100
+  ],
+  [
+   66,
+   -14
+  ],
+  [
+   67,
+   -30
+  ],
+  [
+   68,
+   -8
+  ],
+  [
+   69,
+   0
+  ],
+  [
+   70,
+   24
+  ],
+  [
+   71,
+   3
+  ],
+  [
+   72,
+   52
+  ],
+  [
+   73,
+   43
+  ],
+  [
+   74,
+   33
+  ],
+  [
+   75,
+   -11
+  ],
+  [
+   76,
+   -11
+  ],
+  [
+   77,
+   -27
+  ],
+  [
+   78,
+   -24
+  ],
+  [
+   79,
+   -41
+  ],
+  [
+   80,
+   -35
+  ],
+  [
+   81,
+   -22
+  ],
+  [
+   82,
+   -5
+  ],
+  [
+   83,
+   11
+  ],
+  [
+   84,
+   -5
+  ],
+  [
+   85,
+   -33
+  ],
+  [
+   86,
+   -38
+  ],
+  [
+   87,
+   -38
+  ],
+  [
+   88,
+   0
+  ],
+  [
+   89,
+   11
+  ],
+  [
+   90,
+   27
+  ],
+  [
+   90.5,
+   8
+  ],
+  [
+   90.75,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "type": "added",
+   "min": 45,
+   "minutes": 1
+  },
+  {
+   "type": "card",
+   "card": "Yellow",
+   "min": 69,
+   "team": "SAB",
+   "player": "Ivan Lepinjica",
+   "reason": "Foul"
+  },
+  {
+   "type": "added",
+   "min": 90,
+   "minutes": 2
+  }
+ ],
+ "stats": {
+  "All": {
+   "BallPossesion": [
+    29,
+    71
+   ],
+   "expected_goals": [
+    "1.14",
+    "4.13"
+   ],
+   "total_shots": [
+    8,
+    25
+   ],
+   "ShotsOnTarget": [
+    3,
+    14
+   ],
+   "touches_opp_box": [
+    18,
+    42
+   ],
+   "big_chance": [
+    3,
+    9
+   ],
+   "big_chance_missed_title": [
+    2,
+    5
+   ],
+   "accurate_passes": [
+    "215 (80%)",
+    "634 (93%)"
+   ],
+   "yellow_cards": [
+    1,
+    0
+   ],
+   "corners": [
+    4,
+    6
+   ],
+   "ShotsOffTarget": [
+    4,
+    8
+   ],
+   "blocked_shots": [
+    1,
+    3
+   ],
+   "shots_woodwork": [
+    1,
+    1
+   ],
+   "shots_inside_box": [
+    7,
+    15
+   ],
+   "shots_outside_box": [
+    1,
+    10
+   ],
+   "expected_goals_open_play": [
+    "0.94",
+    "3.09"
+   ],
+   "expected_goals_set_play": [
+    "0.21",
+    "1.04"
+   ],
+   "expected_goals_non_penalty": [
+    "1.14",
+    "4.13"
+   ],
+   "expected_goals_on_target": [
+    "1.20",
+    "5.04"
+   ],
+   "passes": [
+    268,
+    685
+   ],
+   "own_half_passes": [
+    160,
+    348
+   ],
+   "opposition_half_passes": [
+    55,
+    286
+   ],
+   "long_balls_accurate": [
+    "16 (41%)",
+    "9 (56%)"
+   ],
+   "accurate_crosses": [
+    "1 (17%)",
+    "1 (10%)"
+   ],
+   "player_throws": [
+    15,
+    17
+   ],
+   "Offsides": [
+    4,
+    2
+   ],
+   "matchstats.headers.tackles": [
+    14,
+    14
+   ],
+   "interceptions": [
+    10,
+    2
+   ],
+   "shot_blocks": [
+    4,
+    1
+   ],
+   "clearances": [
+    17,
+    11
+   ],
+   "keeper_saves": [
+    9,
+    2
+   ],
+   "duel_won": [
+    30,
+    38
+   ],
+   "ground_duels_won": [
+    "26 (46%)",
+    "31 (54%)"
+   ],
+   "aerials_won": [
+    "4 (36%)",
+    "7 (64%)"
+   ],
+   "dribbles_succeeded": [
+    "4 (36%)",
+    "9 (60%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    9,
+    8
+   ]
+  },
+  "FirstHalf": {
+   "BallPossesion": [
+    25,
+    75
+   ],
+   "expected_goals": [
+    "0.36",
+    "1.03"
+   ],
+   "total_shots": [
+    3,
+    11
+   ],
+   "ShotsOnTarget": [
+    1,
+    5
+   ],
+   "touches_opp_box": [
+    7,
+    20
+   ],
+   "big_chance": [
+    1,
+    2
+   ],
+   "big_chance_missed_title": [
+    1,
+    1
+   ],
+   "accurate_passes": [
+    "95 (75%)",
+    "350 (93%)"
+   ],
+   "yellow_cards": [
+    0,
+    0
+   ],
+   "corners": [
+    1,
+    2
+   ],
+   "ShotsOffTarget": [
+    2,
+    5
+   ],
+   "blocked_shots": [
+    0,
+    1
+   ],
+   "shots_woodwork": [
+    1,
+    0
+   ],
+   "shots_inside_box": [
+    3,
+    5
+   ],
+   "shots_outside_box": [
+    0,
+    6
+   ],
+   "expected_goals_open_play": [
+    "0.23",
+    "1.00"
+   ],
+   "expected_goals_set_play": [
+    "0.13",
+    "0.03"
+   ],
+   "expected_goals_non_penalty": [
+    "0.36",
+    "1.03"
+   ],
+   "expected_goals_on_target": [
+    "0.12",
+    "1.02"
+   ],
+   "passes": [
+    126,
+    376
+   ],
+   "own_half_passes": [
+    67,
+    157
+   ],
+   "opposition_half_passes": [
+    28,
+    193
+   ],
+   "long_balls_accurate": [
+    "9 (36%)",
+    "4 (67%)"
+   ],
+   "accurate_crosses": [
+    "0 (0%)",
+    "0 (0%)"
+   ],
+   "player_throws": [
+    10,
+    12
+   ],
+   "Offsides": [
+    2,
+    2
+   ],
+   "matchstats.headers.tackles": [
+    11,
+    8
+   ],
+   "interceptions": [
+    5,
+    2
+   ],
+   "shot_blocks": [
+    1,
+    0
+   ],
+   "clearances": [
+    10,
+    4
+   ],
+   "keeper_saves": [
+    4,
+    1
+   ],
+   "duel_won": [
+    20,
+    19
+   ],
+   "ground_duels_won": [
+    "19 (56%)",
+    "15 (44%)"
+   ],
+   "aerials_won": [
+    "1 (20%)",
+    "4 (80%)"
+   ],
+   "dribbles_succeeded": [
+    "4 (57%)",
+    "4 (50%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    3,
+    4
+   ]
+  },
+  "SecondHalf": {
+   "BallPossesion": [
+    32,
+    68
+   ],
+   "expected_goals": [
+    "0.78",
+    "3.10"
+   ],
+   "total_shots": [
+    5,
+    14
+   ],
+   "ShotsOnTarget": [
+    2,
+    9
+   ],
+   "touches_opp_box": [
+    11,
+    22
+   ],
+   "big_chance": [
+    2,
+    7
+   ],
+   "big_chance_missed_title": [
+    1,
+    4
+   ],
+   "accurate_passes": [
+    "120 (85%)",
+    "284 (92%)"
+   ],
+   "yellow_cards": [
+    1,
+    0
+   ],
+   "corners": [
+    3,
+    4
+   ],
+   "ShotsOffTarget": [
+    2,
+    3
+   ],
+   "blocked_shots": [
+    1,
+    2
+   ],
+   "shots_woodwork": [
+    0,
+    1
+   ],
+   "shots_inside_box": [
+    4,
+    10
+   ],
+   "shots_outside_box": [
+    1,
+    4
+   ],
+   "expected_goals_open_play": [
+    "0.71",
+    "2.09"
+   ],
+   "expected_goals_set_play": [
+    "0.07",
+    "1.01"
+   ],
+   "expected_goals_non_penalty": [
+    "0.78",
+    "3.10"
+   ],
+   "expected_goals_on_target": [
+    "1.08",
+    "4.02"
+   ],
+   "passes": [
+    142,
+    309
+   ],
+   "own_half_passes": [
+    93,
+    191
+   ],
+   "opposition_half_passes": [
+    27,
+    93
+   ],
+   "long_balls_accurate": [
+    "7 (50%)",
+    "5 (50%)"
+   ],
+   "accurate_crosses": [
+    "1 (25%)",
+    "1 (20%)"
+   ],
+   "player_throws": [
+    5,
+    5
+   ],
+   "Offsides": [
+    2,
+    0
+   ],
+   "matchstats.headers.tackles": [
+    3,
+    6
+   ],
+   "interceptions": [
+    5,
+    0
+   ],
+   "shot_blocks": [
+    3,
+    1
+   ],
+   "clearances": [
+    7,
+    7
+   ],
+   "keeper_saves": [
+    5,
+    1
+   ],
+   "duel_won": [
+    10,
+    19
+   ],
+   "ground_duels_won": [
+    "7 (30%)",
+    "16 (70%)"
+   ],
+   "aerials_won": [
+    "3 (50%)",
+    "3 (50%)"
+   ],
+   "dribbles_succeeded": [
+    "0 (0%)",
+    "5 (71%)"
+   ],
+   "red_cards": [
+    0,
+    0
+   ],
+   "fouls": [
+    6,
+    4
+   ]
+  }
+ }
+}
